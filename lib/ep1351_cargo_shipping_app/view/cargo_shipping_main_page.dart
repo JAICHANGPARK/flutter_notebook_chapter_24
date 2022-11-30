@@ -55,7 +55,18 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Column(
-                            children: [],
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Shipping",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              Text("Today is Friday - 22 June, 2022"),
+                            ],
                           ),
                           CircleAvatar()
                         ],

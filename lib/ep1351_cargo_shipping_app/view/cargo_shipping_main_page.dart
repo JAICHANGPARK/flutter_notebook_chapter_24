@@ -8,12 +8,14 @@ class CargoShippingMainPage extends StatefulWidget {
 }
 
 class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
+  Color _primaryColor = Color.fromRGBO(19, 3, 58, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: const Text("Cargo"),
-        backgroundColor: Color.fromRGBO(19, 3, 58, 1),
+        backgroundColor: _primaryColor,
         foregroundColor: Colors.white,
         actions: [
           IconButton(
@@ -35,7 +37,35 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [],
+          children: [
+            Container(
+              height: MediaQuery.of(context).size.height / 2.5,
+              color: Colors.blue,
+              child: Stack(
+                children: [
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    child: Container(
+                      height: 160,
+                      color: _primaryColor,
+                      padding: EdgeInsets.only(top: 24, bottom: 24, left: 16, right: 16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            children: [],
+                          ),
+                          CircleAvatar()
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );

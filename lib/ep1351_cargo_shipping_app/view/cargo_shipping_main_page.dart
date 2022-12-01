@@ -309,6 +309,17 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              height: 58,
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(28),
+                border: Border.all(
+                  color: Colors.grey[300]!,
+                ),
+              ),
             )
           ],
         ),

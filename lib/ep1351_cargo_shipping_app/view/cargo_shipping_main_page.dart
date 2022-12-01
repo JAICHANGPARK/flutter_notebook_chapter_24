@@ -251,7 +251,59 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                             ),
                           ),
                         ),
-                        const Card(),
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Expanded(
+                                      child: Text(
+                                        "Delivery\nShipments",
+                                        maxLines: 2,
+                                        style: TextStyle(
+                                          color: Colors.grey,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.grey[200],
+                                      foregroundColor: _accentColor,
+                                      child: const Icon(Icons.block),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "6,628",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.arrow_drop_up,
+                                      color: Colors.green,
+                                      size: 32,
+                                    ),
+                                    Text(
+                                      "+1.8%",
+                                      style: TextStyle(
+                                        color: Colors.green,
+                                        fontSize: 16,
+                                      ),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                       ],
                     ),
                   )

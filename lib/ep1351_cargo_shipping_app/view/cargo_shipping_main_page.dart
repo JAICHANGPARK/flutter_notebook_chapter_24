@@ -350,6 +350,45 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                   )
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 16,
+                vertical: 16,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Shipment history",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 18,
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: _accentColor,
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    child: Row(
+                      children: [
+                        Text(
+                          "Recent",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                        Icon(
+                          Icons.keyboard_arrow_right_outlined,
+                          color: Colors.white,
+                        )
+                      ],
+                    ),
+                  )
+                ],
+              ),
             )
           ],
         ),

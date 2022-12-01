@@ -311,14 +311,35 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
               ),
             ),
             Container(
-              height: 58,
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              height: 48,
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(28),
                 border: Border.all(
                   color: Colors.grey[300]!,
                 ),
+              ),
+              child: Row(
+                children: [
+                  const Expanded(child: TextField()),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 16,
+                    ),
+                    decoration: BoxDecoration(
+                      color: _secondaryColor,
+                      borderRadius: BorderRadius.circular(28),
+                    ),
+                    child: const Center(
+                        child: Text(
+                      "Track",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    )),
+                  )
+                ],
               ),
             )
           ],

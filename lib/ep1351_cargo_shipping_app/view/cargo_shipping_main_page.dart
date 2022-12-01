@@ -8,9 +8,9 @@ class CargoShippingMainPage extends StatefulWidget {
 }
 
 class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
-  Color _primaryColor = Color.fromRGBO(19, 3, 58, 1);
-  Color _secondaryColor = Color.fromRGBO(154, 134, 200, 1);
-  Color _accentColor = Color.fromRGBO(103, 40, 255, 1);
+  Color _primaryColor = const Color.fromRGBO(19, 3, 58, 1);
+  Color _secondaryColor = const Color.fromRGBO(154, 134, 200, 1);
+  Color _accentColor = const Color.fromRGBO(103, 40, 255, 1);
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                     child: Container(
                       height: 160,
                       color: _primaryColor,
-                      padding: EdgeInsets.only(top: 0, bottom: 24, left: 16, right: 16),
+                      padding: const EdgeInsets.only(top: 0, bottom: 24, left: 16, right: 16),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -60,7 +60,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Text(
+                              const Text(
                                 "Shipping",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -68,7 +68,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                                   fontSize: 24,
                                 ),
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 16,
                               ),
                               Text(
@@ -83,7 +83,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                             radius: 28,
                             foregroundColor: Colors.white,
                             backgroundColor: _accentColor,
-                            child: Icon(
+                            child: const Icon(
                               Icons.add,
                             ),
                           )
@@ -100,42 +100,60 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                       crossAxisCount: 2,
                       crossAxisSpacing: 4,
                       mainAxisSpacing: 4,
-                      childAspectRatio: 1.4,
+                      childAspectRatio: 1.5,
                       children: [
                         Card(
                           child: Padding(
                             padding: const EdgeInsets.all(12.0),
                             child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Row(
                                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text(
+                                    const Text(
                                       "Total\nShipments",
                                       maxLines: 2,
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold,
+                                      ),
                                     ),
                                     CircleAvatar(
                                       backgroundColor: Colors.grey[200],
                                       foregroundColor: _primaryColor,
-                                      child: Icon(Icons.indeterminate_check_box_sharp),
+                                      child: const Icon(Icons.indeterminate_check_box_sharp),
                                     ),
                                   ],
                                 ),
-
                                 Row(
                                   children: [
-                                    Text("6,628"),
-                                    Icon(Icons.arrow_drop_up,),
-                                    Text("+1.8%")
+                                    const Text(
+                                      "6,628",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    const Icon(
+                                      Icons.arrow_drop_up,
+                                      color: Colors.green,
+                                    ),
+                                    const Text(
+                                      "+1.8%",
+                                      style: TextStyle(
+                                        color: Colors.green,
+                                      ),
+                                    )
                                   ],
                                 )
                               ],
                             ),
                           ),
                         ),
-                        Card(),
-                        Card(),
-                        Card(),
+                        const Card(),
+                        const Card(),
+                        const Card(),
                       ],
                     ),
                   )

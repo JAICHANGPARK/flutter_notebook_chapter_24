@@ -127,22 +127,24 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                                   ],
                                 ),
                                 Row(
-                                  children: [
-                                    const Text(
+                                  children: const [
+                                    Text(
                                       "6,628",
                                       style: TextStyle(
                                         fontSize: 24,
                                         fontWeight: FontWeight.bold,
                                       ),
                                     ),
-                                    const Icon(
+                                    Icon(
                                       Icons.arrow_drop_up,
                                       color: Colors.green,
+                                      size: 32,
                                     ),
-                                    const Text(
+                                    Text(
                                       "+1.8%",
                                       style: TextStyle(
                                         color: Colors.green,
+                                        fontSize: 16
                                       ),
                                     )
                                   ],

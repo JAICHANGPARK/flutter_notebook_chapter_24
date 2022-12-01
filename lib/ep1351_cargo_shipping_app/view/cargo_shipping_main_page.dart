@@ -41,7 +41,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
         child: Column(
           children: [
             Container(
-              height: MediaQuery.of(context).size.height / 2.2,
+              height: MediaQuery.of(context).size.height / 2.3,
               child: Stack(
                 children: [
                   Positioned(
@@ -312,7 +312,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
             ),
             Container(
               height: 48,
-              margin: const EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(28),

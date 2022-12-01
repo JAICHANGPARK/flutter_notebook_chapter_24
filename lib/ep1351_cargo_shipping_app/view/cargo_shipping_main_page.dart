@@ -320,9 +320,18 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                   color: Colors.grey[300]!,
                 ),
               ),
+              padding: EdgeInsets.only(
+                left: 16,
+              ),
               child: Row(
                 children: [
-                  const Expanded(child: TextField()),
+                  const Expanded(
+                      child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Enter tracking number",
+                      border: InputBorder.none,
+                    ),
+                  )),
                   Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 16,

@@ -121,7 +121,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                                     ),
                                     CircleAvatar(
                                       backgroundColor: Colors.grey[200],
-                                      foregroundColor: _primaryColor,
+                                      foregroundColor: _accentColor,
                                       child: const Icon(Icons.indeterminate_check_box_sharp),
                                     ),
                                   ],
@@ -142,10 +142,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                                     ),
                                     Text(
                                       "+1.8%",
-                                      style: TextStyle(
-                                        color: Colors.green,
-                                        fontSize: 16
-                                      ),
+                                      style: TextStyle(color: Colors.green, fontSize: 16),
                                     )
                                   ],
                                 )
@@ -153,7 +150,54 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                             ),
                           ),
                         ),
-                        const Card(),
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      "Pickup\nPackage",
+                                      maxLines: 2,
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.grey[200],
+                                      foregroundColor: _accentColor,
+                                      child: const Icon(Icons.fire_truck),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  children: const [
+                                    Text(
+                                      "6,628",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                        fontWeight: FontWeight.bold,
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.arrow_drop_up,
+                                      color: Colors.green,
+                                      size: 32,
+                                    ),
+                                    Text(
+                                      "+1.8%",
+                                      style: TextStyle(color: Colors.green, fontSize: 16),
+                                    )
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                         const Card(),
                         const Card(),
                       ],

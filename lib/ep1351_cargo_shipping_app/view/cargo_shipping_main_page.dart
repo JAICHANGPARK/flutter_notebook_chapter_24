@@ -42,7 +42,6 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
           children: [
             Container(
               height: MediaQuery.of(context).size.height / 2.2,
-              color: Colors.blue,
               child: Stack(
                 children: [
                   Positioned(
@@ -103,7 +102,37 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                       mainAxisSpacing: 4,
                       childAspectRatio: 1.4,
                       children: [
-                        Card(),
+                        Card(
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text(
+                                      "Total\nShipments",
+                                      maxLines: 2,
+                                    ),
+                                    CircleAvatar(
+                                      backgroundColor: Colors.grey[200],
+                                      foregroundColor: _primaryColor,
+                                      child: Icon(Icons.indeterminate_check_box_sharp),
+                                    ),
+                                  ],
+                                ),
+
+                                Row(
+                                  children: [
+                                    Text("6,628"),
+                                    Icon(Icons.arrow_drop_up,),
+                                    Text("+1.8%")
+                                  ],
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                         Card(),
                         Card(),
                         Card(),

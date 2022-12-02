@@ -400,125 +400,133 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(
-                        width: 58,
-                        child: Text(
-                          'Track\nnumber',
-                          style: TextStyle(
-                            color: Colors.grey,
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(
+                          width: 58,
+                          child: Text(
+                            'Track\nnumber',
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              "TRACKING NUMBER",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+                        const SizedBox(
+                          width: 16,
+                        ),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "TRACKING NUMBER",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                            ),
-                            Padding(
-                              padding: const EdgeInsets.symmetric(vertical: 12),
-                              child: Row(
-                                children: const [
-                                  Text(
-                                    "HCM-03245612345",
-                                    style: TextStyle(
-                                      color: Colors.cyan,
+                              Padding(
+                                padding: const EdgeInsets.symmetric(vertical: 12),
+                                child: Row(
+                                  children: const [
+                                    Text(
+                                      "HCM-03245612345",
+                                      style: TextStyle(
+                                        color: Colors.cyan,
+                                      ),
                                     ),
-                                  ),
-                                  SizedBox(
-                                    width: 8,
-                                  ),
-                                  Icon(
-                                    Icons.ios_share,
-                                    size: 18,
-                                  ),
-                                ],
+                                    SizedBox(
+                                      width: 8,
+                                    ),
+                                    Icon(
+                                      Icons.ios_share,
+                                      size: 18,
+                                    ),
+                                  ],
+                                ),
                               ),
-                            ),
-                            const Text(
-                              "Shipping start date: Oct 18, 2000",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
+                              const Text(
+                                "Shipping start date: Oct 18, 2000",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
+                            ],
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        const SizedBox(
+                          width: 58,
+                          child: Text(
+                            "Services",
+                            style: TextStyle(
+                              color: Colors.grey,
                             ),
-                          ],
-                        ),
-                      )
-                    ],
-                  ),
-                  const SizedBox(
-                    height: 16,
-                  ),
-                  Row(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      const SizedBox(
-                        width: 58,
-                        child: Text(
-                          "Services",
-                          style: TextStyle(
-                            color: Colors.grey,
-                            fontWeight: FontWeight.bold,
                           ),
                         ),
-                      ),
-                      const SizedBox(
-                        width: 16,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              "OCEAN FREIGHT",
-                              style: TextStyle(
-                                color: Colors.grey,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            const Text(
-                              "\$850",
-                              style: TextStyle(
-                                fontSize: 24,
-                                height: 1.8,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            Text(
-                              "View details",
-                              style: TextStyle(
-                                decoration: TextDecoration.underline,
-                                color: _accentColor,
-                              ),
-                            ),
-                          ],
+                        const SizedBox(
+                          width: 16,
                         ),
-                      ),
-                    ],
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "OCEAN FREIGHT",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              const Text(
+                                "\$850",
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  height: 1.8,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                "View details",
+                                style: TextStyle(
+                                  decoration: TextDecoration.underline,
+                                  color: _accentColor,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                   Container(
-                    margin: EdgeInsets.only(top: 16),
+                    margin: const EdgeInsets.only(top: 16),
+                    padding: const EdgeInsets.symmetric(vertical: 8),
                     decoration: BoxDecoration(
                       color: Colors.white,
                       border: Border.all(
-                        color: Colors.grey,
+                        color: Colors.grey[200]!,
+                      ),
+                      borderRadius: const BorderRadius.only(
+                        bottomLeft: Radius.circular(4),
+                        bottomRight: Radius.circular(4),
                       ),
                     ),
-                    child: Center(
+                    child: const Center(
                       child: Icon(
                         Icons.keyboard_arrow_down,
+                        color: Colors.grey,
                       ),
                     ),
                   )

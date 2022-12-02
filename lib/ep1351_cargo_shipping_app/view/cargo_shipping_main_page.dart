@@ -465,7 +465,16 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(width: 58, child: Text("Services")),
+                      const SizedBox(
+                        width: 58,
+                        child: Text(
+                          "Services",
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
                       const SizedBox(
                         width: 16,
                       ),
@@ -473,11 +482,19 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            const Text("OCEAN FREGHT"),
+                            const Text(
+                              "OCEAN FREIGHT",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
                             const Text(
                               "\$850",
                               style: TextStyle(
                                 fontSize: 24,
+                                height: 1.8,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             Text(
@@ -486,7 +503,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                                 decoration: TextDecoration.underline,
                                 color: _accentColor,
                               ),
-                            )
+                            ),
                           ],
                         ),
                       )

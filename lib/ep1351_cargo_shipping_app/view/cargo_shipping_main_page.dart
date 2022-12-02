@@ -396,14 +396,26 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                 color: Colors.blueGrey[50],
                 border: Border.all(color: Colors.grey),
               ),
+              padding: EdgeInsets.all(8),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [
                       Text('Track\nnumber'),
                       Expanded(
                         child: Column(
-                          children: [Text("TRACKING NUMBER")],
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("TRACKING NUMBER"),
+                            Row(
+                              children: [
+                                Text("HCM-03245612345"),
+                                Icon(Icons.ios_share),
+                              ],
+                            ),
+                            Text("Shipping start date: Oct 18, 2000"),
+                          ],
                         ),
                       )
                     ],

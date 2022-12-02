@@ -13,12 +13,18 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.5
+  flutter_riverpod: any
+  freezed: any
+  google_fonts: any
+  ionicons: any
+
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^2.0.1
+  build_runner: any
 
 flutter:
   uses-material-design: true

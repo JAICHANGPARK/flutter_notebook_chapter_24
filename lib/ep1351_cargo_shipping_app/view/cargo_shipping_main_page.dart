@@ -373,14 +373,14 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                     ),
                     padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Row(
-                      children: [
-                        const Text(
+                      children: const [
+                        Text(
                           "Recent",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
-                        const Icon(
+                        Icon(
                           Icons.keyboard_arrow_right_outlined,
                           color: Colors.white,
                         )
@@ -391,30 +391,102 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
               ),
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 16),
+              margin: const EdgeInsets.symmetric(horizontal: 16),
               decoration: BoxDecoration(
-                color: Colors.blueGrey[50],
+                color: Colors.grey[100],
                 border: Border.all(color: Colors.grey),
+                borderRadius: BorderRadius.circular(4),
               ),
-              padding: EdgeInsets.all(8),
+              padding: const EdgeInsets.all(8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Track\nnumber'),
+                      const SizedBox(
+                        width: 58,
+                        child: Text(
+                          'Track\nnumber',
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 16,
+                      ),
                       Expanded(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("TRACKING NUMBER"),
-                            Row(
-                              children: [
-                                Text("HCM-03245612345"),
-                                Icon(Icons.ios_share),
-                              ],
+                            const Text(
+                              "TRACKING NUMBER",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
-                            Text("Shipping start date: Oct 18, 2000"),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 12),
+                              child: Row(
+                                children: const [
+                                  Text(
+                                    "HCM-03245612345",
+                                    style: TextStyle(
+                                      color: Colors.cyan,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Icon(
+                                    Icons.ios_share,
+                                    size: 18,
+                                  ),
+                                ],
+                              ),
+                            ),
+                            const Text(
+                              "Shipping start date: Oct 18, 2000",
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  const SizedBox(
+                    height: 16,
+                  ),
+                  Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const SizedBox(width: 58, child: Text("Services")),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text("OCEAN FREGHT"),
+                            const Text(
+                              "\$850",
+                              style: TextStyle(
+                                fontSize: 24,
+                              ),
+                            ),
+                            Text(
+                              "View details",
+                              style: TextStyle(
+                                decoration: TextDecoration.underline,
+                                color: _accentColor,
+                              ),
+                            )
                           ],
                         ),
                       )

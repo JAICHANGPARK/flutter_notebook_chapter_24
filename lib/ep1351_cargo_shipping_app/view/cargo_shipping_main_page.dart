@@ -508,6 +508,17 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                         ),
                       )
                     ],
+                  ),
+                  Container(
+
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                    ),
+                    child: Center(
+                      child: Icon(
+                        Icons.keyboard_arrow_down,
+                      ),
+                    ),
                   )
                 ],
               ),

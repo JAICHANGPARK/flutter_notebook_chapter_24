@@ -397,7 +397,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                 border: Border.all(color: Colors.grey),
                 borderRadius: BorderRadius.circular(4),
               ),
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -506,13 +506,16 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                             ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                   Container(
-
+                    margin: EdgeInsets.symmetric(horizontal: 16),
                     decoration: BoxDecoration(
                       color: Colors.white,
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
                     ),
                     child: Center(
                       child: Icon(
@@ -522,7 +525,8 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                   )
                 ],
               ),
-            )
+            ),
+
           ],
         ),
       ),

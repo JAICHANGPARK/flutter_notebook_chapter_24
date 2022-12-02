@@ -320,7 +320,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                   color: Colors.grey[300]!,
                 ),
               ),
-              padding: EdgeInsets.only(
+              padding: const EdgeInsets.only(
                 left: 16,
               ),
               child: Row(
@@ -359,7 +359,7 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
+                  const Text(
                     "Shipment history",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -371,21 +371,42 @@ class _CargoShippingMainPageState extends State<CargoShippingMainPage> {
                       color: _accentColor,
                       borderRadius: BorderRadius.circular(16),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 12),
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
                     child: Row(
                       children: [
-                        Text(
+                        const Text(
                           "Recent",
                           style: TextStyle(
                             color: Colors.white,
                           ),
                         ),
-                        Icon(
+                        const Icon(
                           Icons.keyboard_arrow_right_outlined,
                           color: Colors.white,
                         )
                       ],
                     ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                color: Colors.blueGrey[50],
+                border: Border.all(color: Colors.grey),
+              ),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Text('Track\nnumber'),
+                      Expanded(
+                        child: Column(
+                          children: [Text("TRACKING NUMBER")],
+                        ),
+                      )
+                    ],
                   )
                 ],
               ),

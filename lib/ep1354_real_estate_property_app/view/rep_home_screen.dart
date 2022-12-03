@@ -12,7 +12,39 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey,
-
+      body: ListView.builder(
+        itemBuilder: (context, index) {
+          return Container(
+            margin: const EdgeInsets.fromLTRB(8, 8, 8, 4),
+            height: MediaQuery.of(context).size.height / 2,
+            decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(16)),
+          );
+        },
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black,
+        selectedItemColor: Colors.teal,
+        unselectedItemColor: Colors.grey,
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        items: [
+          const BottomNavigationBarItem(
+              icon: Icon(
+                Icons.apps_outlined,
+              ),
+              label: "Home"),
+          const BottomNavigationBarItem(
+            icon: Icon(Icons.mail),
+            label: "Mail",
+          ),
+          const BottomNavigationBarItem(
+            icon: Icon(
+              Icons.account_box,
+            ),
+            label: "Mail",
+          )
+        ],
+      ),
     );
   }
 }

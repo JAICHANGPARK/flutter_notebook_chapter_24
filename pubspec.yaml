@@ -17,6 +17,7 @@ dependencies:
   freezed: any
   google_fonts: any
   ionicons: any
+  go_router: any
 
 
 dev_dependencies:

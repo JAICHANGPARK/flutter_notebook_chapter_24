@@ -8,6 +8,8 @@ class RealEstatePropertyHomeScreen extends StatefulWidget {
 }
 
 class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScreen> {
+  int _menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +19,10 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
           return Container(
             margin: const EdgeInsets.fromLTRB(8, 8, 8, 4),
             height: MediaQuery.of(context).size.height / 2,
-            decoration: BoxDecoration(color: Colors.teal[50], borderRadius: BorderRadius.circular(16)),
+            decoration: BoxDecoration(
+              color: Colors.teal[50],
+              borderRadius: BorderRadius.circular(16),
+            ),
           );
         },
       ),
@@ -27,17 +32,19 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
         unselectedItemColor: Colors.grey,
         showUnselectedLabels: false,
         showSelectedLabels: false,
-        items: [
-          const BottomNavigationBarItem(
+        currentIndex: _menuIndex,
+        onTap: (idx) => setState(() => _menuIndex = idx),
+        items: const [
+           BottomNavigationBarItem(
               icon: Icon(
                 Icons.apps_outlined,
               ),
               label: "Home"),
-          const BottomNavigationBarItem(
+           BottomNavigationBarItem(
             icon: Icon(Icons.mail),
             label: "Mail",
           ),
-          const BottomNavigationBarItem(
+           BottomNavigationBarItem(
             icon: Icon(
               Icons.account_box,
             ),

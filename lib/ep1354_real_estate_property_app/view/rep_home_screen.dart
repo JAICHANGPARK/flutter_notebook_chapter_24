@@ -126,10 +126,28 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                             crossAxisSpacing: 8,
                             children: [
                               Container(
-                                color: Colors.blueGrey,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Colors.blueGrey,
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                               Container(
-                                color: Colors.blueGrey,
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8),
+                                  color: Colors.blueGrey,
+                                  image: const DecorationImage(
+                                    image: NetworkImage(
+                                      "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
+                                    ),
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               )
                             ],
                           ),

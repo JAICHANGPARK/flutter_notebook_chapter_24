@@ -30,13 +30,36 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                   right: 0,
                   bottom: 0,
                   child: Container(
+                    height: 80,
                     decoration: BoxDecoration(
+                      color: Colors.white,
+                      gradient: LinearGradient(
+                        colors: [
+                          Colors.white,
+                          Colors.white,
+                          Colors.white.withOpacity(0.6),
+                          Colors.white.withOpacity(0.2),
+                        ],
+                        stops: [0, 0.5, 0.8, 1],
+                        begin: Alignment.bottomCenter,
+                        end: Alignment.topCenter,
+                      ),
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(16),
-                        bottomRight:  Radius.circular(16),
-                      )
+                        bottomRight: Radius.circular(16),
+                      ),
                     ),
-                  ),)
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        IconButton(onPressed: () {}, icon: Icon(Icons.favorite)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.forward)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.send)),
+                        IconButton(onPressed: () {}, icon: Icon(Icons.bookmark)),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           );

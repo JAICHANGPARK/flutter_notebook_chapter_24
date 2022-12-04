@@ -26,16 +26,19 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
             child: Stack(
               children: [
                 Positioned(
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    top: 0,
+                    left: 16,
+                    right: 16,
+                    bottom: 16,
+                    top: 16,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
                             CircleAvatar(),
+                            SizedBox(
+                              width: 16,
+                            ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -48,11 +51,15 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                                 ),
                               ],
                             ),
+                            Spacer(),
                             Container(
                               decoration: BoxDecoration(
                                 color: Colors.teal,
                               ),
-                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              padding: EdgeInsets.symmetric(
+                                horizontal: 8,
+                                vertical: 4,
+                              ),
                               child: Text(
                                 "Property",
                                 style: TextStyle(
@@ -61,6 +68,36 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                               ),
                             )
                           ],
+                        ),
+                        Text("Dreamwalker listed a"),
+                        Row(
+                          children: [
+                            Text(
+                              "Property",
+                              style: TextStyle(
+                                backgroundColor: Colors.teal[100],
+                                color: Colors.teal,
+                              ),
+                            ),
+                            Text("in"),
+                          ],
+                        ),
+                        Text("Windsor, CA"),
+                        Text("Posted 11 days ago"),
+                        Expanded(
+                          child: GridView.count(
+                            crossAxisCount: 2,
+                            mainAxisSpacing: 8,
+                            crossAxisSpacing: 8,
+                            children: [
+                              Container(
+                                color: Colors.blueGrey,
+                              ),
+                              Container(
+                                color: Colors.blueGrey,
+                              )
+                            ],
+                          ),
                         )
                       ],
                     )),

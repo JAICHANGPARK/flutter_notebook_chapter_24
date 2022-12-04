@@ -35,32 +35,32 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                       children: [
                         Row(
                           children: [
-                            CircleAvatar(),
-                            SizedBox(
+                            const CircleAvatar(),
+                            const SizedBox(
                               width: 16,
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Dream Walker"),
+                                const Text("Dream Walker"),
                                 Row(
                                   children: [
-                                    Text("Realtor"),
-                                    Text("Sonama County, CA"),
+                                    const Text("Realtor"),
+                                    const Text("Sonama County, CA"),
                                   ],
                                 ),
                               ],
                             ),
-                            Spacer(),
+                            const Spacer(),
                             Container(
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: Colors.teal,
                               ),
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 horizontal: 8,
                                 vertical: 4,
                               ),
-                              child: Text(
+                              child: const Text(
                                 "Property",
                                 style: TextStyle(
                                   color: Colors.white,
@@ -69,10 +69,10 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                             )
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 24,
                         ),
-                        Text(
+                        const Text(
                           "Dreamwalker listed a",
                           style: TextStyle(
                             fontWeight: FontWeight.w900,
@@ -90,7 +90,7 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                                 fontSize: 38,
                               ),
                             ),
-                            Text(
+                            const Text(
                               " in",
                               style: TextStyle(
                                 fontWeight: FontWeight.w900,
@@ -99,7 +99,7 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                             ),
                           ],
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 4,
                         ),
                         Text(
@@ -111,8 +111,8 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                             fontSize: 38,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
+                        const Padding(
+                          padding: EdgeInsets.symmetric(
                             vertical: 16,
                           ),
                           child: Text(
@@ -155,7 +155,7 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                         begin: Alignment.bottomCenter,
                         end: Alignment.topCenter,
                       ),
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                         bottomLeft: Radius.circular(16),
                         bottomRight: Radius.circular(16),
                       ),
@@ -163,10 +163,10 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        IconButton(onPressed: () {}, icon: Icon(Icons.favorite)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.forward)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.send)),
-                        IconButton(onPressed: () {}, icon: Icon(Icons.bookmark)),
+                        IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
+                        IconButton(onPressed: () {}, icon: const Icon(Icons.forward)),
+                        IconButton(onPressed: () {}, icon: const Icon(Icons.send)),
+                        IconButton(onPressed: () {}, icon: const Icon(Icons.bookmark)),
                       ],
                     ),
                   ),

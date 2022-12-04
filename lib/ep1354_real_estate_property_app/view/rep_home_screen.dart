@@ -26,6 +26,45 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
             child: Stack(
               children: [
                 Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    top: 0,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            CircleAvatar(),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Dream Walker"),
+                                Row(
+                                  children: [
+                                    Text("Realtor"),
+                                    Text("Sonama County, CA"),
+                                  ],
+                                ),
+                              ],
+                            ),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.teal,
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                              child: Text(
+                                "Property",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                ),
+                              ),
+                            )
+                          ],
+                        )
+                      ],
+                    )),
+                Positioned(
                   left: 0,
                   right: 0,
                   bottom: 0,

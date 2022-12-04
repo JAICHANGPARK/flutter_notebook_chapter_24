@@ -35,16 +35,17 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
         currentIndex: _menuIndex,
         onTap: (idx) => setState(() => _menuIndex = idx),
         items: const [
-           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.apps_outlined,
-              ),
-              label: "Home"),
-           BottomNavigationBarItem(
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.apps_outlined,
+            ),
+            label: "Home",
+          ),
+          BottomNavigationBarItem(
             icon: Icon(Icons.mail),
             label: "Mail",
           ),
-           BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(
               Icons.account_box,
             ),

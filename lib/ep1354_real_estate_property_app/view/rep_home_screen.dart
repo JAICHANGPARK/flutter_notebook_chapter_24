@@ -13,7 +13,7 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Colors.black,
       body: ListView.builder(
         itemBuilder: (context, index) {
           return Container(
@@ -22,6 +22,22 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
             decoration: BoxDecoration(
               color: Colors.teal[50],
               borderRadius: BorderRadius.circular(16),
+            ),
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  bottom: 0,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                        bottomLeft: Radius.circular(16),
+                        bottomRight:  Radius.circular(16),
+                      )
+                    ),
+                  ),)
+              ],
             ),
           );
         },

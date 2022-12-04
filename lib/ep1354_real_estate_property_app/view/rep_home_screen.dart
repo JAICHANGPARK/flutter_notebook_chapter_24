@@ -69,21 +69,56 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
                             )
                           ],
                         ),
-                        Text("Dreamwalker listed a"),
+                        SizedBox(
+                          height: 24,
+                        ),
+                        Text(
+                          "Dreamwalker listed a",
+                          style: TextStyle(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 32,
+                          ),
+                        ),
                         Row(
                           children: [
                             Text(
-                              "Property",
+                              "property",
                               style: TextStyle(
                                 backgroundColor: Colors.teal[100],
                                 color: Colors.teal,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 38,
                               ),
                             ),
-                            Text("in"),
+                            Text(
+                              " in",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w900,
+                                fontSize: 38,
+                              ),
+                            ),
                           ],
                         ),
-                        Text("Windsor, CA"),
-                        Text("Posted 11 days ago"),
+                        SizedBox(
+                          height: 4,
+                        ),
+                        Text(
+                          "Windsor, CA",
+                          style: TextStyle(
+                            backgroundColor: Colors.teal[100],
+                            color: Colors.teal,
+                            fontWeight: FontWeight.w900,
+                            fontSize: 38,
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                            vertical: 16,
+                          ),
+                          child: Text(
+                            "Posted 11 days ago",
+                          ),
+                        ),
                         Expanded(
                           child: GridView.count(
                             crossAxisCount: 2,

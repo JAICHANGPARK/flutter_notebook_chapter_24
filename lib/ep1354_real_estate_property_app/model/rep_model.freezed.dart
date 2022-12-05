@@ -16,7 +16,12 @@ final _privateConstructorUsedError = UnsupportedError(
 
 /// @nodoc
 mixin _$RepModel {
+  String? get profileImg => throw _privateConstructorUsedError;
+  String? get cardTag => throw _privateConstructorUsedError;
+  String? get author => throw _privateConstructorUsedError;
+  String? get location => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
+  List<String> get imgItems => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $RepModelCopyWith<RepModel> get copyWith =>
@@ -28,7 +33,13 @@ abstract class $RepModelCopyWith<$Res> {
   factory $RepModelCopyWith(RepModel value, $Res Function(RepModel) then) =
       _$RepModelCopyWithImpl<$Res, RepModel>;
   @useResult
-  $Res call({String? title});
+  $Res call(
+      {String? profileImg,
+      String? cardTag,
+      String? author,
+      String? location,
+      String? title,
+      List<String> imgItems});
 }
 
 /// @nodoc
@@ -44,13 +55,38 @@ class _$RepModelCopyWithImpl<$Res, $Val extends RepModel>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? profileImg = freezed,
+    Object? cardTag = freezed,
+    Object? author = freezed,
+    Object? location = freezed,
     Object? title = freezed,
+    Object? imgItems = null,
   }) {
     return _then(_value.copyWith(
+      profileImg: freezed == profileImg
+          ? _value.profileImg
+          : profileImg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cardTag: freezed == cardTag
+          ? _value.cardTag
+          : cardTag // ignore: cast_nullable_to_non_nullable
+              as String?,
+      author: freezed == author
+          ? _value.author
+          : author // ignore: cast_nullable_to_non_nullable
+              as String?,
+      location: freezed == location
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as String?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
+      imgItems: null == imgItems
+          ? _value.imgItems
+          : imgItems // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ) as $Val);
   }
 }
@@ -62,7 +98,13 @@ abstract class _$$_RepModelCopyWith<$Res> implements $RepModelCopyWith<$Res> {
       __$$_RepModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String? title});
+  $Res call(
+      {String? profileImg,
+      String? cardTag,
+      String? author,
+      String? location,
+      String? title,
+      List<String> imgItems});
 }
 
 /// @nodoc
@@ -76,13 +118,38 @@ class __$$_RepModelCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
+    Object? profileImg = freezed,
+    Object? cardTag = freezed,
+    Object? author = freezed,
+    Object? location = freezed,
     Object? title = freezed,
+    Object? imgItems = null,
   }) {
     return _then(_$_RepModel(
+      profileImg: freezed == profileImg
+          ? _value.profileImg
+          : profileImg // ignore: cast_nullable_to_non_nullable
+              as String?,
+      cardTag: freezed == cardTag
+          ? _value.cardTag
+          : cardTag // ignore: cast_nullable_to_non_nullable
+              as String?,
+      author: freezed == author
+          ? _value.author
+          : author // ignore: cast_nullable_to_non_nullable
+              as String?,
+      location: freezed == location
+          ? _value.location
+          : location // ignore: cast_nullable_to_non_nullable
+              as String?,
       title: freezed == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
+      imgItems: null == imgItems
+          ? _value._imgItems
+          : imgItems // ignore: cast_nullable_to_non_nullable
+              as List<String>,
     ));
   }
 }
@@ -90,14 +157,37 @@ class __$$_RepModelCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_RepModel implements _RepModel {
-  const _$_RepModel({this.title});
+  const _$_RepModel(
+      {this.profileImg,
+      this.cardTag,
+      this.author,
+      this.location,
+      this.title,
+      final List<String> imgItems = const []})
+      : _imgItems = imgItems;
 
   @override
+  final String? profileImg;
+  @override
+  final String? cardTag;
+  @override
+  final String? author;
+  @override
+  final String? location;
+  @override
   final String? title;
+  final List<String> _imgItems;
+  @override
+  @JsonKey()
+  List<String> get imgItems {
+    if (_imgItems is EqualUnmodifiableListView) return _imgItems;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_imgItems);
+  }
 
   @override
   String toString() {
-    return 'RepModel(title: $title)';
+    return 'RepModel(profileImg: $profileImg, cardTag: $cardTag, author: $author, location: $location, title: $title, imgItems: $imgItems)';
   }
 
   @override
@@ -105,11 +195,19 @@ class _$_RepModel implements _RepModel {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$_RepModel &&
-            (identical(other.title, title) || other.title == title));
+            (identical(other.profileImg, profileImg) ||
+                other.profileImg == profileImg) &&
+            (identical(other.cardTag, cardTag) || other.cardTag == cardTag) &&
+            (identical(other.author, author) || other.author == author) &&
+            (identical(other.location, location) ||
+                other.location == location) &&
+            (identical(other.title, title) || other.title == title) &&
+            const DeepCollectionEquality().equals(other._imgItems, _imgItems));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, title);
+  int get hashCode => Object.hash(runtimeType, profileImg, cardTag, author,
+      location, title, const DeepCollectionEquality().hash(_imgItems));
 
   @JsonKey(ignore: true)
   @override
@@ -119,10 +217,26 @@ class _$_RepModel implements _RepModel {
 }
 
 abstract class _RepModel implements RepModel {
-  const factory _RepModel({final String? title}) = _$_RepModel;
+  const factory _RepModel(
+      {final String? profileImg,
+      final String? cardTag,
+      final String? author,
+      final String? location,
+      final String? title,
+      final List<String> imgItems}) = _$_RepModel;
 
   @override
+  String? get profileImg;
+  @override
+  String? get cardTag;
+  @override
+  String? get author;
+  @override
+  String? get location;
+  @override
   String? get title;
+  @override
+  List<String> get imgItems;
   @override
   @JsonKey(ignore: true)
   _$$_RepModelCopyWith<_$_RepModel> get copyWith =>

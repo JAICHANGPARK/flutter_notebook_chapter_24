@@ -14,10 +14,12 @@ dependencies:
 
   cupertino_icons: ^1.0.5
   flutter_riverpod: any
-  freezed: any
+
   google_fonts: any
   ionicons: any
   go_router: any
+  freezed_annotation: any
+  json_annotation: any
 
 
 dev_dependencies:
@@ -26,6 +28,8 @@ dev_dependencies:
 
   flutter_lints: ^2.0.1
   build_runner: any
+  freezed: any
+  json_serializable: any
 
 flutter:
   uses-material-design: true

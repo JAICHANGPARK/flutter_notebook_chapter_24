@@ -11,6 +11,7 @@ class _RealEstateDetailScreenState extends State<RealEstateDetailScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.teal[50],
       body: SafeArea(
         child: Column(
           children: [

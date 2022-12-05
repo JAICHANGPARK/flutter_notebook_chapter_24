@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1354_real_estate_property_app/view/rep_detail_screen.dart';
 
 class RealEstatePropertyHomeScreen extends StatefulWidget {
   const RealEstatePropertyHomeScreen({Key? key}) : super(key: key);
@@ -16,180 +17,191 @@ class _RealEstatePropertyHomeScreenState extends State<RealEstatePropertyHomeScr
       backgroundColor: Colors.black,
       body: ListView.builder(
         itemBuilder: (context, index) {
-          return Container(
-            margin: const EdgeInsets.fromLTRB(8, 8, 8, 4),
-            height: MediaQuery.of(context).size.height / 2,
-            decoration: BoxDecoration(
-              color: Colors.teal[50],
-              borderRadius: BorderRadius.circular(16),
-            ),
-            child: Stack(
-              children: [
-                Positioned(
-                    left: 16,
-                    right: 16,
-                    bottom: 16,
-                    top: 16,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            const CircleAvatar(),
-                            const SizedBox(
-                              width: 16,
-                            ),
-                            Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text("Dream Walker"),
-                                Row(
-                                  children: [
-                                    const Text("Realtor"),
-                                    const Text("Sonama County, CA"),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            const Spacer(),
-                            Container(
-                              decoration: const BoxDecoration(
-                                color: Colors.teal,
-                              ),
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 8,
-                                vertical: 4,
-                              ),
-                              child: const Text(
-                                "Property",
-                                style: TextStyle(
-                                  color: Colors.white,
-                                ),
-                              ),
-                            )
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 24,
-                        ),
-                        const Text(
-                          "Dreamwalker listed a",
-                          style: TextStyle(
-                            fontWeight: FontWeight.w900,
-                            fontSize: 32,
-                          ),
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              "property",
-                              style: TextStyle(
-                                backgroundColor: Colors.teal[100],
-                                color: Colors.teal,
-                                fontWeight: FontWeight.w900,
-                                fontSize: 38,
-                              ),
-                            ),
-                            const Text(
-                              " in",
-                              style: TextStyle(
-                                fontWeight: FontWeight.w900,
-                                fontSize: 38,
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 4,
-                        ),
-                        Text(
-                          "Windsor, CA",
-                          style: TextStyle(
-                            backgroundColor: Colors.teal[100],
-                            color: Colors.teal,
-                            fontWeight: FontWeight.w900,
-                            fontSize: 38,
-                          ),
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.symmetric(
-                            vertical: 16,
-                          ),
-                          child: Text(
-                            "Posted 11 days ago",
-                          ),
-                        ),
-                        Expanded(
-                          child: GridView.count(
-                            crossAxisCount: 2,
-                            mainAxisSpacing: 8,
-                            crossAxisSpacing: 8,
+          return GestureDetector(
+            onTap: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) {
+                    return RealEstateDetailScreen();
+                  },
+                ),
+              );
+            },
+            child: Container(
+              margin: const EdgeInsets.fromLTRB(8, 8, 8, 4),
+              height: MediaQuery.of(context).size.height / 2,
+              decoration: BoxDecoration(
+                color: Colors.teal[50],
+                borderRadius: BorderRadius.circular(16),
+              ),
+              child: Stack(
+                children: [
+                  Positioned(
+                      left: 16,
+                      right: 16,
+                      bottom: 16,
+                      top: 16,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
                             children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.blueGrey,
-                                  image: const DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
-                                    ),
-                                    fit: BoxFit.cover,
-                                  ),
-                                ),
+                              const CircleAvatar(),
+                              const SizedBox(
+                                width: 16,
                               ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  const Text("Dream Walker"),
+                                  Row(
+                                    children: const [
+                                      Text("Realtor"),
+                                      Text("Sonama County, CA"),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                              const Spacer(),
                               Container(
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  color: Colors.blueGrey,
-                                  image: const DecorationImage(
-                                    image: NetworkImage(
-                                      "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
-                                    ),
-                                    fit: BoxFit.cover,
+                                decoration: const BoxDecoration(
+                                  color: Colors.teal,
+                                ),
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 8,
+                                  vertical: 4,
+                                ),
+                                child: const Text(
+                                  "Property",
+                                  style: TextStyle(
+                                    color: Colors.white,
                                   ),
                                 ),
                               )
                             ],
                           ),
-                        )
-                      ],
-                    )),
-                Positioned(
-                  left: 0,
-                  right: 0,
-                  bottom: 0,
-                  child: Container(
-                    height: 80,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      gradient: LinearGradient(
-                        colors: [
-                          Colors.white,
-                          Colors.white,
-                          Colors.white.withOpacity(0.6),
-                          Colors.white.withOpacity(0.2),
+                          const SizedBox(
+                            height: 24,
+                          ),
+                          const Text(
+                            "Dreamwalker listed a",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w900,
+                              fontSize: 32,
+                            ),
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "property",
+                                style: TextStyle(
+                                  backgroundColor: Colors.teal[100],
+                                  color: Colors.teal,
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 38,
+                                ),
+                              ),
+                              const Text(
+                                " in",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 38,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(
+                            height: 4,
+                          ),
+                          Text(
+                            "Windsor, CA",
+                            style: TextStyle(
+                              backgroundColor: Colors.teal[100],
+                              color: Colors.teal,
+                              fontWeight: FontWeight.w900,
+                              fontSize: 38,
+                            ),
+                          ),
+                          const Padding(
+                            padding: EdgeInsets.symmetric(
+                              vertical: 16,
+                            ),
+                            child: Text(
+                              "Posted 11 days ago",
+                            ),
+                          ),
+                          Expanded(
+                            child: GridView.count(
+                              crossAxisCount: 2,
+                              mainAxisSpacing: 8,
+                              crossAxisSpacing: 8,
+                              children: [
+                                Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.blueGrey,
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                                Container(
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(8),
+                                    color: Colors.blueGrey,
+                                    image: const DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2017/03/22/17/39/kitchen-2165756_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                )
+                              ],
+                            ),
+                          )
                         ],
-                        stops: [0, 0.5, 0.8, 1],
-                        begin: Alignment.bottomCenter,
-                        end: Alignment.topCenter,
+                      )),
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    child: Container(
+                      height: 80,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        gradient: LinearGradient(
+                          colors: [
+                            Colors.white,
+                            Colors.white,
+                            Colors.white.withOpacity(0.6),
+                            Colors.white.withOpacity(0.2),
+                          ],
+                          stops: const [0, 0.5, 0.8, 1],
+                          begin: Alignment.bottomCenter,
+                          end: Alignment.topCenter,
+                        ),
+                        borderRadius: const BorderRadius.only(
+                          bottomLeft: Radius.circular(16),
+                          bottomRight: Radius.circular(16),
+                        ),
                       ),
-                      borderRadius: const BorderRadius.only(
-                        bottomLeft: Radius.circular(16),
-                        bottomRight: Radius.circular(16),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.forward)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.send)),
+                          IconButton(onPressed: () {}, icon: const Icon(Icons.bookmark)),
+                        ],
                       ),
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        IconButton(onPressed: () {}, icon: const Icon(Icons.favorite)),
-                        IconButton(onPressed: () {}, icon: const Icon(Icons.forward)),
-                        IconButton(onPressed: () {}, icon: const Icon(Icons.send)),
-                        IconButton(onPressed: () {}, icon: const Icon(Icons.bookmark)),
-                      ],
-                    ),
-                  ),
-                )
-              ],
+                  )
+                ],
+              ),
             ),
           );
         },

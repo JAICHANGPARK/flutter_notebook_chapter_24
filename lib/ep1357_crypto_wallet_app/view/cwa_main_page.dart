@@ -47,7 +47,31 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
             top: 0,
             child: Column(
               children: [
-
+                Container(
+                  margin: EdgeInsets.all(16),
+                  height: 250,
+                  decoration: BoxDecoration(
+                    color: Colors.indigo[50],
+                  ),
+                ),
+                Row(
+                  children: [],
+                ),
+                Container(
+                  height: 42,
+                  color: Colors.blue,
+                ),
+                Text("My Wallets"),
+                Expanded(
+                  child: ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Container(
+                        margin: EdgeInsets.only(bottom: 8),
+                        color: Colors.blueGrey,
+                      );
+                    },
+                  ),
+                ),
               ],
             ),
           ),

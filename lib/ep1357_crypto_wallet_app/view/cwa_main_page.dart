@@ -41,21 +41,28 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
       body: Stack(
         children: [
           Positioned(
-            left: 0,
-            right: 0,
+            left: 16,
+            right: 16,
             bottom: 0,
             top: 0,
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  margin: EdgeInsets.all(16),
+                  margin: EdgeInsets.symmetric(vertical: 16),
                   height: 250,
                   decoration: BoxDecoration(
                     color: Colors.indigo[50],
                   ),
                 ),
                 Row(
-                  children: [],
+                  children: [
+                    Icon(
+                      Ionicons.pie_chart_outline,
+                    ),
+                    Text("Portfolio"),
+                    Text("\$6543 (LAST MONTH)")
+                  ],
                 ),
                 Container(
                   height: 42,

@@ -2,13 +2,12 @@
 
 
 
-### EP1354-1356
+### EP1357
+- Coinze Crypto Wallet App
+- by Musemind Mobile for Musemind
+- https://dribbble.com/shots/20057526-Coinze-Crypto-Wallet-App
 
-- Real Estate Property - App UI
-- by Vlad Radchenko
-- https://dribbble.com/shots/19998444-Real-Estate-Property-App-UI
-
-<img src="https://cdn.dribbble.com/userupload/4059194/file/original-055845d45489e4b8508edf0d0f65ce4f.png?compress=1&resize=1600x1200" width="400px"/>
+<img src="https://cdn.dribbble.com/userupload/4096264/file/original-315632175ccb9eff60af85e2d5aeaf7e.png?compress=1&resize=1600x1200" width="400px"/>
 
 ### EP1354-1356
 

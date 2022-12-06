@@ -47,7 +47,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
             top: 0,
             child: Column(
               children: [
-                
+
               ],
             ),
           ),

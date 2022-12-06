@@ -27,6 +27,8 @@
 <img src="https://cdn.dribbble.com/userupload/4065652/file/original-9e07bf125ed0451848db5fcfc8b31756.png?compress=1&resize=1600x1200" width="400px"/>
 <img src="https://cdn.dribbble.com/userupload/4065665/file/original-3e4fd844dfdadee68ab60ccea3c58bdf.png?compress=1&resize=1600x1200" width="400px"/>
 
+A new Flutter project.
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.

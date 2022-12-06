@@ -50,16 +50,43 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
               child: Stack(
                 children: [
                   Positioned(
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      top: 32,
-                      child: Container(
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    top: 24,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
                         color: Colors.black,
-                        child: Row(
-                          children: [],
+                      ),
+                      child: Row(
+                        children: [],
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 16,
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        shape: BoxShape.circle,
+                      ),
+                      child: Center(
+                        child: CircleAvatar(
+                          backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: Icon(
+                            Icons.import_export,
+                            size: 42,
+                          ),
+                          radius: 32,
                         ),
-                      ))
+                      ),
+                    ),
+                  )
                 ],
               ),
             ),

@@ -61,6 +61,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                       Ionicons.pie_chart_outline,
                     ),
                     Text("Portfolio"),
+                    Spacer(),
                     Text("\$6543 (LAST MONTH)")
                   ],
                 ),
@@ -68,11 +69,15 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                   height: 42,
                   color: Colors.blue,
                 ),
-                Text("My Wallets"),
+                Text(
+                  "My Wallets",
+                  style: TextStyle(fontSize: 24),
+                ),
                 Expanded(
                   child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Container(
+                        height: 64,
                         margin: EdgeInsets.only(bottom: 8),
                         color: Colors.blueGrey,
                       );

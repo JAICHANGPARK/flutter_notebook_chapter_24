@@ -41,6 +41,17 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
       body: Stack(
         children: [
           Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: Column(
+              children: [
+                
+              ],
+            ),
+          ),
+          Positioned(
             bottom: 16,
             left: 16,
             right: 16,

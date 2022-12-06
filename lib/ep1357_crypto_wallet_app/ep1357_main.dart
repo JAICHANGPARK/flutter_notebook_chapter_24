@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/view/cwa_main_page.dart';
 
 main() {
   runApp(const CryptoWalletApp());
@@ -9,6 +10,8 @@ class CryptoWalletApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp();
+    return const MaterialApp(
+      home: CryptoWalletAppMainPage(),
+    );
   }
 }

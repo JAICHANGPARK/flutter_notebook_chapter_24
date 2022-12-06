@@ -19,20 +19,20 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
         elevation: 0,
         leading: IconButton(
           onPressed: () {},
-          icon: Icon(
+          icon: const Icon(
             Icons.menu,
           ),
         ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Ionicons.notifications_outline,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Ionicons.search,
             ),
           ),
@@ -46,7 +46,6 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
             right: 16,
             child: Container(
               height: 100,
-              color: Colors.blueGrey,
               child: Stack(
                 children: [
                   Positioned(
@@ -60,7 +59,32 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                         color: Colors.black,
                       ),
                       child: Row(
-                        children: [],
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Ionicons.home_outline),
+                            color: Colors.white,
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Ionicons.wallet_outline),
+                            color: Colors.grey,
+                          ),
+                          SizedBox(
+                            width: 64,
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Ionicons.card_outline),
+                            color: Colors.grey,
+                          ),
+                          IconButton(
+                            onPressed: () {},
+                            icon: Icon(Ionicons.person_outline),
+                            color: Colors.grey,
+                          ),
+                        ],
                       ),
                     ),
                   ),
@@ -70,11 +94,11 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                     top: 0,
                     bottom: 16,
                     child: Container(
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black,
                         shape: BoxShape.circle,
                       ),
-                      child: Center(
+                      child: const Center(
                         child: CircleAvatar(
                           backgroundColor: Colors.white,
                           foregroundColor: Colors.black,

@@ -12,8 +12,10 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
         elevation: 0,
         leading: IconButton(
           onPressed: () {},
@@ -34,6 +36,15 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
               Ionicons.search,
             ),
           ),
+        ],
+      ),
+      body: Stack(
+        children: [
+          Positioned(
+            child: Container(
+              height: 100,
+            ),
+          )
         ],
       ),
     );

@@ -58,6 +58,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                   ),
                   padding: EdgeInsets.all(16),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -89,6 +90,9 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                                 color: Colors.white,
                               ),
                             ),
+                          ),
+                          SizedBox(
+                            width: 8,
                           ),
                           Text(
                             "9835.73",
@@ -153,7 +157,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(Icons.upload),
+                                  Icon(Icons.upload_outlined),
                                   SizedBox(
                                     width: 8,
                                   ),
@@ -163,24 +167,24 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                             )),
                             Expanded(
                                 child: Container(
-                                  height: 42,
-                                  margin: EdgeInsets.symmetric(horizontal: 16),
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(8),
-                                    border: Border.all(),
+                              height: 42,
+                              margin: EdgeInsets.symmetric(horizontal: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.download_outlined),
+                                  SizedBox(
+                                    width: 8,
                                   ),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: [
-                                      Icon(Icons.download),
-                                      SizedBox(
-                                        width: 8,
-                                      ),
-                                      Text("Receive"),
-                                    ],
-                                  ),
-                                )),
+                                  Text("Receive"),
+                                ],
+                              ),
+                            )),
                           ],
                         ),
                       )
@@ -192,6 +196,9 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                     Icon(
                       Ionicons.pie_chart_outline,
                     ),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Text("Portfolio"),
                     Spacer(),
                     Text("\$6543 (LAST MONTH)")
@@ -199,7 +206,15 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                 ),
                 Container(
                   height: 42,
-                  color: Colors.blue,
+                  padding: EdgeInsets.symmetric(
+                    vertical: 14,
+                  ),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(),
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                  ),
                 ),
                 Text(
                   "My Wallets",

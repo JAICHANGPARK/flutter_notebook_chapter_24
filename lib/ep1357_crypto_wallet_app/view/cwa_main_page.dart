@@ -88,7 +88,23 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                                 color: Colors.white,
                               ),
                             ),
-                          )
+                          ),
+                          Text(
+                            "9835.73",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 30,
+                            ),
+                          ),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            "ETH",
+                            style: TextStyle(
+                              fontSize: 28,
+                            ),
+                          ),
                         ],
                       )
                     ],

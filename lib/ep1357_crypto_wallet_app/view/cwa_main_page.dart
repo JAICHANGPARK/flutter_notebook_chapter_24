@@ -246,31 +246,36 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                               ),
                             ),
                             Expanded(
-                                child: Column(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text("Etherium"),
-                                    Text("ETh 9835.73"),
-                                  ],
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text("ETH"),
-                                    Row(
-                                      children: [
-                                        Icon(
-                                          Icons.arrow_drop_up,
-                                        ),
-                                        Text("2.28%"),
-                                      ],
-                                    )
-                                  ],
-                                ),
-                              ],
+                                child: Padding(
+                              padding: const EdgeInsets.only(
+                                left: 16,
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("Etherium"),
+                                      Text("ETh 9835.73"),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text("ETH"),
+                                      Row(
+                                        children: [
+                                          Icon(
+                                            Icons.arrow_drop_up,
+                                          ),
+                                          Text("2.28%"),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ],
+                              ),
                             ))
                           ],
                         ),

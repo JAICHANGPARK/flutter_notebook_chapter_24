@@ -230,6 +230,50 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                         height: 64,
                         margin: const EdgeInsets.only(bottom: 8),
                         color: Colors.blueGrey,
+                        child: Row(
+                          children: [
+                            Container(
+                              height: 64,
+                              width: 64,
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                shape: BoxShape.circle,
+                              ),
+                              child: Center(
+                                child: Icon(
+                                  CryptoFontIcons.ETH,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                                child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("Etherium"),
+                                    Text("ETh 9835.73"),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Text("ETH"),
+                                    Row(
+                                      children: [
+                                        Icon(
+                                          Icons.arrow_drop_up,
+                                        ),
+                                        Text("2.28%"),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ],
+                            ))
+                          ],
+                        ),
                       );
                     },
                   ),

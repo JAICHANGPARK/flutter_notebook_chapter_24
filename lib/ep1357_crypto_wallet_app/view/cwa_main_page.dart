@@ -223,13 +223,16 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                   "My Wallets",
                   style: TextStyle(fontSize: 24),
                 ),
+                SizedBox(
+                  height: 16,
+                ),
                 Expanded(
                   child: ListView.builder(
                     itemBuilder: (context, index) {
                       return Container(
                         height: 64,
                         margin: const EdgeInsets.only(bottom: 8),
-                        color: Colors.blueGrey,
+                        // color: Colors.blueGrey,
                         child: Row(
                           children: [
                             Container(

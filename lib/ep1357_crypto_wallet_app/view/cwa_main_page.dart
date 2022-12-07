@@ -71,6 +71,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                         ],
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             height: 48,
@@ -104,6 +105,31 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                             style: TextStyle(
                               fontSize: 28,
                             ),
+                          ),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(24)),
+                            child: Row(
+                              children: [
+                                Icon(
+                                  Icons.arrow_drop_up,
+                                  color: Colors.green,
+                                ),
+                                Text(
+                                  "2.28%",
+                                  style: TextStyle(
+                                    color: Colors.green,
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                          Text(
+                            "PAST 24 HOURS",
                           ),
                         ],
                       )

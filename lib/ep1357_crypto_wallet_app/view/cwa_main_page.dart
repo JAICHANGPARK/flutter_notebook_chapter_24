@@ -1,3 +1,4 @@
+import 'package:crypto_font_icons/crypto_font_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -53,6 +54,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                   height: 250,
                   decoration: BoxDecoration(
                     color: Colors.indigo[50],
+                    borderRadius: BorderRadius.circular(16),
                   ),
                   padding: EdgeInsets.all(16),
                   child: Column(
@@ -65,6 +67,27 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                           ),
                           Icon(
                             Icons.keyboard_arrow_down,
+                          )
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            height: 48,
+                            width: 48,
+                            decoration: BoxDecoration(
+                              border: Border.all(
+                                color: Colors.black,
+                              ),
+                              shape: BoxShape.circle,
+                              color: Colors.blue,
+                            ),
+                            child: Center(
+                              child: Icon(
+                                CryptoFontIcons.ETH,
+                                color: Colors.white,
+                              ),
+                            ),
                           )
                         ],
                       )

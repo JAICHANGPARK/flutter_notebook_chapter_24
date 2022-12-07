@@ -54,6 +54,20 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                   decoration: BoxDecoration(
                     color: Colors.indigo[50],
                   ),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            "CURRENT WALLET BALANCE",
+                          ),
+                          Icon(
+                            Icons.keyboard_arrow_down,
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
                 Row(
                   children: [

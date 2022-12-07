@@ -109,10 +109,14 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                         ],
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
                             padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-                            decoration: BoxDecoration(color: Colors.grey[100], borderRadius: BorderRadius.circular(24)),
+                            decoration: BoxDecoration(
+                              color: Colors.grey[100],
+                              borderRadius: BorderRadius.circular(24),
+                            ),
                             child: Row(
                               children: [
                                 Icon(
@@ -132,6 +136,53 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                             "PAST 24 HOURS",
                           ),
                         ],
+                      ),
+                      SizedBox(
+                        height: 52,
+                        child: Row(
+                          children: [
+                            Expanded(
+                                child: Container(
+                              height: 42,
+                              margin: EdgeInsets.symmetric(horizontal: 16),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(8),
+                                border: Border.all(),
+                              ),
+                              child: Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Icon(Icons.upload),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Text("Send"),
+                                ],
+                              ),
+                            )),
+                            Expanded(
+                                child: Container(
+                                  height: 42,
+                                  margin: EdgeInsets.symmetric(horizontal: 16),
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: BorderRadius.circular(8),
+                                    border: Border.all(),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: [
+                                      Icon(Icons.download),
+                                      SizedBox(
+                                        width: 8,
+                                      ),
+                                      Text("Receive"),
+                                    ],
+                                  ),
+                                )),
+                          ],
+                        ),
                       )
                     ],
                   ),

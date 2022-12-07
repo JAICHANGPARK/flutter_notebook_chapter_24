@@ -50,19 +50,19 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 16),
+                  margin: const EdgeInsets.symmetric(vertical: 16),
                   height: 250,
                   decoration: BoxDecoration(
                     color: Colors.indigo[50],
                     borderRadius: BorderRadius.circular(16),
                   ),
-                  padding: EdgeInsets.all(16),
+                  padding: const EdgeInsets.all(16),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
+                        children: const [
                           Text(
                             "CURRENT WALLET BALANCE",
                           ),
@@ -84,27 +84,27 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                               shape: BoxShape.circle,
                               color: Colors.blue,
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Icon(
                                 CryptoFontIcons.ETH,
                                 color: Colors.white,
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text(
+                          const Text(
                             "9835.73",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 30,
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 8,
                           ),
-                          Text(
+                          const Text(
                             "ETH",
                             style: TextStyle(
                               fontSize: 28,
@@ -116,13 +116,13 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Container(
-                            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                             decoration: BoxDecoration(
                               color: Colors.grey[100],
                               borderRadius: BorderRadius.circular(24),
                             ),
                             child: Row(
-                              children: [
+                              children: const [
                                 Icon(
                                   Icons.arrow_drop_up,
                                   color: Colors.green,
@@ -136,7 +136,10 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                               ],
                             ),
                           ),
-                          Text(
+                          const SizedBox(
+                            width: 12,
+                          ),
+                          const Text(
                             "PAST 24 HOURS",
                           ),
                         ],
@@ -148,7 +151,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                             Expanded(
                                 child: Container(
                               height: 42,
-                              margin: EdgeInsets.symmetric(horizontal: 16),
+                              margin: const EdgeInsets.symmetric(horizontal: 16),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(8),
@@ -156,7 +159,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                               ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Icon(Icons.upload_outlined),
                                   SizedBox(
                                     width: 8,
@@ -168,7 +171,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                             Expanded(
                                 child: Container(
                               height: 42,
-                              margin: EdgeInsets.symmetric(horizontal: 16),
+                              margin: const EdgeInsets.symmetric(horizontal: 16),
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(8),
@@ -176,7 +179,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                               ),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
+                                children: const [
                                   Icon(Icons.download_outlined),
                                   SizedBox(
                                     width: 8,
@@ -192,7 +195,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                   ),
                 ),
                 Row(
-                  children: [
+                  children: const [
                     Icon(
                       Ionicons.pie_chart_outline,
                     ),
@@ -206,7 +209,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                 ),
                 Container(
                   height: 42,
-                  padding: EdgeInsets.symmetric(
+                  padding: const EdgeInsets.symmetric(
                     vertical: 14,
                   ),
                   child: Container(
@@ -216,7 +219,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                     ),
                   ),
                 ),
-                Text(
+                const Text(
                   "My Wallets",
                   style: TextStyle(fontSize: 24),
                 ),
@@ -225,7 +228,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                     itemBuilder: (context, index) {
                       return Container(
                         height: 64,
-                        margin: EdgeInsets.only(bottom: 8),
+                        margin: const EdgeInsets.only(bottom: 8),
                         color: Colors.blueGrey,
                       );
                     },
@@ -257,25 +260,25 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                         children: [
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Ionicons.home_outline),
+                            icon: const Icon(Ionicons.home_outline),
                             color: Colors.white,
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Ionicons.wallet_outline),
+                            icon: const Icon(Ionicons.wallet_outline),
                             color: Colors.grey,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 64,
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Ionicons.card_outline),
+                            icon: const Icon(Ionicons.card_outline),
                             color: Colors.grey,
                           ),
                           IconButton(
                             onPressed: () {},
-                            icon: Icon(Ionicons.person_outline),
+                            icon: const Icon(Ionicons.person_outline),
                             color: Colors.grey,
                           ),
                         ],

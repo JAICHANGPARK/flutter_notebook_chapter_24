@@ -18,6 +18,7 @@ final _privateConstructorUsedError = UnsupportedError(
 mixin _$CwaModel {
   IconData? get iconData => throw _privateConstructorUsedError;
   String? get title => throw _privateConstructorUsedError;
+  Color? get color => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $CwaModelCopyWith<CwaModel> get copyWith =>
@@ -29,7 +30,7 @@ abstract class $CwaModelCopyWith<$Res> {
   factory $CwaModelCopyWith(CwaModel value, $Res Function(CwaModel) then) =
       _$CwaModelCopyWithImpl<$Res, CwaModel>;
   @useResult
-  $Res call({IconData? iconData, String? title});
+  $Res call({IconData? iconData, String? title, Color? color});
 }
 
 /// @nodoc
@@ -47,6 +48,7 @@ class _$CwaModelCopyWithImpl<$Res, $Val extends CwaModel>
   $Res call({
     Object? iconData = freezed,
     Object? title = freezed,
+    Object? color = freezed,
   }) {
     return _then(_value.copyWith(
       iconData: freezed == iconData
@@ -57,6 +59,10 @@ class _$CwaModelCopyWithImpl<$Res, $Val extends CwaModel>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
+      color: freezed == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as Color?,
     ) as $Val);
   }
 }
@@ -68,7 +74,7 @@ abstract class _$$_CwaModelCopyWith<$Res> implements $CwaModelCopyWith<$Res> {
       __$$_CwaModelCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({IconData? iconData, String? title});
+  $Res call({IconData? iconData, String? title, Color? color});
 }
 
 /// @nodoc
@@ -84,6 +90,7 @@ class __$$_CwaModelCopyWithImpl<$Res>
   $Res call({
     Object? iconData = freezed,
     Object? title = freezed,
+    Object? color = freezed,
   }) {
     return _then(_$_CwaModel(
       freezed == iconData
@@ -94,6 +101,10 @@ class __$$_CwaModelCopyWithImpl<$Res>
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String?,
+      freezed == color
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as Color?,
     ));
   }
 }
@@ -101,16 +112,18 @@ class __$$_CwaModelCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_CwaModel implements _CwaModel {
-  _$_CwaModel(this.iconData, this.title);
+  _$_CwaModel(this.iconData, this.title, this.color);
 
   @override
   final IconData? iconData;
   @override
   final String? title;
+  @override
+  final Color? color;
 
   @override
   String toString() {
-    return 'CwaModel(iconData: $iconData, title: $title)';
+    return 'CwaModel(iconData: $iconData, title: $title, color: $color)';
   }
 
   @override
@@ -120,11 +133,12 @@ class _$_CwaModel implements _CwaModel {
             other is _$_CwaModel &&
             (identical(other.iconData, iconData) ||
                 other.iconData == iconData) &&
-            (identical(other.title, title) || other.title == title));
+            (identical(other.title, title) || other.title == title) &&
+            (identical(other.color, color) || other.color == color));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, iconData, title);
+  int get hashCode => Object.hash(runtimeType, iconData, title, color);
 
   @JsonKey(ignore: true)
   @override
@@ -134,13 +148,16 @@ class _$_CwaModel implements _CwaModel {
 }
 
 abstract class _CwaModel implements CwaModel {
-  factory _CwaModel(final IconData? iconData, final String? title) =
+  factory _CwaModel(
+          final IconData? iconData, final String? title, final Color? color) =
       _$_CwaModel;
 
   @override
   IconData? get iconData;
   @override
   String? get title;
+  @override
+  Color? get color;
   @override
   @JsonKey(ignore: true)
   _$$_CwaModelCopyWith<_$_CwaModel> get copyWith =>

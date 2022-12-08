@@ -1,18 +1,16 @@
 import 'package:crypto_font_icons/crypto_font_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/controller/cwa_menu_index.dart';
 import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/view/cwa_bottom_bar_widget.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ionicons/ionicons.dart';
 
-class CryptoWalletAppMainPage extends StatefulWidget {
+class CryptoWalletAppMainPage extends ConsumerWidget {
   const CryptoWalletAppMainPage({Key? key}) : super(key: key);
 
   @override
-  State<CryptoWalletAppMainPage> createState() => _CryptoWalletAppMainPageState();
-}
-
-class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
-  @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, ref) {
+    final menuIndex = ref.watch(cwaMenuIndex);
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
@@ -48,6 +46,7 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
               bottom: 0,
               top: 0,
               child: IndexedStack(
+                index: menuIndex,
                 children: [
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -291,6 +290,9 @@ class _CryptoWalletAppMainPageState extends State<CryptoWalletAppMainPage> {
                       ),
                     ],
                   ),
+                  Center(
+                    child: Text("page : $menuIndex"),
+                  )
                 ],
               )),
           const Positioned(

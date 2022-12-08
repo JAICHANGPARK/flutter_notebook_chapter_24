@@ -292,6 +292,12 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                   ),
                   Center(
                     child: Text("page : $menuIndex"),
+                  ),
+                  Center(
+                    child: Text("page : $menuIndex"),
+                  ),
+                  Center(
+                    child: Text("page : $menuIndex"),
                   )
                 ],
               )),

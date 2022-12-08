@@ -264,7 +264,7 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                                         Row(
                                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                           children: [
-                                            const Text("Etherium"),
+                                            Text(item.title ?? "Etherium"),
                                             const Text("ETh 9835.73"),
                                           ],
                                         ),

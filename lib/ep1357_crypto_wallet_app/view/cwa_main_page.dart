@@ -1,6 +1,7 @@
 import 'package:crypto_font_icons/crypto_font_icons.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/controller/cwa_menu_index.dart';
+import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/model/caw_fake_data.dart';
 import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/view/cwa_bottom_bar_widget.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ionicons/ionicons.dart';
@@ -230,7 +231,9 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                       ),
                       Expanded(
                         child: ListView.builder(
+                          itemCount: cwaFakeDataItems.length,
                           itemBuilder: (context, index) {
+                            final item = cwaFakeDataItems[index];
                             return Container(
                               height: 64,
                               margin: const EdgeInsets.only(bottom: 8),
@@ -244,9 +247,9 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                                       border: Border.all(),
                                       shape: BoxShape.circle,
                                     ),
-                                    child: const Center(
+                                    child: Center(
                                       child: Icon(
-                                        CryptoFontIcons.ETH,
+                                        item.iconData ?? CryptoFontIcons.ETH,
                                       ),
                                     ),
                                   ),

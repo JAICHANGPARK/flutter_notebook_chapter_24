@@ -8,5 +8,6 @@ class CwaModel with _$CwaModel {
   factory CwaModel(
     IconData? iconData,
     String? title,
+    Color? color,
   ) = _CwaModel;
 }

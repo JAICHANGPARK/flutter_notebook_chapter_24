@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/controller/cwa_menu_index.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ionicons/ionicons.dart';
+
 class CryptoWalletAppBottomBar extends ConsumerWidget {
   const CryptoWalletAppBottomBar({Key? key}) : super(key: key);
 
@@ -26,27 +27,35 @@ class CryptoWalletAppBottomBar extends ConsumerWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      ref.read(cwaMenuIndex.notifier).state = 0;
+                    },
                     icon: const Icon(Ionicons.home_outline),
-                    color: Colors.white,
+                    color: index == 0 ? Colors.white : Colors.grey,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      ref.read(cwaMenuIndex.notifier).state = 1;
+                    },
                     icon: const Icon(Ionicons.wallet_outline),
-                    color: Colors.grey,
+                    color: index == 1 ? Colors.white : Colors.grey,
                   ),
                   const SizedBox(
                     width: 64,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      ref.read(cwaMenuIndex.notifier).state = 2;
+                    },
                     icon: const Icon(Ionicons.card_outline),
-                    color: Colors.grey,
+                    color: index == 2 ? Colors.white : Colors.grey,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      ref.read(cwaMenuIndex.notifier).state = 3;
+                    },
                     icon: const Icon(Ionicons.person_outline),
-                    color: Colors.grey,
+                    color: index == 3 ? Colors.white : Colors.grey,
                   ),
                 ],
               ),

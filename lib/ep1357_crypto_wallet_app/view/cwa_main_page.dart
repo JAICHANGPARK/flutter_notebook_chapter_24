@@ -246,6 +246,7 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                                     decoration: BoxDecoration(
                                       border: Border.all(),
                                       shape: BoxShape.circle,
+                                      color: item.color,
                                     ),
                                     child: Center(
                                       child: Icon(

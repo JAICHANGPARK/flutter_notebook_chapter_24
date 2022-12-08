@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-
-class CryptoWalletAppBottomBar extends StatelessWidget {
+import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/controller/cwa_menu_index.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:ionicons/ionicons.dart';
+class CryptoWalletAppBottomBar extends ConsumerWidget {
   const CryptoWalletAppBottomBar({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    return Container(
+  Widget build(BuildContext contex, ref) {
+    final index = ref.watch(cwaMenuIndex);
+    return SizedBox(
       height: 100,
       child: Stack(
         children: [

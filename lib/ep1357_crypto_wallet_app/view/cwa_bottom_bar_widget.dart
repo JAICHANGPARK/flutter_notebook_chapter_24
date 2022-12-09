@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/controller/cwa_menu_index.dart';
+import 'package:flutter_notebook_chapter_24/ep1357_crypto_wallet_app/view/cwa_exchange_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -7,7 +8,7 @@ class CryptoWalletAppBottomBar extends ConsumerWidget {
   const CryptoWalletAppBottomBar({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext contex, ref) {
+  Widget build(BuildContext context, ref) {
     final index = ref.watch(cwaMenuIndex);
     return SizedBox(
       height: 100,
@@ -66,20 +67,29 @@ class CryptoWalletAppBottomBar extends ConsumerWidget {
             right: 0,
             top: 0,
             bottom: 16,
-            child: Container(
-              decoration: const BoxDecoration(
-                color: Colors.black,
-                shape: BoxShape.circle,
-              ),
-              child: const Center(
-                child: CircleAvatar(
-                  backgroundColor: Colors.white,
-                  foregroundColor: Colors.black,
-                  child: Icon(
-                    Icons.import_export,
-                    size: 42,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => CwaExchangePage(),
                   ),
-                  radius: 32,
+                );
+              },
+              child: Container(
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  shape: BoxShape.circle,
+                ),
+                child: const Center(
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    foregroundColor: Colors.black,
+                    child: Icon(
+                      Icons.import_export,
+                      size: 42,
+                    ),
+                    radius: 32,
+                  ),
                 ),
               ),
             ),

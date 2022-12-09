@@ -50,12 +50,12 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                                 child: Column(
                                   children: [
                                     Row(
-                                      children: [
+                                      children: const [
                                         Icon(Icons.upload_outlined),
                                         Text("YOU PAY"),
                                       ],
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 12,
                                     ),
                                     Row(
@@ -66,20 +66,21 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                                           decoration: BoxDecoration(
                                             border: Border.all(),
                                             shape: BoxShape.circle,
+                                            color: Colors.purple,
                                           ),
-                                          child: Icon(
+                                          child: const Icon(
                                             CryptoFontIcons.BTC,
                                             color: Colors.white,
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 16,
                                         ),
                                         Expanded(
                                           child: Column(
                                             children: [
                                               Row(
-                                                children: [
+                                                children: const [
                                                   Text("Bitcoin"),
                                                   Icon(
                                                     Icons.keyboard_arrow_down,
@@ -91,9 +92,9 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                                               ),
                                               Row(
                                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                                children: [
+                                                children: const [
                                                   Text("BTC"),
-                                                  Text("Balcance 7634.43"),
+                                                  Text("Balacne 7634.43"),
                                                 ],
                                               )
                                             ],
@@ -104,8 +105,68 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                                   ],
                                 ),
                               ),
-                              const Divider(),
-                              Expanded(child: Column()),
+                              const Divider(
+                                height: 42,
+                              ),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: const [
+                                        Icon(Icons.download_outlined),
+                                        Text("YOU GET"),
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            shape: BoxShape.circle,
+                                            color: Colors.green,
+                                          ),
+                                          child: const Icon(
+                                            Icons.attach_money,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          width: 16,
+                                        ),
+                                        Expanded(
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: const [
+                                                  Text("US Dollar"),
+                                                  Icon(
+                                                    Icons.keyboard_arrow_down,
+                                                  ),
+                                                  Spacer(),
+                                                  Text("75356.09"),
+                                                  Text("USD"),
+                                                ],
+                                              ),
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: const [
+                                                  Text("BTC"),
+                                                  Text("Balance 7634.43"),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
@@ -137,7 +198,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                       borderRadius: BorderRadius.circular(16),
                     ),
                     child: Row(
-                      children: [],
+                      children: const [],
                     ),
                   ),
                   const Text(
@@ -167,18 +228,18 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                       ),
                       borderRadius: BorderRadius.circular(12),
                     ),
-                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                    padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 8),
                     child: Row(
                       children: [
-                        Expanded(child: Text("")),
-                        VerticalDivider(
+                        const Expanded(child: Text("")),
+                        const VerticalDivider(
                           indent: 8,
                           endIndent: 8,
                           color: Colors.grey,
                         ),
                         IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.copy),
+                          icon: const Icon(Icons.copy),
                         )
                       ],
                     ),

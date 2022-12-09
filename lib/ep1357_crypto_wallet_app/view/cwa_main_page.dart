@@ -267,11 +267,17 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                                           children: [
                                             Text(
                                               item.title ?? "Etherium",
-                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                              style: const TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 15,
+                                              ),
                                             ),
                                             const Text(
                                               "ETH 9835.73",
-                                              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 15,
+                                              ),
                                             ),
                                           ],
                                         ),

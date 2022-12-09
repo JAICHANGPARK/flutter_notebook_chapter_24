@@ -1,3 +1,4 @@
+import 'package:crypto_font_icons/crypto_font_icons.dart';
 import 'package:flutter/material.dart';
 
 class CwaExchangePage extends StatefulWidget {
@@ -31,7 +32,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Container(
-                    height: 320,
+                    height: 300,
                     decoration: BoxDecoration(
                       color: Colors.indigo[50],
                       borderRadius: BorderRadius.circular(16),
@@ -45,7 +46,64 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                           top: 16,
                           child: Column(
                             children: [
-                              Expanded(child: Column()),
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      children: [
+                                        Icon(Icons.upload_outlined),
+                                        Text("YOU PAY"),
+                                      ],
+                                    ),
+                                    SizedBox(
+                                      height: 12,
+                                    ),
+                                    Row(
+                                      children: [
+                                        Container(
+                                          height: 48,
+                                          width: 48,
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            shape: BoxShape.circle,
+                                          ),
+                                          child: Icon(
+                                            CryptoFontIcons.BTC,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        Expanded(
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Text("Bitcoin"),
+                                                  Icon(
+                                                    Icons.keyboard_arrow_down,
+                                                  ),
+                                                  Spacer(),
+                                                  Text("6590.08"),
+                                                  Text("BTC"),
+                                                ],
+                                              ),
+                                              Row(
+                                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                                children: [
+                                                  Text("BTC"),
+                                                  Text("Balcance 7634.43"),
+                                                ],
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  ],
+                                ),
+                              ),
                               const Divider(),
                               Expanded(child: Column()),
                             ],

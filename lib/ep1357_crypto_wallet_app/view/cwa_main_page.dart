@@ -286,11 +286,11 @@ class CryptoWalletAppMainPage extends ConsumerWidget {
                                           children: [
                                             const Text("ETH"),
                                             Row(
-                                              children: [
-                                                const Icon(
+                                              children: const [
+                                                Icon(
                                                   Icons.arrow_drop_up,
                                                 ),
-                                                const Text("2.28%"),
+                                                Text("2.28%"),
                                               ],
                                             )
                                           ],

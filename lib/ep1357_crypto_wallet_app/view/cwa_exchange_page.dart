@@ -51,7 +51,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                             ],
                           ),
                         ),
-                        Positioned(
+                        const Positioned(
                           left: 0,
                           right: 0,
                           bottom: 0,
@@ -72,7 +72,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                     ),
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     height: 64,
                     decoration: BoxDecoration(
                       color: Colors.indigo[50],
@@ -82,7 +82,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                       children: [],
                     ),
                   ),
-                  Text(
+                  const Text(
                     "Exchange Account",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
@@ -91,12 +91,12 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                   ),
                   Container(
                     height: 140,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Colors.blue,
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
+                  const Padding(
+                    padding: EdgeInsets.symmetric(
                       vertical: 8,
                     ),
                     child: Text("Wallet Token"),
@@ -108,6 +108,21 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                         color: Colors.grey,
                       ),
                       borderRadius: BorderRadius.circular(12),
+                    ),
+                    padding: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+                    child: Row(
+                      children: [
+                        Expanded(child: Text("")),
+                        VerticalDivider(
+                          indent: 8,
+                          endIndent: 8,
+                          color: Colors.grey,
+                        ),
+                        IconButton(
+                          onPressed: () {},
+                          icon: Icon(Icons.copy),
+                        )
+                      ],
                     ),
                   )
                 ],

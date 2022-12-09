@@ -13,15 +13,29 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("EXCHANGE"),
+        title: const Text("EXCHANGE"),
+        elevation: 0,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
       ),
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
           children: [
-            Expanded(child: Column()),
+            Expanded(
+                child: Column(
+              children: [
+                Container(
+                  height: 400,
+                  decoration: BoxDecoration(
+                    color: Colors.indigo[50],
+                  ),
+                )
+              ],
+            )),
             Container(
               height: 64,
               decoration: BoxDecoration(
@@ -54,7 +68,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                           _sliderXCord = 8.0;
                         });
                       },
-                      child: CircleAvatar(
+                      child: const CircleAvatar(
                         radius: 26,
                         backgroundColor: Colors.white,
                         foregroundColor: Colors.black,
@@ -64,7 +78,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                       ),
                     ),
                   ),
-                  Positioned(
+                  const Positioned(
                     child: Center(
                       child: Text(
                         "Swipe to Exchange",

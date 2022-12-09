@@ -24,18 +24,95 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Expanded(
-                child: Column(
-              children: [
-                Container(
-                  height: 400,
-                  decoration: BoxDecoration(
-                    color: Colors.indigo[50],
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Container(
+                    height: 320,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo[50],
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Stack(
+                      children: [
+                        Positioned(
+                          left: 16,
+                          right: 16,
+                          bottom: 16,
+                          top: 16,
+                          child: Column(
+                            children: [
+                              Expanded(child: Column()),
+                              const Divider(),
+                              Expanded(child: Column()),
+                            ],
+                          ),
+                        ),
+                        Positioned(
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          top: 0,
+                          child: Center(
+                            child: CircleAvatar(
+                              radius: 34,
+                              backgroundColor: Colors.black,
+                              foregroundColor: Colors.white,
+                              child: Icon(
+                                Icons.import_export,
+                                size: 42,
+                              ),
+                            ),
+                          ),
+                        )
+                      ],
+                    ),
                   ),
-                )
-              ],
-            )),
+                  Container(
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    height: 64,
+                    decoration: BoxDecoration(
+                      color: Colors.indigo[50],
+                      borderRadius: BorderRadius.circular(16),
+                    ),
+                    child: Row(
+                      children: [],
+                    ),
+                  ),
+                  Text(
+                    "Exchange Account",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 24,
+                    ),
+                  ),
+                  Container(
+                    height: 140,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      vertical: 8,
+                    ),
+                    child: Text("Wallet Token"),
+                  ),
+                  Container(
+                    height: 54,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  )
+                ],
+              ),
+            ),
             Container(
               height: 64,
               decoration: BoxDecoration(
@@ -92,7 +169,7 @@ class _CwaExchangePageState extends State<CwaExchangePage> {
                   )
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

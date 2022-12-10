@@ -103,7 +103,10 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                   ),
                   Text(
                     "At home",
-                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
                   )
                 ],
               ),

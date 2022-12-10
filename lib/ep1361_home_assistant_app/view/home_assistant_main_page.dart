@@ -14,18 +14,35 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              "Favorites",
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 24,
-                color: Colors.white,
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                "Favorites",
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 24,
+                  color: Colors.white,
+                ),
               ),
-            ),
-          ],
+              Container(
+                margin: EdgeInsets.only(top: 16),
+                height: MediaQuery.of(context).size.height / 2.2,
+                color: Colors.orange,
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 12, bottom: 12),
+                height: 84,
+                color: Colors.grey,
+              ),
+              Container(
+                height: 84,
+                color: Colors.grey,
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: BottomAppBar(

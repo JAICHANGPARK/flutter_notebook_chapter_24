@@ -31,6 +31,12 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                 margin: EdgeInsets.only(top: 16),
                 height: MediaQuery.of(context).size.height / 2.2,
                 color: Colors.orange,
+                child: Row(
+                  children: [
+                    Expanded(child: Placeholder()),
+                    Expanded(child: Placeholder()),
+                  ],
+                ),
               ),
               Container(
                 margin: EdgeInsets.only(top: 12, bottom: 12),

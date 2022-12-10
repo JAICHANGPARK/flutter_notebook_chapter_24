@@ -22,6 +22,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
             ),
             Expanded(
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   CircleAvatar(
                     radius: 12,
@@ -32,6 +33,15 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                       size: 12,
                     ),
                   ),
+                  SizedBox(
+                    width: 8,
+                  ),
+                  Text(
+                    "At home",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
                 ],
               ),
             ),

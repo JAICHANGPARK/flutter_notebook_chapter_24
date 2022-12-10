@@ -1,8 +1,16 @@
 # flutter_notebook_chapter_24
 
 
+### EP1361
 
-### EP1357
+- Home Assistant
+- by habitat
+- https://dribbble.com/shots/20093242-Home-Assistant
+
+<img src="https://cdn.dribbble.com/userupload/4106577/file/original-a12a2ae1b25235aa6ddbd7fb5ce949f7.jpg?compress=1&resize=1600x1200" width="400px"/>
+
+### EP1357-1360
+
 - Coinze Crypto Wallet App
 - by Musemind Mobile for Musemind
 - https://dribbble.com/shots/20057526-Coinze-Crypto-Wallet-App

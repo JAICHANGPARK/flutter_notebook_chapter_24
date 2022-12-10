@@ -12,13 +12,31 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              "Favorites",
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 24,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         height: 72,
+        color: Colors.black,
         child: Row(
           children: [
             IconButton(
               onPressed: () {},
               icon: Icon(Icons.menu),
+              color: Colors.white,
             ),
             Expanded(
               child: Row(
@@ -38,9 +56,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                   ),
                   Text(
                     "At home",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
                   )
                 ],
               ),
@@ -50,6 +66,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
               icon: Icon(
                 Ionicons.home_outline,
               ),
+              color: Colors.white,
             ),
           ],
         ),

@@ -19,7 +19,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Favorites",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
@@ -28,7 +28,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 16),
+                margin: const EdgeInsets.only(top: 16),
                 height: MediaQuery.of(context).size.height / 2.2,
                 color: Colors.orange,
                 child: Row(
@@ -38,9 +38,9 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                         children: [
                           Container(
                             height: 100,
-                            child: Placeholder(),
+                            child: const Placeholder(),
                           ),
-                          Expanded(
+                          const Expanded(
                             child: Placeholder(),
                           )
                         ],
@@ -49,15 +49,13 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                     Expanded(
                       child: Column(
                         children: [
-                          Expanded(
+                          const Expanded(
                             child: Placeholder(),
                           ),
-
                           Container(
                             height: 100,
-                            child: Placeholder(),
+                            child: const Placeholder(),
                           ),
-
                         ],
                       ),
                     ),
@@ -65,7 +63,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 12, bottom: 12),
+                margin: const EdgeInsets.only(top: 12, bottom: 12),
                 height: 84,
                 color: Colors.grey,
               ),
@@ -84,13 +82,13 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
           children: [
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.menu),
+              icon: const Icon(Icons.menu),
               color: Colors.white,
             ),
             Expanded(
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   CircleAvatar(
                     radius: 12,
                     backgroundColor: Colors.green,
@@ -112,7 +110,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
             ),
             IconButton(
               onPressed: () {},
-              icon: Icon(
+              icon: const Icon(
                 Ionicons.home_outline,
               ),
               color: Colors.white,

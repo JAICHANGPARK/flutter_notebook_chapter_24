@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:ionicons/ionicons.dart';
 
 class HomeAssistantMainPage extends StatefulWidget {
   const HomeAssistantMainPage({Key? key}) : super(key: key);
@@ -11,6 +11,19 @@ class HomeAssistantMainPage extends StatefulWidget {
 class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      persistentFooterButtons: [
+        IconButton(
+          onPressed: () {},
+          icon: Icon(Icons.menu),
+        ),
+        IconButton(
+          onPressed: () {},
+          icon: Icon(
+            Ionicons.home,
+          ),
+        ),
+      ],
+    );
   }
 }

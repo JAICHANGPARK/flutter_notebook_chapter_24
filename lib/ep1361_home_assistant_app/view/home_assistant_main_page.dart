@@ -33,8 +33,34 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                 color: Colors.orange,
                 child: Row(
                   children: [
-                    Expanded(child: Placeholder()),
-                    Expanded(child: Placeholder()),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 100,
+                            child: Placeholder(),
+                          ),
+                          Expanded(
+                            child: Placeholder(),
+                          )
+                        ],
+                      ),
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Placeholder(),
+                          ),
+
+                          Container(
+                            height: 100,
+                            child: Placeholder(),
+                          ),
+
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),

@@ -12,18 +12,38 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      persistentFooterButtons: [
-        IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.menu),
+      bottomNavigationBar: BottomAppBar(
+        height: 72,
+        child: Row(
+          children: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.menu),
+            ),
+            Expanded(
+              child: Row(
+                children: [
+                  CircleAvatar(
+                    radius: 12,
+                    backgroundColor: Colors.green,
+                    foregroundColor: Colors.white,
+                    child: Icon(
+                      Icons.home_filled,
+                      size: 12,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Ionicons.home_outline,
+              ),
+            ),
+          ],
         ),
-        IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Ionicons.home,
-          ),
-        ),
-      ],
+      ),
     );
   }
 }

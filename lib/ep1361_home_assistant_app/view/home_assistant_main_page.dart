@@ -219,7 +219,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                     ),
                     Expanded(
@@ -228,7 +228,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                           const Expanded(
                             child: Placeholder(),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Container(
@@ -248,14 +248,14 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                 end: Alignment.bottomCenter,
                               ),
                             ),
-                            padding: EdgeInsets.all(12),
+                            padding: const EdgeInsets.all(12),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
+                                  children: const [
                                     Text(
                                       "ENTRANCE",
                                       style: TextStyle(
@@ -263,7 +263,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                         fontSize: 15,
                                       ),
                                     ),
-                                    const Text(
+                                    Text(
                                       "lights",
                                       style: TextStyle(
                                         color: Colors.white,
@@ -280,7 +280,11 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                     color: Colors.black,
                                     shape: BoxShape.circle,
                                   ),
-                                  child: CircleAvatar(),
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    foregroundColor: Colors.orange,
+                                    child: Icon(Icons.lightbulb, size: 28,),
+                                  ),
                                 )
                               ],
                             ),

@@ -59,6 +59,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   "All lights",
                                   style: TextStyle(
                                     color: Colors.white,
+                                    fontSize: 18,
                                   ),
                                 ),
                                 Container(
@@ -74,7 +75,12 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                       Expanded(child: Container()),
                                       Expanded(
                                         child: Container(
-                                          color: Color.fromRGBO(40, 40, 40, 1),
+                                          decoration: BoxDecoration(
+                                              color: Color.fromRGBO(40, 40, 40, 1),
+                                              borderRadius: BorderRadius.only(
+                                                bottomRight: Radius.circular(36),
+                                                bottomLeft: Radius.circular(36),
+                                              )),
                                         ),
                                       ),
                                     ],

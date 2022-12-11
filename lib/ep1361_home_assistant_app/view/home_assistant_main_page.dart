@@ -38,7 +38,22 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                         children: [
                           Container(
                             height: 84,
+                            decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                colors: [
+                                  Color.fromRGBO(30, 30, 30, 1),
+                                  Color.fromRGBO(30, 30, 30, 1),
+                                  Color.fromRGBO(24, 24, 24, 1),
+                                  Color.fromRGBO(24, 24, 24, 1),
+                                  Color.fromRGBO(21, 21, 21, 1),
+                                  Color.fromRGBO(21, 21, 21, 1),
+                                ],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                              ),
+                            ),
                             child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text("All lights"),
                                 Container(
@@ -46,7 +61,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   width: 64,
                                   decoration: BoxDecoration(
                                     color: Colors.black,
-                                    shape: BoxShape.circle
+                                    shape: BoxShape.circle,
                                   ),
                                 )
                               ],

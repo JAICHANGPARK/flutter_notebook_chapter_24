@@ -219,6 +219,9 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                         ],
                       ),
                     ),
+                    SizedBox(
+                      width: 8,
+                    ),
                     Expanded(
                       child: Column(
                         children: [
@@ -245,7 +248,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                 end: Alignment.bottomCenter,
                               ),
                             ),
-                            padding: EdgeInsets.all(16),
+                            padding: EdgeInsets.all(12),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -253,7 +256,8 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Text("ENTRANCE",
+                                    Text(
+                                      "ENTRANCE",
                                       style: TextStyle(
                                         color: Colors.grey,
                                         fontSize: 15,

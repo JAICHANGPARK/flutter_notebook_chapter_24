@@ -38,7 +38,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                         children: [
                           Container(
                             height: 84,
-                            decoration: BoxDecoration(
+                            decoration: const BoxDecoration(
                               gradient: LinearGradient(
                                 colors: [
                                   Color.fromRGBO(30, 30, 30, 1),
@@ -55,7 +55,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text(
+                                const Text(
                                   "All lights",
                                   style: TextStyle(
                                     color: Colors.white,
@@ -63,26 +63,36 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   ),
                                 ),
                                 Container(
-                                  margin: EdgeInsets.only(left: 16),
+                                  margin: const EdgeInsets.only(left: 16),
                                   height: 64,
                                   width: 64,
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     color: Colors.black,
                                     shape: BoxShape.circle,
                                   ),
-                                  child: Column(
+                                  child: Stack(
                                     children: [
-                                      Expanded(child: Container()),
-                                      Expanded(
-                                        child: Container(
-                                          decoration: BoxDecoration(
-                                              color: Color.fromRGBO(40, 40, 40, 1),
-                                              borderRadius: BorderRadius.only(
-                                                bottomRight: Radius.circular(36),
-                                                bottomLeft: Radius.circular(36),
-                                              )),
-                                        ),
+                                      Column(
+                                        children: [
+                                          Expanded(child: Container()),
+                                          Expanded(
+                                            child: Container(
+                                              decoration: const BoxDecoration(
+                                                  color: Color.fromRGBO(40, 40, 40, 1),
+                                                  borderRadius: BorderRadius.only(
+                                                    bottomRight: Radius.circular(36),
+                                                    bottomLeft: Radius.circular(36),
+                                                  )),
+                                            ),
+                                          ),
+                                        ],
                                       ),
+                                      Center(
+                                        child: Icon(
+                                          Icons.light_mode,
+                                          color: Colors.orange,
+                                        ),
+                                      )
                                     ],
                                   ),
                                 )

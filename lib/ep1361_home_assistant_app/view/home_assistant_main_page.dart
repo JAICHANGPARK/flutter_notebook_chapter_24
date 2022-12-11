@@ -125,6 +125,39 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   end: Alignment.bottomCenter,
                                 ),
                               ),
+                              child: Column(
+                                children: [
+                                  Text(
+                                    "LIVING ROOM",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  Expanded(
+                                      child: Row(
+                                    children: [
+                                      const Text(
+                                        "All lights",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 18,
+                                        ),
+                                      ),
+                                      CircleAvatar(
+                                        backgroundColor: Colors.white,
+                                      ),
+                                    ],
+                                  )),
+                                  Expanded(
+                                      child: Row(
+                                    children: [],
+                                  )),
+                                  Expanded(
+                                      child: Row(
+                                    children: [],
+                                  ))
+                                ],
+                              ),
                             ),
                           )
                         ],

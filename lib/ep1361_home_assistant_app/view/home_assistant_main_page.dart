@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
@@ -72,22 +74,26 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   ),
                                   child: Stack(
                                     children: [
-                                      Column(
-                                        children: [
-                                          Expanded(child: Container()),
-                                          Expanded(
-                                            child: Container(
-                                              decoration: const BoxDecoration(
+                                      Transform.rotate(
+                                        angle: 24 * (180 / pi),
+                                        child: Column(
+                                          children: [
+                                            Expanded(child: Container()),
+                                            Expanded(
+                                              child: Container(
+                                                decoration: const BoxDecoration(
                                                   color: Color.fromRGBO(40, 40, 40, 1),
                                                   borderRadius: BorderRadius.only(
                                                     bottomRight: Radius.circular(36),
                                                     bottomLeft: Radius.circular(36),
-                                                  )),
+                                                  ),
+                                                ),
+                                              ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
-                                      Center(
+                                      const Center(
                                         child: Icon(
                                           Icons.light_mode,
                                           color: Colors.orange,

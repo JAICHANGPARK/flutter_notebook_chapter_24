@@ -40,8 +40,9 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                         children: [
                           Container(
                             height: 84,
-                            decoration: const BoxDecoration(
-                              gradient: LinearGradient(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              gradient: const LinearGradient(
                                 colors: [
                                   Color.fromRGBO(30, 30, 30, 1),
                                   Color.fromRGBO(30, 30, 30, 1),
@@ -105,8 +106,26 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               ],
                             ),
                           ),
-                          const Expanded(
-                            child: Placeholder(),
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Color.fromRGBO(30, 30, 30, 1),
+                                    Color.fromRGBO(30, 30, 30, 1),
+                                    Color.fromRGBO(24, 24, 24, 1),
+                                    Color.fromRGBO(21, 21, 21, 1),
+                                    Color.fromRGBO(21, 21, 21, 1),
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       ),

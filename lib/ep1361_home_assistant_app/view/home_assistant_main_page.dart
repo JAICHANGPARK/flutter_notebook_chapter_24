@@ -280,10 +280,13 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                     color: Colors.black,
                                     shape: BoxShape.circle,
                                   ),
-                                  child: CircleAvatar(
+                                  child: const CircleAvatar(
                                     backgroundColor: Colors.white,
                                     foregroundColor: Colors.orange,
-                                    child: Icon(Icons.lightbulb, size: 28,),
+                                    child: Icon(
+                                      Icons.lightbulb,
+                                      size: 28,
+                                    ),
                                   ),
                                 )
                               ],

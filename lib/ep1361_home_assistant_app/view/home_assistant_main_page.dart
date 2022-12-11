@@ -37,8 +37,20 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                       child: Column(
                         children: [
                           Container(
-                            height: 100,
-                            child: const Placeholder(),
+                            height: 84,
+                            child: Row(
+                              children: [
+                                Text("All lights"),
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  decoration: BoxDecoration(
+                                    color: Colors.black,
+                                    shape: BoxShape.circle
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           const Expanded(
                             child: Placeholder(),

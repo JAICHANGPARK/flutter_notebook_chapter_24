@@ -32,7 +32,6 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
               Container(
                 margin: const EdgeInsets.only(top: 16),
                 height: MediaQuery.of(context).size.height / 2.2,
-                color: Colors.orange,
                 child: Row(
                   children: [
                     Expanded(
@@ -226,9 +225,61 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                           const Expanded(
                             child: Placeholder(),
                           ),
+                          SizedBox(
+                            height: 8,
+                          ),
                           Container(
-                            height: 100,
-                            child: const Placeholder(),
+                            height: 84,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              gradient: const LinearGradient(
+                                colors: [
+                                  Color.fromRGBO(30, 30, 30, 1),
+                                  Color.fromRGBO(30, 30, 30, 1),
+                                  Color.fromRGBO(24, 24, 24, 1),
+                                  Color.fromRGBO(24, 24, 24, 1),
+                                  Color.fromRGBO(21, 21, 21, 1),
+                                  Color.fromRGBO(21, 21, 21, 1),
+                                ],
+                                begin: Alignment.topCenter,
+                                end: Alignment.bottomCenter,
+                              ),
+                            ),
+                            padding: EdgeInsets.all(16),
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text("ENTRANCE",
+                                      style: TextStyle(
+                                        color: Colors.grey,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                    const Text(
+                                      "lights",
+                                      style: TextStyle(
+                                        color: Colors.white,
+                                        fontSize: 18,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Container(
+                                  margin: const EdgeInsets.only(left: 16),
+                                  height: 64,
+                                  width: 64,
+                                  decoration: const BoxDecoration(
+                                    color: Colors.black,
+                                    shape: BoxShape.circle,
+                                  ),
+                                  child: CircleAvatar(),
+                                )
+                              ],
+                            ),
                           ),
                         ],
                       ),

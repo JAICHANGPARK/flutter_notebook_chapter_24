@@ -55,13 +55,29 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("All lights"),
+                                Text(
+                                  "All lights",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
                                 Container(
+                                  margin: EdgeInsets.only(left: 16),
                                   height: 64,
                                   width: 64,
                                   decoration: BoxDecoration(
                                     color: Colors.black,
                                     shape: BoxShape.circle,
+                                  ),
+                                  child: Column(
+                                    children: [
+                                      Expanded(child: Container()),
+                                      Expanded(
+                                        child: Container(
+                                          color: Color.fromRGBO(40, 40, 40, 1),
+                                        ),
+                                      ),
+                                    ],
                                   ),
                                 )
                               ],

@@ -134,20 +134,32 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                     ),
                                   ),
                                   Expanded(
-                                      child: Row(
-                                    children: [
-                                      const Text(
-                                        "All lights",
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 18,
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "Top light",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
                                         ),
-                                      ),
-                                      CircleAvatar(
-                                        backgroundColor: Colors.white,
-                                      ),
-                                    ],
-                                  )),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        CircleAvatar(
+                                          backgroundColor: Colors.white,
+                                          foregroundColor: Colors.orange,
+                                          radius: 28,
+                                          child: Icon(
+                                            Icons.lightbulb,
+                                            size: 28,
+                                          ),
+
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                   Expanded(
                                       child: Row(
                                     children: [],

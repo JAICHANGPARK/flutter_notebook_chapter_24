@@ -125,7 +125,9 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   end: Alignment.bottomCenter,
                                 ),
                               ),
+                              padding: EdgeInsets.all(16),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     "LIVING ROOM",
@@ -155,19 +157,62 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                             Icons.lightbulb,
                                             size: 28,
                                           ),
-
                                         ),
                                       ],
                                     ),
                                   ),
                                   Expanded(
-                                      child: Row(
-                                    children: [],
-                                  )),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "Side light",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        CircleAvatar(
+                                          backgroundColor: Colors.black,
+                                          foregroundColor: Colors.grey,
+                                          radius: 28,
+                                          child: Icon(
+                                            Icons.light,
+                                            size: 28,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                   Expanded(
-                                      child: Row(
-                                    children: [],
-                                  ))
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: const [
+                                        Text(
+                                          "Soft light",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 18,
+                                          ),
+                                        ),
+                                        SizedBox(
+                                          width: 16,
+                                        ),
+                                        CircleAvatar(
+                                          backgroundColor: Colors.black,
+                                          foregroundColor: Colors.grey,
+                                          radius: 28,
+                                          child: Icon(
+                                            Icons.light,
+                                            size: 28,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
                                 ],
                               ),
                             ),

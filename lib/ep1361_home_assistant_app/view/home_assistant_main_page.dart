@@ -503,7 +503,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                       right: 100,
                       child: Container(
                         decoration: BoxDecoration(
-                          color: Color.fromRGBO(50, 50, 50, 1),
+                          color: const Color.fromRGBO(50, 50, 50, 1),
                           borderRadius: BorderRadius.circular(4),
                         ),
                       ),
@@ -515,18 +515,18 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                       right: 16,
                       child: Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.cloudy_snowing,
                             color: Colors.lightBlueAccent,
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 24,
                           ),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
+                              children: const [
                                 Text(
                                   "Air Conditioner",
                                   style: TextStyle(
@@ -546,7 +546,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               ],
                             ),
                           ),
-                          Text(
+                          const Text(
                             "20°",
                             style: TextStyle(color: Colors.grey, fontSize: 24),
                           )

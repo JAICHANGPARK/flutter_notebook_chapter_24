@@ -105,7 +105,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Expanded(
@@ -124,11 +124,11 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   end: Alignment.bottomCenter,
                                 ),
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "LIVING ROOM",
                                     style: TextStyle(
                                       color: Colors.grey,
@@ -241,17 +241,17 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   end: Alignment.bottomCenter,
                                 ),
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
-                                    "HOME ELECTROCITY",
+                                  const Text(
+                                    "HOME ELECTRICITY",
                                     style: TextStyle(
                                       color: Colors.grey,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                   ),
                                   Expanded(
@@ -263,16 +263,37 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                               Expanded(
                                                 child: Container(
                                                   decoration: BoxDecoration(
-                                                    color: Color.fromRGBO(51, 51, 51, 1),
+                                                    color: const Color.fromRGBO(51, 51, 51, 1),
                                                     borderRadius: BorderRadius.circular(8),
                                                   ),
-                                                  child: Stack(),
+                                                  child: Stack(
+                                                    children: [
+                                                      Positioned(
+                                                          left: 0,
+                                                          right: 0,
+                                                          top: 8,
+                                                          child: Column(
+                                                            children: [
+                                                              Icon(
+                                                                Icons.power,
+                                                                color: Colors.green,
+                                                              ),
+                                                              Text(
+                                                                "5kW/h",
+                                                                style: TextStyle(
+                                                                  color: Colors.white,
+                                                                ),
+                                                              )
+                                                            ],
+                                                          ))
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 height: 16,
                                               ),
-                                              Text(
+                                              const Text(
                                                 "Meter",
                                                 style: TextStyle(
                                                   color: Colors.white,
@@ -285,10 +306,10 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                             child: Column(
                                           children: [
                                             Expanded(child: Container()),
-                                            SizedBox(
+                                            const SizedBox(
                                               height: 16,
                                             ),
-                                            Text(
+                                            const Text(
                                               "PV",
                                               style: TextStyle(
                                                 color: Colors.white,

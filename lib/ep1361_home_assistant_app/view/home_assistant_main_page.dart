@@ -478,7 +478,48 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
               Container(
                 margin: const EdgeInsets.only(top: 12, bottom: 12),
                 height: 84,
-                color: Colors.grey,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(6),
+                  gradient: const LinearGradient(
+                    colors: [
+                      Color.fromRGBO(30, 30, 30, 1),
+                      Color.fromRGBO(30, 30, 30, 1),
+                      Color.fromRGBO(24, 24, 24, 1),
+                      Color.fromRGBO(24, 24, 24, 1),
+                      Color.fromRGBO(21, 21, 21, 1),
+                      Color.fromRGBO(21, 21, 21, 1),
+                    ],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                ),
+                child: Stack(
+                  children: [
+                    Positioned(
+                      left: 16,
+                      top: 12,
+                      bottom: 12,
+                      right: 16,
+                      child: Row(
+                        children: [
+                          Icon(Icons.cloudy_snowing),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text("Air Conditioner"),
+                                Text("COOL TO 18"),
+                              ],
+                            ),
+                          ),
+                          Text("20")
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
               Container(
                 height: 84,

@@ -268,6 +268,19 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                                   ),
                                                   child: Stack(
                                                     children: [
+                                                      AnimatedPositioned(
+                                                        left: 4,
+                                                        right: 4,
+                                                        bottom: 4,
+                                                        top: 84,
+                                                        duration: const Duration(milliseconds: 250),
+                                                        child: Container(
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.grey,
+                                                            borderRadius: BorderRadius.circular(4),
+                                                          ),
+                                                        ),
+                                                      ),
                                                       Positioned(
                                                         left: 0,
                                                         right: 0,
@@ -288,19 +301,6 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                                               ),
                                                             )
                                                           ],
-                                                        ),
-                                                      ),
-                                                      AnimatedPositioned(
-                                                        left: 4,
-                                                        right: 4,
-                                                        bottom: 4,
-                                                        top: 84,
-                                                        duration: const Duration(milliseconds: 250),
-                                                        child: Container(
-                                                          decoration: BoxDecoration(
-                                                            color: Colors.grey,
-                                                            borderRadius: BorderRadius.circular(4),
-                                                          ),
                                                         ),
                                                       ),
                                                     ],
@@ -333,6 +333,19 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                                 ),
                                                 child: Stack(
                                                   children: [
+                                                    AnimatedPositioned(
+                                                      left: 4,
+                                                      right: 4,
+                                                      bottom: 4,
+                                                      top: 4,
+                                                      duration: const Duration(milliseconds: 250),
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          color: Colors.grey,
+                                                          borderRadius: BorderRadius.circular(4),
+                                                        ),
+                                                      ),
+                                                    ),
                                                     Positioned(
                                                       left: 0,
                                                       right: 0,

@@ -21,6 +21,7 @@ dependencies:
   freezed_annotation: any
   json_annotation: any
   crypto_font_icons: ^1.0.1
+  percent_indicator: any
 
 
 dev_dependencies:

@@ -288,7 +288,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                                         right: 4,
                                                         bottom: 4,
                                                         top: _meterHeight,
-                                                        duration: const Duration(milliseconds: 250),
+                                                        duration: const Duration(milliseconds: 350),
                                                         child: Container(
                                                           decoration: BoxDecoration(
                                                             color: Colors.grey,

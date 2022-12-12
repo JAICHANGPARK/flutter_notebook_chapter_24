@@ -503,18 +503,41 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                       right: 16,
                       child: Row(
                         children: [
-                          Icon(Icons.cloudy_snowing),
+                          Icon(
+                            Icons.cloudy_snowing,
+                            color: Colors.lightBlueAccent,
+                          ),
+                          SizedBox(
+                            width: 24,
+                          ),
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                Text("Air Conditioner"),
-                                Text("COOL TO 18"),
+                                Text(
+                                  "Air Conditioner",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "COOL TO 18°",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
                               ],
                             ),
                           ),
-                          Text("20")
+                          Text("20°", style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 24
+                          ),)
                         ],
                       ),
                     )

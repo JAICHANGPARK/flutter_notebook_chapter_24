@@ -11,6 +11,21 @@ class HomeAssistantMainPage extends StatefulWidget {
 }
 
 class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
+  double _meterHeight = 4;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(const Duration(seconds: 1)).then(
+      (value) => setState(
+        () {
+          _meterHeight = 84.0;
+        },
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -272,7 +287,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                                         left: 4,
                                                         right: 4,
                                                         bottom: 4,
-                                                        top: 84,
+                                                        top: _meterHeight,
                                                         duration: const Duration(milliseconds: 250),
                                                         child: Container(
                                                           decoration: BoxDecoration(
@@ -319,7 +334,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                             ],
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           width: 12,
                                         ),
                                         Expanded(

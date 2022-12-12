@@ -225,8 +225,24 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                     Expanded(
                       child: Column(
                         children: [
-                          const Expanded(
-                            child: Placeholder(),
+                           Expanded(
+                            child: Container(
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(8),
+                                gradient: const LinearGradient(
+                                  colors: [
+                                    Color.fromRGBO(30, 30, 30, 1),
+                                    Color.fromRGBO(30, 30, 30, 1),
+                                    Color.fromRGBO(24, 24, 24, 1),
+                                    Color.fromRGBO(21, 21, 21, 1),
+                                    Color.fromRGBO(21, 21, 21, 1),
+                                  ],
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                ),
+                              ),
+                              padding: EdgeInsets.all(16),
+                            ),
                           ),
                           const SizedBox(
                             height: 8,

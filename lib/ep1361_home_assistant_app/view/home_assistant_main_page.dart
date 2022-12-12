@@ -607,7 +607,9 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                             radius: 30,
                             percent: 0.4,
                             progressColor: Colors.green,
-                            center: Center(
+                            lineWidth: 2.5,
+                            backgroundColor: Colors.black,
+                            center: const Center(
                               child: Icon(
                                 Icons.flash_on,
                                 color: Colors.green,
@@ -641,7 +643,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               ],
                             ),
                           ),
-                          CircleAvatar(
+                          const CircleAvatar(
                             radius: 24,
                             backgroundColor: Colors.black,
                             foregroundColor: Colors.grey,

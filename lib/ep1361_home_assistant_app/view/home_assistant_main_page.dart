@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
+import 'package:percent_indicator/percent_indicator.dart';
 
 class HomeAssistantMainPage extends StatefulWidget {
   const HomeAssistantMainPage({Key? key}) : super(key: key);
@@ -548,7 +549,10 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                           ),
                           const Text(
                             "20°",
-                            style: TextStyle(color: Colors.grey, fontSize: 24),
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 24,
+                            ),
                           )
                         ],
                       ),
@@ -558,7 +562,97 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
               ),
               Container(
                 height: 84,
-                color: Colors.grey,
+                decoration: BoxDecoration(
+                  color: Colors.grey,
+                  borderRadius: BorderRadius.circular(6),
+                  gradient: const LinearGradient(
+                    colors: [
+                      Color.fromRGBO(30, 30, 30, 1),
+                      Color.fromRGBO(30, 30, 30, 1),
+                      Color.fromRGBO(24, 24, 24, 1),
+                      Color.fromRGBO(24, 24, 24, 1),
+                      Color.fromRGBO(21, 21, 21, 1),
+                      Color.fromRGBO(21, 21, 21, 1),
+                    ],
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                  ),
+                ),
+                child: Stack(
+                  children: [
+                    // Positioned(
+                    //   left: 4,
+                    //   top: 4,
+                    //   bottom: 4,
+                    //   right: 0,
+                    //   child: Container(
+                    //     decoration: BoxDecoration(
+                    //       color: const Color.fromRGBO(50, 50, 50, 1),
+                    //       borderRadius: BorderRadius.circular(4),
+                    //     ),
+                    //   ),
+                    // ),
+                    Positioned(
+                      left: 16,
+                      top: 8,
+                      bottom: 8,
+                      right: 16,
+                      child: Row(
+                        children: [
+                          // const Icon(
+                          //   Icons.cloudy_snowing,
+                          //   color: Colors.lightBlueAccent,
+                          // ),
+                          CircularPercentIndicator(
+                            radius: 30,
+                            percent: 0.4,
+                            progressColor: Colors.green,
+                            center: Center(
+                              child: Icon(
+                                Icons.flash_on,
+                                color: Colors.green,
+                              ),
+                            ),
+                          ),
+                          const SizedBox(
+                            width: 24,
+                          ),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: const [
+                                Text(
+                                  "Air Conditioner",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 4,
+                                ),
+                                Text(
+                                  "COOL TO 18°",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          const Text(
+                            "20°",
+                            style: TextStyle(
+                              color: Colors.grey,
+                              fontSize: 24,
+                            ),
+                          )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
               ),
             ],
           ),

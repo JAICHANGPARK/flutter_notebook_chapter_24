@@ -225,7 +225,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                     Expanded(
                       child: Column(
                         children: [
-                           Expanded(
+                          Expanded(
                             child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
@@ -242,6 +242,65 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                 ),
                               ),
                               padding: EdgeInsets.all(16),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    "HOME ELECTROCITY",
+                                    style: TextStyle(
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 16,
+                                  ),
+                                  Expanded(
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Column(
+                                            children: [
+                                              Expanded(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    color: Color.fromRGBO(51, 51, 51, 1),
+                                                    borderRadius: BorderRadius.circular(8),
+                                                  ),
+                                                  child: Stack(),
+                                                ),
+                                              ),
+                                              SizedBox(
+                                                height: 16,
+                                              ),
+                                              Text(
+                                                "Meter",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        Expanded(
+                                            child: Column(
+                                          children: [
+                                            Expanded(child: Container()),
+                                            SizedBox(
+                                              height: 16,
+                                            ),
+                                            Text(
+                                              "PV",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            )
+                                          ],
+                                        )),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
                             ),
                           ),
                           const SizedBox(

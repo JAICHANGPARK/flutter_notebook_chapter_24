@@ -623,7 +623,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const [
                                 Text(
-                                  "Air Conditioner",
+                                  "Car Charger",
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 16,
@@ -633,7 +633,7 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                   height: 4,
                                 ),
                                 Text(
-                                  "COOL TO 18°",
+                                  "BATTERY: 64%",
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
@@ -641,12 +641,11 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               ],
                             ),
                           ),
-                          const Text(
-                            "20°",
-                            style: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 24,
-                            ),
+                          CircleAvatar(
+                            radius: 24,
+                            backgroundColor: Colors.black,
+                            foregroundColor: Colors.grey,
+                            child: Icon(Icons.power_settings_new),
                           )
                         ],
                       ),

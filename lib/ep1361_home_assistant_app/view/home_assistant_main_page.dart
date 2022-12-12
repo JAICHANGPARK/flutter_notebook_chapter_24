@@ -497,6 +497,18 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                 child: Stack(
                   children: [
                     Positioned(
+                      left: 4,
+                      top: 4,
+                      bottom: 4,
+                      right: 100,
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color.fromRGBO(50, 50, 50, 1),
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                    ),
+                    Positioned(
                       left: 16,
                       top: 12,
                       bottom: 12,
@@ -534,10 +546,10 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                               ],
                             ),
                           ),
-                          Text("20°", style: TextStyle(
-                            color: Colors.grey,
-                            fontSize: 24
-                          ),)
+                          Text(
+                            "20°",
+                            style: TextStyle(color: Colors.grey, fontSize: 24),
+                          )
                         ],
                       ),
                     )

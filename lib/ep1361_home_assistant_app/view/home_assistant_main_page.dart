@@ -269,23 +269,37 @@ class _HomeAssistantMainPageState extends State<HomeAssistantMainPage> {
                                                   child: Stack(
                                                     children: [
                                                       Positioned(
-                                                          left: 0,
-                                                          right: 0,
-                                                          top: 8,
-                                                          child: Column(
-                                                            children: [
-                                                              Icon(
-                                                                Icons.power,
-                                                                color: Colors.green,
+                                                        left: 0,
+                                                        right: 0,
+                                                        top: 8,
+                                                        child: Column(
+                                                          children: const [
+                                                            Icon(
+                                                              Icons.power,
+                                                              color: Colors.green,
+                                                            ),
+                                                            Text(
+                                                              "5kW/h",
+                                                              style: TextStyle(
+                                                                color: Colors.white,
                                                               ),
-                                                              Text(
-                                                                "5kW/h",
-                                                                style: TextStyle(
-                                                                  color: Colors.white,
-                                                                ),
-                                                              )
-                                                            ],
-                                                          ))
+                                                            )
+                                                          ],
+                                                        ),
+                                                      ),
+                                                      AnimatedPositioned(
+                                                        left: 4,
+                                                        right: 4,
+                                                        bottom: 4,
+                                                        top: 84,
+                                                        child: Container(
+                                                          decoration: BoxDecoration(
+                                                            color: Colors.grey,
+                                                            borderRadius: BorderRadius.circular(4),
+                                                          ),
+                                                        ),
+                                                        duration: const Duration(milliseconds: 250),
+                                                      ),
                                                     ],
                                                   ),
                                                 ),

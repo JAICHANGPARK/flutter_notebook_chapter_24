@@ -34,6 +34,80 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
           )
         ],
       ),
+      bottomNavigationBar: BottomAppBar(
+        height: 80,
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Container(
+                      height: 5,
+                      decoration: BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(4),
+                          bottomLeft: Radius.circular(4),
+                        ),
+                      ),
+                    ),
+                    Icon(Icons.home_filled),
+                    Text("Home"),
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 5,
+                      decoration: BoxDecoration(
+                          // color: Colors.black,
+                          ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 5,
+                      decoration: BoxDecoration(
+                          // color: Colors.black,
+                          ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(
+                width: 16,
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      height: 5,
+                      decoration: BoxDecoration(
+                          // color: Colors.black,
+                          ),
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

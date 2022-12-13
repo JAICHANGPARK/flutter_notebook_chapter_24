@@ -31,7 +31,50 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                 ))
               ],
             ),
-          )
+          ),
+          Positioned(
+            left: 16,
+            top: 64,
+            bottom: 0,
+            right: 0,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text("Hello,Dream"),
+                          Text(
+                            "Dreaming of your next trip?",
+                            style: TextStyle(
+                              fontSize: 34,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    Container(
+                      height: 64,
+                      width: 64,
+                    )
+                  ],
+                ),
+                SizedBox(
+                  height: 24,
+                ),
+                Container(
+                  height: 400,
+                  color: Colors.white,
+                ),
+              ],
+            ),
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(
@@ -46,7 +89,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                   children: [
                     Container(
                       height: 5,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                         color: Colors.black,
                         borderRadius: BorderRadius.only(
                           bottomRight: Radius.circular(4),
@@ -54,56 +97,77 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                         ),
                       ),
                     ),
-                    Icon(Icons.home_filled),
-                    Text("Home"),
+                    const Icon(Icons.home_filled),
+                    const Text("Home"),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 16,
               ),
               Expanded(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       height: 5,
-                      decoration: BoxDecoration(
-                          // color: Colors.black,
-                          ),
-                    )
+                      decoration: const BoxDecoration(
+                        // color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(4),
+                          bottomLeft: Radius.circular(4),
+                        ),
+                      ),
+                    ),
+                    const Icon(Icons.favorite_border),
+                    const Text("Saved"),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 16,
               ),
               Expanded(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       height: 5,
-                      decoration: BoxDecoration(
-                          // color: Colors.black,
-                          ),
-                    )
+                      decoration: const BoxDecoration(
+                        // color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(4),
+                          bottomLeft: Radius.circular(4),
+                        ),
+                      ),
+                    ),
+                    const Icon(Icons.card_giftcard),
+                    const Text("Booked"),
                   ],
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 16,
               ),
               Expanded(
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Container(
                       height: 5,
-                      decoration: BoxDecoration(
-                          // color: Colors.black,
-                          ),
-                    )
+                      decoration: const BoxDecoration(
+                        // color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(4),
+                          bottomLeft: Radius.circular(4),
+                        ),
+                      ),
+                    ),
+                    const Icon(Icons.perm_identity),
+                    const Text("Profile"),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),

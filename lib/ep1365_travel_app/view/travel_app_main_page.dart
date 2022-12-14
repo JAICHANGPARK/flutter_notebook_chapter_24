@@ -139,10 +139,26 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                             itemCount: 10,
                             itemBuilder: (context, index) {
                               return Container(
+                                width: 260,
+                                margin: EdgeInsets.only(right: 16),
                                 decoration: BoxDecoration(
                                     border: Border.all(
                                   color: Colors.grey[300]!,
                                 )),
+                                child: Row(
+                                  children: [
+                                    Expanded(child: Container()),
+                                    Expanded(
+                                        child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text("Only for Credit,"),
+                                        Text("Card"),
+                                        Text("Up to 30% Discount On Hotel Booking")
+                                      ],
+                                    ))
+                                  ],
+                                ),
                               );
                             },
                           ),

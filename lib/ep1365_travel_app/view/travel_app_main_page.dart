@@ -147,7 +147,13 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                                 )),
                                 child: Row(
                                   children: [
-                                    Expanded(child: Container()),
+                                    Expanded(
+                                      child: Image.network(
+                                        "https://cdn.pixabay.com/photo/2019/09/05/15/25/airbus-4454338_960_720.jpg",
+                                        fit: BoxFit.cover,
+                                        height: double.infinity,
+                                      ),
+                                    ),
                                     Expanded(
                                         child: Padding(
                                       padding: const EdgeInsets.all(8.0),

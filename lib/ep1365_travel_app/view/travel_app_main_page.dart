@@ -138,7 +138,12 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                             scrollDirection: Axis.horizontal,
                             itemCount: 10,
                             itemBuilder: (context, index) {
-                              return Container();
+                              return Container(
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                  color: Colors.grey[300]!,
+                                )),
+                              );
                             },
                           ),
                         )

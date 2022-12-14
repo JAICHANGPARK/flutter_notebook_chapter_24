@@ -41,7 +41,9 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16, ),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 16,
+                  ),
                   child: Column(
                     children: [
                       Row(
@@ -50,11 +52,11 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text("Hello,Dream"),
-                                SizedBox(
+                                const Text("Hello,Dream"),
+                                const SizedBox(
                                   height: 16,
                                 ),
-                                Text(
+                                const Text(
                                   "Dreaming of your next trip?",
                                   style: TextStyle(
                                     fontSize: 34,
@@ -63,7 +65,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
                           Container(
@@ -72,14 +74,14 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                           )
                         ],
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                       Container(
                         height: 400,
                         color: Colors.white,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
                     ],

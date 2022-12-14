@@ -69,8 +69,15 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                             width: 16,
                           ),
                           Container(
-                            height: 64,
-                            width: 64,
+                            height: 42,
+                            width: 42,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(color: Colors.grey),
+                            ),
+                            child: Icon(
+                              Icons.notifications_none,
+                            ),
                           )
                         ],
                       ),

@@ -33,45 +33,63 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
             ),
           ),
           Positioned(
-            left: 16,
-            top: 64,
+            left: 0,
+            top: 72,
             bottom: 0,
             right: 0,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16, ),
+                  child: Column(
+                    children: [
+                      Row(
                         children: [
-                          Text("Hello,Dream"),
-                          Text(
-                            "Dreaming of your next trip?",
-                            style: TextStyle(
-                              fontSize: 34,
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text("Hello,Dream"),
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Text(
+                                  "Dreaming of your next trip?",
+                                  style: TextStyle(
+                                    fontSize: 34,
+                                  ),
+                                )
+                              ],
                             ),
+                          ),
+                          SizedBox(
+                            width: 16,
+                          ),
+                          Container(
+                            height: 64,
+                            width: 64,
                           )
                         ],
                       ),
-                    ),
-                    SizedBox(
-                      width: 16,
-                    ),
-                    Container(
-                      height: 64,
-                      width: 64,
-                    )
-                  ],
+                      SizedBox(
+                        height: 24,
+                      ),
+                      Container(
+                        height: 400,
+                        color: Colors.white,
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                    ],
+                  ),
                 ),
-                SizedBox(
-                  height: 24,
-                ),
-                Container(
-                  height: 400,
-                  color: Colors.white,
-                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.white,
+                  ),
+                )
               ],
             ),
           ),

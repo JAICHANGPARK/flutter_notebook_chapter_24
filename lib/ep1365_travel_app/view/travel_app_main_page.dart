@@ -7,7 +7,16 @@ class TravelAppMainPage extends StatefulWidget {
   State<TravelAppMainPage> createState() => _TravelAppMainPageState();
 }
 
-class _TravelAppMainPageState extends State<TravelAppMainPage> {
+class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: 3, vsync: this);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,6 +96,20 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                       Container(
                         height: 400,
                         color: Colors.white,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 100,
+                              color: Colors.blue,
+                            ),
+                            Expanded(
+                              child: TabBarView(
+                                controller: _tabController,
+                                children: [],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         height: 16,

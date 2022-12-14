@@ -90,6 +90,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                 Expanded(
                   child: Container(
                     color: Colors.white,
+                    padding: EdgeInsets.only(left: 16, right: 0, top: 12),
                     child: Column(
                       children: [
                         Row(

@@ -149,13 +149,17 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                                   children: [
                                     Expanded(child: Container()),
                                     Expanded(
-                                        child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      children: [
-                                        Text("Only for Credit,"),
-                                        Text("Card"),
-                                        Text("Up to 30% Discount On Hotel Booking")
-                                      ],
+                                        child: Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Column(
+                                        crossAxisAlignment: CrossAxisAlignment.start,
+                                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                        children: [
+                                          Text("Only for Credit,"),
+                                          Text("Card"),
+                                          Text("Up to 30% Discount On Hotel Booking")
+                                        ],
+                                      ),
                                     ))
                                   ],
                                 ),

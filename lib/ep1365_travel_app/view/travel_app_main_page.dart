@@ -90,20 +90,20 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                 Expanded(
                   child: Container(
                     color: Colors.white,
-                    padding: EdgeInsets.only(left: 16, right: 0, top: 12),
+                    padding: const EdgeInsets.only(left: 16, right: 0, top: 12),
                     child: Column(
                       children: [
                         Row(
                           children: [
-                            Text(
+                            const Text(
                               "Hot Deals",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 fontSize: 24,
                               ),
                             ),
-                            Spacer(),
-                            Text(
+                            const Spacer(),
+                            const Text(
                               "All",
                               style: TextStyle(
                                 color: Colors.orange,
@@ -126,12 +126,21 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                                   )
                                 ];
                               },
-                              icon: Icon(
+                              icon: const Icon(
                                 Icons.keyboard_arrow_down,
                                 color: Colors.orange,
                               ),
                             ),
                           ],
+                        ),
+                        Expanded(
+                          child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                            itemCount: 10,
+                            itemBuilder: (context, index) {
+                              return Container();
+                            },
+                          ),
                         )
                       ],
                     ),

@@ -51,12 +51,12 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text("Hello,Dream"),
-                                const SizedBox(
+                              children: const [
+                                Text("Hello,Dream"),
+                                SizedBox(
                                   height: 16,
                                 ),
-                                const Text(
+                                Text(
                                   "Dreaming of your next trip?",
                                   style: TextStyle(
                                     fontSize: 34,
@@ -90,6 +90,50 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> {
                 Expanded(
                   child: Container(
                     color: Colors.white,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Text(
+                              "Hot Deals",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24,
+                              ),
+                            ),
+                            Spacer(),
+                            Text(
+                              "All",
+                              style: TextStyle(
+                                color: Colors.orange,
+                              ),
+                            ),
+                            PopupMenuButton(
+                              itemBuilder: (context) {
+                                return [
+                                  const PopupMenuItem<String>(
+                                    value: "All",
+                                    child: Text('All'),
+                                  ),
+                                  const PopupMenuItem<String>(
+                                    value: "1",
+                                    child: Text('1'),
+                                  ),
+                                  const PopupMenuItem<String>(
+                                    value: "2",
+                                    child: Text('2'),
+                                  )
+                                ];
+                              },
+                              icon: Icon(
+                                Icons.keyboard_arrow_down,
+                                color: Colors.orange,
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
                   ),
                 )
               ],

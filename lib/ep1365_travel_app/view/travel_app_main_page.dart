@@ -9,6 +9,7 @@ class TravelAppMainPage extends StatefulWidget {
 
 class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
+  int _tabIndex = 0;
 
   @override
   void initState() {
@@ -99,13 +100,65 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                         child: Column(
                           children: [
                             Container(
-                              height: 100,
+                              height: 80,
                               color: Colors.blue,
+                              child: Row(
+                                children: [
+                                  Expanded(
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          _tabController.index = 0;
+                                        });
+                                      },
+                                      child: Container(
+                                        color: _tabController.index == 0 ? Colors.white : Colors.blue,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          _tabController.index = 1;
+                                        });
+                                      },
+                                      child: Container(
+                                        color: _tabController.index == 1 ? Colors.white : Colors.blue,
+                                      ),
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: GestureDetector(
+                                      onTap: () {
+                                        setState(() {
+                                          _tabController.index = 2;
+                                        });
+                                      },
+                                      child: Container(
+                                        color: _tabController.index == 2 ? Colors.white : Colors.blue,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
                             ),
                             Expanded(
                               child: TabBarView(
                                 controller: _tabController,
-                                children: [],
+                                children: [
+                                  Container(
+                                    child: Column(
+                                      children: [],
+                                    ),
+                                  ),
+                                  Center(
+                                    child: Text("${_tabController.index}"),
+                                  ),
+                                  Center(
+                                    child: Text("${_tabController.index}"),
+                                  )
+                                ],
                               ),
                             ),
                           ],

@@ -128,12 +128,12 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.center,
-                                            children: [
-                                              const Icon(Icons.flight_takeoff),
-                                              const SizedBox(
+                                            children: const [
+                                              Icon(Icons.flight_takeoff),
+                                              SizedBox(
                                                 width: 8,
                                               ),
-                                              const Text("Flight"),
+                                              Text("Flight"),
                                             ],
                                           ),
                                         ),
@@ -160,14 +160,14 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.center,
-                                            children: [
-                                              const Icon(
+                                            children: const [
+                                              Icon(
                                                 Icons.domain,
                                               ),
-                                              const SizedBox(
+                                              SizedBox(
                                                 width: 8,
                                               ),
-                                              const Text("Hotel"),
+                                              Text("Hotel"),
                                             ],
                                           ),
                                         ),
@@ -194,14 +194,14 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           child: Row(
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.center,
-                                            children: [
-                                              const Icon(
+                                            children: const [
+                                              Icon(
                                                 Icons.event,
                                               ),
-                                              const SizedBox(
+                                              SizedBox(
                                                 width: 8,
                                               ),
-                                              const Text("Events"),
+                                              Text("Events"),
                                             ],
                                           ),
                                         ),
@@ -217,7 +217,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                 physics: const NeverScrollableScrollPhysics(),
                                 children: [
                                   Container(
-                                    padding: EdgeInsets.all(16),
+                                    padding: const EdgeInsets.all(16),
                                     child: Column(
                                       children: [
                                         Row(
@@ -230,7 +230,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                     enumFlight = v!;
                                                   });
                                                 }),
-                                            Text("One Way"),
+                                            const Text("One Way"),
                                             Radio<EnumFlight>(
                                                 value: EnumFlight.roundWayTrip,
                                                 groupValue: enumFlight,
@@ -239,7 +239,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                     enumFlight = v!;
                                                   });
                                                 }),
-                                            Text("Round Way"),
+                                            const Text("Round Way"),
                                           ],
                                         ),
                                         Container(
@@ -247,7 +247,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             children: [
                                               Positioned(
                                                 child: Row(
-                                                  children: [
+                                                  children: const [
                                                     Expanded(
                                                         child: TextField(
                                                       decoration: InputDecoration(
@@ -282,7 +282,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                       border: Border.all(),
                                                       color: Colors.white,
                                                     ),
-                                                    child: Center(
+                                                    child: const Center(
                                                       child: Icon(
                                                         Icons.sync,
                                                         color: Colors.orange,
@@ -294,12 +294,40 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             ],
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 16,
                                         ),
                                         Container(
                                           child: Row(
-                                            children: [
+                                            children: const [
+                                              Expanded(
+                                                  child: TextField(
+                                                decoration: InputDecoration(
+                                                  border: OutlineInputBorder(),
+                                                  enabledBorder: OutlineInputBorder(),
+                                                  focusedBorder: OutlineInputBorder(),
+                                                ),
+                                              )),
+                                              SizedBox(
+                                                width: 16,
+                                              ),
+                                              Expanded(
+                                                  child: TextField(
+                                                decoration: InputDecoration(
+                                                  border: OutlineInputBorder(),
+                                                  enabledBorder: OutlineInputBorder(),
+                                                  focusedBorder: OutlineInputBorder(),
+                                                ),
+                                              )),
+                                            ],
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          height: 16,
+                                        ),
+                                        Container(
+                                          child: Row(
+                                            children: const [
                                               Expanded(
                                                   child: TextField(
                                                 decoration: InputDecoration(
@@ -323,35 +351,21 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           ),
                                         ),
                                         SizedBox(
-                                          height: 16,
+                                          height: 12,
                                         ),
                                         Container(
-                                          child: Row(
-                                            children: [
-                                              Expanded(
-                                                  child: TextField(
-                                                decoration: InputDecoration(
-                                                  border: OutlineInputBorder(),
-                                                  enabledBorder: OutlineInputBorder(),
-                                                  focusedBorder: OutlineInputBorder(),
-                                                ),
-                                              )),
-                                              SizedBox(
-                                                width: 16,
-                                              ),
-                                              Expanded(
-                                                  child: TextField(
-                                                decoration: InputDecoration(
-                                                  border: OutlineInputBorder(),
-                                                  enabledBorder: OutlineInputBorder(),
-                                                  focusedBorder: OutlineInputBorder(),
-                                                ),
-                                              )),
-                                            ],
+                                          height: 54,
+                                          decoration: const BoxDecoration(
+                                            color: Colors.black,
                                           ),
-                                        ),
-                                        Container(
-                                          height: 64,
+                                          child: Center(
+                                            child: const Text(
+                                              "Search",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
                                         ),
                                       ],
                                     ),
@@ -447,10 +461,10 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                       child: Column(
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                        children: [
-                                          const Text("Only for Credit,"),
-                                          const Text("Card"),
-                                          const Text("Up to 30% Discount On Hotel Booking")
+                                        children: const [
+                                          Text("Only for Credit,"),
+                                          Text("Card"),
+                                          Text("Up to 30% Discount On Hotel Booking")
                                         ],
                                       ),
                                     ))

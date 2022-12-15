@@ -24,6 +24,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned(
@@ -246,13 +247,18 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           children: [
                                             Positioned(
                                               child: Row(
-                                                children: const [
+                                                children: [
                                                   Expanded(
                                                       child: TextField(
                                                     decoration: InputDecoration(
-                                                      border: OutlineInputBorder(),
+                                                      border: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                          color: Colors.grey[300]!,
+                                                        ),
+                                                      ),
                                                       enabledBorder: OutlineInputBorder(),
                                                       focusedBorder: OutlineInputBorder(),
+                                                      labelText: "From",
                                                     ),
                                                   )),
                                                   SizedBox(

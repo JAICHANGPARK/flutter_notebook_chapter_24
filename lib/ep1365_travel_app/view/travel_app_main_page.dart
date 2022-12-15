@@ -253,23 +253,43 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                     decoration: InputDecoration(
                                                       border: OutlineInputBorder(
                                                         borderSide: BorderSide(
-                                                          color: Colors.grey[300]!,
+                                                          color: Colors.grey[500]!,
                                                         ),
                                                       ),
-                                                      enabledBorder: OutlineInputBorder(),
-                                                      focusedBorder: OutlineInputBorder(),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                          color: Colors.grey[500]!,
+                                                        ),
+                                                      ),
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                          color: Colors.grey[500]!,
+                                                        ),
+                                                      ),
                                                       labelText: "From",
                                                     ),
                                                   )),
-                                                  SizedBox(
+                                                  const SizedBox(
                                                     width: 16,
                                                   ),
                                                   Expanded(
                                                       child: TextField(
                                                     decoration: InputDecoration(
-                                                      border: OutlineInputBorder(),
-                                                      enabledBorder: OutlineInputBorder(),
-                                                      focusedBorder: OutlineInputBorder(),
+                                                      border: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                          color: Colors.grey[500]!,
+                                                        ),
+                                                      ),
+                                                      enabledBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                          color: Colors.grey[500]!,
+                                                        ),
+                                                      ),
+                                                      focusedBorder: OutlineInputBorder(
+                                                        borderSide: BorderSide(
+                                                          color: Colors.grey[500]!,
+                                                        ),
+                                                      ),
                                                     ),
                                                   )),
                                                 ],
@@ -284,7 +304,9 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                 child: Container(
                                                   decoration: BoxDecoration(
                                                     shape: BoxShape.circle,
-                                                    border: Border.all(),
+                                                    border: Border.all(
+                                                      color: Colors.grey[500]!,
+                                                    ),
                                                     color: Colors.white,
                                                   ),
                                                   child: const Center(
@@ -303,24 +325,48 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                         ),
                                         Container(
                                           child: Row(
-                                            children: const [
+                                            children: [
                                               Expanded(
                                                   child: TextField(
                                                 decoration: InputDecoration(
-                                                  border: OutlineInputBorder(),
-                                                  enabledBorder: OutlineInputBorder(),
-                                                  focusedBorder: OutlineInputBorder(),
+                                                  border: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  enabledBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  focusedBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
                                                 ),
                                               )),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 16,
                                               ),
                                               Expanded(
                                                   child: TextField(
                                                 decoration: InputDecoration(
-                                                  border: OutlineInputBorder(),
-                                                  enabledBorder: OutlineInputBorder(),
-                                                  focusedBorder: OutlineInputBorder(),
+                                                  border: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  enabledBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  focusedBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
                                                 ),
                                               )),
                                             ],
@@ -331,30 +377,54 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                         ),
                                         Container(
                                           child: Row(
-                                            children: const [
+                                            children: [
                                               Expanded(
                                                   child: TextField(
                                                 decoration: InputDecoration(
-                                                  border: OutlineInputBorder(),
-                                                  enabledBorder: OutlineInputBorder(),
-                                                  focusedBorder: OutlineInputBorder(),
+                                                  border: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  enabledBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  focusedBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
                                                 ),
                                               )),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 16,
                                               ),
                                               Expanded(
                                                   child: TextField(
                                                 decoration: InputDecoration(
-                                                  border: OutlineInputBorder(),
-                                                  enabledBorder: OutlineInputBorder(),
-                                                  focusedBorder: OutlineInputBorder(),
+                                                  border: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  enabledBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
+                                                  focusedBorder: OutlineInputBorder(
+                                                    borderSide: BorderSide(
+                                                      color: Colors.grey[500]!,
+                                                    ),
+                                                  ),
                                                 ),
                                               )),
                                             ],
                                           ),
                                         ),
-                                        SizedBox(
+                                        const SizedBox(
                                           height: 12,
                                         ),
                                         Container(
@@ -362,8 +432,8 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           decoration: const BoxDecoration(
                                             color: Colors.black,
                                           ),
-                                          child: Center(
-                                            child: const Text(
+                                          child: const Center(
+                                            child: Text(
                                               "Search",
                                               style: TextStyle(
                                                 color: Colors.white,

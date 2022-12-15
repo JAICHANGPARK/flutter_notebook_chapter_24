@@ -113,7 +113,27 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                         });
                                       },
                                       child: Container(
-                                        color: _tabController.index == 0 ? Colors.white : Colors.blue,
+                                        color: _tabController.index == 0
+                                            ? Colors.white
+                                            : Color.fromRGBO(
+                                                234,
+                                                245,
+                                                250,
+                                                1,
+                                              ),
+                                        child: Center(
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(Icons.flight_takeoff),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text("Flight"),
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -125,7 +145,29 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                         });
                                       },
                                       child: Container(
-                                        color: _tabController.index == 1 ? Colors.white : Colors.blue,
+                                        color: _tabController.index == 1
+                                            ? Colors.white
+                                            : Color.fromRGBO(
+                                                234,
+                                                245,
+                                                250,
+                                                1,
+                                              ),
+                                        child: Center(
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(
+                                                Icons.domain,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text("Hotel"),
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -137,7 +179,29 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                         });
                                       },
                                       child: Container(
-                                        color: _tabController.index == 2 ? Colors.white : Colors.blue,
+                                        color: _tabController.index == 2
+                                            ? Colors.white
+                                            : Color.fromRGBO(
+                                                234,
+                                                245,
+                                                250,
+                                                1,
+                                              ),
+                                        child: Center(
+                                          child: Row(
+                                            mainAxisSize: MainAxisSize.max,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(
+                                                Icons.event,
+                                              ),
+                                              SizedBox(
+                                                width: 8,
+                                              ),
+                                              Text("Events"),
+                                            ],
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ),
@@ -147,6 +211,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             Expanded(
                               child: TabBarView(
                                 controller: _tabController,
+                                physics: NeverScrollableScrollPhysics(),
                                 children: [
                                   Container(
                                     child: Column(

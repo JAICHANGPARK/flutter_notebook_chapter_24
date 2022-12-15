@@ -99,12 +99,12 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                         height: 24,
                       ),
                       Container(
-                        height: 400,
+                        height: 420,
                         color: Colors.white,
                         child: Column(
                           children: [
                             Container(
-                              height: 80,
+                              height: 64,
                               color: Colors.blue,
                               child: Row(
                                 children: [
@@ -283,8 +283,10 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                       color: Colors.white,
                                                     ),
                                                     child: Center(
-                                                      child: Icon(Icons.sync,
-                                                      color: Colors.orange,),
+                                                      child: Icon(
+                                                        Icons.sync,
+                                                        color: Colors.orange,
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -292,32 +294,65 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             ],
                                           ),
                                         ),
-                                        SizedBox(height: 16,),
+                                        SizedBox(
+                                          height: 16,
+                                        ),
                                         Container(
                                           child: Row(
                                             children: [
                                               Expanded(
                                                   child: TextField(
-                                                    decoration: InputDecoration(
-                                                      border: OutlineInputBorder(),
-                                                      enabledBorder: OutlineInputBorder(),
-                                                      focusedBorder: OutlineInputBorder(),
-                                                    ),
-                                                  )),
+                                                decoration: InputDecoration(
+                                                  border: OutlineInputBorder(),
+                                                  enabledBorder: OutlineInputBorder(),
+                                                  focusedBorder: OutlineInputBorder(),
+                                                ),
+                                              )),
                                               SizedBox(
                                                 width: 16,
                                               ),
                                               Expanded(
                                                   child: TextField(
-                                                    decoration: InputDecoration(
-                                                      border: OutlineInputBorder(),
-                                                      enabledBorder: OutlineInputBorder(),
-                                                      focusedBorder: OutlineInputBorder(),
-                                                    ),
-                                                  )),
+                                                decoration: InputDecoration(
+                                                  border: OutlineInputBorder(),
+                                                  enabledBorder: OutlineInputBorder(),
+                                                  focusedBorder: OutlineInputBorder(),
+                                                ),
+                                              )),
                                             ],
                                           ),
-                                        )
+                                        ),
+                                        SizedBox(
+                                          height: 16,
+                                        ),
+                                        Container(
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                  child: TextField(
+                                                decoration: InputDecoration(
+                                                  border: OutlineInputBorder(),
+                                                  enabledBorder: OutlineInputBorder(),
+                                                  focusedBorder: OutlineInputBorder(),
+                                                ),
+                                              )),
+                                              SizedBox(
+                                                width: 16,
+                                              ),
+                                              Expanded(
+                                                  child: TextField(
+                                                decoration: InputDecoration(
+                                                  border: OutlineInputBorder(),
+                                                  enabledBorder: OutlineInputBorder(),
+                                                  focusedBorder: OutlineInputBorder(),
+                                                ),
+                                              )),
+                                            ],
+                                          ),
+                                        ),
+                                        Container(
+                                          height: 64,
+                                        ),
                                       ],
                                     ),
                                   ),

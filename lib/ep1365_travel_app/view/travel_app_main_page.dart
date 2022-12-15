@@ -57,6 +57,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                   child: Column(
                     children: [
                       Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Expanded(
                             child: Column(

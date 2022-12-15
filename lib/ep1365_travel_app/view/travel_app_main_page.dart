@@ -243,9 +243,80 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                           ],
                                         ),
                                         Container(
-                                          height: 64,
-                                          color: Colors.grey,
-                                          child: Stack(),
+                                          child: Stack(
+                                            children: [
+                                              Positioned(
+                                                child: Row(
+                                                  children: [
+                                                    Expanded(
+                                                        child: TextField(
+                                                      decoration: InputDecoration(
+                                                        border: OutlineInputBorder(),
+                                                        enabledBorder: OutlineInputBorder(),
+                                                        focusedBorder: OutlineInputBorder(),
+                                                      ),
+                                                    )),
+                                                    SizedBox(
+                                                      width: 16,
+                                                    ),
+                                                    Expanded(
+                                                        child: TextField(
+                                                      decoration: InputDecoration(
+                                                        border: OutlineInputBorder(),
+                                                        enabledBorder: OutlineInputBorder(),
+                                                        focusedBorder: OutlineInputBorder(),
+                                                      ),
+                                                    )),
+                                                  ],
+                                                ),
+                                              ),
+                                              Positioned(
+                                                left: 0,
+                                                right: 0,
+                                                bottom: 6,
+                                                top: 6,
+                                                child: Center(
+                                                  child: Container(
+                                                    decoration: BoxDecoration(
+                                                      shape: BoxShape.circle,
+                                                      border: Border.all(),
+                                                      color: Colors.white,
+                                                    ),
+                                                    child: Center(
+                                                      child: Icon(Icons.sync,
+                                                      color: Colors.orange,),
+                                                    ),
+                                                  ),
+                                                ),
+                                              )
+                                            ],
+                                          ),
+                                        ),
+                                        SizedBox(height: 16,),
+                                        Container(
+                                          child: Row(
+                                            children: [
+                                              Expanded(
+                                                  child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: OutlineInputBorder(),
+                                                      enabledBorder: OutlineInputBorder(),
+                                                      focusedBorder: OutlineInputBorder(),
+                                                    ),
+                                                  )),
+                                              SizedBox(
+                                                width: 16,
+                                              ),
+                                              Expanded(
+                                                  child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: OutlineInputBorder(),
+                                                      enabledBorder: OutlineInputBorder(),
+                                                      focusedBorder: OutlineInputBorder(),
+                                                    ),
+                                                  )),
+                                            ],
+                                          ),
                                         )
                                       ],
                                     ),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1365_travel_app/enums/enum_flight.dart';
 
 class TravelAppMainPage extends StatefulWidget {
   const TravelAppMainPage({Key? key}) : super(key: key);
@@ -10,6 +11,8 @@ class TravelAppMainPage extends StatefulWidget {
 class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   int _tabIndex = 0;
+
+  EnumFlight enumFlight = EnumFlight.oneWayTrip;
 
   @override
   void initState() {
@@ -86,7 +89,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                               shape: BoxShape.circle,
                               border: Border.all(color: Colors.grey),
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.notifications_none,
                             ),
                           )
@@ -115,7 +118,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                       child: Container(
                                         color: _tabController.index == 0
                                             ? Colors.white
-                                            : Color.fromRGBO(
+                                            : const Color.fromRGBO(
                                                 234,
                                                 245,
                                                 250,
@@ -126,11 +129,11 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Icon(Icons.flight_takeoff),
-                                              SizedBox(
+                                              const Icon(Icons.flight_takeoff),
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text("Flight"),
+                                              const Text("Flight"),
                                             ],
                                           ),
                                         ),
@@ -147,7 +150,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                       child: Container(
                                         color: _tabController.index == 1
                                             ? Colors.white
-                                            : Color.fromRGBO(
+                                            : const Color.fromRGBO(
                                                 234,
                                                 245,
                                                 250,
@@ -158,13 +161,13 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Icon(
+                                              const Icon(
                                                 Icons.domain,
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text("Hotel"),
+                                              const Text("Hotel"),
                                             ],
                                           ),
                                         ),
@@ -181,7 +184,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                       child: Container(
                                         color: _tabController.index == 2
                                             ? Colors.white
-                                            : Color.fromRGBO(
+                                            : const Color.fromRGBO(
                                                 234,
                                                 245,
                                                 250,
@@ -192,13 +195,13 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             mainAxisSize: MainAxisSize.max,
                                             mainAxisAlignment: MainAxisAlignment.center,
                                             children: [
-                                              Icon(
+                                              const Icon(
                                                 Icons.event,
                                               ),
-                                              SizedBox(
+                                              const SizedBox(
                                                 width: 8,
                                               ),
-                                              Text("Events"),
+                                              const Text("Events"),
                                             ],
                                           ),
                                         ),
@@ -211,11 +214,40 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             Expanded(
                               child: TabBarView(
                                 controller: _tabController,
-                                physics: NeverScrollableScrollPhysics(),
+                                physics: const NeverScrollableScrollPhysics(),
                                 children: [
                                   Container(
+                                    padding: EdgeInsets.all(16),
                                     child: Column(
-                                      children: [],
+                                      children: [
+                                        Row(
+                                          children: [
+                                            Radio<EnumFlight>(
+                                                value: EnumFlight.oneWayTrip,
+                                                groupValue: enumFlight,
+                                                onChanged: (v) {
+                                                  setState(() {
+                                                    enumFlight = v!;
+                                                  });
+                                                }),
+                                            Text("One Way"),
+                                            Radio<EnumFlight>(
+                                                value: EnumFlight.roundWayTrip,
+                                                groupValue: enumFlight,
+                                                onChanged: (v) {
+                                                  setState(() {
+                                                    enumFlight = v!;
+                                                  });
+                                                }),
+                                            Text("Round Way"),
+                                          ],
+                                        ),
+                                        Container(
+                                          height: 64,
+                                          color: Colors.grey,
+                                          child: Stack(),
+                                        )
+                                      ],
                                     ),
                                   ),
                                   Center(
@@ -289,7 +321,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             itemBuilder: (context, index) {
                               return Container(
                                 width: 260,
-                                margin: EdgeInsets.only(right: 16),
+                                margin: const EdgeInsets.only(right: 16),
                                 decoration: BoxDecoration(
                                     border: Border.all(
                                   color: Colors.grey[300]!,
@@ -310,9 +342,9 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                         crossAxisAlignment: CrossAxisAlignment.start,
                                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                                         children: [
-                                          Text("Only for Credit,"),
-                                          Text("Card"),
-                                          Text("Up to 30% Discount On Hotel Booking")
+                                          const Text("Only for Credit,"),
+                                          const Text("Card"),
+                                          const Text("Up to 30% Discount On Hotel Booking")
                                         ],
                                       ),
                                     ))

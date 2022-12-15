@@ -242,57 +242,55 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                             const Text("Round Way"),
                                           ],
                                         ),
-                                        Container(
-                                          child: Stack(
-                                            children: [
-                                              Positioned(
-                                                child: Row(
-                                                  children: const [
-                                                    Expanded(
-                                                        child: TextField(
-                                                      decoration: InputDecoration(
-                                                        border: OutlineInputBorder(),
-                                                        enabledBorder: OutlineInputBorder(),
-                                                        focusedBorder: OutlineInputBorder(),
-                                                      ),
-                                                    )),
-                                                    SizedBox(
-                                                      width: 16,
+                                        Stack(
+                                          children: [
+                                            Positioned(
+                                              child: Row(
+                                                children: const [
+                                                  Expanded(
+                                                      child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: OutlineInputBorder(),
+                                                      enabledBorder: OutlineInputBorder(),
+                                                      focusedBorder: OutlineInputBorder(),
                                                     ),
-                                                    Expanded(
-                                                        child: TextField(
-                                                      decoration: InputDecoration(
-                                                        border: OutlineInputBorder(),
-                                                        enabledBorder: OutlineInputBorder(),
-                                                        focusedBorder: OutlineInputBorder(),
-                                                      ),
-                                                    )),
-                                                  ],
-                                                ),
+                                                  )),
+                                                  SizedBox(
+                                                    width: 16,
+                                                  ),
+                                                  Expanded(
+                                                      child: TextField(
+                                                    decoration: InputDecoration(
+                                                      border: OutlineInputBorder(),
+                                                      enabledBorder: OutlineInputBorder(),
+                                                      focusedBorder: OutlineInputBorder(),
+                                                    ),
+                                                  )),
+                                                ],
                                               ),
-                                              Positioned(
-                                                left: 0,
-                                                right: 0,
-                                                bottom: 6,
-                                                top: 6,
-                                                child: Center(
-                                                  child: Container(
-                                                    decoration: BoxDecoration(
-                                                      shape: BoxShape.circle,
-                                                      border: Border.all(),
-                                                      color: Colors.white,
-                                                    ),
-                                                    child: const Center(
-                                                      child: Icon(
-                                                        Icons.sync,
-                                                        color: Colors.orange,
-                                                      ),
+                                            ),
+                                            Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              bottom: 6,
+                                              top: 6,
+                                              child: Center(
+                                                child: Container(
+                                                  decoration: BoxDecoration(
+                                                    shape: BoxShape.circle,
+                                                    border: Border.all(),
+                                                    color: Colors.white,
+                                                  ),
+                                                  child: const Center(
+                                                    child: Icon(
+                                                      Icons.sync,
+                                                      color: Colors.orange,
                                                     ),
                                                   ),
                                                 ),
-                                              )
-                                            ],
-                                          ),
+                                              ),
+                                            )
+                                          ],
                                         ),
                                         const SizedBox(
                                           height: 16,

@@ -275,6 +275,8 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                   Expanded(
                                                       child: TextField(
                                                     decoration: InputDecoration(
+                                                      hintText: "To",
+                                                      labelText: "To",
                                                       border: OutlineInputBorder(
                                                         borderSide: BorderSide(
                                                           color: Colors.grey[500]!,

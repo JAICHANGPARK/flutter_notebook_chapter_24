@@ -51,207 +51,206 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
             top: 72,
             bottom: 0,
             right: 0,
-            child:
-            SingleChildScrollView(
-              child:  Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
+            child: Column(
+              children: [
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: const [
+                          Text("Hello,Dream"),
+                          SizedBox(
+                            height: 16,
+                          ),
+                          Text(
+                            "Dreaming of your next trip?",
+                            style: TextStyle(
+                              fontSize: 34,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                    child: Column(
-                      children: [
-                        Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                    const SizedBox(
+                      width: 16,
+                    ),
+                    Container(
+                      height: 42,
+                      width: 42,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(color: Colors.grey),
+                      ),
+                      child: const Icon(
+                        Icons.notifications_none,
+                      ),
+                    )
+                  ],
+                ),
+                Expanded(
+                    child: SingleChildScrollView(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 16,
+                        ),
+                        child: Column(
                           children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: const [
-                                  Text("Hello,Dream"),
-                                  SizedBox(
-                                    height: 16,
-                                  ),
-                                  Text(
-                                    "Dreaming of your next trip?",
-                                    style: TextStyle(
-                                      fontSize: 34,
-                                    ),
-                                  )
-                                ],
-                              ),
-                            ),
-                            const SizedBox(
-                              width: 16,
-                            ),
                             Container(
-                              height: 42,
-                              width: 42,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                border: Border.all(color: Colors.grey),
-                              ),
-                              child: const Icon(
-                                Icons.notifications_none,
-                              ),
-                            )
-                          ],
-                        ),
-                        const SizedBox(
-                          height: 24,
-                        ),
-                        Container(
-                          height: 420,
-                          color: Colors.white,
-                          child: Column(
-                            children: [
-                              Container(
-                                height: 64,
-                                color: Colors.blue,
-                                child: Row(
-                                  children: [
-                                    Expanded(
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          setState(() {
-                                            _tabController.index = 0;
-                                          });
-                                        },
-                                        child: Container(
-                                          color: _tabController.index == 0
-                                              ? Colors.white
-                                              : const Color.fromRGBO(
-                                            234,
-                                            245,
-                                            250,
-                                            1,
-                                          ),
-                                          child: Center(
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: const [
-                                                Icon(Icons.flight_takeoff),
-                                                SizedBox(
-                                                  width: 8,
-                                                ),
-                                                Text("Flight"),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          setState(() {
-                                            _tabController.index = 1;
-                                          });
-                                        },
-                                        child: Container(
-                                          color: _tabController.index == 1
-                                              ? Colors.white
-                                              : const Color.fromRGBO(
-                                            234,
-                                            245,
-                                            250,
-                                            1,
-                                          ),
-                                          child: Center(
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: const [
-                                                Icon(
-                                                  Icons.domain,
-                                                ),
-                                                SizedBox(
-                                                  width: 8,
-                                                ),
-                                                Text("Hotel"),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: GestureDetector(
-                                        onTap: () {
-                                          setState(() {
-                                            _tabController.index = 2;
-                                          });
-                                        },
-                                        child: Container(
-                                          color: _tabController.index == 2
-                                              ? Colors.white
-                                              : const Color.fromRGBO(
-                                            234,
-                                            245,
-                                            250,
-                                            1,
-                                          ),
-                                          child: Center(
-                                            child: Row(
-                                              mainAxisSize: MainAxisSize.max,
-                                              mainAxisAlignment: MainAxisAlignment.center,
-                                              children: const [
-                                                Icon(
-                                                  Icons.event,
-                                                ),
-                                                SizedBox(
-                                                  width: 8,
-                                                ),
-                                                Text("Events"),
-                                              ],
-                                            ),
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Expanded(
-                                child: TabBarView(
-                                  controller: _tabController,
-                                  physics: const NeverScrollableScrollPhysics(),
-                                  children: [
-                                    Container(
-                                      padding: const EdgeInsets.all(16),
-                                      child: Column(
-                                        children: [
-                                          Row(
-                                            children: [
-                                              Radio<EnumFlight>(
-                                                  value: EnumFlight.oneWayTrip,
-                                                  groupValue: enumFlight,
-                                                  onChanged: (v) {
-                                                    setState(() {
-                                                      enumFlight = v!;
-                                                    });
-                                                  }),
-                                              const Text("One Way"),
-                                              Radio<EnumFlight>(
-                                                  value: EnumFlight.roundWayTrip,
-                                                  groupValue: enumFlight,
-                                                  onChanged: (v) {
-                                                    setState(() {
-                                                      enumFlight = v!;
-                                                    });
-                                                  }),
-                                              const Text("Round Way"),
-                                            ],
-                                          ),
-                                          Stack(
-                                            children: [
-                                              Positioned(
+                              height: 420,
+                              color: Colors.white,
+                              child: Column(
+                                children: [
+                                  Container(
+                                    height: 64,
+                                    color: Colors.blue,
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              setState(() {
+                                                _tabController.index = 0;
+                                              });
+                                            },
+                                            child: Container(
+                                              color: _tabController.index == 0
+                                                  ? Colors.white
+                                                  : const Color.fromRGBO(
+                                                      234,
+                                                      245,
+                                                      250,
+                                                      1,
+                                                    ),
+                                              child: Center(
                                                 child: Row(
-                                                  children: [
-                                                    Expanded(
-                                                        child: TextField(
+                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  children: const [
+                                                    Icon(Icons.flight_takeoff),
+                                                    SizedBox(
+                                                      width: 8,
+                                                    ),
+                                                    Text("Flight"),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              setState(() {
+                                                _tabController.index = 1;
+                                              });
+                                            },
+                                            child: Container(
+                                              color: _tabController.index == 1
+                                                  ? Colors.white
+                                                  : const Color.fromRGBO(
+                                                      234,
+                                                      245,
+                                                      250,
+                                                      1,
+                                                    ),
+                                              child: Center(
+                                                child: Row(
+                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  children: const [
+                                                    Icon(
+                                                      Icons.domain,
+                                                    ),
+                                                    SizedBox(
+                                                      width: 8,
+                                                    ),
+                                                    Text("Hotel"),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                        Expanded(
+                                          child: GestureDetector(
+                                            onTap: () {
+                                              setState(() {
+                                                _tabController.index = 2;
+                                              });
+                                            },
+                                            child: Container(
+                                              color: _tabController.index == 2
+                                                  ? Colors.white
+                                                  : const Color.fromRGBO(
+                                                      234,
+                                                      245,
+                                                      250,
+                                                      1,
+                                                    ),
+                                              child: Center(
+                                                child: Row(
+                                                  mainAxisSize: MainAxisSize.max,
+                                                  mainAxisAlignment: MainAxisAlignment.center,
+                                                  children: const [
+                                                    Icon(
+                                                      Icons.event,
+                                                    ),
+                                                    SizedBox(
+                                                      width: 8,
+                                                    ),
+                                                    Text("Events"),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Expanded(
+                                    child: TabBarView(
+                                      controller: _tabController,
+                                      physics: const NeverScrollableScrollPhysics(),
+                                      children: [
+                                        Container(
+                                          padding: const EdgeInsets.all(16),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Radio<EnumFlight>(
+                                                      value: EnumFlight.oneWayTrip,
+                                                      groupValue: enumFlight,
+                                                      onChanged: (v) {
+                                                        setState(() {
+                                                          enumFlight = v!;
+                                                        });
+                                                      }),
+                                                  const Text("One Way"),
+                                                  Radio<EnumFlight>(
+                                                      value: EnumFlight.roundWayTrip,
+                                                      groupValue: enumFlight,
+                                                      onChanged: (v) {
+                                                        setState(() {
+                                                          enumFlight = v!;
+                                                        });
+                                                      }),
+                                                  const Text("Round Way"),
+                                                ],
+                                              ),
+                                              Stack(
+                                                children: [
+                                                  Positioned(
+                                                    child: Row(
+                                                      children: [
+                                                        Expanded(
+                                                            child: TextField(
                                                           decoration: InputDecoration(
                                                             border: OutlineInputBorder(
                                                               borderSide: BorderSide(
@@ -271,11 +270,11 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                             labelText: "From",
                                                           ),
                                                         )),
-                                                    const SizedBox(
-                                                      width: 16,
-                                                    ),
-                                                    Expanded(
-                                                        child: TextField(
+                                                        const SizedBox(
+                                                          width: 16,
+                                                        ),
+                                                        Expanded(
+                                                            child: TextField(
                                                           decoration: InputDecoration(
                                                             hintText: "To",
                                                             labelText: "To",
@@ -296,270 +295,269 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                                             ),
                                                           ),
                                                         )),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                  Positioned(
+                                                    left: 0,
+                                                    right: 0,
+                                                    bottom: 6,
+                                                    top: 6,
+                                                    child: Center(
+                                                      child: Container(
+                                                        decoration: BoxDecoration(
+                                                          shape: BoxShape.circle,
+                                                          border: Border.all(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                          color: Colors.white,
+                                                        ),
+                                                        child: const Center(
+                                                          child: Icon(
+                                                            Icons.sync,
+                                                            color: Colors.orange,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                              const SizedBox(
+                                                height: 16,
+                                              ),
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Expanded(
+                                                        child: TextField(
+                                                      decoration: InputDecoration(
+                                                        border: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        enabledBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        focusedBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 16,
+                                                    ),
+                                                    Expanded(
+                                                        child: TextField(
+                                                      decoration: InputDecoration(
+                                                        border: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        enabledBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        focusedBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                      ),
+                                                    )),
                                                   ],
                                                 ),
                                               ),
-                                              Positioned(
-                                                left: 0,
-                                                right: 0,
-                                                bottom: 6,
-                                                top: 6,
-                                                child: Center(
-                                                  child: Container(
-                                                    decoration: BoxDecoration(
-                                                      shape: BoxShape.circle,
-                                                      border: Border.all(
-                                                        color: Colors.grey[500]!,
+                                              const SizedBox(
+                                                height: 16,
+                                              ),
+                                              Container(
+                                                child: Row(
+                                                  children: [
+                                                    Expanded(
+                                                        child: TextField(
+                                                      decoration: InputDecoration(
+                                                        border: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        enabledBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        focusedBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
                                                       ),
-                                                      color: Colors.white,
+                                                    )),
+                                                    const SizedBox(
+                                                      width: 16,
                                                     ),
-                                                    child: const Center(
-                                                      child: Icon(
-                                                        Icons.sync,
-                                                        color: Colors.orange,
+                                                    Expanded(
+                                                        child: TextField(
+                                                      decoration: InputDecoration(
+                                                        border: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        enabledBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
+                                                        focusedBorder: OutlineInputBorder(
+                                                          borderSide: BorderSide(
+                                                            color: Colors.grey[500]!,
+                                                          ),
+                                                        ),
                                                       ),
+                                                    )),
+                                                  ],
+                                                ),
+                                              ),
+                                              const SizedBox(
+                                                height: 12,
+                                              ),
+                                              Container(
+                                                height: 54,
+                                                decoration: const BoxDecoration(
+                                                  color: Colors.black,
+                                                ),
+                                                child: const Center(
+                                                  child: Text(
+                                                    "Search",
+                                                    style: TextStyle(
+                                                      color: Colors.white,
                                                     ),
                                                   ),
                                                 ),
-                                              )
+                                              ),
                                             ],
                                           ),
-                                          const SizedBox(
-                                            height: 16,
-                                          ),
-                                          Container(
-                                            child: Row(
-                                              children: [
-                                                Expanded(
-                                                    child: TextField(
-                                                      decoration: InputDecoration(
-                                                        border: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        enabledBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        focusedBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    )),
-                                                const SizedBox(
-                                                  width: 16,
-                                                ),
-                                                Expanded(
-                                                    child: TextField(
-                                                      decoration: InputDecoration(
-                                                        border: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        enabledBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        focusedBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    )),
-                                              ],
-                                            ),
-                                          ),
-                                          const SizedBox(
-                                            height: 16,
-                                          ),
-                                          Container(
-                                            child: Row(
-                                              children: [
-                                                Expanded(
-                                                    child: TextField(
-                                                      decoration: InputDecoration(
-                                                        border: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        enabledBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        focusedBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    )),
-                                                const SizedBox(
-                                                  width: 16,
-                                                ),
-                                                Expanded(
-                                                    child: TextField(
-                                                      decoration: InputDecoration(
-                                                        border: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        enabledBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                        focusedBorder: OutlineInputBorder(
-                                                          borderSide: BorderSide(
-                                                            color: Colors.grey[500]!,
-                                                          ),
-                                                        ),
-                                                      ),
-                                                    )),
-                                              ],
-                                            ),
-                                          ),
-                                          const SizedBox(
-                                            height: 12,
-                                          ),
-                                          Container(
-                                            height: 54,
-                                            decoration: const BoxDecoration(
-                                              color: Colors.black,
-                                            ),
-                                            child: const Center(
-                                              child: Text(
-                                                "Search",
-                                                style: TextStyle(
-                                                  color: Colors.white,
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                    Center(
-                                      child: Text("${_tabController.index}"),
-                                    ),
-                                    Center(
-                                      child: Text("${_tabController.index}"),
-                                    )
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        const SizedBox(
-                          height: 16,
-                        ),
-                      ],
-                    ),
-                  ),
-                  Expanded(
-                    child: Container(
-                      color: Colors.white,
-                      padding: const EdgeInsets.only(left: 16, right: 0, top: 12),
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              const Text(
-                                "Hot Deals",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 24,
-                                ),
-                              ),
-                              const Spacer(),
-                              const Text(
-                                "All",
-                                style: TextStyle(
-                                  color: Colors.orange,
-                                ),
-                              ),
-                              PopupMenuButton(
-                                itemBuilder: (context) {
-                                  return [
-                                    const PopupMenuItem<String>(
-                                      value: "All",
-                                      child: Text('All'),
-                                    ),
-                                    const PopupMenuItem<String>(
-                                      value: "1",
-                                      child: Text('1'),
-                                    ),
-                                    const PopupMenuItem<String>(
-                                      value: "2",
-                                      child: Text('2'),
-                                    )
-                                  ];
-                                },
-                                icon: const Icon(
-                                  Icons.keyboard_arrow_down,
-                                  color: Colors.orange,
-                                ),
-                              ),
-                            ],
-                          ),
-                          Expanded(
-                            child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: 10,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  width: 260,
-                                  margin: const EdgeInsets.only(right: 16),
-                                  decoration: BoxDecoration(
-                                      border: Border.all(
-                                        color: Colors.grey[300]!,
-                                      )),
-                                  child: Row(
-                                    children: [
-                                      Expanded(
-                                        child: Image.network(
-                                          "https://cdn.pixabay.com/photo/2019/09/05/15/25/airbus-4454338_960_720.jpg",
-                                          fit: BoxFit.cover,
-                                          height: double.infinity,
                                         ),
-                                      ),
-                                      Expanded(
-                                          child: Padding(
-                                            padding: const EdgeInsets.all(8.0),
-                                            child: Column(
-                                              crossAxisAlignment: CrossAxisAlignment.start,
-                                              mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                              children: const [
-                                                Text("Only for Credit,"),
-                                                Text("Card"),
-                                                Text("Up to 30% Discount On Hotel Booking")
-                                              ],
-                                            ),
-                                          ))
-                                    ],
+                                        Center(
+                                          child: Text("${_tabController.index}"),
+                                        ),
+                                        Center(
+                                          child: Text("${_tabController.index}"),
+                                        )
+                                      ],
+                                    ),
                                   ),
-                                );
-                              },
+                                ],
+                              ),
                             ),
-                          )
-                        ],
+                            const SizedBox(
+                              height: 16,
+                            ),
+                          ],
+                        ),
                       ),
-                    ),
-                  )
-                ],
-              ),
-            )
-
+                      Container(
+                        color: Colors.white,
+                        padding: const EdgeInsets.only(left: 16, right: 0, top: 12),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                const Text(
+                                  "Hot Deals",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 24,
+                                  ),
+                                ),
+                                const Spacer(),
+                                const Text(
+                                  "All",
+                                  style: TextStyle(
+                                    color: Colors.orange,
+                                  ),
+                                ),
+                                PopupMenuButton(
+                                  itemBuilder: (context) {
+                                    return [
+                                      const PopupMenuItem<String>(
+                                        value: "All",
+                                        child: Text('All'),
+                                      ),
+                                      const PopupMenuItem<String>(
+                                        value: "1",
+                                        child: Text('1'),
+                                      ),
+                                      const PopupMenuItem<String>(
+                                        value: "2",
+                                        child: Text('2'),
+                                      )
+                                    ];
+                                  },
+                                  icon: const Icon(
+                                    Icons.keyboard_arrow_down,
+                                    color: Colors.orange,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Expanded(
+                              child: ListView.builder(
+                                scrollDirection: Axis.horizontal,
+                                itemCount: 10,
+                                itemBuilder: (context, index) {
+                                  return Container(
+                                    width: 260,
+                                    margin: const EdgeInsets.only(right: 16),
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                      color: Colors.grey[300]!,
+                                    )),
+                                    child: Row(
+                                      children: [
+                                        Expanded(
+                                          child: Image.network(
+                                            "https://cdn.pixabay.com/photo/2019/09/05/15/25/airbus-4454338_960_720.jpg",
+                                            fit: BoxFit.cover,
+                                            height: double.infinity,
+                                          ),
+                                        ),
+                                        Expanded(
+                                            child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            children: const [
+                                              Text("Only for Credit,"),
+                                              Text("Card"),
+                                              Text("Up to 30% Discount On Hotel Booking")
+                                            ],
+                                          ),
+                                        ))
+                                      ],
+                                    ),
+                                  );
+                                },
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ))
+              ],
+            ),
           ),
         ],
       ),

@@ -82,7 +82,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                       Padding(
                         padding: const EdgeInsets.only(
                           left: 16,
-                          right: 32,
+                          right: 48,
                         ),
                         child: Text(
                           "Dreaming of your next trip?",
@@ -554,6 +554,12 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             )
                           ],
                         ),
+                      ),
+
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 16),
+                        height: MediaQuery.of(context).size.height / 2.5,
+                        color: Colors.white,
                       )
                     ],
                   ),

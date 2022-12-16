@@ -56,26 +56,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text("Hello,Dream"),
-                          SizedBox(
-                            height: 16,
-                          ),
-                          Text(
-                            "Dreaming of your next trip?",
-                            style: TextStyle(
-                              fontSize: 34,
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                    const SizedBox(
-                      width: 16,
-                    ),
+                    Text("Hello,Dream"),
                     Container(
                       height: 42,
                       width: 42,
@@ -94,6 +75,12 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Text(
+                        "Dreaming of your next trip?",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: 16,
@@ -466,6 +453,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                         ),
                       ),
                       Container(
+                        height: 200,
                         color: Colors.white,
                         padding: const EdgeInsets.only(left: 16, right: 0, top: 12),
                         child: Column(

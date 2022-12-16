@@ -570,7 +570,15 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             ),
                             Expanded(
                                 child: Column(
-                              children: [],
+                              children: [
+                                Expanded(child: Placeholder()),
+                                Expanded(child: Row(
+                                  children: [
+                                    Expanded(child: Placeholder()),
+                                    Expanded(child: Placeholder()),
+                                  ],
+                                )),
+                              ],
                             ))
                           ],
                         ),

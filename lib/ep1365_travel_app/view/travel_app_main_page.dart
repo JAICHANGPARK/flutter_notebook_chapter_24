@@ -567,7 +567,11 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                               ),
-                            )
+                            ),
+                            Expanded(
+                                child: Column(
+                              children: [],
+                            ))
                           ],
                         ),
                       )

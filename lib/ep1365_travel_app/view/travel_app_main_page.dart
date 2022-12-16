@@ -559,6 +559,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                         margin: EdgeInsets.symmetric(vertical: 16),
                         height: MediaQuery.of(context).size.height / 1.8,
                         color: Colors.white,
+                        padding: EdgeInsets.all(16),
                         child: Column(
                           children: [
                             Text(

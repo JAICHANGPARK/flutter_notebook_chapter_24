@@ -561,6 +561,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                         color: Colors.white,
                         padding: EdgeInsets.all(16),
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
                               "Your Dream Trip",
@@ -572,9 +573,16 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                                 child: Column(
                               children: [
                                 Expanded(child: Placeholder()),
-                                Expanded(child: Row(
+                                SizedBox(
+                                  height: 16,
+                                ),
+                                Expanded(
+                                    child: Row(
                                   children: [
                                     Expanded(child: Placeholder()),
+                                    SizedBox(
+                                      width: 16,
+                                    ),
                                     Expanded(child: Placeholder()),
                                   ],
                                 )),

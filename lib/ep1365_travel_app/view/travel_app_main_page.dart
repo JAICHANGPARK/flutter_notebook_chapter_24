@@ -555,11 +555,20 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                           ],
                         ),
                       ),
-
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16),
                         height: MediaQuery.of(context).size.height / 1.8,
                         color: Colors.white,
+                        child: Column(
+                          children: [
+                            Text(
+                              "Your Dream Trip",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                              ),
+                            )
+                          ],
+                        ),
                       )
                     ],
                   ),

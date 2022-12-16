@@ -469,7 +469,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                       Container(
                         height: 200,
                         color: Colors.white,
-                        padding: const EdgeInsets.only(left: 16, right: 0, top: 12),
+                        padding: const EdgeInsets.only(left: 16, right: 0, top: 12, bottom: 16),
                         child: Column(
                           children: [
                             Row(
@@ -558,7 +558,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
 
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16),
-                        height: MediaQuery.of(context).size.height / 2.5,
+                        height: MediaQuery.of(context).size.height / 2.2,
                         color: Colors.white,
                       )
                     ],

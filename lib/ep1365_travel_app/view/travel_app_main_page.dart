@@ -80,7 +80,10 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
+                        padding: const EdgeInsets.only(
+                          left: 16,
+                          right: 32,
+                        ),
                         child: Text(
                           "Dreaming of your next trip?",
                           style: TextStyle(
@@ -88,6 +91,9 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             fontSize: 32,
                           ),
                         ),
+                      ),
+                      SizedBox(
+                        height: 24,
                       ),
                       Padding(
                         padding: const EdgeInsets.symmetric(

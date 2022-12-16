@@ -24,7 +24,6 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: Stack(
         children: [
           Positioned(
@@ -59,7 +58,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text("Hello,Dream"),
+                      const Text("Hello, Dream"),
                       Container(
                         height: 34,
                         width: 34,
@@ -79,8 +78,8 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Padding(
-                        padding: const EdgeInsets.only(
+                      const Padding(
+                        padding: EdgeInsets.only(
                           left: 16,
                           right: 48,
                         ),
@@ -92,7 +91,7 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 24,
                       ),
                       Padding(
@@ -556,14 +555,14 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 16),
+                        margin: const EdgeInsets.symmetric(vertical: 16),
                         height: MediaQuery.of(context).size.height / 1.8,
                         color: Colors.white,
-                        padding: EdgeInsets.all(16),
+                        padding: const EdgeInsets.all(16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(
+                            const Text(
                               "Your Dream Trip",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
@@ -572,18 +571,18 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                             Expanded(
                                 child: Column(
                               children: [
-                                Expanded(child: Placeholder()),
-                                SizedBox(
+                                const Expanded(child: Placeholder()),
+                                const SizedBox(
                                   height: 16,
                                 ),
                                 Expanded(
                                     child: Row(
                                   children: [
-                                    Expanded(child: Placeholder()),
-                                    SizedBox(
+                                    const Expanded(child: Placeholder()),
+                                    const SizedBox(
                                       width: 16,
                                     ),
-                                    Expanded(child: Placeholder()),
+                                    const Expanded(child: Placeholder()),
                                   ],
                                 )),
                               ],

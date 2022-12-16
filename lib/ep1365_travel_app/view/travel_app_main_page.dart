@@ -566,12 +566,36 @@ class _TravelAppMainPageState extends State<TravelAppMainPage> with SingleTicker
                               "Your Dream Trip",
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
+                                fontSize: 18,
                               ),
+                            ),
+                            const SizedBox(
+                              height: 16,
                             ),
                             Expanded(
                                 child: Column(
                               children: [
-                                const Expanded(child: Placeholder()),
+                                Expanded(
+                                  child: Stack(
+                                    children: [
+                                      Positioned.fill(
+                                        child: Image.network(
+                                          "https://cdn.pixabay.com/photo/2014/03/03/16/12/village-279013_960_720.jpg",
+                                          fit: BoxFit.cover,
+                                        ),
+                                      ),
+                                      Positioned(
+                                          left: 16,
+                                          bottom: 16,
+                                          child: Text(
+                                            "Italy",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ))
+                                    ],
+                                  ),
+                                ),
                                 const SizedBox(
                                   height: 16,
                                 ),

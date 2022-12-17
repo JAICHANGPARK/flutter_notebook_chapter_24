@@ -15,12 +15,18 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
         child: Stack(
           children: [
             Positioned(
-                left: 16,
-                right: 16,
-                top: 0,
+              left: 16,
+              right: 16,
+              top: 0,
+              child: Container(
+                height: 64,
+              ),
+            ),
+            Positioned(
                 child: Container(
-                  height: 64,
-                ))
+              height: 72,
+              color: Colors.lightBlue,
+            ))
           ],
         ),
       ),

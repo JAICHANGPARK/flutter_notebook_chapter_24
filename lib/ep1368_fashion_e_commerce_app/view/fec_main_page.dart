@@ -15,18 +15,61 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
         child: Stack(
           children: [
             Positioned(
-              left: 16,
-              right: 16,
-              top: 0,
-              child: Container(
-                height: 64,
-              ),
-            ),
+                left: 12,
+                right: 12,
+                top: 16,
+                bottom: 16,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 64,
+                      color: Colors.purple,
+                    ),
+                    SizedBox(
+                      height: 24,
+                    ),
+                    Expanded(
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 140,
+                            color: Colors.red,
+                          ),
+                          Container(
+                            margin: EdgeInsets.symmetric(vertical: 16),
+                            height: 54,
+                            color: Colors.green,
+                          ),
+                          Row(
+                            children: [],
+                          ),
+                          Expanded(
+                            child: GridView.count(
+                              crossAxisCount: 2,
+                              crossAxisSpacing: 12,
+                              mainAxisSpacing: 12,
+                              childAspectRatio: 0.6,
+                              children: List.generate(
+                                10,
+                                (index) => Container(
+                                  color: Colors.orange,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
+                  ],
+                )),
             Positioned(
+                left: 12,
+                right: 12,
+                bottom: 24,
                 child: Container(
-              height: 72,
-              color: Colors.lightBlue,
-            ))
+                  height: 72,
+                  color: Colors.lightBlue,
+                ))
           ],
         ),
       ),

@@ -1,13 +1,12 @@
 # flutter_notebook_chapter_24
 
-### EP1364
+### EP1364-1367
 
 - Tripify - Travel App
 - by Musemind Mobile for Musemind - UX/UI Design Agency
 - https://dribbble.com/shots/20108988-Tripify-Travel-App
 
 <img src="https://cdn.dribbble.com/userupload/4112085/file/original-cf4a39d611174629d85b1cc6f28ccf7c.png?compress=1&resize=1600x1200" width="500px"/>
-
 
 ### EP1361-1363
 
@@ -54,5 +53,5 @@ A few resources to get you started if this is your first Flutter project:
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
 For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+[online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on
+mobile development, and a full API reference.

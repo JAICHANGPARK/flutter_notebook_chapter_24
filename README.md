@@ -1,5 +1,14 @@
 # flutter_notebook_chapter_24
 
+### EP1368
+
+- Mallzku- Fashion E-commerce Shopping Mobile App
+- by Bagas Aji Setia Budi for Vektora
+- https://dribbble.com/shots/20146591-Mallzku-Fashion-E-commerce-Shopping-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/4154880/file/original-b2051c3ed4201f68816e8c204d64ad42.png?compress=1&resize=1600x1200" width="500px"/>
+
+
 ### EP1364-1367
 
 - Tripify - Travel App

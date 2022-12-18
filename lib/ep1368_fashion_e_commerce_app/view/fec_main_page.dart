@@ -95,16 +95,41 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                         children: [
                           Container(
                             height: 130,
-                            decoration: BoxDecoration(
-                              color: Colors.lightGreenAccent,
-                              borderRadius: BorderRadius.circular(24)
-                            ),
+                            decoration:
+                                BoxDecoration(color: Colors.lightGreenAccent, borderRadius: BorderRadius.circular(24)),
                             child: Stack(),
                           ),
                           Container(
                             margin: EdgeInsets.symmetric(vertical: 16),
                             height: 54,
                             color: Colors.green,
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                    child: Center(
+                                  child: Container(
+                                    margin: EdgeInsets.symmetric(horizontal: 16),
+                                    height: 24,
+                                    color: Color.fromRGBO(0, 70, 174, 1),
+                                  ),
+                                )),
+                                Positioned(
+                                  child: Row(
+                                    children: [
+                                      CircleAvatar(
+                                        radius: 28,
+                                      ),
+                                      Expanded(child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Color.fromRGBO(0, 70, 174, 1),
+                                          borderRadius: BorderRadius.circular(32)
+                                        ),
+                                      ))
+                                    ],
+                                  ),
+                                )
+                              ],
+                            ),
                           ),
                           Row(
                             children: [],

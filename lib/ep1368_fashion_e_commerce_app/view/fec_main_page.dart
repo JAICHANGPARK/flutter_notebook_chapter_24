@@ -51,13 +51,22 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                   ),
                                 ),
                                 Expanded(
-                                    child: Container(
-                                  decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    border: Border.all(),
-                                    borderRadius: BorderRadius.circular(32),
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      border: Border.all(),
+                                      borderRadius: BorderRadius.circular(32),
+                                    ),
+                                    padding: EdgeInsets.symmetric(horizontal: 14),
+                                    child: TextField(
+                                      decoration: InputDecoration(
+                                        icon: Icon(Icons.search),
+                                        hintText: "Holoday Market Discount",
+                                        border: InputBorder.none,
+                                      ),
+                                    ),
                                   ),
-                                )),
+                                ),
                                 CircleAvatar(
                                   radius: 24,
                                   backgroundColor: Colors.black,

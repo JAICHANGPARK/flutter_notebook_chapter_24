@@ -7,7 +7,17 @@ class FashionECommerceMainPage extends StatefulWidget {
   State<FashionECommerceMainPage> createState() => _FashionECommerceMainPageState();
 }
 
-class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
+class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> with SingleTickerProviderStateMixin {
+  late TabController _tabController;
+  List<String> tabItems = ["Woman", "Men", "Kids", "Sports", "New"];
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    _tabController = TabController(length: tabItems.length, vsync: this);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -103,8 +113,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(vertical: 16),
-                            height: 54,
-                            color: Colors.green,
+                            height: 50,
                             child: Stack(
                               children: [
                                 Positioned(
@@ -129,6 +138,20 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                           decoration: BoxDecoration(
                                             color: const Color.fromRGBO(0, 70, 174, 1),
                                             borderRadius: BorderRadius.circular(32),
+                                          ),
+                                          padding: EdgeInsets.only(left: 16),
+                                          child: TabBar(
+                                            labelColor: Color.fromRGBO(168, 246, 60, 1),
+                                            indicatorColor: Color.fromRGBO(168, 246, 60, 1),
+                                            unselectedLabelColor: Colors.white,
+                                            indicatorSize: TabBarIndicatorSize.label,
+                                            isScrollable: true,
+                                            controller: _tabController,
+                                            tabs: tabItems
+                                                .map((e) => Tab(
+                                                      text: e,
+                                                    ))
+                                                .toList(),
                                           ),
                                         ),
                                       )

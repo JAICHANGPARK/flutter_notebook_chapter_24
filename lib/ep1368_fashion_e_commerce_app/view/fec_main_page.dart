@@ -56,8 +56,8 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                       border: Border.all(),
                                       borderRadius: BorderRadius.circular(32),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 14),
-                                    child: TextField(
+                                    padding: const EdgeInsets.symmetric(horizontal: 14),
+                                    child: const TextField(
                                       decoration: InputDecoration(
                                         icon: Icon(Icons.search),
                                         hintText: "Holoday Market Discount",
@@ -66,13 +66,13 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                     ),
                                   ),
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 24,
                                   backgroundColor: Colors.black,
                                   foregroundColor: Colors.white,
                                   child: Icon(Icons.notifications),
                                 ),
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 24,
                                   backgroundColor: Colors.black,
                                   foregroundColor: Colors.white,
@@ -87,7 +87,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                         ],
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 24,
                     ),
                     Expanded(
@@ -102,7 +102,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                             child: Stack(),
                           ),
                           Container(
-                            margin: EdgeInsets.symmetric(vertical: 16),
+                            margin: const EdgeInsets.symmetric(vertical: 16),
                             height: 54,
                             color: Colors.green,
                             child: Stack(
@@ -110,15 +110,15 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                 Positioned(
                                     child: Center(
                                   child: Container(
-                                    margin: EdgeInsets.symmetric(horizontal: 16),
+                                    margin: const EdgeInsets.symmetric(horizontal: 16),
                                     height: 24,
-                                    color: Color.fromRGBO(0, 70, 174, 1),
+                                    color: const Color.fromRGBO(0, 70, 174, 1),
                                   ),
                                 )),
                                 Positioned(
                                   child: Row(
                                     children: [
-                                      CircleAvatar(
+                                      const CircleAvatar(
                                         radius: 28,
                                         backgroundColor: Color.fromRGBO(0, 70, 174, 1),
                                         foregroundColor: Colors.white,
@@ -127,7 +127,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                       Expanded(
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            color: Color.fromRGBO(0, 70, 174, 1),
+                                            color: const Color.fromRGBO(0, 70, 174, 1),
                                             borderRadius: BorderRadius.circular(32),
                                           ),
                                         ),

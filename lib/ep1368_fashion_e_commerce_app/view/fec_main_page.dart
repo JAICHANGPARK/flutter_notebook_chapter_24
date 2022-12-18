@@ -22,8 +22,24 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 64,
+                      height: 58,
                       color: Colors.purple,
+                      child: Stack(
+                        children: [
+                          Positioned(
+                            left: 0,
+                            right: 0,
+                            top: 0,
+                            bottom: 0,
+                            child: Center(
+                              child: Container(
+                                height: 20,
+                                color: Colors.black,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     SizedBox(
                       height: 24,

@@ -60,9 +60,18 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                 )),
                                 CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                  child: Icon(Icons.notifications),
                                 ),
                                 CircleAvatar(
                                   radius: 24,
+                                  backgroundColor: Colors.black,
+                                  foregroundColor: Colors.white,
+                                  child: Badge(
+                                    child: Icon(Icons.shopping_cart),
+                                    smallSize: 8,
+                                  ),
                                 ),
                               ],
                             ),

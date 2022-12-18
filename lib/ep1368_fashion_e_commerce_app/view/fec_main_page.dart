@@ -23,17 +23,16 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                   children: [
                     Container(
                       height: 48,
-                      color: Colors.purple,
                       child: Stack(
                         children: [
                           Positioned(
-                            left: 0,
-                            right: 0,
+                            left: 16,
+                            right: 16,
                             top: 0,
                             bottom: 0,
                             child: Center(
                               child: Container(
-                                height: 20,
+                                height: 18,
                                 color: Colors.black,
                               ),
                             ),
@@ -95,8 +94,12 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                       child: Column(
                         children: [
                           Container(
-                            height: 140,
-                            color: Colors.red,
+                            height: 130,
+                            decoration: BoxDecoration(
+                              color: Colors.lightGreenAccent,
+                              borderRadius: BorderRadius.circular(24)
+                            ),
+                            child: Stack(),
                           ),
                           Container(
                             margin: EdgeInsets.symmetric(vertical: 16),

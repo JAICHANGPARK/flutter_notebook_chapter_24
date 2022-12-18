@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1368_fashion_e_commerce_app/view/fec_main_page.dart';
 
 void main() {
-  runApp(FashionECommerceApp());
+  runApp(const FashionECommerceApp());
 }
 
 class FashionECommerceApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class FashionECommerceApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: FashionECommerceMainPage(),
     );
   }

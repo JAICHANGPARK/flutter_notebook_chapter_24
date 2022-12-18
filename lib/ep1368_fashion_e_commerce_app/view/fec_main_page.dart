@@ -22,7 +22,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                 child: Column(
                   children: [
                     Container(
-                      height: 58,
+                      height: 48,
                       color: Colors.purple,
                       child: Stack(
                         children: [
@@ -37,7 +37,36 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> {
                                 color: Colors.black,
                               ),
                             ),
-                          )
+                          ),
+                          Positioned(
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 48,
+                                  width: 48,
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(),
+                                    shape: BoxShape.circle,
+                                  ),
+                                ),
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white,
+                                    border: Border.all(),
+                                    borderRadius: BorderRadius.circular(32),
+                                  ),
+                                )),
+                                CircleAvatar(
+                                  radius: 24,
+                                ),
+                                CircleAvatar(
+                                  radius: 24,
+                                ),
+                              ],
+                            ),
+                          ),
                         ],
                       ),
                     ),

@@ -184,13 +184,26 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                   ],
                 )),
             Positioned(
-                left: 12,
-                right: 12,
-                bottom: 24,
-                child: Container(
-                  height: 72,
-                  color: Colors.lightBlue,
-                ))
+              left: 12,
+              right: 12,
+              bottom: 24,
+              child: Container(
+                height: 72,
+                color: Colors.lightBlue,
+                child: Stack(
+                  children: [
+                    Positioned(
+                      child: Center(
+                        child: Container(
+                          color: Colors.white,
+                          height: 24,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+            )
           ],
         ),
       ),

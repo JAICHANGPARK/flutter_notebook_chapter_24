@@ -176,7 +176,6 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -190,7 +189,21 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                               top: 0,
                                               child: Container(
                                                 decoration: BoxDecoration(
-                                                    color: Colors.grey[200], borderRadius: BorderRadius.circular(12)),
+                                                  color: Colors.grey[200],
+                                                  borderRadius: BorderRadius.circular(12),
+                                                ),
+                                              ),
+                                            ),
+                                            Positioned(
+                                              right: 8,
+                                              top: 8,
+                                              child: Container(
+                                                height: 52,
+                                                width: 52,
+                                                decoration: BoxDecoration(
+                                                  color: Colors.black.withOpacity(0.2),
+                                                  shape: BoxShape.circle,
+                                                ),
                                               ),
                                             ),
                                             Positioned(
@@ -200,7 +213,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                   padding: EdgeInsets.all(8),
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
-                                                    borderRadius: BorderRadius.circular(8)
+                                                    borderRadius: BorderRadius.circular(8),
                                                   ),
                                                   child: Row(
                                                     children: [

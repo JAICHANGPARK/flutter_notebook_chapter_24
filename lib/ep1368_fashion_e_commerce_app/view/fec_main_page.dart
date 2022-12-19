@@ -177,6 +177,64 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               itemBuilder: (context, index) {
                                 return Container(
                                   color: Colors.orange,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Stack(
+                                          children: [
+                                            Positioned(
+                                              left: 0,
+                                              right: 0,
+                                              bottom: 0,
+                                              top: 0,
+                                              child: Container(
+                                                decoration: BoxDecoration(
+                                                    color: Colors.grey[200], borderRadius: BorderRadius.circular(12)),
+                                              ),
+                                            ),
+                                            Positioned(
+                                                bottom: 0,
+                                                left: 0,
+                                                child: Container(
+                                                  padding: EdgeInsets.all(8),
+                                                  child: Row(
+                                                    children: [
+                                                      Icon(
+                                                        Icons.star,
+                                                        size: 16,
+                                                      ),
+                                                      SizedBox(
+                                                        width: 8,
+                                                      ),
+                                                      Text("4.9")
+                                                    ],
+                                                  ),
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 8,
+                                      ),
+                                      Text(
+                                        "Dreamwalker Outer",
+                                        style: TextStyle(
+                                          fontSize: 16,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "\$572",
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 );
                               },
                               // crossAxisCount: 2,

@@ -176,7 +176,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  color: Colors.orange,
+
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
@@ -198,6 +198,10 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                 left: 0,
                                                 child: Container(
                                                   padding: EdgeInsets.all(8),
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.white,
+                                                    borderRadius: BorderRadius.circular(8)
+                                                  ),
                                                   child: Row(
                                                     children: [
                                                       Icon(

@@ -188,7 +188,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
               right: 12,
               bottom: 24,
               child: Container(
-                height: 72,
+                height: 64,
                 color: Colors.lightBlue,
                 child: Stack(
                   children: [
@@ -249,18 +249,23 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                           ),
                           Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.circular(42)
-                                ),
-                                child: Row(
-                            children: [
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(42),
+                            ),
+                            child: Row(
+                              children: [
+                                Expanded(child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(42),
+                                  ),
+                                )),
                                 Expanded(child: Container()),
                                 Expanded(child: Container()),
-                                Expanded(child: Container()),
-                            ],
-                          ),
-                              ))
+                              ],
+                            ),
+                          ))
                         ],
                       ),
                     )

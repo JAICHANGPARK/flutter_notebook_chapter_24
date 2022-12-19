@@ -113,28 +113,42 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             child: Stack(
                               children: [
                                 Positioned(
+                                    left: 16,
+                                    top: 16,
+                                    bottom: 16,
+                                    right: 16,
                                     child: Row(
-                                  children: [
-                                    Expanded(child: Column()),
-                                    Expanded(
-                                        child: Center(
-                                      child: Container(
-                                        decoration: BoxDecoration(
-                                          color: Colors.black,
-                                        ),
-                                        padding: EdgeInsets.all(16),
-                                        child: Text(
-                                          "Get it now",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 18,
-                                            color: Colors.white,
+                                      children: [
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Text("UP TO"),
+                                              Text("75% OFF"),
+                                              Text("WITH CODE"),
+                                            ],
                                           ),
                                         ),
-                                      ),
+                                        Expanded(
+                                            child: Center(
+                                          child: Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black,
+                                            ),
+                                            padding: EdgeInsets.all(16),
+                                            child: Text(
+                                              "Get it now",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        ))
+                                      ],
                                     ))
-                                  ],
-                                ))
                               ],
                             ),
                           ),

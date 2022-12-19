@@ -113,7 +113,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             child: Stack(
                               children: [
                                 Positioned(
-                                    left: 16,
+                                    left: 24,
                                     top: 16,
                                     bottom: 16,
                                     right: 16,
@@ -122,11 +122,20 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                         Expanded(
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text("UP TO"),
-                                              Text("75% OFF"),
-                                              Text("WITH CODE"),
+                                              Text(
+                                                "UP TO",
+                                                style: TextStyle(
+                                                  fontSize: 16,
+                                                ),
+                                              ),
+                                              Text("75% OFF",style: TextStyle(
+                                                fontSize:18,
+                                              ),),
+                                              Text("WITH CODE",style: TextStyle(
+                                                fontSize: 18,
+                                              ),),
                                             ],
                                           ),
                                         ),

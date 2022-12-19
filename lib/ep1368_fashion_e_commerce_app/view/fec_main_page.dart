@@ -297,6 +297,16 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                     color: Colors.white.withOpacity(0.3),
                                     borderRadius: BorderRadius.circular(42),
                                   ),
+                                  child: Center(
+                                    child: IconButton(
+                                      icon: Icon(
+                                        Icons.person,
+                                      ),
+                                      color: Colors.white,
+                                      onPressed: () {},
+                                      iconSize: 34,
+                                    ),
+                                  ),
                                 )),
                               ],
                             ),

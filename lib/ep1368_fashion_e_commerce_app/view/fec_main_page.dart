@@ -207,6 +207,13 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                   color: Colors.black.withOpacity(0.2),
                                                   shape: BoxShape.circle,
                                                 ),
+                                                child: IconButton(
+                                                  icon: Icon(
+                                                    Icons.favorite,
+                                                  ),
+                                                  color: Colors.white,
+                                                  onPressed: () {},
+                                                ),
                                               ),
                                             ),
                                             Positioned(

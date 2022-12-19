@@ -166,17 +166,24 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             children: [],
                           ),
                           Expanded(
-                            child: GridView.count(
-                              crossAxisCount: 2,
-                              crossAxisSpacing: 12,
-                              mainAxisSpacing: 12,
-                              childAspectRatio: 0.6,
-                              children: List.generate(
-                                10,
-                                (index) => Container(
-                                  color: Colors.orange,
-                                ),
+                            child: GridView.builder(
+                              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                                crossAxisCount: 2,
+                                crossAxisSpacing: 12,
+                                mainAxisSpacing: 12,
+                                childAspectRatio: 0.6,
                               ),
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  color: Colors.orange,
+                                );
+                              },
+                              // crossAxisCount: 2,
+                              // crossAxisSpacing: 12,
+                              // mainAxisSpacing: 12,
+                              // childAspectRatio: 0.6,
+                              // children:
                             ),
                           ),
                         ],
@@ -263,7 +270,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(42),
                               ),
-                              padding: EdgeInsets.all(4),
+                              padding: const EdgeInsets.all(4),
                               child: Container(
                                 decoration: BoxDecoration(
                                   color: Colors.white.withOpacity(0.3),
@@ -293,7 +300,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(42),
                                 ),
-                                padding: EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(4),
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.3),
@@ -318,7 +325,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                   color: Colors.black,
                                   borderRadius: BorderRadius.circular(42),
                                 ),
-                                padding: EdgeInsets.all(4),
+                                padding: const EdgeInsets.all(4),
                                 child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.3),

@@ -225,13 +225,20 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               ),
                               child: Center(
                                 child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     Icon(
                                       Icons.home,
                                       size: 38,
                                     ),
+                                    SizedBox(
+                                      width: 8,
+                                    ),
                                     Text(
                                       "Home",
+                                      style: TextStyle(
+                                        fontSize: 24,
+                                      ),
                                     )
                                   ],
                                 ),

@@ -217,10 +217,10 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(64),
                             ),
-                            padding: EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(4),
                             child: Container(
                               decoration: BoxDecoration(
-                                color: Color.fromRGBO(168, 246, 60, 1),
+                                color: const Color.fromRGBO(168, 246, 60, 1),
                                 borderRadius: BorderRadius.circular(64),
                               ),
                               child: Center(
@@ -253,7 +253,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(42),
                             ),
-                            padding: EdgeInsets.all(4),
+                            padding: const EdgeInsets.all(4),
                             child: Row(
                               children: [
                                 Expanded(
@@ -264,7 +264,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                     ),
                                     child: Center(
                                       child: IconButton(
-                                        icon: Icon(
+                                        icon: const Icon(
                                           Icons.favorite,
                                         ),
                                         color: Colors.white,
@@ -282,7 +282,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                   ),
                                   child: Center(
                                     child: IconButton(
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.shopping_cart,
                                       ),
                                       color: Colors.white,
@@ -299,7 +299,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                   ),
                                   child: Center(
                                     child: IconButton(
-                                      icon: Icon(
+                                      icon: const Icon(
                                         Icons.person,
                                       ),
                                       color: Colors.white,

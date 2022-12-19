@@ -195,6 +195,8 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                     Positioned(
                       left: 16,
                       right: 16,
+                      bottom: 0,
+                      top: 0,
                       child: Center(
                         child: Container(
                           color: Colors.black,
@@ -203,13 +205,42 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                       ),
                     ),
                     Positioned(
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
-                        top: 0,
-                        child: Row(
-                          children: [],
-                        ))
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      top: 0,
+                      child: Row(
+                        children: [
+                          Container(
+                            width: 160,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(64),
+                            ),
+                            padding: EdgeInsets.all(4),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Color.fromRGBO(168, 246, 60, 1),
+                                borderRadius: BorderRadius.circular(64),
+                              ),
+                              child: Center(
+                                child: Row(
+                                  children: [
+                                    Icon(
+                                      Icons.home,
+                                      size: 38,
+                                    ),
+                                    Text(
+                                      "Home",
+                                    )
+                                  ],
+                                ),
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               ),

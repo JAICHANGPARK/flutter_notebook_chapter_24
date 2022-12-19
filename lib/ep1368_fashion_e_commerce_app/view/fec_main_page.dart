@@ -190,7 +190,6 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
               bottom: 24,
               child: Container(
                 height: 64,
-                color: Colors.lightBlue,
                 child: Stack(
                   children: [
                     Positioned(

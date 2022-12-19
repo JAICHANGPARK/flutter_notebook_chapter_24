@@ -110,7 +110,33 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               color: Colors.lightGreenAccent,
                               borderRadius: BorderRadius.circular(24),
                             ),
-                            child: Stack(),
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                    child: Row(
+                                  children: [
+                                    Expanded(child: Column()),
+                                    Expanded(
+                                        child: Center(
+                                      child: Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.black,
+                                        ),
+                                        padding: EdgeInsets.all(16),
+                                        child: Text(
+                                          "Get it now",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 18,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                    ))
+                                  ],
+                                ))
+                              ],
+                            ),
                           ),
                           Container(
                             margin: const EdgeInsets.symmetric(vertical: 16),
@@ -167,10 +193,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             children: [
                               Text(
                                 "Most Popular",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 18
-                                ),
+                                style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
                               ),
                               TextButton(
                                 onPressed: () {},

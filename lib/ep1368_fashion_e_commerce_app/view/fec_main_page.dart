@@ -10,6 +10,7 @@ class FashionECommerceMainPage extends StatefulWidget {
 class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> with SingleTickerProviderStateMixin {
   late TabController _tabController;
   List<String> tabItems = ["Woman", "Men", "Kids", "Sports", "New"];
+  int _menuIndex = 0;
 
   @override
   void initState() {
@@ -212,45 +213,52 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                       child: Row(
                         children: [
                           Expanded(
-                            flex: 3,
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(64),
-                              ),
-                              padding: const EdgeInsets.all(4),
+                            flex: _menuIndex == 0 ? 3 : 1,
+                            child: GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  _menuIndex = 0;
+                                });
+                              },
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: const Color.fromRGBO(168, 246, 60, 1),
+                                  color: Colors.black,
                                   borderRadius: BorderRadius.circular(64),
                                 ),
-                                child: Center(
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: const [
-                                      Icon(
-                                        Icons.home,
-                                        size: 38,
-                                        color: Color.fromRGBO(0, 70, 174, 1),
-                                      ),
-                                      SizedBox(
-                                        width: 8,
-                                      ),
-                                      Text(
-                                        "Home",
-                                        style: TextStyle(
-                                          fontSize: 24,
+                                padding: const EdgeInsets.all(4),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromRGBO(168, 246, 60, 1),
+                                    borderRadius: BorderRadius.circular(64),
+                                  ),
+                                  child: Center(
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.center,
+                                      children: const [
+                                        Icon(
+                                          Icons.home,
+                                          size: 38,
                                           color: Color.fromRGBO(0, 70, 174, 1),
                                         ),
-                                      )
-                                    ],
+                                        SizedBox(
+                                          width: 8,
+                                        ),
+                                        Text(
+                                          "Home",
+                                          style: TextStyle(
+                                            fontSize: 24,
+                                            color: Color.fromRGBO(0, 70, 174, 1),
+                                          ),
+                                        )
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: _menuIndex == 1 ? 3 : 1,
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.black,
@@ -268,7 +276,11 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                       Icons.favorite,
                                     ),
                                     color: Colors.white,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      setState(() {
+                                        _menuIndex = 1;
+                                      });
+                                    },
                                     iconSize: 34,
                                   ),
                                 ),
@@ -276,55 +288,55 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                              flex: _menuIndex == 2 ? 3 : 1,
                               child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(42),
-                            ),
-                            padding: EdgeInsets.all(4),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.3),
-                                borderRadius: BorderRadius.circular(42),
-                              ),
-                              child: Center(
-                                child: IconButton(
-                                  icon: const Icon(
-                                    Icons.shopping_cart,
-                                  ),
-                                  color: Colors.white,
-                                  onPressed: () {},
-                                  iconSize: 34,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(42),
                                 ),
-                              ),
-                            ),
-                          )),
+                                padding: EdgeInsets.all(4),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(42),
+                                  ),
+                                  child: Center(
+                                    child: IconButton(
+                                      icon: const Icon(
+                                        Icons.shopping_cart,
+                                      ),
+                                      color: Colors.white,
+                                      onPressed: () {},
+                                      iconSize: 34,
+                                    ),
+                                  ),
+                                ),
+                              )),
                           Expanded(
-                              flex: 3,
+                              flex: _menuIndex == 3 ? 3 : 1,
                               child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.black,
-                              borderRadius: BorderRadius.circular(42),
-                            ),
-                            padding: EdgeInsets.all(4),
-                            child: Container(
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.3),
-                                borderRadius: BorderRadius.circular(42),
-                              ),
-                              child: Center(
-                                child: IconButton(
-                                  icon: const Icon(
-                                    Icons.person,
-                                  ),
-                                  color: Colors.white,
-                                  onPressed: () {},
-                                  iconSize: 34,
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(42),
                                 ),
-                              ),
-                            ),
-                          )),
+                                padding: EdgeInsets.all(4),
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(42),
+                                  ),
+                                  child: Center(
+                                    child: IconButton(
+                                      icon: const Icon(
+                                        Icons.person,
+                                      ),
+                                      color: Colors.white,
+                                      onPressed: () {},
+                                      iconSize: 34,
+                                    ),
+                                  ),
+                                ),
+                              )),
                           // Expanded(
                           //     child: Container(
                           //   decoration: BoxDecoration(

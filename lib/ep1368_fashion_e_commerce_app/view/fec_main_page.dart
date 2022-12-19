@@ -253,6 +253,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               color: Colors.black,
                               borderRadius: BorderRadius.circular(42),
                             ),
+                            padding: EdgeInsets.all(4),
                             child: Row(
                               children: [
                                 Expanded(child: Container(

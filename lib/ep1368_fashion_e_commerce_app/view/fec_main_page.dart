@@ -226,10 +226,11 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                               child: Center(
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
+                                  children: const [
                                     Icon(
                                       Icons.home,
                                       size: 38,
+                                      color: Color.fromRGBO(0, 70, 174, 1),
                                     ),
                                     SizedBox(
                                       width: 8,
@@ -238,13 +239,28 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                       "Home",
                                       style: TextStyle(
                                         fontSize: 24,
+                                        color: Color.fromRGBO(0, 70, 174, 1),
                                       ),
                                     )
                                   ],
                                 ),
                               ),
                             ),
-                          )
+                          ),
+                          Expanded(
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(42)
+                                ),
+                                child: Row(
+                            children: [
+                                Expanded(child: Container()),
+                                Expanded(child: Container()),
+                                Expanded(child: Container()),
+                            ],
+                          ),
+                              ))
                         ],
                       ),
                     )

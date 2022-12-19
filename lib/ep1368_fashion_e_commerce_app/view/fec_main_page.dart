@@ -163,7 +163,14 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             ),
                           ),
                           Row(
-                            children: [],
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text("Most Popular"),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("See All"),
+                              ),
+                            ],
                           ),
                           Expanded(
                             child: GridView.builder(

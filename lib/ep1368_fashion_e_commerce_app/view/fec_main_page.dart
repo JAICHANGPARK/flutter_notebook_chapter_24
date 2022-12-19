@@ -144,6 +144,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                           child: Container(
                                             decoration: BoxDecoration(
                                               color: Colors.black,
+                                              borderRadius: BorderRadius.circular(8)
                                             ),
                                             padding: EdgeInsets.all(16),
                                             child: Text(

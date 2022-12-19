@@ -165,10 +165,19 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text("Most Popular"),
+                              Text(
+                                "Most Popular",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 18
+                                ),
+                              ),
                               TextButton(
                                 onPressed: () {},
                                 child: Text("See All"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.black,
+                                ),
                               ),
                             ],
                           ),

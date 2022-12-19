@@ -256,14 +256,38 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             padding: EdgeInsets.all(4),
                             child: Row(
                               children: [
-                                Expanded(child: Container(
+                                Expanded(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.3),
+                                      borderRadius: BorderRadius.circular(42),
+                                    ),
+                                    child: Center(
+                                      child: IconButton(
+                                        icon: Icon(
+                                          Icons.favorite,
+                                        ),
+                                        color: Colors.white,
+                                        onPressed: () {},
+                                        iconSize: 34,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                    child: Container(
                                   decoration: BoxDecoration(
                                     color: Colors.white.withOpacity(0.3),
                                     borderRadius: BorderRadius.circular(42),
                                   ),
                                 )),
-                                Expanded(child: Container()),
-                                Expanded(child: Container()),
+                                Expanded(
+                                    child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.white.withOpacity(0.3),
+                                    borderRadius: BorderRadius.circular(42),
+                                  ),
+                                )),
                               ],
                             ),
                           ))

@@ -277,38 +277,52 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                           ),
                           Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.3),
-                                  borderRadius: BorderRadius.circular(42),
-                                ),
-                                child: Center(
-                                  child: IconButton(
-                                    icon: const Icon(
-                                      Icons.shopping_cart,
-                                    ),
-                                    color: Colors.white,
-                                    onPressed: () {},
-                                    iconSize: 34,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(42),
+                            ),
+                            padding: EdgeInsets.all(4),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.3),
+                                borderRadius: BorderRadius.circular(42),
+                              ),
+                              child: Center(
+                                child: IconButton(
+                                  icon: const Icon(
+                                    Icons.shopping_cart,
                                   ),
+                                  color: Colors.white,
+                                  onPressed: () {},
+                                  iconSize: 34,
                                 ),
-                              )),
+                              ),
+                            ),
+                          )),
                           Expanded(
                               child: Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.white.withOpacity(0.3),
-                                  borderRadius: BorderRadius.circular(42),
-                                ),
-                                child: Center(
-                                  child: IconButton(
-                                    icon: const Icon(
-                                      Icons.person,
-                                    ),
-                                    color: Colors.white,
-                                    onPressed: () {},
-                                    iconSize: 34,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(42),
+                            ),
+                            padding: EdgeInsets.all(4),
+                            child: Container(
+                              decoration: BoxDecoration(
+                                color: Colors.white.withOpacity(0.3),
+                                borderRadius: BorderRadius.circular(42),
+                              ),
+                              child: Center(
+                                child: IconButton(
+                                  icon: const Icon(
+                                    Icons.person,
                                   ),
+                                  color: Colors.white,
+                                  onPressed: () {},
+                                  iconSize: 34,
                                 ),
-                              )),
+                              ),
+                            ),
+                          )),
                           // Expanded(
                           //     child: Container(
                           //   decoration: BoxDecoration(

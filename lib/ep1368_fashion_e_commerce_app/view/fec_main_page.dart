@@ -192,6 +192,9 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                   color: Colors.grey[200],
                                                   borderRadius: BorderRadius.circular(12),
                                                 ),
+                                                padding: EdgeInsets.all(16),
+                                                child: Image.network(
+                                                    "https://cdn.pixabay.com/photo/2012/04/13/14/55/jacket-32714_960_720.png"),
                                               ),
                                             ),
                                             Positioned(

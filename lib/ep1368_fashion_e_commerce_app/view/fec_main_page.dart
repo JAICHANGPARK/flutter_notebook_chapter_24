@@ -214,7 +214,6 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                           Expanded(
                             flex: 3,
                             child: Container(
-                              width: 160,
                               decoration: BoxDecoration(
                                 color: Colors.black,
                                 borderRadius: BorderRadius.circular(64),
@@ -251,6 +250,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             ),
                           ),
                           Expanded(
+                            flex: 3,
                             child: Container(
                               decoration: BoxDecoration(
                                 color: Colors.black,
@@ -276,6 +276,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             ),
                           ),
                           Expanded(
+                            flex: 3,
                               child: Container(
                             decoration: BoxDecoration(
                               color: Colors.black,
@@ -300,6 +301,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                             ),
                           )),
                           Expanded(
+                              flex: 3,
                               child: Container(
                             decoration: BoxDecoration(
                               color: Colors.black,

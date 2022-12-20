@@ -123,20 +123,20 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                            children: [
-                                              const Text(
+                                            children: const [
+                                              Text(
                                                 "UP TO",
                                                 style: TextStyle(
                                                   fontSize: 16,
                                                 ),
                                               ),
-                                              const Text(
+                                              Text(
                                                 "75% OFF",
                                                 style: TextStyle(
                                                   fontSize: 18,
                                                 ),
                                               ),
-                                              const Text(
+                                              Text(
                                                 "WITH CODE",
                                                 style: TextStyle(
                                                   fontSize: 18,
@@ -293,15 +293,15 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                     borderRadius: BorderRadius.circular(8),
                                                   ),
                                                   child: Row(
-                                                    children: [
-                                                      const Icon(
+                                                    children: const [
+                                                      Icon(
                                                         Icons.star,
                                                         size: 16,
                                                       ),
-                                                      const SizedBox(
+                                                      SizedBox(
                                                         width: 8,
                                                       ),
-                                                      const Text("4.9")
+                                                      Text("4.9")
                                                     ],
                                                   ),
                                                 )),

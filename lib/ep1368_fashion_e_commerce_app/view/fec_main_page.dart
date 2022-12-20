@@ -124,18 +124,24 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "UP TO",
                                                 style: TextStyle(
                                                   fontSize: 16,
                                                 ),
                                               ),
-                                              Text("75% OFF",style: TextStyle(
-                                                fontSize:18,
-                                              ),),
-                                              Text("WITH CODE",style: TextStyle(
-                                                fontSize: 18,
-                                              ),),
+                                              const Text(
+                                                "75% OFF",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                ),
+                                              ),
+                                              const Text(
+                                                "WITH CODE",
+                                                style: TextStyle(
+                                                  fontSize: 18,
+                                                ),
+                                              ),
                                             ],
                                           ),
                                         ),
@@ -143,11 +149,9 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                             child: Center(
                                           child: Container(
                                             decoration: BoxDecoration(
-                                              color: Colors.black,
-                                              borderRadius: BorderRadius.circular(8)
-                                            ),
-                                            padding: EdgeInsets.all(16),
-                                            child: Text(
+                                                color: Colors.black, borderRadius: BorderRadius.circular(8)),
+                                            padding: const EdgeInsets.all(16),
+                                            child: const Text(
                                               "Get it now",
                                               style: TextStyle(
                                                 fontWeight: FontWeight.bold,
@@ -215,13 +219,13 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 "Most Popular",
                                 style: TextStyle(fontWeight: FontWeight.w700, fontSize: 18),
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text("See All"),
+                                child: const Text("See All"),
                                 style: TextButton.styleFrom(
                                   foregroundColor: Colors.black,
                                 ),
@@ -255,7 +259,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                   color: Colors.grey[200],
                                                   borderRadius: BorderRadius.circular(12),
                                                 ),
-                                                padding: EdgeInsets.all(16),
+                                                padding: const EdgeInsets.all(16),
                                                 child: Image.network(
                                                     "https://cdn.pixabay.com/photo/2012/04/13/14/55/jacket-32714_960_720.png"),
                                               ),
@@ -271,7 +275,7 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                   shape: BoxShape.circle,
                                                 ),
                                                 child: IconButton(
-                                                  icon: Icon(
+                                                  icon: const Icon(
                                                     Icons.favorite,
                                                   ),
                                                   color: Colors.white,
@@ -283,40 +287,40 @@ class _FashionECommerceMainPageState extends State<FashionECommerceMainPage> wit
                                                 bottom: 0,
                                                 left: 0,
                                                 child: Container(
-                                                  padding: EdgeInsets.all(8),
+                                                  padding: const EdgeInsets.all(8),
                                                   decoration: BoxDecoration(
                                                     color: Colors.white,
                                                     borderRadius: BorderRadius.circular(8),
                                                   ),
                                                   child: Row(
                                                     children: [
-                                                      Icon(
+                                                      const Icon(
                                                         Icons.star,
                                                         size: 16,
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         width: 8,
                                                       ),
-                                                      Text("4.9")
+                                                      const Text("4.9")
                                                     ],
                                                   ),
                                                 )),
                                           ],
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 8,
                                       ),
-                                      Text(
+                                      const Text(
                                         "Dreamwalker Outer",
                                         style: TextStyle(
                                           fontSize: 16,
                                         ),
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 4,
                                       ),
-                                      Text(
+                                      const Text(
                                         "\$572",
                                         style: TextStyle(
                                           fontSize: 15,

@@ -61,6 +61,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                   )
                   .toList(),
             ),
+            Expanded(child: const TabBarView(children: [])),
           ],
         ),
       ),

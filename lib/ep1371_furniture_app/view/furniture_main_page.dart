@@ -8,6 +8,14 @@ class FurnitureMainPage extends StatefulWidget {
 }
 
 class _FurnitureMainPageState extends State<FurnitureMainPage> {
+  List<String> menuItems = [
+    "All",
+    "Newest",
+    "Popular",
+    "Chair",
+    "Table",
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,103 +44,107 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         foregroundColor: Colors.black,
         elevation: 0,
       ),
+      body: DefaultTabController(
+        length: menuItems.length,
+        child: Column(
+          children: [],
+        ),
+      ),
       bottomNavigationBar: BottomAppBar(
         height: 80,
-        child: Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.home_outlined,
-                    ),
-                    iconSize: 32,
-                    color: Colors.grey,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.home_outlined,
                   ),
-                  Container(
-                    height: 2,
-                    width: 12,
-                    // color: Colors.black,
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.chair,
-                    ),
-                    iconSize: 32,
+                  iconSize: 32,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 2,
+                  width: 12,
+                  // color: Colors.black,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.chair,
                   ),
-                  Container(
-                    height: 2,
-                    width: 12,
-                    color: Colors.black,
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.favorite_border,
-                    ),
-                    iconSize: 32,
-                    color: Colors.grey,
+                  iconSize: 32,
+                ),
+                Container(
+                  height: 2,
+                  width: 12,
+                  color: Colors.black,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.favorite_border,
                   ),
-                  Container(
-                    height: 2,
-                    width: 12,
-                    // color: Colors.black,
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.shopping_cart_outlined,
-                    ),
-                    iconSize: 32,
-                    color: Colors.grey,
+                  iconSize: 32,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 2,
+                  width: 12,
+                  // color: Colors.black,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.shopping_cart_outlined,
                   ),
-                  Container(
-                    height: 2,
-                    width: 12,
-                    // color: Colors.black,
-                  )
-                ],
-              ),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.person_2_outlined,
-                    ),
-                    iconSize: 32,
-                    color: Colors.grey,
+                  iconSize: 32,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 2,
+                  width: 12,
+                  // color: Colors.black,
+                )
+              ],
+            ),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.person_2_outlined,
                   ),
-                  Container(
-                    height: 2,
-                    width: 12,
-                    // color: Colors.black,
-                  )
-                ],
-              )
-            ],
-          ),
+                  iconSize: 32,
+                  color: Colors.grey,
+                ),
+                Container(
+                  height: 2,
+                  width: 12,
+                  // color: Colors.black,
+                )
+              ],
+            )
+          ],
         ),
       ),
     );

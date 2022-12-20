@@ -47,7 +47,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.home_outlined,
                     ),
                     iconSize: 32,
@@ -65,7 +65,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.chair,
                     ),
                     iconSize: 32,
@@ -82,7 +82,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.favorite_border,
                     ),
                     iconSize: 32,
@@ -100,7 +100,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.shopping_cart_outlined,
                     ),
                     iconSize: 32,
@@ -118,7 +118,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                 children: [
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(
+                    icon: const Icon(
                       Icons.person_2_outlined,
                     ),
                     iconSize: 32,

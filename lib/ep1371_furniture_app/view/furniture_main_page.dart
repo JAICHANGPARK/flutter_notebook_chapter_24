@@ -11,18 +11,23 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("All Product"),
+        title: const Text("All Product"),
+        titleTextStyle: const TextStyle(
+          fontSize: 30,
+          color: Colors.black,
+        ),
         actions: [
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.filter_alt_outlined,
             ),
           ),
           IconButton(
             onPressed: () {},
-            icon: Icon(
+            icon: const Icon(
               Icons.search,
             ),
           ),

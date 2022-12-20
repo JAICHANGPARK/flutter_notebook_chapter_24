@@ -61,7 +61,27 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                   )
                   .toList(),
             ),
-            Expanded(child: const TabBarView(children: [])),
+            Expanded(
+                child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TabBarView(children: [
+                GridView.builder(
+                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 12,
+                      crossAxisSpacing: 12,
+                    ),
+                    itemBuilder: (context, index) {
+                      return Container(
+                        color: Colors.blue,
+                      );
+                    }),
+                Container(),
+                Container(),
+                Container(),
+                Container(),
+              ]),
+            )),
           ],
         ),
       ),

@@ -49,6 +49,10 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         child: Column(
           children: [
             TabBar(
+              labelColor: Colors.black,
+              unselectedLabelColor: Colors.grey,
+              indicatorColor: Colors.black,
+              indicatorSize: TabBarIndicatorSize.label,
               tabs: menuItems
                   .map(
                     (e) => Tab(

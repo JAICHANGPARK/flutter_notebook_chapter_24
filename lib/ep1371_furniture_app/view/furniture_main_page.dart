@@ -51,6 +51,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Icons.home_outlined,
                     ),
                     iconSize: 32,
+                    color: Colors.grey,
                   ),
                   Container(
                     height: 2,
@@ -85,6 +86,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       Icons.favorite_border,
                     ),
                     iconSize: 32,
+                    color: Colors.grey,
                   ),
                   Container(
                     height: 2,

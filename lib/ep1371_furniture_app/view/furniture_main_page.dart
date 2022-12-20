@@ -47,7 +47,17 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
       body: DefaultTabController(
         length: menuItems.length,
         child: Column(
-          children: [],
+          children: [
+            TabBar(
+              tabs: menuItems
+                  .map(
+                    (e) => Tab(
+                      text: e,
+                    ),
+                  )
+                  .toList(),
+            ),
+          ],
         ),
       ),
       bottomNavigationBar: BottomAppBar(

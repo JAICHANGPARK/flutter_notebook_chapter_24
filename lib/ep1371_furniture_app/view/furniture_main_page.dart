@@ -10,13 +10,26 @@ class FurnitureMainPage extends StatefulWidget {
 class _FurnitureMainPageState extends State<FurnitureMainPage> {
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return Scaffold(
       appBar: AppBar(
         title: Text("All Product"),
         actions: [
-          IconButton(onPressed: (){}, icon: Icon(Icons.filter_alt_outlined)),
-          IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.filter_alt_outlined,
+            ),
+          ),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.search,
+            ),
+          ),
         ],
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.black,
+        elevation: 0,
       ),
     );
   }

@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1368
+### EP1371
+
+- Furnitre - Mobile App
+- by Adin Yanuar for Pixelz
+- https://dribbble.com/shots/20173053-Furnitre-Mobile-App
+
+<img src="https://cdn.dribbble.com/userupload/4163567/file/original-9146eac71b3cb0aadf82c2b332a555b7.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1368-1370
 
 - Mallzku- Fashion E-commerce Shopping Mobile App
 - by Bagas Aji Setia Budi for Vektora

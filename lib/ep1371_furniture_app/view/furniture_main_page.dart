@@ -77,13 +77,21 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
               child: TabBarView(children: [
                 GridView.builder(
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                    ),
+                        crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.7),
                     itemBuilder: (context, index) {
                       return Container(
                         color: Colors.blue,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 160,
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                            )
+                          ],
+                        ),
                       );
                     }),
                 Container(),

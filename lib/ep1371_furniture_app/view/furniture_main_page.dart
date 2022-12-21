@@ -54,123 +54,133 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
         foregroundColor: Colors.black,
         elevation: 0,
       ),
-      body: DefaultTabController(
-        length: menuItems.length,
-        child: Column(
-          children: [
-            TabBar(
-              labelColor: Colors.black,
-              unselectedLabelColor: Colors.grey,
-              indicatorColor: Colors.black,
-              indicatorSize: TabBarIndicatorSize.label,
-              tabs: menuItems
-                  .map(
-                    (e) => Tab(
-                      text: e,
-                    ),
-                  )
-                  .toList(),
-            ),
-            Expanded(
-                child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TabBarView(children: [
-                GridView.builder(
-                    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 2,
-                      mainAxisSpacing: 12,
-                      crossAxisSpacing: 12,
-                      childAspectRatio: 0.7,
-                    ),
-                    itemBuilder: (context, index) {
-                      return Container(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Container(
-                              height: 180,
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
-                                  image: NetworkImage(
-                                    "https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_960_720.jpg",
-                                  ),
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                            ),
-                            SizedBox(
-                              height: 16,
-                            ),
-                            Text("Cottages Sofa"),
-                            SizedBox(
-                              height: 4,
-                            ),
-                            Text("Stock: 21"),
-                            SizedBox(
-                              height: 8,
-                            ),
-                            Row(
+      body: IndexedStack(
+        index: homeIndex,
+        children: [
+          DefaultTabController(
+            length: menuItems.length,
+            child: Column(
+              children: [
+                TabBar(
+                  labelColor: Colors.black,
+                  unselectedLabelColor: Colors.grey,
+                  indicatorColor: Colors.black,
+                  indicatorSize: TabBarIndicatorSize.label,
+                  tabs: menuItems
+                      .map(
+                        (e) => Tab(
+                          text: e,
+                        ),
+                      )
+                      .toList(),
+                ),
+                Expanded(
+                    child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TabBarView(children: [
+                    GridView.builder(
+                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: 2,
+                          mainAxisSpacing: 12,
+                          crossAxisSpacing: 12,
+                          childAspectRatio: 0.7,
+                        ),
+                        itemBuilder: (context, index) {
+                          return Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Container(
-                                  height: 24,
-                                  width: 24,
+                                  height: 180,
                                   decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(4),
-                                    border: Border.all(
-                                      color: Colors.grey,
+                                    color: Colors.grey,
+                                    borderRadius: BorderRadius.circular(8),
+                                    image: DecorationImage(
+                                      image: NetworkImage(
+                                        "https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_960_720.jpg",
+                                      ),
+                                      fit: BoxFit.cover,
                                     ),
-                                    color: Colors.white,
                                   ),
                                 ),
                                 SizedBox(
-                                  width: 12,
+                                  height: 16,
                                 ),
-                                Container(
-                                  height: 24,
-                                  width: 24,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(4),
-                                    border: Border.all(
-                                      color: Colors.grey,
-                                    ),
-                                    color: Colors.green,
-                                  ),
-                                ),
+                                Text("Cottages Sofa"),
                                 SizedBox(
-                                  width: 12,
+                                  height: 4,
                                 ),
-                                Container(
-                                  height: 24,
-                                  width: 24,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(4),
-                                    border: Border.all(
-                                      color: Colors.grey,
+                                Text("Stock: 21"),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      height: 24,
+                                      width: 24,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(4),
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                        color: Colors.white,
+                                      ),
                                     ),
-                                    color: Colors.orange,
-                                  ),
-                                ),
-                                Spacer(),
-                                Text(
-                                  "\$24",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    SizedBox(
+                                      width: 12,
+                                    ),
+                                    Container(
+                                      height: 24,
+                                      width: 24,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(4),
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                        color: Colors.green,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 12,
+                                    ),
+                                    Container(
+                                      height: 24,
+                                      width: 24,
+                                      decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(4),
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                        color: Colors.orange,
+                                      ),
+                                    ),
+                                    Spacer(),
+                                    Text(
+                                      "\$24",
+                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                    )
+                                  ],
                                 )
                               ],
-                            )
-                          ],
-                        ),
-                      );
-                    }),
-                Container(),
-                Container(),
-                Container(),
-                Container(),
-              ]),
-            )),
-          ],
-        ),
+                            ),
+                          );
+                        }),
+                    Container(),
+                    Container(),
+                    Container(),
+                    Container(),
+                  ]),
+                )),
+              ],
+            ),
+          ),
+          Center(child: Text("$homeIndex"),),
+          Center(child: Text("$homeIndex"),),
+          Center(child: Text("$homeIndex"),),
+          Center(child: Text("$homeIndex"),),
+          Center(child: Text("$homeIndex"),),
+        ],
       ),
       bottomNavigationBar: BottomAppBar(
         height: 80,

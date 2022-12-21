@@ -85,10 +85,24 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           children: [
                             Container(
                               height: 160,
-                              decoration: BoxDecoration(
-                                color: Colors.grey,
-                                borderRadius: BorderRadius.circular(8)
-                              ),
+                              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                            ),
+                            Text("Cottages Sofa"),
+                            Text("Stock: 21"),
+                            Row(
+                              children: [
+                                Container(
+                                  height: 24,
+                                  width: 24,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4),
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    color: Colors.white,
+                                  ),
+                                )
+                              ],
                             )
                           ],
                         ),

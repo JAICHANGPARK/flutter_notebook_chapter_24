@@ -92,6 +92,12 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                  image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_960_720.jpg",
+                                  ),
+                                  fit: BoxFit.cover,
+                                ),
                               ),
                             ),
                             SizedBox(
@@ -149,10 +155,7 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 Spacer(),
                                 Text(
                                   "\$24",
-                                  style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    fontSize: 16
-                                  ),
+                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                 )
                               ],
                             )

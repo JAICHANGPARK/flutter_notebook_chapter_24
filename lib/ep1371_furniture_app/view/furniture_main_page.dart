@@ -82,13 +82,26 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                       return Container(
                         color: Colors.blue,
                         child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
                               height: 160,
-                              decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8)),
+                              decoration: BoxDecoration(
+                                color: Colors.grey,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                            SizedBox(
+                              height: 16,
                             ),
                             Text("Cottages Sofa"),
+                            SizedBox(
+                              height: 4,
+                            ),
                             Text("Stock: 21"),
+                            SizedBox(
+                              height: 8,
+                            ),
                             Row(
                               children: [
                                 Container(

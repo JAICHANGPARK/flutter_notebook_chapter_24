@@ -77,15 +77,18 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
               child: TabBarView(children: [
                 GridView.builder(
                     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2, mainAxisSpacing: 12, crossAxisSpacing: 12, childAspectRatio: 0.7),
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 12,
+                      crossAxisSpacing: 12,
+                      childAspectRatio: 0.7,
+                    ),
                     itemBuilder: (context, index) {
                       return Container(
-                        color: Colors.blue,
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
-                              height: 160,
+                              height: 180,
                               decoration: BoxDecoration(
                                 color: Colors.grey,
                                 borderRadius: BorderRadius.circular(8),
@@ -113,6 +116,42 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                       color: Colors.grey,
                                     ),
                                     color: Colors.white,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Container(
+                                  height: 24,
+                                  width: 24,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4),
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    color: Colors.green,
+                                  ),
+                                ),
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Container(
+                                  height: 24,
+                                  width: 24,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(4),
+                                    border: Border.all(
+                                      color: Colors.grey,
+                                    ),
+                                    color: Colors.orange,
+                                  ),
+                                ),
+                                Spacer(),
+                                Text(
+                                  "\$24",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16
                                   ),
                                 )
                               ],

@@ -1,4 +1,4 @@
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
-final furnitureMenuIndex = StateProvider((ref) => 0);
+final furnitureMenuIndex = StateProvider<int>((ref) => 0);

@@ -35,12 +35,15 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               height: 300,
               color: Colors.blue,
             ),
-
+          SizedBox(height: 24,),
             const Text("Cottages Sofa", style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold
             ),),
-            const Text("Stock: 21"),
+            const Text("Stock: 21", style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.bold
+            ),),
             Row(
               children: [
                 Container(

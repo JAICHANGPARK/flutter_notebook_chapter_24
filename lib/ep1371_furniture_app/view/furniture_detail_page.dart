@@ -27,23 +27,29 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
         ),
         backgroundColor: Colors.white,
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
             children: [
               Container(
                 height: 320,
                 color: Colors.blue,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               const Text(
                 "Cottages Sofa",
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const Text(
                 "Stock: 21",
-                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                style: TextStyle(
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               Padding(
                 padding: const EdgeInsets.all(24.0),
@@ -59,7 +65,9 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           borderRadius: BorderRadius.circular(8)),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(horizontal: 16),
+                      margin: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                      ),
                       height: 42,
                       width: 42,
                       decoration: BoxDecoration(
@@ -83,17 +91,21 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   color: Colors.grey[300],
                   borderRadius: BorderRadius.circular(24),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 24,
+                  vertical: 12,
+                ),
                 child: const Text("Details"),
               ),
               Container(
-                margin: EdgeInsets.symmetric(vertical: 16),
+                margin: const EdgeInsets.symmetric(
+                  vertical: 16,
+                ),
                 height: 140,
                 decoration: BoxDecoration(
                   color: Colors.purple[200],
                 ),
               ),
-
               Container(
                 height: 54,
                 decoration: const ShapeDecoration(

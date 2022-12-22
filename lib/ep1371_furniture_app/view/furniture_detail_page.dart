@@ -45,6 +45,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 fontWeight: FontWeight.bold
             ),),
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
                   height: 42,

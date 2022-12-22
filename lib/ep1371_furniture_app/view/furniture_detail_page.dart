@@ -25,9 +25,10 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
           ),
         ],
       ),
+      backgroundColor: Colors.white,
       body:
       Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16),
+        padding: EdgeInsets.symmetric(horizontal: 16 , vertical: 24),
         child: Column(
           children: [
             Container(

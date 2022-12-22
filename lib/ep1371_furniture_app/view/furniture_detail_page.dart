@@ -36,11 +36,12 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
           Row(
             children: [
               Container(
-                height: 48,
-                width: 48,
+                height: 38,
+                width: 38,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  border: Border.all(color: Colors.grey)
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(8)
                 ),
               )
             ],

@@ -27,11 +27,11 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
         ),
         backgroundColor: Colors.white,
         body: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 16),
           child: Column(
             children: [
               Container(
-                height: 300,
+                height: 320,
                 color: Colors.blue,
               ),
               SizedBox(
@@ -86,11 +86,13 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 child: const Text("Details"),
               ),
               Container(
+                margin: EdgeInsets.symmetric(vertical: 16),
                 height: 140,
                 decoration: BoxDecoration(
                   color: Colors.purple[200],
                 ),
               ),
+
               Container(
                 height: 54,
                 decoration: const ShapeDecoration(

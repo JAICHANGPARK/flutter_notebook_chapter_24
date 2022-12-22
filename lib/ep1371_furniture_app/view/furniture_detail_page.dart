@@ -59,6 +59,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           borderRadius: BorderRadius.circular(8)),
                     ),
                     Container(
+                      margin: EdgeInsets.symmetric(horizontal: 16),
                       height: 42,
                       width: 42,
                       decoration: BoxDecoration(

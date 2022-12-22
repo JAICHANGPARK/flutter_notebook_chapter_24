@@ -35,7 +35,11 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               height: 300,
               color: Colors.blue,
             ),
-            const Text("Cottages Sofa"),
+
+            const Text("Cottages Sofa", style: TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold
+            ),),
             const Text("Stock: 21"),
             Row(
               children: [
@@ -67,7 +71,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
             ),
             Container(
               decoration: BoxDecoration(
-                color: Colors.grey,
+                color: Colors.grey[300],
                 borderRadius: BorderRadius.circular(24),
               ),
               padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),

@@ -22,6 +22,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 Icons.favorite,
               ),
               color: Colors.red,
+              iconSize: 32,
             ),
           ],
         ),
@@ -71,7 +72,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       height: 42,
                       width: 42,
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.green,
                           border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.circular(8)),
                     ),
@@ -79,7 +80,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                       height: 42,
                       width: 42,
                       decoration: BoxDecoration(
-                          color: Colors.white,
+                          color: Colors.orange,
                           border: Border.all(color: Colors.grey),
                           borderRadius: BorderRadius.circular(8)),
                     )

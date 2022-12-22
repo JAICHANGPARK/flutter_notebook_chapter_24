@@ -175,11 +175,21 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
               ],
             ),
           ),
-          Center(child: Text("$homeIndex"),),
-          Center(child: Text("$homeIndex"),),
-          Center(child: Text("$homeIndex"),),
-          Center(child: Text("$homeIndex"),),
-          Center(child: Text("$homeIndex"),),
+          Center(
+            child: Text("$homeIndex"),
+          ),
+          Center(
+            child: Text("$homeIndex"),
+          ),
+          Center(
+            child: Text("$homeIndex"),
+          ),
+          Center(
+            child: Text("$homeIndex"),
+          ),
+          Center(
+            child: Text("$homeIndex"),
+          ),
         ],
       ),
       bottomNavigationBar: BottomAppBar(

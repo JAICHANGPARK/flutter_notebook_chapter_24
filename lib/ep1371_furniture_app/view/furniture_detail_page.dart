@@ -12,12 +12,40 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        foregroundColor: Colors.black,
         actions: [
-          IconButton(onPressed: () {}, icon: Icon(Icons.favorite)),
+          IconButton(
+            onPressed: () {},
+            icon: Icon(
+              Icons.favorite,
+            ),
+            color: Colors.red,
+          ),
         ],
       ),
       body: Column(
-        children: [],
+        children: [
+          Container(
+            height: 300,
+            color: Colors.blue,
+          ),
+          Text("Cottages Sofa"),
+          Text("Stock: 21"),
+          Row(
+            children: [
+              Container(
+                height: 48,
+                width: 48,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.grey)
+                ),
+              )
+            ],
+          )
+        ],
       ),
     );
   }

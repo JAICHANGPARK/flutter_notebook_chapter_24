@@ -70,6 +70,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 color: Colors.grey,
                 borderRadius: BorderRadius.circular(24),
               ),
+              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 12),
               child: const Text("Details"),
             ),
             Container(

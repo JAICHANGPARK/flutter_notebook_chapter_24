@@ -225,9 +225,58 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                       Container(
                         height: 52,
                         color: Colors.brown,
-                      )
+                      ),
+                      Expanded(
+                        child: ListView.separated(
+                          itemCount: 10,
+                          separatorBuilder: (context, _) => Divider(
+                            color: Colors.grey,
+                          ),
+                          itemBuilder: (context, index) {
+                            return Container(
+                              height: 180,
+                              color: Colors.lightGreenAccent,
+                              child: Column(
+                                children: [
+                                  Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              "SPORTS",
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                color: Colors.red,
+                                              ),
+                                            ),
+                                            Text(
+                                                "SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE ",
+
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 17
+                                            ),),
+                                          ],
+                                        ),
+                                      ),
+                                      Container(
+                                        height: 120,
+                                        width: 100,
+                                        color: Colors.pink,
+                                      )
+                                    ],
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                        ),
+                      ),
                     ],
-                  )
+                  ),
                 ],
               ),
             ),

@@ -11,5 +11,6 @@ class FurnitureItem with _$FurnitureItem {
     required String stock,
     required String price,
     required List<Color> colors,
+    required String img,
   }) = _FurnitureItem;
 }

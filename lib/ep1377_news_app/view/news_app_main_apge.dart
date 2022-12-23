@@ -233,11 +233,12 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             itemCount: 10,
                             separatorBuilder: (context, _) => Divider(
                               color: Colors.grey,
+                              height: 34,
                             ),
                             itemBuilder: (context, index) {
                               return Container(
-                                height: 160,
-                                color: Colors.lightGreenAccent,
+                                height: 148,
+                                // color: Colors.lightGreenAccent,
                                 child: Column(
                                   children: [
                                     Row(

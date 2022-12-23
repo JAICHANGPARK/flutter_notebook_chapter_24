@@ -58,6 +58,15 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                     ),
+                  ),
+                  Expanded(
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+
+                        ],
+                      ),
+                    ),
                   )
                 ],
               ),

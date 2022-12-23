@@ -96,9 +96,9 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               ),
               Container(
                 margin: const EdgeInsets.symmetric(
-                  vertical: 16,
+                  vertical: 24,
                 ),
-                height: 140,
+                height: 120,
                 decoration: BoxDecoration(
                   color: Colors.purple[200],
                   borderRadius: BorderRadius.circular(16),
@@ -108,18 +108,19 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Text("Quantity"),
-                        Text("Total")
-                      ],
+                      children: [Text("Quantity"), Text("Total")],
                     ),
+                    SizedBox(height: 16,),
                     Row(
                       children: [
                         Container(
                           height: 38,
                           width: 38,
+                          decoration: BoxDecoration(
+                            color: Colors.purple,
+                          ),
                           child: IconButton(
-                            onPressed: (){},
+                            onPressed: () {},
                             icon: Icon(Icons.remove),
                           ),
                         )

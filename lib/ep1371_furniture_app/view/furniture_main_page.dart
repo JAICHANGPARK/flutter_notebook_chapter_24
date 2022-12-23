@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/controller/funiture_app_controller.dart';
 import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/data/fake_furniture_data.dart';
+import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/model/furniture_item.dart';
 import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/view/furniture_detail_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -94,7 +95,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                             onTap: () {
                               Navigator.of(context).push(
                                 MaterialPageRoute(
-                                  builder: (context) => const FurnitureDetailPage(),
+                                  builder: (context) => FurnitureDetailPage(
+                                    furnitureItem: item,
+                                  ),
                                 ),
                               );
                             },

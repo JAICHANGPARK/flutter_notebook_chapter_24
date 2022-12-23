@@ -75,10 +75,9 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16),
                         height: 180,
-                        
                         decoration: BoxDecoration(
                           color: Colors.black,
-                          borderRadius: BorderRadius.circular(8)
+                          borderRadius: BorderRadius.circular(8),
                         ),
                       )
                     ],

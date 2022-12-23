@@ -21,6 +21,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
               bottom: 100,
               top: 16,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     children: [

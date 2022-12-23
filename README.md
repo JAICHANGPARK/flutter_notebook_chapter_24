@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_24
 
-### EP1371-1376
+### EP1377
 
 - NowNews - Mobile application design for a news service
 - by Outcrowd

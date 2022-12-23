@@ -14,6 +14,8 @@ class FurnitureDetailPage extends StatefulWidget {
 }
 
 class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
+  int _count = 1;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -100,7 +102,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 ),
                 height: 120,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(200, 192, 254, 1),
+                  color: const Color.fromRGBO(200, 192, 254, 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
@@ -123,20 +125,25 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(
-                            color: Color.fromRGBO(145, 129, 243, 1),
+                            color: const Color.fromRGBO(145, 129, 243, 1),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                _count--;
+                                if (_count <= 1) _count = 1;
+                              });
+                            },
                             icon: const Icon(Icons.remove),
                             color: Colors.white,
                           ),
                         ),
-                        const Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 24),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
                           child: Text(
-                            "1",
-                            style: TextStyle(
+                            "${_count}",
+                            style: const TextStyle(
                               fontWeight: FontWeight.bold,
                               fontSize: 32,
                             ),
@@ -150,7 +157,12 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              setState(() {
+                                _count++;
+                                if (_count >= 10) _count = 10;
+                              });
+                            },
                             icon: const Icon(Icons.add),
                             color: Colors.black,
                           ),
@@ -158,7 +170,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                         const Spacer(),
                         Text(
                           "\$${widget.furnitureItem.price}",
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 32,
                           ),

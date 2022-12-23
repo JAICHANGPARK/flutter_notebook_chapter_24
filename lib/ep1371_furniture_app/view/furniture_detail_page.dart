@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/model/furniture_item.dart';
 
 class FurnitureDetailPage extends StatefulWidget {
-  const FurnitureDetailPage({Key? key}) : super(key: key);
+  final FurnitureItem furnitureItem;
+
+  const FurnitureDetailPage({
+    Key? key,
+    required this.furnitureItem,
+  }) : super(key: key);
 
   @override
   State<FurnitureDetailPage> createState() => _FurnitureDetailPageState();

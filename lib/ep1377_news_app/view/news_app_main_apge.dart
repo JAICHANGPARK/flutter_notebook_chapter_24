@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1377_news_app/home/view/news_app_home_page.dart';
 import 'package:ionicons/ionicons.dart';
 import '../news_list/view/news_app_list_page.dart';
+
 class NewsAppMainPage extends StatefulWidget {
   const NewsAppMainPage({Key? key}) : super(key: key);
 
@@ -24,8 +26,8 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
               top: 16,
               child: IndexedStack(
                 index: _index,
-                children: [
-
+                children: const [
+                  NewsAppHomePage(),
                   NewsAppListPage(),
                 ],
               ),

@@ -84,6 +84,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             ),
                           ),
                           Container(
+                            margin: EdgeInsets.symmetric(vertical: 16),
                             height: 70,
                             color: Colors.blue,
                           )

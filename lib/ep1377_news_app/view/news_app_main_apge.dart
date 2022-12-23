@@ -242,7 +242,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                           });
                         },
                         icon: const Icon(Ionicons.home_outline),
-                        color: Colors.white,
+                        color: _index == 0 ? Colors.white : Colors.grey,
                       ),
                       IconButton(
                         onPressed: () {
@@ -251,7 +251,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                           });
                         },
                         icon: const Icon(Ionicons.list_outline),
-                        color: Colors.white,
+                        color: _index == 1 ? Colors.white : Colors.grey,
                       ),
                       IconButton(
                         onPressed: () {

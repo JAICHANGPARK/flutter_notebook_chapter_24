@@ -159,21 +159,29 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: const EdgeInsets.only(right: 16),
                                   width: 300,
                                   color: Colors.blue,
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Expanded(child: Placeholder()),
-                                      Text(
+                                      const Expanded(child: Placeholder()),
+                                      const SizedBox(
+                                        height: 8,
+                                      ),
+                                      const Text(
                                         "News Title News Title News Title News Title News Title News Title News Title",
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
                                         style: TextStyle(
                                           fontWeight: FontWeight.bold,
+                                          fontSize: 18,
                                         ),
                                       ),
-                                      Text("Dream Walker - 3h ago"),
+                                      const SizedBox(
+                                        height: 8,
+                                      ),
+                                      const Text("Dream Walker - 3h ago"),
                                     ],
                                   ),
                                 );

@@ -54,7 +54,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                   ),
                   Container(
                     margin: const EdgeInsets.symmetric(vertical: 24),
-                    height: 64,
+                    height: 60,
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(8),
@@ -73,7 +73,14 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
-                        children: [],
+                        children: [
+                          Text(
+                            "Hot news",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
+                        ],
                       ),
                     ),
                   ),

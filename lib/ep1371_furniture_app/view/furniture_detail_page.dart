@@ -85,16 +85,35 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                         )
                         .toList()),
               ),
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.grey[300],
-                  borderRadius: BorderRadius.circular(24),
+              GestureDetector(
+                onTap: (){
+                  showModalBottomSheet(context: context, builder: (context){
+                    return Container(
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(24),
+                          topRight: Radius.circular(24),
+                        )
+                      ),
+                    );
+                  });
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.grey[300],
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 24,
+                    vertical: 12,
+                  ),
+                  child: const Text(
+                    "Details",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
                 ),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 12,
-                ),
-                child: const Text("Details"),
               ),
               Container(
                 margin: const EdgeInsets.symmetric(

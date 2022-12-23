@@ -24,23 +24,23 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                 children: [
                   Row(
                     children: [
-                      CircleAvatar(
+                      const CircleAvatar(
                         radius: 28,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 12,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text("Welcome back!"),
-                          SizedBox(
+                          const Text("Welcome back!"),
+                          const SizedBox(
                             height: 8,
                           ),
-                          Text("Dreamwalker")
+                          const Text("Dreamwalker")
                         ],
                       ),
-                      Spacer(),
+                      const Spacer(),
                       Container(
                         height: 48,
                         width: 48,
@@ -48,22 +48,25 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                           border: Border.all(),
                           shape: BoxShape.circle,
                         ),
-                        child: Icon(Ionicons.notifications_outline),
+                        child: const Icon(Ionicons.notifications_outline),
                       )
                     ],
                   ),
                   Container(
-                    margin: EdgeInsets.symmetric(vertical: 24),
+                    margin: const EdgeInsets.symmetric(vertical: 24),
                     height: 64,
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 16),
-                    child: Center(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
+                    child: const Center(
                       child: TextField(
-                        decoration:
-                            InputDecoration(icon: Icon(Icons.search), hintText: "Search", border: InputBorder.none),
+                        decoration: InputDecoration(
+                          icon: Icon(Icons.search),
+                          hintText: "Search",
+                          border: InputBorder.none,
+                        ),
                       ),
                     ),
                   ),
@@ -84,29 +87,29 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
               child: Container(
                 height: 100,
                 color: Colors.white,
-                padding: EdgeInsets.fromLTRB(24, 24, 24, 16),
+                padding: const EdgeInsets.fromLTRB(24, 24, 24, 16),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(32),
                   ),
-                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Ionicons.home_outline),
+                        icon: const Icon(Ionicons.home_outline),
                         color: Colors.white,
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Ionicons.list_outline),
+                        icon: const Icon(Ionicons.list_outline),
                         color: Colors.white,
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(Ionicons.settings_outline),
+                        icon: const Icon(Ionicons.settings_outline),
                         color: Colors.white,
                       )
                     ],

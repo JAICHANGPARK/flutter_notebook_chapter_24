@@ -103,15 +103,17 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   color: Colors.purple[200],
                   borderRadius: BorderRadius.circular(16),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [Text("Quantity"), Text("Total")],
+                      children: [const Text("Quantity"), const Text("Total")],
                     ),
-                    SizedBox(height: 16,),
+                    const SizedBox(
+                      height: 16,
+                    ),
                     Row(
                       children: [
                         Container(
@@ -119,28 +121,35 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           width: 38,
                           decoration: BoxDecoration(
                             color: Colors.purple,
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.remove),
+                            icon: const Icon(Icons.remove),
+                            color: Colors.white,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 24),
-                          child: Text("1", style: TextStyle(),),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 24),
+                          child: Text(
+                            "1",
+                            style: TextStyle(),
+                          ),
                         ),
                         Container(
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(
                             color: Colors.white,
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
                             onPressed: () {},
-                            icon: Icon(Icons.add),
+                            icon: const Icon(Icons.add),
+                            color: Colors.black,
                           ),
                         ),
-                        Spacer(),
+                        const Spacer(),
                         Text("\$${widget.furnitureItem.price}")
                       ],
                     )

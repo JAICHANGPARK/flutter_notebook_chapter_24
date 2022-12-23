@@ -19,20 +19,11 @@ List<FurnitureItem> fakeFurnitureItems = const [
     img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
   ),
   FurnitureItem(
-      title: "Dreamwalker Sofa",
-      stock: "21",
-      colors: [
-        Colors.white,
-        Colors.green,
-      ],
-      price: "24",
-      img: "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg"),
-  FurnitureItem(
-    title: "Cottages Sofa",
+    title: "Brown Sofa",
     stock: "21",
-    colors: [Colors.white, Colors.green, Colors.orange],
-    price: "24",
-    img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
   ),
   FurnitureItem(
       title: "Dreamwalker Sofa",
@@ -51,20 +42,11 @@ List<FurnitureItem> fakeFurnitureItems = const [
     img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
   ),
   FurnitureItem(
-      title: "Dreamwalker Sofa",
-      stock: "21",
-      colors: [
-        Colors.white,
-        Colors.green,
-      ],
-      price: "24",
-      img: "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg"),
-  FurnitureItem(
-    title: "Cottages Sofa",
+    title: "Brown Sofa",
     stock: "21",
-    colors: [Colors.white, Colors.green, Colors.orange],
-    price: "24",
-    img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
   ),
   FurnitureItem(
       title: "Dreamwalker Sofa",
@@ -83,6 +65,13 @@ List<FurnitureItem> fakeFurnitureItems = const [
     img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
   ),
   FurnitureItem(
+    title: "Brown Sofa",
+    stock: "21",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
+  ),
+  FurnitureItem(
       title: "Dreamwalker Sofa",
       stock: "21",
       colors: [
@@ -97,5 +86,81 @@ List<FurnitureItem> fakeFurnitureItems = const [
     colors: [Colors.white, Colors.green, Colors.orange],
     price: "24",
     img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
-  )
+  ),
+  FurnitureItem(
+    title: "Brown Sofa",
+    stock: "21",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
+  ),
+  FurnitureItem(
+      title: "Dreamwalker Sofa",
+      stock: "21",
+      colors: [
+        Colors.white,
+        Colors.green,
+      ],
+      price: "24",
+      img: "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg"),
+  FurnitureItem(
+    title: "Cottages Sofa",
+    stock: "21",
+    colors: [Colors.white, Colors.green, Colors.orange],
+    price: "24",
+    img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
+  ),
+  FurnitureItem(
+    title: "Brown Sofa",
+    stock: "21",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
+  ),
+  FurnitureItem(
+      title: "Dreamwalker Sofa",
+      stock: "21",
+      colors: [
+        Colors.white,
+        Colors.green,
+      ],
+      price: "24",
+      img: "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg"),
+  FurnitureItem(
+    title: "Cottages Sofa",
+    stock: "21",
+    colors: [Colors.white, Colors.green, Colors.orange],
+    price: "24",
+    img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
+  ),
+  FurnitureItem(
+    title: "Brown Sofa",
+    stock: "21",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
+  ),
+  FurnitureItem(
+      title: "Dreamwalker Sofa",
+      stock: "21",
+      colors: [
+        Colors.white,
+        Colors.green,
+      ],
+      price: "24",
+      img: "https://cdn.pixabay.com/photo/2014/09/15/21/46/couch-447484__340.jpg"),
+  FurnitureItem(
+    title: "Cottages Sofa",
+    stock: "21",
+    colors: [Colors.white, Colors.green, Colors.orange],
+    price: "24",
+    img: "https://cdn.pixabay.com/photo/2017/07/31/21/15/dog-2561134__340.jpg",
+  ),
+  FurnitureItem(
+    title: "Brown Sofa",
+    stock: "21",
+    colors: [Colors.brown, Colors.orange],
+    price: "64",
+    img: "https://cdn.pixabay.com/photo/2016/11/29/01/24/dog-1866530_960_720.jpg",
+  ),
 ];

@@ -73,6 +73,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
                             "Hot news",

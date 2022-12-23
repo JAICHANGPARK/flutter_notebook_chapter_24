@@ -18,26 +18,33 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
             children: [
               Row(
                 children: [
-                  Container(
-                    height: 48,
-                    width: 48,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      border: Border.all(
-                        color: Colors.grey,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.of(context).pop();
+                    },
+                    child: Container(
+                      height: 48,
+                      width: 48,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.grey,
+                        ),
                       ),
+                      child: Icon(Icons.arrow_back),
                     ),
                   ),
                   Expanded(
-                      child: Center(
-                    child: Text(
-                      "Sports",
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18
+                    child: Center(
+                      child: Text(
+                        "Sports",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
                       ),
                     ),
-                  )),
+                  ),
                   Container(
                     height: 48,
                     width: 48,
@@ -47,9 +54,17 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         color: Colors.grey,
                       ),
                     ),
+                    child: Icon(Icons.bookmark_border),
                   )
                 ],
-              )
+              ),
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [],
+                  ),
+                ),
+              ),
             ],
           ),
         ),

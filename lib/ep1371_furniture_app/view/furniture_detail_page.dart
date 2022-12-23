@@ -139,7 +139,9 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                             onPressed: () {},
                             icon: Icon(Icons.add),
                           ),
-                        )
+                        ),
+                        Spacer(),
+                        Text("\$${widget.furnitureItem.price}")
                       ],
                     )
                   ],

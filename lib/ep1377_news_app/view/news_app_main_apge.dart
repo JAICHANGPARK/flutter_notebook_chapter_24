@@ -159,8 +159,19 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                               itemCount: 10,
                               itemBuilder: (context, index) {
                                 return Container(
+                                  margin: EdgeInsets.only(right: 16),
                                   width: 300,
                                   color: Colors.blue,
+                                  child: Column(
+                                    children: [
+                                      Expanded(child: Placeholder()),
+                                      Text(
+                                        "News Title News Title News Title News Title News Title News Title News Title",
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                      )
+                                    ],
+                                  ),
                                 );
                               },
                             ),

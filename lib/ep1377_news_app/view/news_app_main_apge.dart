@@ -57,6 +57,14 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                     height: 64,
                     decoration: BoxDecoration(
                       color: Colors.grey[300],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 16),
+                    child: Center(
+                      child: TextField(
+                        decoration:
+                            InputDecoration(icon: Icon(Icons.search), hintText: "Search", border: InputBorder.none),
+                      ),
                     ),
                   ),
                   Expanded(
@@ -66,7 +74,6 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                       ),
                     ),
                   ),
-
                 ],
               ),
             ),
@@ -77,9 +84,33 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
               child: Container(
                 height: 100,
                 color: Colors.white,
-                padding: EdgeInsets.fromLTRB(24, 24, 24, 24),
+                padding: EdgeInsets.fromLTRB(24, 24, 24, 16),
                 child: Container(
-                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
+                  decoration: BoxDecoration(
+                    color: Colors.black,
+                    borderRadius: BorderRadius.circular(32),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 24),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Ionicons.home_outline),
+                        color: Colors.white,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Ionicons.list_outline),
+                        color: Colors.white,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Ionicons.settings_outline),
+                        color: Colors.white,
+                      )
+                    ],
+                  ),
                 ),
               ),
             )

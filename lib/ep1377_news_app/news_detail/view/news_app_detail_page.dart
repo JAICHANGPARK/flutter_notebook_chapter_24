@@ -31,10 +31,10 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                           color: Colors.grey,
                         ),
                       ),
-                      child: Icon(Icons.arrow_back),
+                      child: const Icon(Icons.arrow_back),
                     ),
                   ),
-                  Expanded(
+                  const Expanded(
                     child: Center(
                       child: Text(
                         "Sports",
@@ -54,11 +54,11 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                         color: Colors.grey,
                       ),
                     ),
-                    child: Icon(Icons.bookmark_border),
+                    child: const Icon(Icons.bookmark_border),
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 24,
               ),
               Expanded(
@@ -66,7 +66,7 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         "News Title News Title News Title News Title News Title News Title News Title ",
                         maxLines: 2,
                         style: TextStyle(
@@ -74,42 +74,67 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Text("Dream Walker - 26 min read"),
-                      SizedBox(
+                      const Text("Dream Walker - 26 min read"),
+                      const SizedBox(
                         height: 16,
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 16),
+                        margin: const EdgeInsets.symmetric(vertical: 16),
                         height: 240,
                         decoration: BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(8),
-                          image: DecorationImage(
+                          image: const DecorationImage(
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2021/12/31/13/25/women-6905793_960_720.jpg",
                               ),
                               fit: BoxFit.cover),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Text(
+                      const Text(
                         "Star",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 18,
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      SelectableText(
+                      const SelectableText(
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                        style: TextStyle(height: 1.2, fontWeight: FontWeight.w500, fontSize: 15),
+                        style: TextStyle(
+                          height: 1.2,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 15,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 24,
+                      ),
+                      const Text(
+                        "Ranks seventh",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 16,
+                      ),
+                      const SelectableText(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        style: TextStyle(
+                          height: 1.2,
+                          fontWeight: FontWeight.w500,
+                          fontSize: 15,
+                        ),
                       )
                     ],
                   ),

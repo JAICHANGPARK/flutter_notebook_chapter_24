@@ -161,11 +161,20 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                 return Container(
                                   margin: const EdgeInsets.only(right: 16),
                                   width: 300,
-                                  color: Colors.blue,
                                   child: Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      const Expanded(child: Placeholder()),
+                                      Expanded(
+                                        child: ClipRRect(
+                                          borderRadius: BorderRadius.circular(8),
+                                          child: Image.network(
+
+                                            "https://cdn.pixabay.com/photo/2012/11/28/11/11/quarterback-67700_960_720.jpg",
+                                            fit: BoxFit.cover,
+                                            width: double.infinity,
+                                          ),
+                                        ),
+                                      ),
                                       const SizedBox(
                                         height: 8,
                                       ),
@@ -181,7 +190,13 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                       const SizedBox(
                                         height: 8,
                                       ),
-                                      const Text("Dream Walker - 3h ago"),
+                                      const Text(
+                                        "Dream Walker - 3h ago",
+                                        style: TextStyle(
+                                          fontSize: 12,
+                                          color: Colors.grey,
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 );

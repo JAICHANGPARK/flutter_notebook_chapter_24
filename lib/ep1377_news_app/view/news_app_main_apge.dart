@@ -106,7 +106,18 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                 ),
                               )
                             ],
-                          )
+                          ),
+                          SizedBox(
+                            height: 360,
+                              child: ListView.builder(
+                            scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                            return Container(
+                              width: 300,
+                              color: Colors.blue,
+                            );
+                          }))
                         ],
                       ),
                     ),

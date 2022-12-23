@@ -40,7 +40,7 @@ class _NewsAppListPageState extends State<NewsAppListPage> {
                     ),
                   ),
                   child: Center(
-                    child: Text("${listMenuItems[index]}"),
+                    child: Text(listMenuItems[index]),
                   ),
                 );
               },
@@ -80,7 +80,10 @@ class _NewsAppListPageState extends State<NewsAppListPage> {
                                   padding: EdgeInsets.fromLTRB(0, 16, 24, 0),
                                   child: Text(
                                     "SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE ",
-                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 17,
+                                    ),
                                   ),
                                 ),
                               ],

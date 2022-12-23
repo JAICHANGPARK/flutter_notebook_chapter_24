@@ -81,9 +81,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                                 borderRadius: BorderRadius.circular(8)),
                           ),
                         )
-                        .toList()
-
-                    ),
+                        .toList()),
               ),
               Container(
                 decoration: BoxDecoration(
@@ -103,6 +101,31 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 height: 140,
                 decoration: BoxDecoration(
                   color: Colors.purple[200],
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                child: Column(
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text("Quantity"),
+                        Text("Total")
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Container(
+                          height: 38,
+                          width: 38,
+                          child: IconButton(
+                            onPressed: (){},
+                            icon: Icon(Icons.remove),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
                 ),
               ),
               Container(

@@ -9,6 +9,8 @@ class NewsAppMainPage extends StatefulWidget {
 }
 
 class _NewsAppMainPageState extends State<NewsAppMainPage> {
+  int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -234,19 +236,31 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            _index = 0;
+                          });
+                        },
                         icon: const Icon(Ionicons.home_outline),
                         color: Colors.white,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            _index = 1;
+                          });
+                        },
                         icon: const Icon(Ionicons.list_outline),
                         color: Colors.white,
                       ),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          setState(() {
+                            _index = 2;
+                          });
+                        },
                         icon: const Icon(Ionicons.settings_outline),
-                        color: Colors.white,
+                        color: _index == 2 ? Colors.white : Colors.grey,
                       )
                     ],
                   ),

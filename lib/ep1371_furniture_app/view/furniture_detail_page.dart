@@ -68,37 +68,50 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
               Padding(
                 padding: const EdgeInsets.all(24.0),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                          color: Colors.white,
-                          border: Border.all(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(8)),
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: widget.furnitureItem.colors
+                        .map(
+                          (e) => Container(
+                            height: 42,
+                            width: 42,
+                            margin: EdgeInsets.only(left: 8, right: 8),
+                            decoration: BoxDecoration(
+                                color: e,
+                                border: Border.all(color: Colors.grey),
+                                borderRadius: BorderRadius.circular(8)),
+                          ),
+                        )
+                        .toList()
+                    // [
+                    //   Container(
+                    //     height: 42,
+                    //     width: 42,
+                    //     decoration: BoxDecoration(
+                    //         color: Colors.white,
+                    //         border: Border.all(color: Colors.grey),
+                    //         borderRadius: BorderRadius.circular(8)),
+                    //   ),
+                    //   Container(
+                    //     margin: const EdgeInsets.symmetric(
+                    //       horizontal: 16,
+                    //     ),
+                    //     height: 42,
+                    //     width: 42,
+                    //     decoration: BoxDecoration(
+                    //         color: Colors.green,
+                    //         border: Border.all(color: Colors.grey),
+                    //         borderRadius: BorderRadius.circular(8)),
+                    //   ),
+                    //   Container(
+                    //     height: 42,
+                    //     width: 42,
+                    //     decoration: BoxDecoration(
+                    //         color: Colors.orange,
+                    //         border: Border.all(color: Colors.grey),
+                    //         borderRadius: BorderRadius.circular(8)),
+                    //   )
+                    // ],
                     ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(
-                        horizontal: 16,
-                      ),
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                          color: Colors.green,
-                          border: Border.all(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(8)),
-                    ),
-                    Container(
-                      height: 42,
-                      width: 42,
-                      decoration: BoxDecoration(
-                          color: Colors.orange,
-                          border: Border.all(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(8)),
-                    )
-                  ],
-                ),
               ),
               Container(
                 decoration: BoxDecoration(

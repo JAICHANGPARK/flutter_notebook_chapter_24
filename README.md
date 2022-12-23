@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1371
+### EP1371-1376
+
+- NowNews - Mobile application design for a news service
+- by Outcrowd
+- https://dribbble.com/shots/20193950-NowNews-Mobile-application-design-for-a-news-service
+
+<img src="https://cdn.dribbble.com/userupload/4170121/file/original-69d26e44ad74283d7351891f3ba49ffa.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1371-1376
 
 - Furnitre - Mobile App
 - by Adin Yanuar for Pixelz
@@ -15,7 +23,6 @@
 - https://dribbble.com/shots/20146591-Mallzku-Fashion-E-commerce-Shopping-Mobile-App
 
 <img src="https://cdn.dribbble.com/userupload/4154880/file/original-b2051c3ed4201f68816e8c204d64ad42.png?compress=1&resize=1600x1200" width="500px"/>
-
 
 ### EP1364-1367
 

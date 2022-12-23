@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1377_news_app/news_detail/view/news_app_detail_page.dart';
 import 'package:ionicons/ionicons.dart';
 
 class NewsAppHomePage extends StatefulWidget {
@@ -156,45 +157,54 @@ class _NewsAppHomePageState extends State<NewsAppHomePage> {
                     scrollDirection: Axis.horizontal,
                     itemCount: 10,
                     itemBuilder: (context, index) {
-                      return Container(
-                        margin: const EdgeInsets.only(right: 16),
-                        width: 300,
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Expanded(
-                              child: ClipRRect(
-                                borderRadius: BorderRadius.circular(8),
-                                child: Image.network(
-                                  "https://cdn.pixabay.com/photo/2012/11/28/11/11/quarterback-67700_960_720.jpg",
-                                  fit: BoxFit.cover,
-                                  width: double.infinity,
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            MaterialPageRoute(
+                              builder: (context) => NewsAppDetailPage(),
+                            ),
+                          );
+                        },
+                        child: Container(
+                          margin: const EdgeInsets.only(right: 16),
+                          width: 300,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Expanded(
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8),
+                                  child: Image.network(
+                                    "https://cdn.pixabay.com/photo/2012/11/28/11/11/quarterback-67700_960_720.jpg",
+                                    fit: BoxFit.cover,
+                                    width: double.infinity,
+                                  ),
                                 ),
                               ),
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            const Text(
-                              "News Title News Title News Title News Title News Title News Title News Title",
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
+                              const SizedBox(
+                                height: 8,
                               ),
-                            ),
-                            const SizedBox(
-                              height: 8,
-                            ),
-                            const Text(
-                              "Dream Walker - 3h ago",
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: Colors.grey,
+                              const Text(
+                                "News Title News Title News Title News Title News Title News Title News Title",
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 18,
+                                ),
                               ),
-                            ),
-                          ],
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              const Text(
+                                "Dream Walker - 3h ago",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       );
                     },

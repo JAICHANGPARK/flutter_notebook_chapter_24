@@ -58,6 +58,9 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                   )
                 ],
               ),
+              SizedBox(
+                height: 24,
+              ),
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
@@ -71,15 +74,29 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                           fontWeight: FontWeight.bold,
                         ),
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Text("Dream Walker - 26 min read"),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Container(
                         margin: EdgeInsets.symmetric(vertical: 16),
-                        height: 180,
+                        height: 240,
                         decoration: BoxDecoration(
                           color: Colors.black,
                           borderRadius: BorderRadius.circular(8),
+                          image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2021/12/31/13/25/women-6905793_960_720.jpg",
+                              ),
+                              fit: BoxFit.cover),
                         ),
-                      )
+                      ),
+                      Text("Star"),
+                      SelectableText(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.")
                     ],
                   ),
                 ),

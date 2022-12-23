@@ -240,7 +240,15 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                               scrollDirection: Axis.horizontal,
                               itemCount: listMenuItems.length,
                               itemBuilder: (context, index) {
-                                return Container();
+                                return Container(
+                                  decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(32),
+                                      border: Border.all(
+                                        color: Colors.grey,
+                                      )),
+                                  padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                                  child: Center(child: Text("${listMenuItems[index]}")),
+                                );
                               }),
                         ),
                         SizedBox(

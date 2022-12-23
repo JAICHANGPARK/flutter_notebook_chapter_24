@@ -100,7 +100,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 ),
                 height: 120,
                 decoration: BoxDecoration(
-                  color: Colors.purple[200],
+                  color: Color.fromRGBO(200, 192, 254, 1),
                   borderRadius: BorderRadius.circular(16),
                 ),
                 padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
@@ -109,7 +109,10 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [const Text("Quantity"), const Text("Total")],
+                      children: [
+                        const Text("Quantity"),
+                        const Text("Total"),
+                      ],
                     ),
                     const SizedBox(
                       height: 16,
@@ -120,7 +123,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           height: 38,
                           width: 38,
                           decoration: BoxDecoration(
-                            color: Colors.purple,
+                            color: Color.fromRGBO(145, 129, 243, 1),
                             borderRadius: BorderRadius.circular(8),
                           ),
                           child: IconButton(
@@ -150,7 +153,13 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           ),
                         ),
                         const Spacer(),
-                        Text("\$${widget.furnitureItem.price}")
+                        Text(
+                          "\$${widget.furnitureItem.price}",
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 32,
+                          ),
+                        )
                       ],
                     )
                   ],

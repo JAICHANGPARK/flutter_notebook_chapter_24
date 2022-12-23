@@ -254,18 +254,40 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                                   color: Colors.red,
                                                 ),
                                               ),
-                                              Text(
-                                                "SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE ",
-                                                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                                              Padding(
+                                                padding: const EdgeInsets.fromLTRB(0, 16, 24, 0),
+                                                child: Text(
+                                                  "SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE ",
+                                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                                                ),
                                               ),
                                             ],
                                           ),
                                         ),
                                         Container(
-                                          height: 120,
-                                          width: 120,
-                                          color: Colors.pink,
+                                          height: 100,
+                                          width: 100,
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(8),
+                                            color: Colors.pink,
+                                          ),
                                         )
+                                      ],
+                                    ),
+                                    Row(
+                                      children: [
+                                        Text("4h ago - 21 min read"),
+                                        Spacer(),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                              Icons.bookmark_border,
+                                            )),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                              Icons.more_horiz,
+                                            )),
                                       ],
                                     )
                                   ],

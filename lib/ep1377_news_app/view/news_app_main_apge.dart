@@ -234,21 +234,20 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                     child: Column(
                       children: [
                         Container(
-                          height: 52,
-                          color: Colors.brown,
+                          height: 42,
                           child: ListView.builder(
                             scrollDirection: Axis.horizontal,
                             itemCount: listMenuItems.length,
                             itemBuilder: (context, index) {
                               return Container(
-                                padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                                margin: const EdgeInsets.only(right: 16),
+                                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 12),
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(32),
                                   border: Border.all(
                                     color: Colors.grey,
                                   ),
                                 ),
-
                                 child: Center(
                                   child: Text("${listMenuItems[index]}"),
                                 ),
@@ -256,13 +255,13 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             },
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 16,
                         ),
                         Expanded(
                           child: ListView.separated(
                             itemCount: 10,
-                            separatorBuilder: (context, _) => Divider(
+                            separatorBuilder: (context, _) => const Divider(
                               color: Colors.grey,
                               height: 34,
                             ),
@@ -279,15 +278,15 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                           child: Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
-                                              Text(
+                                              const Text(
                                                 "SPORTS",
                                                 style: TextStyle(
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.red,
                                                 ),
                                               ),
-                                              Padding(
-                                                padding: const EdgeInsets.fromLTRB(0, 16, 24, 0),
+                                              const Padding(
+                                                padding: EdgeInsets.fromLTRB(0, 16, 24, 0),
                                                 child: Text(
                                                   "SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE ",
                                                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
@@ -308,16 +307,16 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                     ),
                                     Row(
                                       children: [
-                                        Text("4h ago - 21 min read"),
-                                        Spacer(),
+                                        const Text("4h ago - 21 min read"),
+                                        const Spacer(),
                                         IconButton(
                                             onPressed: () {},
-                                            icon: Icon(
+                                            icon: const Icon(
                                               Icons.bookmark_border,
                                             )),
                                         IconButton(
                                             onPressed: () {},
-                                            icon: Icon(
+                                            icon: const Icon(
                                               Icons.more_horiz,
                                             )),
                                       ],

@@ -17,7 +17,9 @@ final _privateConstructorUsedError = UnsupportedError(
 /// @nodoc
 mixin _$FurnitureItem {
   String get title => throw _privateConstructorUsedError;
-  String? get stock => throw _privateConstructorUsedError;
+  String get stock => throw _privateConstructorUsedError;
+  String get price => throw _privateConstructorUsedError;
+  List<Color> get colors => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $FurnitureItemCopyWith<FurnitureItem> get copyWith =>
@@ -30,7 +32,7 @@ abstract class $FurnitureItemCopyWith<$Res> {
           FurnitureItem value, $Res Function(FurnitureItem) then) =
       _$FurnitureItemCopyWithImpl<$Res, FurnitureItem>;
   @useResult
-  $Res call({String title, String? stock});
+  $Res call({String title, String stock, String price, List<Color> colors});
 }
 
 /// @nodoc
@@ -47,17 +49,27 @@ class _$FurnitureItemCopyWithImpl<$Res, $Val extends FurnitureItem>
   @override
   $Res call({
     Object? title = null,
-    Object? stock = freezed,
+    Object? stock = null,
+    Object? price = null,
+    Object? colors = null,
   }) {
     return _then(_value.copyWith(
       title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      stock: freezed == stock
+      stock: null == stock
           ? _value.stock
           : stock // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
+      price: null == price
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as String,
+      colors: null == colors
+          ? _value.colors
+          : colors // ignore: cast_nullable_to_non_nullable
+              as List<Color>,
     ) as $Val);
   }
 }
@@ -70,7 +82,7 @@ abstract class _$$_FurnitureItemCopyWith<$Res>
       __$$_FurnitureItemCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String title, String? stock});
+  $Res call({String title, String stock, String price, List<Color> colors});
 }
 
 /// @nodoc
@@ -85,17 +97,27 @@ class __$$_FurnitureItemCopyWithImpl<$Res>
   @override
   $Res call({
     Object? title = null,
-    Object? stock = freezed,
+    Object? stock = null,
+    Object? price = null,
+    Object? colors = null,
   }) {
     return _then(_$_FurnitureItem(
       title: null == title
           ? _value.title
           : title // ignore: cast_nullable_to_non_nullable
               as String,
-      stock: freezed == stock
+      stock: null == stock
           ? _value.stock
           : stock // ignore: cast_nullable_to_non_nullable
-              as String?,
+              as String,
+      price: null == price
+          ? _value.price
+          : price // ignore: cast_nullable_to_non_nullable
+              as String,
+      colors: null == colors
+          ? _value._colors
+          : colors // ignore: cast_nullable_to_non_nullable
+              as List<Color>,
     ));
   }
 }
@@ -103,16 +125,30 @@ class __$$_FurnitureItemCopyWithImpl<$Res>
 /// @nodoc
 
 class _$_FurnitureItem implements _FurnitureItem {
-  const _$_FurnitureItem({required this.title, required this.stock});
+  const _$_FurnitureItem(
+      {required this.title,
+      required this.stock,
+      required this.price,
+      required final List<Color> colors})
+      : _colors = colors;
 
   @override
   final String title;
   @override
-  final String? stock;
+  final String stock;
+  @override
+  final String price;
+  final List<Color> _colors;
+  @override
+  List<Color> get colors {
+    if (_colors is EqualUnmodifiableListView) return _colors;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_colors);
+  }
 
   @override
   String toString() {
-    return 'FurnitureItem(title: $title, stock: $stock)';
+    return 'FurnitureItem(title: $title, stock: $stock, price: $price, colors: $colors)';
   }
 
   @override
@@ -121,11 +157,14 @@ class _$_FurnitureItem implements _FurnitureItem {
         (other.runtimeType == runtimeType &&
             other is _$_FurnitureItem &&
             (identical(other.title, title) || other.title == title) &&
-            (identical(other.stock, stock) || other.stock == stock));
+            (identical(other.stock, stock) || other.stock == stock) &&
+            (identical(other.price, price) || other.price == price) &&
+            const DeepCollectionEquality().equals(other._colors, _colors));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, title, stock);
+  int get hashCode => Object.hash(runtimeType, title, stock, price,
+      const DeepCollectionEquality().hash(_colors));
 
   @JsonKey(ignore: true)
   @override
@@ -137,12 +176,18 @@ class _$_FurnitureItem implements _FurnitureItem {
 abstract class _FurnitureItem implements FurnitureItem {
   const factory _FurnitureItem(
       {required final String title,
-      required final String? stock}) = _$_FurnitureItem;
+      required final String stock,
+      required final String price,
+      required final List<Color> colors}) = _$_FurnitureItem;
 
   @override
   String get title;
   @override
-  String? get stock;
+  String get stock;
+  @override
+  String get price;
+  @override
+  List<Color> get colors;
   @override
   @JsonKey(ignore: true)
   _$$_FurnitureItemCopyWith<_$_FurnitureItem> get copyWith =>

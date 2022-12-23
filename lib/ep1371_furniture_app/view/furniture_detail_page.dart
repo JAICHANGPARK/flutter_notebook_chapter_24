@@ -34,26 +34,33 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
         ),
         backgroundColor: Colors.white,
         body: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 16,
+            vertical: 16,
+          ),
           child: Column(
             children: [
               Container(
                 height: 320,
                 color: Colors.blue,
+                child: Image.network(
+                  widget.furnitureItem.img,
+                  fit: BoxFit.cover,
+                ),
               ),
               const SizedBox(
                 height: 24,
               ),
-              const Text(
-                "Cottages Sofa",
-                style: TextStyle(
+              Text(
+                widget.furnitureItem.title,
+                style: const TextStyle(
                   fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
-                "Stock: 21",
-                style: TextStyle(
+              Text(
+                "Stock: ${widget.furnitureItem.stock}",
+                style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.bold,
                 ),

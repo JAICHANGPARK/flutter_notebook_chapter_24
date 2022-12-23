@@ -86,17 +86,67 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                         .toList()),
               ),
               GestureDetector(
-                onTap: (){
-                  showModalBottomSheet(context: context, builder: (context){
-                    return Container(
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(24),
-                          topRight: Radius.circular(24),
-                        )
-                      ),
-                    );
-                  });
+                onTap: () {
+                  showModalBottomSheet(
+                      context: context,
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(24),
+                        topRight: Radius.circular(24),
+                      )),
+                      // enableDrag: true,
+                      isDismissible: false,
+                      isScrollControlled: true,
+                      builder: (context) {
+                        return Container(
+                          height: MediaQuery.of(context).size.height / 1.3,
+                          decoration: BoxDecoration(),
+                          padding: EdgeInsets.all(16),
+                          child: Column(
+                            children: [
+                              Container(
+                                height: 4,
+                                width: 32,
+                                decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(16)),
+                              ),
+                              Text("Details"),
+                              Text(
+                                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "),
+                              Expanded(
+                                child: SingleChildScrollView(
+                                  child: Column(
+                                    children: [
+                                      ExpansionTile(
+                                        title: Center(
+                                          child: Column(
+                                            children: [
+                                              Text("materials"),
+                                            ],
+                                          ),
+                                        ),
+                                        children: [
+                                          Container(
+                                            height: 120,
+                                            color: Colors.black,
+                                            child: Row(),
+                                          ),
+
+                                          Container(
+                                            margin: EdgeInsets.only(top: 16),
+                                            height: 120,
+                                            color: Colors.black,
+                                            child: Row(),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        );
+                      });
                 },
                 child: Container(
                   decoration: BoxDecoration(

@@ -86,7 +86,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text(
+                          const Text(
                             "Hot news",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
@@ -94,47 +94,49 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             ),
                           ),
                           Container(
-                            margin: EdgeInsets.symmetric(vertical: 16),
+                            margin: const EdgeInsets.symmetric(vertical: 16),
                             height: 64,
                             child: Row(
                               children: [
                                 Container(
                                   height: 64,
                                   width: 64,
-                                  margin: EdgeInsets.only(right: 8),
+                                  margin: const EdgeInsets.only(right: 8),
                                   decoration: BoxDecoration(
                                     shape: BoxShape.circle,
                                     color: Colors.grey[200],
                                   ),
                                   child: IconButton(
                                     onPressed: () {},
-                                    icon: Icon(
+                                    icon: const Icon(
                                       Icons.add,
                                     ),
                                   ),
                                 ),
                                 Expanded(
-                                    child: ListView.builder(
-                                        scrollDirection: Axis.horizontal,
-                                        itemCount: 10,
-                                        itemBuilder: (context, index) {
-                                          return Container(
-                                            height: 64,
-                                            width: 64,
-                                            margin: EdgeInsets.only(right: 8),
-                                            decoration: BoxDecoration(
-                                              shape: BoxShape.circle,
-                                              color: Colors.black,
-                                            ),
-                                          );
-                                        }))
+                                  child: ListView.builder(
+                                    scrollDirection: Axis.horizontal,
+                                    itemCount: 10,
+                                    itemBuilder: (context, index) {
+                                      return Container(
+                                        height: 64,
+                                        width: 64,
+                                        margin: const EdgeInsets.only(right: 8),
+                                        decoration: const BoxDecoration(
+                                          shape: BoxShape.circle,
+                                          color: Colors.black,
+                                        ),
+                                      );
+                                    },
+                                  ),
+                                )
                               ],
                             ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 "Popular",
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -143,24 +145,26 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                               ),
                               TextButton(
                                 onPressed: () {},
-                                child: Text("See All"),
                                 style: TextButton.styleFrom(
                                   foregroundColor: Colors.red,
                                 ),
+                                child: const Text("See All"),
                               )
                             ],
                           ),
                           SizedBox(
-                              height: 360,
-                              child: ListView.builder(
-                                  scrollDirection: Axis.horizontal,
-                                  itemCount: 10,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      width: 300,
-                                      color: Colors.blue,
-                                    );
-                                  }))
+                            height: 360,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: 10,
+                              itemBuilder: (context, index) {
+                                return Container(
+                                  width: 300,
+                                  color: Colors.blue,
+                                );
+                              },
+                            ),
+                          )
                         ],
                       ),
                     ),

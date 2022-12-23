@@ -10,6 +10,15 @@ class NewsAppMainPage extends StatefulWidget {
 
 class _NewsAppMainPageState extends State<NewsAppMainPage> {
   int _index = 0;
+  List<String> listMenuItems = [
+    "Sports",
+    "Politics",
+    "Fashion",
+    "Moda",
+    "Flutter",
+    "Android",
+    "iOS",
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -227,6 +236,15 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                         Container(
                           height: 52,
                           color: Colors.brown,
+                          child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: listMenuItems.length,
+                              itemBuilder: (context, index) {
+                                return Container();
+                              }),
+                        ),
+                        SizedBox(
+                          height: 16,
                         ),
                         Expanded(
                           child: ListView.separated(

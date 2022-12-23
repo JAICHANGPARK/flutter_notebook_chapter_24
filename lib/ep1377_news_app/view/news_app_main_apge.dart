@@ -169,7 +169,11 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                         "News Title News Title News Title News Title News Title News Title News Title",
                                         maxLines: 2,
                                         overflow: TextOverflow.ellipsis,
-                                      )
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text("Dream Walker - 3h ago"),
                                     ],
                                   ),
                                 );

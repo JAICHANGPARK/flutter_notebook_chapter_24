@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1377_news_app/view/news_app_main_apge.dart';
 
 void main() {
   runApp(NewsApp());
@@ -9,8 +10,10 @@ class NewsApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-
+    return MaterialApp(
+      routes: {
+        "/": (context) => NewsAppMainPage(),
+      },
     );
   }
 }

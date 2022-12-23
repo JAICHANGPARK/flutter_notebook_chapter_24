@@ -11,44 +11,46 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Positioned(
-            left: 16,
-            right: 16,
-            bottom: 0,
-            top: 16,
-            child: Column(
-              children: [
-                Row(
-                  children: [
-                    CircleAvatar(),
-                    Column(
-                      children: [Text("Welcome back!"), Text("Dreamwalker")],
-                    ),
-                    Container(
-                      height: 64,
-                      width: 64,
-                      decoration: BoxDecoration(
-                        border: Border.all(),
-                        shape: BoxShape.circle,
+      body: SafeArea(
+        child: Stack(
+          children: [
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 0,
+              top: 16,
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      CircleAvatar(),
+                      Column(
+                        children: [Text("Welcome back!"), Text("Dreamwalker")],
                       ),
-                    )
-                  ],
-                )
-              ],
+                      Container(
+                        height: 48,
+                        width: 48,
+                        decoration: BoxDecoration(
+                          border: Border.all(),
+                          shape: BoxShape.circle,
+                        ),
+                      )
+                    ],
+                  )
+                ],
+              ),
             ),
-          ),
-          Positioned(
-            child: Container(
-              height: 64,
-              color: Colors.black,
-            ),
-            bottom: 16,
-            left: 24,
-            right: 24,
-          )
-        ],
+            Positioned(
+              child: Container(
+                height: 64,
+                color: Colors.black,
+              ),
+              bottom: 16,
+              left: 24,
+              right: 24,
+            )
+          ],
+        ),
       ),
     );
   }

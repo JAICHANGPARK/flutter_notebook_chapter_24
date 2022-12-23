@@ -80,7 +80,12 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             "Hot news",
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
+                              fontSize: 24,
                             ),
+                          ),
+                          Container(
+                            height: 70,
+                            color: Colors.blue,
                           )
                         ],
                       ),

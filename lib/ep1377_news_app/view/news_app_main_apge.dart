@@ -237,19 +237,24 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                           height: 52,
                           color: Colors.brown,
                           child: ListView.builder(
-                              scrollDirection: Axis.horizontal,
-                              itemCount: listMenuItems.length,
-                              itemBuilder: (context, index) {
-                                return Container(
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(32),
-                                      border: Border.all(
-                                        color: Colors.grey,
-                                      )),
-                                  padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
-                                  child: Center(child: Text("${listMenuItems[index]}")),
-                                );
-                              }),
+                            scrollDirection: Axis.horizontal,
+                            itemCount: listMenuItems.length,
+                            itemBuilder: (context, index) {
+                              return Container(
+                                padding: EdgeInsets.symmetric(horizontal: 18, vertical: 12),
+                                decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(32),
+                                  border: Border.all(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+
+                                child: Center(
+                                  child: Text("${listMenuItems[index]}"),
+                                ),
+                              );
+                            },
+                          ),
                         ),
                         SizedBox(
                           height: 16,

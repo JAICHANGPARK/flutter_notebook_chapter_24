@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class NewsAppListPage extends StatefulWidget {
   const NewsAppListPage({Key? key}) : super(key: key);
 
@@ -18,9 +17,10 @@ class _NewsAppListPageState extends State<NewsAppListPage> {
     "Android",
     "iOS",
   ];
+
   @override
   Widget build(BuildContext context) {
-    return    Padding(
+    return Padding(
       padding: const EdgeInsets.only(right: 16),
       child: Column(
         children: [

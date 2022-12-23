@@ -74,7 +74,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           (e) => Container(
                             height: 42,
                             width: 42,
-                            margin: EdgeInsets.only(left: 8, right: 8),
+                            margin: const EdgeInsets.only(left: 8, right: 8),
                             decoration: BoxDecoration(
                                 color: e,
                                 border: Border.all(color: Colors.grey),

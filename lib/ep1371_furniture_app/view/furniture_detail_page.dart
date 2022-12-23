@@ -105,6 +105,7 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -122,6 +123,21 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           child: IconButton(
                             onPressed: () {},
                             icon: Icon(Icons.remove),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 24),
+                          child: Text("1", style: TextStyle(),),
+                        ),
+                        Container(
+                          height: 38,
+                          width: 38,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                          ),
+                          child: IconButton(
+                            onPressed: () {},
+                            icon: Icon(Icons.add),
                           ),
                         )
                       ],

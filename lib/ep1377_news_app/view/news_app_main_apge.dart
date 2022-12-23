@@ -33,12 +33,22 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text("Welcome back!"),
-                          const SizedBox(
+                        children: const [
+                          Text(
+                            "Welcome back!",
+                            style: TextStyle(
+                              color: Colors.grey,
+                            ),
+                          ),
+                          SizedBox(
                             height: 8,
                           ),
-                          const Text("Dreamwalker")
+                          Text(
+                            "Dreamwalker",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          )
                         ],
                       ),
                       const Spacer(),
@@ -85,8 +95,41 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                           ),
                           Container(
                             margin: EdgeInsets.symmetric(vertical: 16),
-                            height: 70,
-                            color: Colors.blue,
+                            height: 64,
+                            child: Row(
+                              children: [
+                                Container(
+                                  height: 64,
+                                  width: 64,
+                                  margin: EdgeInsets.only(right: 8),
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: Colors.grey[200],
+                                  ),
+                                  child: IconButton(
+                                    onPressed: () {},
+                                    icon: Icon(
+                                      Icons.add,
+                                    ),
+                                  ),
+                                ),
+                                Expanded(
+                                    child: ListView.builder(
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount: 10,
+                                        itemBuilder: (context, index) {
+                                          return Container(
+                                            height: 64,
+                                            width: 64,
+                                            margin: EdgeInsets.only(right: 8),
+                                            decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              color: Colors.black,
+                                            ),
+                                          );
+                                        }))
+                              ],
+                            ),
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -108,16 +151,16 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             ],
                           ),
                           SizedBox(
-                            height: 360,
+                              height: 360,
                               child: ListView.builder(
-                            scrollDirection: Axis.horizontal,
-                              itemCount: 10,
-                              itemBuilder: (context, index) {
-                            return Container(
-                              width: 300,
-                              color: Colors.blue,
-                            );
-                          }))
+                                  scrollDirection: Axis.horizontal,
+                                  itemCount: 10,
+                                  itemBuilder: (context, index) {
+                                    return Container(
+                                      width: 300,
+                                      color: Colors.blue,
+                                    );
+                                  }))
                         ],
                       ),
                     ),

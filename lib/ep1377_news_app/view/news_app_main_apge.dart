@@ -87,6 +87,25 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                             margin: EdgeInsets.symmetric(vertical: 16),
                             height: 70,
                             color: Colors.blue,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                "Popular",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 24,
+                                ),
+                              ),
+                              TextButton(
+                                onPressed: () {},
+                                child: Text("See All"),
+                                style: TextButton.styleFrom(
+                                  foregroundColor: Colors.red,
+                                ),
+                              )
+                            ],
                           )
                         ],
                       ),

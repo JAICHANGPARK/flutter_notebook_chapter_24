@@ -20,6 +20,7 @@ mixin _$FurnitureItem {
   String get stock => throw _privateConstructorUsedError;
   String get price => throw _privateConstructorUsedError;
   List<Color> get colors => throw _privateConstructorUsedError;
+  String get img => throw _privateConstructorUsedError;
 
   @JsonKey(ignore: true)
   $FurnitureItemCopyWith<FurnitureItem> get copyWith =>
@@ -32,7 +33,12 @@ abstract class $FurnitureItemCopyWith<$Res> {
           FurnitureItem value, $Res Function(FurnitureItem) then) =
       _$FurnitureItemCopyWithImpl<$Res, FurnitureItem>;
   @useResult
-  $Res call({String title, String stock, String price, List<Color> colors});
+  $Res call(
+      {String title,
+      String stock,
+      String price,
+      List<Color> colors,
+      String img});
 }
 
 /// @nodoc
@@ -52,6 +58,7 @@ class _$FurnitureItemCopyWithImpl<$Res, $Val extends FurnitureItem>
     Object? stock = null,
     Object? price = null,
     Object? colors = null,
+    Object? img = null,
   }) {
     return _then(_value.copyWith(
       title: null == title
@@ -70,6 +77,10 @@ class _$FurnitureItemCopyWithImpl<$Res, $Val extends FurnitureItem>
           ? _value.colors
           : colors // ignore: cast_nullable_to_non_nullable
               as List<Color>,
+      img: null == img
+          ? _value.img
+          : img // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -82,7 +93,12 @@ abstract class _$$_FurnitureItemCopyWith<$Res>
       __$$_FurnitureItemCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String title, String stock, String price, List<Color> colors});
+  $Res call(
+      {String title,
+      String stock,
+      String price,
+      List<Color> colors,
+      String img});
 }
 
 /// @nodoc
@@ -100,6 +116,7 @@ class __$$_FurnitureItemCopyWithImpl<$Res>
     Object? stock = null,
     Object? price = null,
     Object? colors = null,
+    Object? img = null,
   }) {
     return _then(_$_FurnitureItem(
       title: null == title
@@ -118,6 +135,10 @@ class __$$_FurnitureItemCopyWithImpl<$Res>
           ? _value._colors
           : colors // ignore: cast_nullable_to_non_nullable
               as List<Color>,
+      img: null == img
+          ? _value.img
+          : img // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -129,7 +150,8 @@ class _$_FurnitureItem implements _FurnitureItem {
       {required this.title,
       required this.stock,
       required this.price,
-      required final List<Color> colors})
+      required final List<Color> colors,
+      required this.img})
       : _colors = colors;
 
   @override
@@ -147,8 +169,11 @@ class _$_FurnitureItem implements _FurnitureItem {
   }
 
   @override
+  final String img;
+
+  @override
   String toString() {
-    return 'FurnitureItem(title: $title, stock: $stock, price: $price, colors: $colors)';
+    return 'FurnitureItem(title: $title, stock: $stock, price: $price, colors: $colors, img: $img)';
   }
 
   @override
@@ -159,12 +184,13 @@ class _$_FurnitureItem implements _FurnitureItem {
             (identical(other.title, title) || other.title == title) &&
             (identical(other.stock, stock) || other.stock == stock) &&
             (identical(other.price, price) || other.price == price) &&
-            const DeepCollectionEquality().equals(other._colors, _colors));
+            const DeepCollectionEquality().equals(other._colors, _colors) &&
+            (identical(other.img, img) || other.img == img));
   }
 
   @override
   int get hashCode => Object.hash(runtimeType, title, stock, price,
-      const DeepCollectionEquality().hash(_colors));
+      const DeepCollectionEquality().hash(_colors), img);
 
   @JsonKey(ignore: true)
   @override
@@ -178,7 +204,8 @@ abstract class _FurnitureItem implements FurnitureItem {
       {required final String title,
       required final String stock,
       required final String price,
-      required final List<Color> colors}) = _$_FurnitureItem;
+      required final List<Color> colors,
+      required final String img}) = _$_FurnitureItem;
 
   @override
   String get title;
@@ -188,6 +215,8 @@ abstract class _FurnitureItem implements FurnitureItem {
   String get price;
   @override
   List<Color> get colors;
+  @override
+  String get img;
   @override
   @JsonKey(ignore: true)
   _$$_FurnitureItemCopyWith<_$_FurnitureItem> get copyWith =>

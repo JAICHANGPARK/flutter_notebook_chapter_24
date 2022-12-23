@@ -53,9 +53,10 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                     ],
                   ),
                   Container(
+                    margin: EdgeInsets.symmetric(vertical: 24),
                     height: 64,
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
+                      color: Colors.grey[300],
                     ),
                   )
                 ],

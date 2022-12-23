@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/controller/funiture_app_controller.dart';
+import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/data/fake_furniture_data.dart';
 import 'package:flutter_notebook_chapter_24/ep1371_furniture_app/view/furniture_detail_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -86,7 +87,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                           crossAxisSpacing: 12,
                           childAspectRatio: 0.7,
                         ),
+                        itemCount: fakeFurnitureItems.length,
                         itemBuilder: (context, index) {
+                          final item = fakeFurnitureItems[index];
                           return GestureDetector(
                             onTap: () {
                               Navigator.of(context).push(
@@ -103,9 +106,9 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                   decoration: BoxDecoration(
                                     color: Colors.grey,
                                     borderRadius: BorderRadius.circular(8),
-                                    image: const DecorationImage(
+                                    image: DecorationImage(
                                       image: NetworkImage(
-                                        "https://cdn.pixabay.com/photo/2016/11/21/12/59/couch-1845270_960_720.jpg",
+                                        item.img,
                                       ),
                                       fit: BoxFit.cover,
                                     ),
@@ -114,55 +117,36 @@ class _FurnitureMainPageState extends State<FurnitureMainPage> {
                                 const SizedBox(
                                   height: 16,
                                 ),
-                                const Text("Cottages Sofa"),
+                                Text(item.title),
                                 const SizedBox(
                                   height: 4,
                                 ),
-                                const Text("Stock: 21"),
+                                Text("Stock: ${item.stock}"),
                                 const SizedBox(
                                   height: 8,
                                 ),
                                 Row(
                                   children: [
-                                    Container(
-                                      height: 24,
-                                      width: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(4),
-                                        border: Border.all(
-                                          color: Colors.grey,
-                                        ),
-                                        color: Colors.white,
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      width: 12,
-                                    ),
-                                    Container(
-                                      height: 24,
-                                      width: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(4),
-                                        border: Border.all(
-                                          color: Colors.grey,
-                                        ),
-                                        color: Colors.green,
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      width: 12,
-                                    ),
-                                    Container(
-                                      height: 24,
-                                      width: 24,
-                                      decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(4),
-                                        border: Border.all(
-                                          color: Colors.grey,
-                                        ),
-                                        color: Colors.orange,
-                                      ),
-                                    ),
+                                    ...item.colors
+                                        .map(
+                                          (e) => Row(children: [
+                                            Container(
+                                              height: 24,
+                                              width: 24,
+                                              decoration: BoxDecoration(
+                                                borderRadius: BorderRadius.circular(4),
+                                                border: Border.all(
+                                                  color: Colors.grey,
+                                                ),
+                                                color: e,
+                                              ),
+                                            ),
+                                            const SizedBox(
+                                              width: 12,
+                                            ),
+                                          ]),
+                                        )
+                                        .toList(),
                                     const Spacer(),
                                     const Text(
                                       "\$24",

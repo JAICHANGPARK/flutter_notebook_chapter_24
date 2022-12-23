@@ -68,15 +68,15 @@ class _NewsAppListPageState extends State<NewsAppListPage> {
                           Expanded(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                const Text(
+                              children: const [
+                                Text(
                                   "SPORTS",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
                                     color: Colors.red,
                                   ),
                                 ),
-                                const Padding(
+                                Padding(
                                   padding: EdgeInsets.fromLTRB(0, 16, 24, 0),
                                   child: Text(
                                     "SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE SPORTS TITLE ",

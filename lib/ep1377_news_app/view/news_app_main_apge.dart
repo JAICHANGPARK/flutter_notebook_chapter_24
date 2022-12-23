@@ -18,7 +18,7 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
             Positioned(
               left: 16,
               right: 16,
-              bottom: 0,
+              bottom: 100,
               top: 16,
               child: Column(
                 children: [
@@ -62,23 +62,26 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                   Expanded(
                     child: SingleChildScrollView(
                       child: Column(
-                        children: [
-
-                        ],
+                        children: [],
                       ),
                     ),
-                  )
+                  ),
+
                 ],
               ),
             ),
             Positioned(
+              bottom: 0,
+              left: 0,
+              right: 0,
               child: Container(
-                height: 64,
-                color: Colors.black,
+                height: 100,
+                color: Colors.white,
+                padding: EdgeInsets.fromLTRB(24, 24, 24, 24),
+                child: Container(
+                  decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(32)),
+                ),
               ),
-              bottom: 16,
-              left: 24,
-              right: 24,
             )
           ],
         ),

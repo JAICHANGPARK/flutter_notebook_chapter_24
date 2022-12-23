@@ -94,6 +94,9 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                               fit: BoxFit.cover),
                         ),
                       ),
+                      SizedBox(
+                        height: 16,
+                      ),
                       Text(
                         "Star",
                         style: TextStyle(
@@ -101,13 +104,12 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
                           fontSize: 18,
                         ),
                       ),
-                      SizedBox(height: 16,),
+                      SizedBox(
+                        height: 16,
+                      ),
                       SelectableText(
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                        style: TextStyle(
-                          height: 1.2,
-                          fontWeight: FontWeight.w500
-                        ),
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        style: TextStyle(height: 1.2, fontWeight: FontWeight.w500, fontSize: 15),
                       )
                     ],
                   ),

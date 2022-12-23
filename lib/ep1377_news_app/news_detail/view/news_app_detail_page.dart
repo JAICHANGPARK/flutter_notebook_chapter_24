@@ -61,7 +61,27 @@ class _NewsAppDetailPageState extends State<NewsAppDetailPage> {
               Expanded(
                 child: SingleChildScrollView(
                   child: Column(
-                    children: [],
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "News Title News Title News Title News Title News Title News Title News Title ",
+                        maxLines: 2,
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text("Dream Walker - 26 min read"),
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 16),
+                        height: 180,
+                        
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(8)
+                        ),
+                      )
+                    ],
                   ),
                 ),
               ),

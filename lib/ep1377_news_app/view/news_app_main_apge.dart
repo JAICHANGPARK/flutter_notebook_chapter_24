@@ -23,62 +23,69 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    children: [
-                      const CircleAvatar(
-                        radius: 28,
-                      ),
-                      const SizedBox(
-                        width: 12,
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: const [
-                          Text(
-                            "Welcome back!",
-                            style: TextStyle(
-                              color: Colors.grey,
+                  Padding(
+                    padding: const EdgeInsets.only(right: 16),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            const CircleAvatar(
+                              radius: 28,
+                            ),
+                            const SizedBox(
+                              width: 12,
+                            ),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: const [
+                                Text(
+                                  "Welcome back!",
+                                  style: TextStyle(
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                                SizedBox(
+                                  height: 8,
+                                ),
+                                Text(
+                                  "Dreamwalker",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                )
+                              ],
+                            ),
+                            const Spacer(),
+                            Container(
+                              height: 48,
+                              width: 48,
+                              decoration: BoxDecoration(
+                                border: Border.all(),
+                                shape: BoxShape.circle,
+                              ),
+                              child: const Icon(Ionicons.notifications_outline),
+                            )
+                          ],
+                        ),
+                        Container(
+                          margin: const EdgeInsets.symmetric(vertical: 24),
+                          height: 60,
+                          decoration: BoxDecoration(
+                            color: Colors.grey[300],
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const Center(
+                            child: TextField(
+                              decoration: InputDecoration(
+                                icon: Icon(Icons.search),
+                                hintText: "Search",
+                                border: InputBorder.none,
+                              ),
                             ),
                           ),
-                          SizedBox(
-                            height: 8,
-                          ),
-                          Text(
-                            "Dreamwalker",
-                            style: TextStyle(
-                              fontWeight: FontWeight.bold,
-                            ),
-                          )
-                        ],
-                      ),
-                      const Spacer(),
-                      Container(
-                        height: 48,
-                        width: 48,
-                        decoration: BoxDecoration(
-                          border: Border.all(),
-                          shape: BoxShape.circle,
-                        ),
-                        child: const Icon(Ionicons.notifications_outline),
-                      )
-                    ],
-                  ),
-                  Container(
-                    margin: const EdgeInsets.symmetric(vertical: 24),
-                    height: 60,
-                    decoration: BoxDecoration(
-                      color: Colors.grey[300],
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    padding: const EdgeInsets.symmetric(horizontal: 16),
-                    child: const Center(
-                      child: TextField(
-                        decoration: InputDecoration(
-                          icon: Icon(Icons.search),
-                          hintText: "Search",
-                          border: InputBorder.none,
-                        ),
-                      ),
+                        )
+                      ],
                     ),
                   ),
                   Expanded(
@@ -168,7 +175,6 @@ class _NewsAppMainPageState extends State<NewsAppMainPage> {
                                         child: ClipRRect(
                                           borderRadius: BorderRadius.circular(8),
                                           child: Image.network(
-
                                             "https://cdn.pixabay.com/photo/2012/11/28/11/11/quarterback-67700_960_720.jpg",
                                             fit: BoxFit.cover,
                                             width: double.infinity,

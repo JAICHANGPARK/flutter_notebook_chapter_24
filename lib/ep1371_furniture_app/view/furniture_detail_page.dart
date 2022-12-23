@@ -136,7 +136,10 @@ class _FurnitureDetailPageState extends State<FurnitureDetailPage> {
                           padding: EdgeInsets.symmetric(horizontal: 24),
                           child: Text(
                             "1",
-                            style: TextStyle(),
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              fontSize: 32,
+                            ),
                           ),
                         ),
                         Container(

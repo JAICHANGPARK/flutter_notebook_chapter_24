@@ -40,7 +40,8 @@ class _NewsAppListPageState extends State<NewsAppListPage> {
                     ),
                   ),
                   child: Center(
-                    child: Text(listMenuItems[index]),
+                    child: Text(
+                        listMenuItems[index]),
                   ),
                 );
               },

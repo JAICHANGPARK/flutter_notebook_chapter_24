@@ -67,7 +67,7 @@
 
 ## How to Run 
 
-flutter run <each ep main.dart>
+flutter run each ep main.dart
 
 ## Getting Started
 

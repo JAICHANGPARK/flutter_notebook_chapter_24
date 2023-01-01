@@ -26,8 +26,16 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
             label: "For you",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.thumb_up_alt_outlined),
-            label: "For you",
+            icon: Icon(Icons.wallet),
+            label: "Wallet",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.favorite),
+            label: "Collection",
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: "Settings",
           )
         ],
       ),

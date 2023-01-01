@@ -13,24 +13,24 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
     return Column(
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           child: Row(
             children: [
-              Text(
+              const Text(
                 "Shofun",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 24,
                 ),
               ),
-              Spacer(),
+              const Spacer(),
               IconButton(
                 onPressed: () {},
-                icon: Icon(
+                icon: const Icon(
                   Icons.shopping_cart_outlined,
                 ),
               ),
-              Badge(
+              const Badge(
                 child: Icon(
                   Icons.notifications_none,
                 ),
@@ -40,7 +40,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
         ),
         Container(
           height: 54,
-          margin: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+          margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
           decoration: BoxDecoration(
             color: Colors.white,
             borderRadius: BorderRadius.circular(32),
@@ -54,7 +54,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(left: 16, bottom: 16, top: 16),
+          margin: const EdgeInsets.only(left: 16, bottom: 16, top: 16),
           height: 100,
           color: Colors.pink,
           child: ListView(),
@@ -64,28 +64,40 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
             child: Column(
               children: [
                 Container(
-                  height: 140,
-                  margin: EdgeInsets.symmetric(horizontal: 20),
+                  height: 160,
+                  margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     color: Colors.orange,
                     borderRadius: BorderRadius.circular(16),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Text("New Collection"),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text("See all"),
-                    ),
-                  ],
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      const Text("New Collection"),
+                      TextButton(
+                        onPressed: () {},
+                        child: const Text("See all"),
+                      ),
+                    ],
+                  ),
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                  height: 300,
+                  color: Colors.pink,
+                ),
+                Container(
+                  margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                  height: 300,
+                  color: Colors.pink,
                 ),
               ],
             ),
           ),
         ),
-
       ],
     );
   }

@@ -8,18 +8,23 @@ class EcommerceMainPage extends StatefulWidget {
 }
 
 class _EcommerceMainPageState extends State<EcommerceMainPage> {
+  int _menuIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: IndexedStack(
-
-          children: [
-
-          ],
+          children: [],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        currentIndex: _menuIndex,
+        onTap: (idx) {
+          setState(() {
+            _menuIndex = idx;
+          });
+        },
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.thumb_up_alt_outlined),

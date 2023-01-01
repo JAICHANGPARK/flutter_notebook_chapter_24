@@ -15,10 +15,14 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
     return Scaffold(
       body: SafeArea(
         child: IndexedStack(
+          index: _menuIndex,
           children: [],
         ),
       ),
       bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        selectedItemColor: Color(0xFFFF7800),
+        unselectedItemColor: Colors.grey,
         currentIndex: _menuIndex,
         onTap: (idx) {
           setState(() {

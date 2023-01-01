@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1383_ecommerce_app/view/ecommerce_home_widget.dart';
 
 class EcommerceMainPage extends StatefulWidget {
   const EcommerceMainPage({Key? key}) : super(key: key);
@@ -16,8 +17,11 @@ class _EcommerceMainPageState extends State<EcommerceMainPage> {
       body: SafeArea(
         child: IndexedStack(
           index: _menuIndex,
-          children: [
-
+          children:  [
+            EcommerceHomeWidget(),
+            Center(child: Text(_menuIndex.toString()),),
+            Center(child: Text(_menuIndex.toString()),),
+            Center(child: Text(_menuIndex.toString()),)
           ],
         ),
       ),

@@ -72,11 +72,16 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      const Text("New Collection"),
+                      const Text(
+                        "New Collection",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                       TextButton(
                         onPressed: () {},
                         child: const Text("See all"),
@@ -85,7 +90,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                  margin: EdgeInsets.fromLTRB(16, 8, 0, 16),
                   height: 300,
                   color: Colors.pink,
                 ),

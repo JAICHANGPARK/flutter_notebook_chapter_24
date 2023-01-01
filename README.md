@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1377
+### EP1383
+
+- Ecommerce - Mobile Design
+- by OAnggun Dipa for Dipa Inhouse
+- https://dribbble.com/shots/20254864-Ecommerce-Mobile-Design
+
+<img src="https://cdn.dribbble.com/userupload/4217367/file/original-b1f2069b34e79a7889784003110d67b2.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1377-1382
 
 - NowNews - Mobile application design for a news service
 - by Outcrowd

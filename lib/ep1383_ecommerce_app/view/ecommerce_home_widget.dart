@@ -95,7 +95,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                 padding: const EdgeInsets.only(right: 16),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children:  [
+                  children: [
                     CircleAvatar(
                       radius: 28,
                       backgroundColor: Colors.grey[300]!,
@@ -127,8 +127,36 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   height: 160,
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
-                    color: Colors.orange,
+                    color: Color(0x33ff7800),
                     borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 16,
+                        top: 16,
+                        bottom: 16,
+                        right: MediaQuery.of(context).size.width / 2,
+                        child: Column(
+                          children: [
+                            Text(
+                              "Stay Trendy with Addddd Sport",
+                              style: TextStyle(
+                                height: 1.5,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                            ),
+                            Text("suitable for your fashion"),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Color(0xffff7800),
+                              ),
+                            )
+                          ],
+                        ),
+                      )
+                    ],
                   ),
                 ),
                 Padding(

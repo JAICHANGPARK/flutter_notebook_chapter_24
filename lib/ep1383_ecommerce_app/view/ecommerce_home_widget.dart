@@ -95,19 +95,19 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                 padding: const EdgeInsets.only(right: 16),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: const [
+                  children:  [
                     CircleAvatar(
                       radius: 28,
-                      backgroundColor: Colors.grey,
-                      child: Text(
+                      backgroundColor: Colors.grey[300]!,
+                      child: const Text(
                         "👗",
                         style: TextStyle(fontSize: 24),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 14,
                     ),
-                    Text(
+                    const Text(
                       "Fashion",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,

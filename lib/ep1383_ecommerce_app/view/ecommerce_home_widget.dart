@@ -52,17 +52,17 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
               )
             ],
           ),
-          padding: EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           child: Row(
             children: [
               Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(24),
-                  color: Color(0xfff5f6f9),
+                  color: const Color(0xfff5f6f9),
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 child: Row(
-                  children: [
+                  children: const [
                     Icon(
                       Icons.location_on_outlined,
                       size: 20,
@@ -71,8 +71,8 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   ],
                 ),
               ),
-              VerticalDivider(),
-              Expanded(
+              const VerticalDivider(),
+              const Expanded(
                 child: TextField(
                   decoration: InputDecoration(
                     icon: Icon(Icons.search),
@@ -87,7 +87,6 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
         Container(
           margin: const EdgeInsets.only(left: 16, bottom: 16, top: 16),
           height: 100,
-          color: Colors.pink,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: 10,
@@ -96,10 +95,14 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                 padding: const EdgeInsets.only(right: 16),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     CircleAvatar(
                       radius: 28,
-                      backgroundColor: Color(0xfff5f6f9),
+                      backgroundColor: Colors.grey,
+                      child: Text(
+                        "👗",
+                        style: TextStyle(fontSize: 24),
+                      ),
                     ),
                     SizedBox(
                       height: 14,
@@ -147,12 +150,12 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(16, 8, 0, 16),
+                  margin: const EdgeInsets.fromLTRB(16, 8, 0, 16),
                   height: 300,
                   color: Colors.pink,
                 ),
                 Container(
-                  margin: EdgeInsets.fromLTRB(16, 16, 0, 16),
+                  margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
                   height: 300,
                   color: Colors.pink,
                 ),

@@ -124,7 +124,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
             child: Column(
               children: [
                 Container(
-                  height: 160,
+                  height: 172,
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
                     color: Color(0x33ff7800),
@@ -148,9 +148,25 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                               ),
                             ),
                             Text("suitable for your fashion"),
+                            SizedBox(
+                              height: 16,
+                            ),
                             Container(
                               decoration: BoxDecoration(
                                 color: Color(0xffff7800),
+                                borderRadius: BorderRadius.circular(24),
+                              ),
+                              padding: EdgeInsets.symmetric(
+                                vertical: 8,
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Get it Now",
+                                  style: TextStyle(
+                                    fontSize: 16,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             )
                           ],

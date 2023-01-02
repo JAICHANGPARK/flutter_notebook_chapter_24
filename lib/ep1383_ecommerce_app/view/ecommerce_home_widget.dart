@@ -70,7 +70,17 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                     Text("Seoul"),
                   ],
                 ),
-              )
+              ),
+              VerticalDivider(),
+              Expanded(
+                child: TextField(
+                  decoration: InputDecoration(
+                    icon: Icon(Icons.search),
+                    hintText: "Jacket, Sneakers, Electroinics",
+                    border: InputBorder.none,
+                  ),
+                ),
+              ),
             ],
           ),
         ),

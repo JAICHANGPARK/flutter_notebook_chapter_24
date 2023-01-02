@@ -189,10 +189,10 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                       ),
                       TextButton(
                         onPressed: () {},
-                        child: const Text("See all"),
                         style: TextButton.styleFrom(
                           foregroundColor: Colors.orange,
                         ),
+                        child: const Text("See all"),
                       ),
                     ],
                   ),
@@ -201,6 +201,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   margin: const EdgeInsets.fromLTRB(16, 8, 0, 16),
                   height: 300,
                   color: Colors.pink,
+
                 ),
                 Container(
                   margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),

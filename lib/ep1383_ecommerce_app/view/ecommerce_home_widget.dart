@@ -92,7 +92,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
             itemCount: 10,
             itemBuilder: (context, _) {
               return Padding(
-                padding: const EdgeInsets.only(right: 16),
+                padding: const EdgeInsets.only(right: 20),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -127,7 +127,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   height: 172,
                   margin: const EdgeInsets.symmetric(horizontal: 20),
                   decoration: BoxDecoration(
-                    color: Color(0x33ff7800),
+                    color: const Color(0x33ff7800),
                     borderRadius: BorderRadius.circular(16),
                   ),
                   child: Stack(
@@ -139,7 +139,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                         right: MediaQuery.of(context).size.width / 2,
                         child: Column(
                           children: [
-                            Text(
+                            const Text(
                               "Stay Trendy with Addddd Sport",
                               style: TextStyle(
                                 height: 1.5,
@@ -147,19 +147,19 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                 fontSize: 18,
                               ),
                             ),
-                            Text("suitable for your fashion"),
-                            SizedBox(
+                            const Text("suitable for your fashion"),
+                            const SizedBox(
                               height: 16,
                             ),
                             Container(
                               decoration: BoxDecoration(
-                                color: Color(0xffff7800),
+                                color: const Color(0xffff7800),
                                 borderRadius: BorderRadius.circular(24),
                               ),
-                              padding: EdgeInsets.symmetric(
+                              padding: const EdgeInsets.symmetric(
                                 vertical: 8,
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   "Get it Now",
                                   style: TextStyle(

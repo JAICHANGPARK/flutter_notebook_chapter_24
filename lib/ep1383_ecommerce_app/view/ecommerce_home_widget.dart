@@ -92,15 +92,26 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
             scrollDirection: Axis.horizontal,
             itemCount: 10,
             itemBuilder: (context, _) {
-              return Column(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Color(0xfff5f6f9),
-                  ),
-                  Text(
-                    "Fashion",
-                  )
-                ],
+              return Padding(
+                padding: const EdgeInsets.only(right: 16),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    CircleAvatar(
+                      radius: 28,
+                      backgroundColor: Color(0xfff5f6f9),
+                    ),
+                    SizedBox(
+                      height: 14,
+                    ),
+                    Text(
+                      "Fashion",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    )
+                  ],
+                ),
               );
             },
           ),

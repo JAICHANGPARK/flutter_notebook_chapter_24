@@ -52,6 +52,27 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
               )
             ],
           ),
+          padding: EdgeInsets.all(8),
+          child: Row(
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(24),
+                  color: Color(0xfff5f6f9),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.location_on_outlined,
+                      size: 20,
+                    ),
+                    Text("Seoul"),
+                  ],
+                ),
+              )
+            ],
+          ),
         ),
         Container(
           margin: const EdgeInsets.only(left: 16, bottom: 16, top: 16),

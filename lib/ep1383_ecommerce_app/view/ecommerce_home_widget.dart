@@ -95,7 +95,10 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
               return Column(
                 children: [
                   CircleAvatar(
-                    backgroundColor:  Color(0xfff5f6f9),
+                    backgroundColor: Color(0xfff5f6f9),
+                  ),
+                  Text(
+                    "Fashion",
                   )
                 ],
               );

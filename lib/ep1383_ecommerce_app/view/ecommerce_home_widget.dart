@@ -184,11 +184,15 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                         "New Collection",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 18,
                         ),
                       ),
                       TextButton(
                         onPressed: () {},
                         child: const Text("See all"),
+                        style: TextButton.styleFrom(
+                          foregroundColor: Colors.orange,
+                        ),
                       ),
                     ],
                   ),

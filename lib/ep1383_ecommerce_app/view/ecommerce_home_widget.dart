@@ -88,7 +88,19 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
           margin: const EdgeInsets.only(left: 16, bottom: 16, top: 16),
           height: 100,
           color: Colors.pink,
-          child: ListView(),
+          child: ListView.builder(
+            scrollDirection: Axis.horizontal,
+            itemCount: 10,
+            itemBuilder: (context, _) {
+              return Column(
+                children: [
+                  CircleAvatar(
+                    backgroundColor:  Color(0xfff5f6f9),
+                  )
+                ],
+              );
+            },
+          ),
         ),
         Expanded(
           child: SingleChildScrollView(

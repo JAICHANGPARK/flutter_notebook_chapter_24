@@ -231,9 +231,9 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                           borderRadius: BorderRadius.circular(8),
                                         ),
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.symmetric(vertical: 12),
-                                        child: const Text(
+                                      const Padding(
+                                        padding: EdgeInsets.symmetric(vertical: 12),
+                                        child: Text(
                                           "Title Title Acelerate",
                                           style: TextStyle(
                                             fontWeight: FontWeight.bold,
@@ -245,10 +245,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                           Text(
                                             "\$59.00",
                                             style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                              color: Colors.orange,
-                                              fontSize: 18
-                                            ),
+                                                fontWeight: FontWeight.bold, color: Colors.orange, fontSize: 18),
                                           ),
                                           SizedBox(
                                             width: 8,
@@ -263,7 +260,30 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                         ],
                                       )
                                     ],
-                                  ))
+                                  )),
+                              Positioned(
+                                left: -48,
+                                top: 8,
+                                child: Transform.rotate(
+                                  angle: -0.7,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red[200],
+                                    ),
+                                    width: 160,
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Center(
+                                      child: Text(
+                                        "Limited",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.red,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
                             ],
                           ),
                         );

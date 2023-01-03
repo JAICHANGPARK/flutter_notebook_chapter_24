@@ -245,7 +245,10 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                           Text(
                                             "\$59.00",
                                             style: TextStyle(
-                                                fontWeight: FontWeight.bold, color: Colors.orange, fontSize: 18),
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.orange,
+                                              fontSize: 18,
+                                            ),
                                           ),
                                           SizedBox(
                                             width: 8,

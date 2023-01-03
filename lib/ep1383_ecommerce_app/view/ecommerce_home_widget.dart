@@ -238,7 +238,18 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                       ),
                                       Row(
                                         children: [
-                                          
+                                          Text("\$59.00",style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.orange
+                                          ),),
+                                          SizedBox(width: 8,),
+                                          Text(
+                                            "\$100.00",
+                                            style: TextStyle(
+                                              decoration: TextDecoration.lineThrough,
+                                              color: Colors.grey,
+                                            ),
+                                          )
                                         ],
                                       )
                                     ],

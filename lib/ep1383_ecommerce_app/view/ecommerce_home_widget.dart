@@ -201,7 +201,12 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                   margin: const EdgeInsets.fromLTRB(16, 8, 0, 16),
                   height: 300,
                   color: Colors.pink,
-
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container();
+                      }),
                 ),
                 Container(
                   margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),

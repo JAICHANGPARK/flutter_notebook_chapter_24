@@ -227,8 +227,14 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                       Container(
                                         height: 180,
                                         decoration: BoxDecoration(
-                                          color: Colors.grey,
+                                          color: Colors.grey[300],
                                           borderRadius: BorderRadius.circular(8),
+                                          image: const DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_960_720.png",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
                                         ),
                                       ),
                                       const Padding(
@@ -271,7 +277,7 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                   angle: -0.7,
                                   child: Container(
                                     decoration: BoxDecoration(
-                                      color: Colors.red[200],
+                                      color: Colors.red[50],
                                     ),
                                     width: 160,
                                     padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),

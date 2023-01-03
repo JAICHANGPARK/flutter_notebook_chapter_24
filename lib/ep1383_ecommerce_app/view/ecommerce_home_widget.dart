@@ -299,9 +299,105 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                       }),
                 ),
                 Container(
-                  margin: const EdgeInsets.fromLTRB(16, 16, 0, 16),
-                  height: 300,
-                  color: Colors.pink,
+                  margin: const EdgeInsets.fromLTRB(16, 8, 0, 16),
+                  height: 280,
+                  child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 10,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          width: 220,
+                          margin: const EdgeInsets.only(right: 20),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  left: 8,
+                                  right: 8,
+                                  top: 8,
+                                  bottom: 8,
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        height: 180,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey[300],
+                                          borderRadius: BorderRadius.circular(8),
+                                          image: const DecorationImage(
+                                            image: NetworkImage(
+                                              "https://cdn.pixabay.com/photo/2016/12/06/09/31/blank-1886008_960_720.png",
+                                            ),
+                                            fit: BoxFit.cover,
+                                          ),
+                                        ),
+                                      ),
+                                      const Padding(
+                                        padding: EdgeInsets.symmetric(vertical: 12),
+                                        child: Text(
+                                          "Title Title Acelerate",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                      Row(
+                                        children: const [
+                                          Text(
+                                            "\$59.00",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.orange,
+                                              fontSize: 18,
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Text(
+                                            "\$100.00",
+                                            style: TextStyle(
+                                              decoration: TextDecoration.lineThrough,
+                                              color: Colors.grey,
+                                            ),
+                                          )
+                                        ],
+                                      )
+                                    ],
+                                  )),
+                              Positioned(
+                                left: -48,
+                                top: 8,
+                                child: Transform.rotate(
+                                  angle: -0.7,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.red[50],
+                                    ),
+                                    width: 160,
+                                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+                                    child: const Center(
+                                      child: Text(
+                                        "Limited",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.red,
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        );
+                      }),
                 ),
               ],
             ),

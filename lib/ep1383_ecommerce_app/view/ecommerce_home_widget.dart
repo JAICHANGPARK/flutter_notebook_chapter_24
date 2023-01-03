@@ -199,14 +199,14 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                 ),
                 Container(
                   margin: const EdgeInsets.fromLTRB(16, 8, 0, 16),
-                  height: 300,
+                  height: 280,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
                         return Container(
                           width: 220,
-                          margin: EdgeInsets.only(right: 20),
+                          margin: const EdgeInsets.only(right: 20),
                           decoration: BoxDecoration(
                             color: Colors.white,
                             border: Border.all(
@@ -222,27 +222,37 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                   top: 8,
                                   bottom: 8,
                                   child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        height: 200,
+                                        height: 180,
                                         decoration: BoxDecoration(
                                           color: Colors.grey,
                                           borderRadius: BorderRadius.circular(8),
                                         ),
                                       ),
-                                      Text(
-                                        "Title Title Acelerate",
-                                        style: TextStyle(
-                                          fontWeight: FontWeight.bold,
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 12),
+                                        child: const Text(
+                                          "Title Title Acelerate",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
                                         ),
                                       ),
                                       Row(
-                                        children: [
-                                          Text("\$59.00",style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.orange
-                                          ),),
-                                          SizedBox(width: 8,),
+                                        children: const [
+                                          Text(
+                                            "\$59.00",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.orange,
+                                              fontSize: 18
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 8,
+                                          ),
                                           Text(
                                             "\$100.00",
                                             style: TextStyle(

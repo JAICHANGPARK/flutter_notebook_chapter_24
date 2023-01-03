@@ -227,8 +227,19 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                                         height: 200,
                                         decoration: BoxDecoration(
                                           color: Colors.grey,
-                                          borderRadius: BorderRadius.circular(8)
+                                          borderRadius: BorderRadius.circular(8),
                                         ),
+                                      ),
+                                      Text(
+                                        "Title Title Acelerate",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Row(
+                                        children: [
+                                          
+                                        ],
                                       )
                                     ],
                                   ))

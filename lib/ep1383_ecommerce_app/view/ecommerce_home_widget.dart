@@ -200,12 +200,41 @@ class _EcommerceHomeWidgetState extends State<EcommerceHomeWidget> {
                 Container(
                   margin: const EdgeInsets.fromLTRB(16, 8, 0, 16),
                   height: 300,
-                  color: Colors.pink,
                   child: ListView.builder(
                       scrollDirection: Axis.horizontal,
                       itemCount: 10,
                       itemBuilder: (context, index) {
-                        return Container();
+                        return Container(
+                          width: 220,
+                          margin: EdgeInsets.only(right: 20),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(
+                              color: Colors.grey[400]!,
+                            ),
+                            borderRadius: BorderRadius.circular(8),
+                          ),
+                          child: Stack(
+                            children: [
+                              Positioned(
+                                  left: 8,
+                                  right: 8,
+                                  top: 8,
+                                  bottom: 8,
+                                  child: Column(
+                                    children: [
+                                      Container(
+                                        height: 200,
+                                        decoration: BoxDecoration(
+                                          color: Colors.grey,
+                                          borderRadius: BorderRadius.circular(8)
+                                        ),
+                                      )
+                                    ],
+                                  ))
+                            ],
+                          ),
+                        );
                       }),
                 ),
                 Container(

@@ -34,6 +34,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
           child: Row(
             children: [
               Expanded(
+                  flex: 2,
                   child: Column(
                 children: [
                   Container(
@@ -54,12 +55,13 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       });
                     },
                     icon: Icon(Icons.home_outlined),
-                    color: Colors.grey,
+                    color: _index == 1 ? Colors.blue : Colors.grey,
                     iconSize: 32,
                   )
                 ],
               )),
               Expanded(
+                  flex: 2,
                   child: Column(
                 children: [
                   Container(
@@ -80,13 +82,14 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       });
                     },
                     icon: Icon(Icons.explore_outlined),
-                    color: Colors.blue,
+                    color: _index == 2 ? Colors.blue : Colors.grey,
                     iconSize: 32,
                   )
                 ],
               )),
               Expanded(flex: 2, child: Container()),
               Expanded(
+                flex: 2,
                   child: Column(
                 children: [
                   Container(
@@ -107,12 +110,13 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       });
                     },
                     icon: Icon(Icons.folder_copy_outlined),
-                    color: Colors.grey,
+                    color: _index == 3 ? Colors.blue : Colors.grey,
                     iconSize: 32,
                   )
                 ],
               )),
               Expanded(
+                  flex: 2,
                   child: Column(
                 children: [
                   Container(
@@ -133,7 +137,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       });
                     },
                     icon: Icon(Icons.person_2_outlined),
-                    color: Colors.grey,
+                    color: _index == 4 ? Colors.blue : Colors.grey,
                     iconSize: 32,
                   )
                 ],

@@ -28,13 +28,30 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
         shape: CircularNotchedRectangle(),
         notchMargin: 8,
         child: Container(
-          height: 72,
+          height: 80,
           child: Row(
             children: [
               Expanded(
                   child: Column(
-                children: [Placeholder()],
-              )),
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          // color: Colors.blue,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.explore_outlined),
+                        color: Colors.blue,
+                      )
+                    ],
+                  )),
               Expanded(
                   child: Column(
                 children: [
@@ -43,24 +60,62 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     width: 32,
                     decoration: BoxDecoration(
                       color: Colors.blue,
-                      borderRadius: BorderRadius.circular(4)
+                      borderRadius: BorderRadius.circular(4),
                     ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.explore_outlined),
+                    color: Colors.blue,
                   )
                 ],
               )),
+              Expanded(flex: 2, child: Container()),
               Expanded(
-                  flex: 2,
                   child: Column(
-                    children: [Placeholder()],
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          // color: Colors.blue,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.explore_outlined),
+                        color: Colors.blue,
+                      )
+                    ],
                   )),
               Expanded(
                   child: Column(
-                children: [Placeholder()],
-              )),
-              Expanded(
-                  child: Column(
-                children: [Placeholder()],
-              )),
+                    children: [
+                      Container(
+                        height: 3,
+                        width: 32,
+                        decoration: BoxDecoration(
+                          // color: Colors.blue,
+                          borderRadius: BorderRadius.circular(4),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      IconButton(
+                        onPressed: () {},
+                        icon: Icon(Icons.explore_outlined),
+                        color: Colors.blue,
+                      )
+                    ],
+                  )),
             ],
           ),
         ),

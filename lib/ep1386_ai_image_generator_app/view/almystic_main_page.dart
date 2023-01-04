@@ -22,7 +22,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Color.fromRGBO(85, 99, 249, 1),
         onPressed: () {},
-        child: Icon(Icons.add),
+        child: Icon(Icons.add, size: 32,),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(

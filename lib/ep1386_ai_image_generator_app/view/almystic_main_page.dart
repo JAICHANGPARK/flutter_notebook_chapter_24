@@ -25,11 +25,14 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         color: Color.fromRGBO(35, 36, 42, 1),
-        child: Container(
-          height: 72,
-        ),
         shape: CircularNotchedRectangle(),
         notchMargin: 8,
+        child: Container(
+          height: 72,
+          child: Row(
+            children: [],
+          ),
+        ),
       ),
     );
   }

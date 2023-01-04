@@ -30,7 +30,38 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
         child: Container(
           height: 72,
           child: Row(
-            children: [],
+            children: [
+              Expanded(
+                  child: Column(
+                children: [Placeholder()],
+              )),
+              Expanded(
+                  child: Column(
+                children: [
+                  Container(
+                    height: 3,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(4)
+                    ),
+                  )
+                ],
+              )),
+              Expanded(
+                  flex: 2,
+                  child: Column(
+                    children: [Placeholder()],
+                  )),
+              Expanded(
+                  child: Column(
+                children: [Placeholder()],
+              )),
+              Expanded(
+                  child: Column(
+                children: [Placeholder()],
+              )),
+            ],
           ),
         ),
       ),

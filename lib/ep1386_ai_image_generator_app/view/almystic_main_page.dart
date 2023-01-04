@@ -71,6 +71,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     onPressed: () {},
                     icon: Icon(Icons.explore_outlined),
                     color: Colors.blue,
+                    iconSize: 32,
                   )
                 ],
               )),
@@ -91,8 +92,9 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.explore_outlined),
-                    color: Colors.blue,
+                    icon: Icon(Icons.folder_copy_outlined),
+                    color: Colors.grey,
+                    iconSize: 32,
                   )
                 ],
               )),
@@ -112,8 +114,9 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   ),
                   IconButton(
                     onPressed: () {},
-                    icon: Icon(Icons.explore_outlined),
-                    color: Colors.blue,
+                    icon: Icon(Icons.person_2_outlined),
+                    color: Colors.grey,
+                    iconSize: 32,
                   )
                 ],
               )),

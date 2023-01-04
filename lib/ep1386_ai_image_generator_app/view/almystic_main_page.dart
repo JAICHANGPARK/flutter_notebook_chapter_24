@@ -33,25 +33,26 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             children: [
               Expanded(
                   child: Column(
-                    children: [
-                      Container(
-                        height: 3,
-                        width: 32,
-                        decoration: BoxDecoration(
-                          // color: Colors.blue,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.explore_outlined),
-                        color: Colors.blue,
-                      )
-                    ],
-                  )),
+                children: [
+                  Container(
+                    height: 3,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.home_outlined),
+                    color: Colors.grey,
+                    iconSize: 32,
+                  )
+                ],
+              )),
               Expanded(
                   child: Column(
                 children: [
@@ -76,46 +77,46 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
               Expanded(flex: 2, child: Container()),
               Expanded(
                   child: Column(
-                    children: [
-                      Container(
-                        height: 3,
-                        width: 32,
-                        decoration: BoxDecoration(
-                          // color: Colors.blue,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.explore_outlined),
-                        color: Colors.blue,
-                      )
-                    ],
-                  )),
+                children: [
+                  Container(
+                    height: 3,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.explore_outlined),
+                    color: Colors.blue,
+                  )
+                ],
+              )),
               Expanded(
                   child: Column(
-                    children: [
-                      Container(
-                        height: 3,
-                        width: 32,
-                        decoration: BoxDecoration(
-                          // color: Colors.blue,
-                          borderRadius: BorderRadius.circular(4),
-                        ),
-                      ),
-                      SizedBox(
-                        height: 8,
-                      ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: Icon(Icons.explore_outlined),
-                        color: Colors.blue,
-                      )
-                    ],
-                  )),
+                children: [
+                  Container(
+                    height: 3,
+                    width: 32,
+                    decoration: BoxDecoration(
+                      // color: Colors.blue,
+                      borderRadius: BorderRadius.circular(4),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 8,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: Icon(Icons.explore_outlined),
+                    color: Colors.blue,
+                  )
+                ],
+              )),
             ],
           ),
         ),

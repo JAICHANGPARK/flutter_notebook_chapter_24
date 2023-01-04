@@ -40,7 +40,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 3,
                     width: 32,
                     decoration: BoxDecoration(
-                      // color: Colors.blue,
+                      color: _index == 1 ? Colors.blue : Colors.transparent,
                       borderRadius: BorderRadius.circular(4),
                     ),
                   ),
@@ -66,7 +66,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 3,
                     width: 32,
                     decoration: BoxDecoration(
-                      color: Colors.blue,
+                      color: _index == 2 ? Colors.blue : Colors.transparent,
                       borderRadius: BorderRadius.circular(4),
                     ),
                   ),
@@ -93,7 +93,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 3,
                     width: 32,
                     decoration: BoxDecoration(
-                      // color: Colors.blue,
+                      color: _index == 3 ? Colors.blue : Colors.transparent,
                       borderRadius: BorderRadius.circular(4),
                     ),
                   ),
@@ -119,7 +119,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 3,
                     width: 32,
                     decoration: BoxDecoration(
-                      // color: Colors.blue,
+                      color: _index == 4 ? Colors.blue : Colors.transparent,
                       borderRadius: BorderRadius.circular(4),
                     ),
                   ),

@@ -25,6 +25,8 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
         child: Container(
           height: 72,
         ),
+        shape: CircularNotchedRectangle(),
+        notchMargin: 8,
       ),
     );
   }

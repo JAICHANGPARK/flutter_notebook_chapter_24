@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1383
+### EP1386
+
+- 💡AImystic - AI Images Generator Concept
+- by Vladislav Popov for CodabraSoft
+- https://dribbble.com/shots/20282342--AImystic-AI-Images-Generator-Concept
+
+<img src="https://cdn.dribbble.com/userupload/4244341/file/original-e4ce1e416764bc04fa999dd5d3d61c30.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1383-1385
 
 - Ecommerce - Mobile Design
 - by OAnggun Dipa for Dipa Inhouse

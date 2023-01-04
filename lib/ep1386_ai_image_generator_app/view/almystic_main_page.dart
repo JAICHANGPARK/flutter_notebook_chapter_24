@@ -8,6 +8,8 @@ class AlmysticMainPage extends StatefulWidget {
 }
 
 class _AlmysticMainPageState extends State<AlmysticMainPage> {
+  int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,7 +48,11 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 8,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        _index = 1;
+                      });
+                    },
                     icon: Icon(Icons.home_outlined),
                     color: Colors.grey,
                     iconSize: 32,
@@ -68,7 +74,11 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 8,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        _index = 2;
+                      });
+                    },
                     icon: Icon(Icons.explore_outlined),
                     color: Colors.blue,
                     iconSize: 32,
@@ -91,7 +101,11 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 8,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        _index = 3;
+                      });
+                    },
                     icon: Icon(Icons.folder_copy_outlined),
                     color: Colors.grey,
                     iconSize: 32,
@@ -113,7 +127,11 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     height: 8,
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      setState(() {
+                        _index = 4;
+                      });
+                    },
                     icon: Icon(Icons.person_2_outlined),
                     color: Colors.grey,
                     iconSize: 32,

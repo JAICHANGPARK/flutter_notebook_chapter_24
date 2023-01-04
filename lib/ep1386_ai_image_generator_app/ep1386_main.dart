@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  
+  runApp(AIImageGeneratorApp());
 }
 
 class AIImageGeneratorApp extends StatelessWidget {

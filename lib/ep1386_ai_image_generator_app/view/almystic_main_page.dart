@@ -10,6 +10,12 @@ class AlmysticMainPage extends StatefulWidget {
 class _AlmysticMainPageState extends State<AlmysticMainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      bottomNavigationBar: BottomAppBar(
+        child: Container(
+          height: 72,
+        ),
+      ),
+    );
   }
 }

@@ -152,7 +152,12 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     ),
                     Divider(
                       color: Colors.white,
-                      
+
+                    ),
+                    Row(
+                      children: [
+
+                      ],
                     )
                   ],
                 ),

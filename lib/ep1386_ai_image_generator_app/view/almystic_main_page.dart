@@ -52,17 +52,32 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   }),
             ),
             Divider(
-              color: Colors.grey,
+              color: Colors.white,
+              height: 32,
             ),
-            SizedBox(
-              height: 48,
+            Container(
+              margin: EdgeInsets.only(left: 16),
+              height: 32,
               child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
                   itemCount: _menuItems.length,
                   itemBuilder: (context, index) {
-                return Container(
-                  decoration: BoxDecoration(),
-                );
-              }),
+                    return Container(
+                      margin: EdgeInsets.only(right: 16),
+                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(62, 69, 83, 1),
+                      ),
+                      child: Center(
+                        child: Text(
+                          "${_menuItems[index]}",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    );
+                  }),
             )
           ],
         ),

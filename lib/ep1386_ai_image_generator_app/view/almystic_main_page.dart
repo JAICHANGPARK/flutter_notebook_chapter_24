@@ -41,27 +41,35 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
               ),
             ),
             Container(
-              height: 84,
-              color: Colors.blue,
+              height: 72,
+
               margin: EdgeInsets.only(left: 8),
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 20,
                   itemBuilder: (context, index) {
-                    return Column(
-                      children: [
-                        Expanded(
-                          child: Stack(
-                            children: [
-                              CircleAvatar(),
-                            ],
+                    return Padding(
+                      padding: EdgeInsets.only(right: 12),
+                      child: Column(
+                        children: [
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                CircleAvatar(
+                                  radius: 24,
+                                ),
+                              ],
+                            ),
                           ),
-                        ),
-                        Text(
-                          index % 2 == 0 ? "Dream" : "Walker",
-                          style: TextStyle(color: Colors.white),
-                        ),
-                      ],
+                          SizedBox(
+                            height: 8,
+                          ),
+                          Text(
+                            index % 2 == 0 ? "Dream" : "Walker",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                        ],
+                      ),
                     );
                   }),
             ),

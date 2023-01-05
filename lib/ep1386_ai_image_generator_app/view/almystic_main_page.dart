@@ -42,7 +42,6 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             ),
             Container(
               height: 72,
-
               margin: EdgeInsets.only(left: 8),
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
@@ -58,6 +57,19 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                                 CircleAvatar(
                                   radius: 24,
                                 ),
+                                index % 3 == 0
+                                    ? Positioned(
+                                        right: 0,
+                                        bottom: 0,
+                                        child: Container(
+                                          height: 16,
+                                          width: 16,
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              border: Border.all(color: Colors.black, width: 2),
+                                              color: Colors.green),
+                                        ))
+                                    : Container()
                               ],
                             ),
                           ),

@@ -20,17 +20,20 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             Padding(
               padding: const EdgeInsets.fromLTRB(8.0, 16, 8, 16),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
                     "Discover",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
+                      fontSize: 24,
                     ),
                   ),
                   CircleAvatar(
-                    radius: 18,
+                    radius: 16,
+                    backgroundColor: Color.fromRGBO(62, 69, 83, 1),
+                    foregroundColor: Colors.white,
                     child: Icon(Icons.search),
                   )
                 ],

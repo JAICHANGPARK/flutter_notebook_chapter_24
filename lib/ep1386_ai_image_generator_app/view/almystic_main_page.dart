@@ -130,8 +130,29 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                             Text('Flutter Developer'),
                           ],
                         ),
-                        Text("")
                       ],
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 16),
+                      child: Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                    Container(
+                      height: 200,
+                      color: Colors.blue,
+                    ),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 16),
+                      height: 64,
+                      color: Colors.blue,
+                    ),
+                    Divider(
+                      color: Colors.white,
+                      
                     )
                   ],
                 ),

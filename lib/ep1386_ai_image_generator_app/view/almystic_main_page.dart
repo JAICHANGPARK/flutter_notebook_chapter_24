@@ -48,7 +48,21 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   scrollDirection: Axis.horizontal,
                   itemCount: 20,
                   itemBuilder: (context, index) {
-                    return Column();
+                    return Column(
+                      children: [
+                        Expanded(
+                          child: Stack(
+                            children: [
+                              CircleAvatar(),
+                            ],
+                          ),
+                        ),
+                        Text(
+                          index % 2 == 0 ? "Dream" : "Walker",
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
+                    );
                   }),
             ),
             Divider(
@@ -65,9 +79,8 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     return Container(
                       margin: EdgeInsets.only(right: 16),
                       padding: EdgeInsets.symmetric(horizontal: 16),
-                      decoration: BoxDecoration(
-                        color: Color.fromRGBO(62, 69, 83, 1),
-                      ),
+                      decoration:
+                          BoxDecoration(color: Color.fromRGBO(62, 69, 83, 1), borderRadius: BorderRadius.circular(16)),
                       child: Center(
                         child: Text(
                           "${_menuItems[index]}",

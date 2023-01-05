@@ -9,6 +9,7 @@ class AlmysticMainPage extends StatefulWidget {
 
 class _AlmysticMainPageState extends State<AlmysticMainPage> {
   int _index = 0;
+  List<String> _menuItems = ["All", "Video", "Drafts", "Picture", "Interface", "Flutter"];
 
   @override
   Widget build(BuildContext context) {
@@ -56,8 +57,8 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             SizedBox(
               height: 48,
               child: ListView.builder(
-                  
-                  itemBuilder: (context, index){
+                  itemCount: _menuItems.length,
+                  itemBuilder: (context, index) {
                 return Container(
                   decoration: BoxDecoration(),
                 );

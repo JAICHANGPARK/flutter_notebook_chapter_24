@@ -21,7 +21,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
               padding: const EdgeInsets.fromLTRB(8.0, 16, 8, 16),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
+                children: const [
                   Text(
                     "Discover",
                     style: TextStyle(
@@ -38,6 +38,30 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   )
                 ],
               ),
+            ),
+            Container(
+              height: 84,
+              color: Colors.blue,
+              margin: EdgeInsets.only(left: 8),
+              child: ListView.builder(
+                  scrollDirection: Axis.horizontal,
+                  itemCount: 20,
+                  itemBuilder: (context, index) {
+                    return Column();
+                  }),
+            ),
+            Divider(
+              color: Colors.grey,
+            ),
+            SizedBox(
+              height: 48,
+              child: ListView.builder(
+                  
+                  itemBuilder: (context, index){
+                return Container(
+                  decoration: BoxDecoration(),
+                );
+              }),
             )
           ],
         ),

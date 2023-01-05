@@ -87,7 +87,9 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             ),
             Divider(
               color: Colors.white,
-              height: 32,
+              height: 48,
+              indent: 8,
+              endIndent: 8,
             ),
             Container(
               margin: EdgeInsets.only(left: 16),
@@ -99,8 +101,10 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     return Container(
                       margin: EdgeInsets.only(right: 16),
                       padding: EdgeInsets.symmetric(horizontal: 16),
-                      decoration:
-                          BoxDecoration(color: Color.fromRGBO(62, 69, 83, 1), borderRadius: BorderRadius.circular(16)),
+                      decoration: BoxDecoration(
+                        color: Color.fromRGBO(62, 69, 83, 1),
+                        borderRadius: BorderRadius.circular(16),
+                      ),
                       child: Center(
                         child: Text(
                           "${_menuItems[index]}",

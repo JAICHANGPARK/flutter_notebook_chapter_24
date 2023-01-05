@@ -16,7 +16,27 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
       backgroundColor: const Color.fromRGBO(26, 28, 34, 1),
       body: SafeArea(
         child: Column(
-          children: [],
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8.0, 16, 8, 16),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    "Discover",
+                    style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                  CircleAvatar(
+                    radius: 18,
+                    child: Icon(Icons.search),
+                  )
+                ],
+              ),
+            )
+          ],
         ),
       ),
       floatingActionButton: FloatingActionButton(

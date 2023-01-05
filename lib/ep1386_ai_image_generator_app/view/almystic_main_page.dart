@@ -99,7 +99,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   itemCount: _menuItems.length,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.only(right: 16),
+                      margin: EdgeInsets.only(right: 12),
                       padding: EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
                         color: Color.fromRGBO(62, 69, 83, 1),
@@ -115,7 +115,28 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       ),
                     );
                   }),
-            )
+            ),
+            Expanded(
+              child: Container(
+                margin: EdgeInsets.only(left: 8, top: 16, bottom: 24),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(),
+                        Column(
+                          children: [
+                            Text("Dreamwalker"),
+                            Text('Flutter Developer'),
+                          ],
+                        ),
+                        Text("")
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

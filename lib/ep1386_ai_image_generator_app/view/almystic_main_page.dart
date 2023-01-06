@@ -172,7 +172,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     ),
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 16),
-                      height: 64,
+                      height: 48,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,

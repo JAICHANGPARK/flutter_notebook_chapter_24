@@ -148,6 +148,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 16),
                       height: 64,
+
                       color: Colors.blue,
                     ),
                     Divider(

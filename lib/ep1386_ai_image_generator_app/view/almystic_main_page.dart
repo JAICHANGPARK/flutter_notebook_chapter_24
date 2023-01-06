@@ -143,20 +143,29 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     ),
                     Container(
                       height: 200,
-                     
                       decoration: BoxDecoration(
-                        color: Colors.blue,
-                        image: DecorationImage(
-                          image: NetworkImage(
-                              "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
-                          fit: BoxFit.cover,
-                        ),
-                        borderRadius: BorderRadius.circular(7)
-                      ),
+                          color: Colors.blue,
+                          image: DecorationImage(
+                            image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
+                            fit: BoxFit.cover,
+                          ),
+                          borderRadius: BorderRadius.circular(7)),
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 16),
                       height: 64,
+                      child: ListView.builder(
+                        itemBuilder: (context, index) {
+                          return Container(
+                            decoration: BoxDecoration(
+                              color: Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Text("Make Variations"),
+                          );
+                        },
+                      ),
                     ),
                     Divider(
                       color: Colors.white,

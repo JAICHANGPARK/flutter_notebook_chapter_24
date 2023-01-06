@@ -117,92 +117,109 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                   }),
             ),
             Expanded(
-              child: Container(
-                margin: const EdgeInsets.only(left: 8, top: 16, bottom: 24),
-                child: Column(
-                  children: [
-                    Row(
-                      children: [
-                        const CircleAvatar(),
-                        const SizedBox(
-                          width: 8,
-                        ),
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            const Text(
-                              "Dreamwalker",
-                              style: TextStyle(
-                                color: Colors.green,
+              child: SingleChildScrollView(
+                child: Container(
+                  margin: const EdgeInsets.only(left: 8, top: 16, bottom: 24),
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          const CircleAvatar(),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              const Text(
+                                "Dreamwalker",
+                                style: TextStyle(
+                                  color: Colors.green,
+                                ),
                               ),
-                            ),
-                            const SizedBox(
-                              height: 4,
-                            ),
-                            const Text(
-                              'Flutter Developer',
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.grey,
+                              const SizedBox(
+                                height: 4,
                               ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    const Padding(
-                      padding: EdgeInsets.symmetric(vertical: 16),
-                      child: Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-                        style: TextStyle(
-                          color: Colors.white,
+                              const Text(
+                                'Flutter Developer',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      const Padding(
+                        padding: EdgeInsets.symmetric(vertical: 16),
+                        child: Text(
+                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
                         ),
                       ),
-                    ),
-                    Container(
-                      height: 200,
-                      decoration: BoxDecoration(
-                          color: Colors.blue,
-                          image: const DecorationImage(
-                            image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(7)),
-                    ),
-                    Container(
-                      margin: const EdgeInsets.symmetric(vertical: 16),
-                      height: 48,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: 10,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            margin: const EdgeInsets.only(right: 16),
-                            padding: const EdgeInsets.symmetric(horizontal: 12),
-                            decoration: BoxDecoration(
-                              color: const Color.fromRGBO(62, 69, 83, 1),
-                              borderRadius: BorderRadius.circular(8),
+                      Container(
+                        height: 200,
+                        decoration: BoxDecoration(
+                            color: Colors.blue,
+                            image: const DecorationImage(
+                              image: NetworkImage(
+                                  "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
+                              fit: BoxFit.cover,
                             ),
-                            child: const Center(
+                            borderRadius: BorderRadius.circular(7)),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.symmetric(vertical: 16),
+                        height: 48,
+                        child: ListView.builder(
+                          scrollDirection: Axis.horizontal,
+                          itemCount: 10,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              margin: const EdgeInsets.only(right: 16),
+                              padding: const EdgeInsets.symmetric(horizontal: 12),
+                              decoration: BoxDecoration(
+                                color: const Color.fromRGBO(62, 69, 83, 1),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              child: const Center(
+                                child: Text(
+                                  "✨ Make Variations",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+                      ),
+                      const Divider(
+                        color: Colors.white,
+                      ),
+                      Row(
+                        children: [
+                          Container(
+                            decoration: BoxDecoration(
+                                color: const Color.fromRGBO(62, 69, 83, 1), borderRadius: BorderRadius.circular(4)),
+                            padding: EdgeInsets.all(12),
+                            child: Center(
                               child: Text(
-                                "✨ Make Variations",
+                                "U1",
                                 style: TextStyle(
+                                  fontWeight: FontWeight.bold,
                                   color: Colors.white,
                                 ),
                               ),
                             ),
-                          );
-                        },
-                      ),
-                    ),
-                    const Divider(
-                      color: Colors.white,
-                    ),
-                    Row(
-                      children: [],
-                    )
-                  ],
+                          )
+                        ],
+                      )
+                    ],
+                  ),
                 ),
               ),
             ),

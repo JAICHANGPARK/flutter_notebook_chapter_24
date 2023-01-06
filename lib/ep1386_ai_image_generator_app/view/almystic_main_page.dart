@@ -204,7 +204,10 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                         children: [
                           Container(
                             decoration: BoxDecoration(
-                                color: const Color.fromRGBO(62, 69, 83, 1), borderRadius: BorderRadius.circular(4)),
+                              color: const Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
                             padding: EdgeInsets.all(12),
                             child: Center(
                               child: Text(
@@ -215,6 +218,84 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                                 ),
                               ),
                             ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            padding: EdgeInsets.all(12),
+                            child: Center(
+                              child: Text(
+                                "U2",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            padding: EdgeInsets.all(12),
+                            child: Center(
+                              child: Text(
+                                "U3",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            padding: EdgeInsets.all(12),
+                            child: Center(
+                              child: Text(
+                                "U4",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            padding: EdgeInsets.all(12),
+                            child: Center(
+                              child: Icon(
+                                Icons.refresh,
+                                color: Colors.blue, size: 18,
+                              ),
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                              color: const Color.fromRGBO(62, 69, 83, 1),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            margin: EdgeInsets.only(right: 12),
+                            padding: EdgeInsets.all(12),
+                            child: Center(
+                                child: Icon(
+                              Icons.download,
+                                  size: 18,
+                            )),
                           )
                         ],
                       )

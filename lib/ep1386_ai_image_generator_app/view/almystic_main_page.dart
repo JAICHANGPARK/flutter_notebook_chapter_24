@@ -143,18 +143,20 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                     ),
                     Container(
                       height: 200,
-                      color: Colors.blue,
+                     
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        image: DecorationImage(
+                          image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                        borderRadius: BorderRadius.circular(7)
+                      ),
                     ),
                     Container(
                       margin: EdgeInsets.symmetric(vertical: 16),
                       height: 64,
-                      decoration: BoxDecoration(
-                          color: Colors.blue,
-                          image: DecorationImage(
-                            image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
-                            fit: BoxFit.cover,
-                          )),
                     ),
                     Divider(
                       color: Colors.white,

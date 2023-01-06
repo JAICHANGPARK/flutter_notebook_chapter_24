@@ -42,19 +42,19 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             ),
             Container(
               height: 72,
-              margin: EdgeInsets.only(left: 8),
+              margin: const EdgeInsets.only(left: 8),
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: 20,
                   itemBuilder: (context, index) {
                     return Padding(
-                      padding: EdgeInsets.only(right: 12),
+                      padding: const EdgeInsets.only(right: 12),
                       child: Column(
                         children: [
                           Expanded(
                             child: Stack(
                               children: [
-                                CircleAvatar(
+                                const CircleAvatar(
                                   radius: 24,
                                 ),
                                 index % 3 == 0
@@ -73,42 +73,42 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                               ],
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 8,
                           ),
                           Text(
                             index % 2 == 0 ? "Dream" : "Walker",
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                           ),
                         ],
                       ),
                     );
                   }),
             ),
-            Divider(
+            const Divider(
               color: Colors.white,
               height: 48,
               indent: 8,
               endIndent: 8,
             ),
             Container(
-              margin: EdgeInsets.only(left: 16),
+              margin: const EdgeInsets.only(left: 16),
               height: 32,
               child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: _menuItems.length,
                   itemBuilder: (context, index) {
                     return Container(
-                      margin: EdgeInsets.only(right: 12),
-                      padding: EdgeInsets.symmetric(horizontal: 16),
+                      margin: const EdgeInsets.only(right: 12),
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
-                        color: Color.fromRGBO(62, 69, 83, 1),
+                        color: const Color.fromRGBO(62, 69, 83, 1),
                         borderRadius: BorderRadius.circular(16),
                       ),
                       child: Center(
                         child: Text(
                           "${_menuItems[index]}",
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                           ),
                         ),
@@ -118,22 +118,40 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
             ),
             Expanded(
               child: Container(
-                margin: EdgeInsets.only(left: 8, top: 16, bottom: 24),
+                margin: const EdgeInsets.only(left: 8, top: 16, bottom: 24),
                 child: Column(
                   children: [
                     Row(
                       children: [
-                        CircleAvatar(),
+                        const CircleAvatar(),
+                        const SizedBox(
+                          width: 8,
+                        ),
                         Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text("Dreamwalker"),
-                            Text('Flutter Developer'),
+                            const Text(
+                              "Dreamwalker",
+                              style: TextStyle(
+                                color: Colors.green,
+                              ),
+                            ),
+                            const SizedBox(
+                              height: 4,
+                            ),
+                            const Text(
+                              'Flutter Developer',
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.grey,
+                              ),
+                            ),
                           ],
                         ),
                       ],
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
+                    const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 16),
                       child: Text(
                         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
                         style: TextStyle(
@@ -145,7 +163,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       height: 200,
                       decoration: BoxDecoration(
                           color: Colors.blue,
-                          image: DecorationImage(
+                          image: const DecorationImage(
                             image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2022/12/03/12/28/background-7632590_960_720.jpg"),
                             fit: BoxFit.cover,
@@ -153,25 +171,24 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                           borderRadius: BorderRadius.circular(7)),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 16),
+                      margin: const EdgeInsets.symmetric(vertical: 16),
                       height: 64,
                       child: ListView.builder(
                         scrollDirection: Axis.horizontal,
                         itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
-                            margin: EdgeInsets.only(right: 16),
-                            padding: EdgeInsets.symmetric(horizontal: 12),
+                            margin: const EdgeInsets.only(right: 16),
+                            padding: const EdgeInsets.symmetric(horizontal: 12),
                             decoration: BoxDecoration(
-                              color: Color.fromRGBO(62, 69, 83, 1),
+                              color: const Color.fromRGBO(62, 69, 83, 1),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Center(
+                            child: const Center(
                               child: Text(
                                 "✨ Make Variations",
                                 style: TextStyle(
                                   color: Colors.white,
-
                                 ),
                               ),
                             ),
@@ -179,7 +196,7 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                         },
                       ),
                     ),
-                    Divider(
+                    const Divider(
                       color: Colors.white,
                     ),
                     Row(

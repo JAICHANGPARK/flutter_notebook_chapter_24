@@ -156,13 +156,25 @@ class _AlmysticMainPageState extends State<AlmysticMainPage> {
                       margin: EdgeInsets.symmetric(vertical: 16),
                       height: 64,
                       child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        itemCount: 10,
                         itemBuilder: (context, index) {
                           return Container(
+                            margin: EdgeInsets.only(right: 16),
+                            padding: EdgeInsets.symmetric(horizontal: 12),
                             decoration: BoxDecoration(
                               color: Color.fromRGBO(62, 69, 83, 1),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Text("Make Variations"),
+                            child: Center(
+                              child: Text(
+                                "✨ Make Variations",
+                                style: TextStyle(
+                                  color: Colors.white,
+
+                                ),
+                              ),
+                            ),
                           );
                         },
                       ),

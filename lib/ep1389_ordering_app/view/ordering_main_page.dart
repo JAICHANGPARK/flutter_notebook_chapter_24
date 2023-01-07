@@ -19,26 +19,39 @@ class _OrderingMainPageState extends State<OrderingMainPage> {
           children: [],
         ),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "Home",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.receipt_long),
-            label: "Orders",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.message_outlined),
-            label: "Messages",
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined),
-            label: "Accounts",
-          ),
+      bottomNavigationBar: SizedBox(
+        height: 72,
+        child: BottomNavigationBar(
+          selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.grey,
+          currentIndex: _selectedIndex,
+          type: BottomNavigationBarType.fixed,
+          iconSize: 32,
+          onTap: (idx) {
+            setState(() {
+              _selectedIndex = idx;
+            });
+          },
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.home_filled),
+              label: "Home",
 
-        ],
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.receipt_long),
+              label: "Orders",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.message_outlined),
+              label: "Messages",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.account_circle_outlined),
+              label: "Accounts",
+            ),
+          ],
+        ),
       ),
     );
   }

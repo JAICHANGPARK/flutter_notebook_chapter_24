@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1386
+### EP1389
+
+- Ordering Apps for Chef or Restaurant
+- by Firman Jabbar for Vektora
+- https://dribbble.com/shots/20295810-Ordering-Apps-for-Chef-or-Restaurant
+
+<img src="https://cdn.dribbble.com/userupload/4249723/file/original-cb4b6728f42b61fba2f5ced7cbcc0bda.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1386-1388
 
 - 💡AImystic - AI Images Generator Concept
 - by Vladislav Popov for CodabraSoft

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1389_ordering_app/view/ordering_home_page.dart';
 
 class OrderingMainPage extends StatefulWidget {
   const OrderingMainPage({Key? key}) : super(key: key);
@@ -16,7 +17,10 @@ class _OrderingMainPageState extends State<OrderingMainPage> {
       body: SafeArea(
         child: IndexedStack(
           index: _selectedIndex,
-          children: [],
+          children: [
+            OrderingHomePage(),
+            Center(child: Text("${_selectedIndex}"),)
+          ],
         ),
       ),
       bottomNavigationBar: SizedBox(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1389_ordering_app/view/ordering_main_page.dart';
 
 void main() {
-  runApp(OrderingApp());
+  runApp(const OrderingApp());
 }
 
 class OrderingApp extends StatelessWidget {
@@ -10,7 +10,7 @@ class OrderingApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: OrderingMainPage(),
     );
   }

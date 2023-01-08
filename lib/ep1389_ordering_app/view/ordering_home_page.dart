@@ -65,6 +65,20 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
             ),
           ],
         ),
+      ),
+      Container(
+        height: 64,
+        margin: EdgeInsets.fromLTRB(16, 8, 16, 24),
+        decoration: BoxDecoration(
+          color: Colors.grey[200],
+          borderRadius: BorderRadius.circular(6),
+        ),
+        child: TextField(
+          decoration: InputDecoration(
+            hintText: "boneless chicken breast",
+            border: InputBorder.none,
+          ),
+        ),
       )
     ]);
   }

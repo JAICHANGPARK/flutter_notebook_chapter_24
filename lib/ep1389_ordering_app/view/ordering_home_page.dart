@@ -22,17 +22,17 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
                 color: Colors.black,
                 borderRadius: BorderRadius.circular(4),
               ),
-              child: Icon(
+              child: const Icon(
                 Icons.location_on,
                 color: Colors.white,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               width: 16,
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Text(
                   "My location",
                   style: TextStyle(

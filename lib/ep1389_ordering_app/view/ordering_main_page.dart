@@ -18,8 +18,10 @@ class _OrderingMainPageState extends State<OrderingMainPage> {
         child: IndexedStack(
           index: _selectedIndex,
           children: [
-            OrderingHomePage(),
-            Center(child: Text("${_selectedIndex}"),)
+            const OrderingHomePage(),
+            Center(
+              child: Text("${_selectedIndex}"),
+            )
           ],
         ),
       ),
@@ -36,11 +38,10 @@ class _OrderingMainPageState extends State<OrderingMainPage> {
               _selectedIndex = idx;
             });
           },
-          items: [
+          items: const [
             BottomNavigationBarItem(
               icon: Icon(Icons.home_filled),
               label: "Home",
-
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.receipt_long),

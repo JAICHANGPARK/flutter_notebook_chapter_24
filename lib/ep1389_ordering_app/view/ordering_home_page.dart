@@ -217,24 +217,27 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
                   Container(
                     height: 84,
                     width: 84,
-                    decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
-                    child: Center(
+                    decoration: BoxDecoration(
+                      color: Colors.grey[200],
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Center(
                       child: Text(
                         "🍅",
                         style: TextStyle(fontSize: 38),
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 16,
                   ),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Text("Campari Tomato"),
-                        Text("by Aguero's Family Garden"),
-                        Text("\$15/box"),
+                        const Text("Campari Tomato"),
+                        const Text("by Aguero's Family Garden"),
+                        const Text("\$15/box"),
                       ],
                     ),
                   ),
@@ -243,8 +246,8 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(24),
                     ),
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
-                    child: Center(
+                    padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: const Center(
                       child: Icon(
                         Icons.arrow_forward,
                         color: Colors.white,

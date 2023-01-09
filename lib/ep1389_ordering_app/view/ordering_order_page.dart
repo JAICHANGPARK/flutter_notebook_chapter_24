@@ -21,11 +21,14 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
               color: Colors.grey[300],
               borderRadius: BorderRadius.circular(8),
             ),
-            child: const TextField(
-              decoration: InputDecoration(
-                hintText: "Search your order",
-                suffixIcon: Icon(Icons.search),
-                border: InputBorder.none,
+            padding: EdgeInsets.symmetric(horizontal: 12),
+            child: Center(
+              child: const TextField(
+                decoration: InputDecoration(
+                  hintText: "Search your order",
+                  suffixIcon: Icon(Icons.search),
+                  border: InputBorder.none,
+                ),
               ),
             ),
           ),

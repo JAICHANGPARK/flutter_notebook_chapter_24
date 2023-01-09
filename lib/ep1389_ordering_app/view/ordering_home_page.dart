@@ -161,8 +161,8 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
                       Expanded(
                         flex: 7,
                         child: Container(
-                          padding: EdgeInsets.symmetric(horizontal: 16),
-                          decoration: BoxDecoration(
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          decoration: const BoxDecoration(
                             image: DecorationImage(
                               image: NetworkImage(
                                 "https://cdn.pixabay.com/photo/2020/05/03/13/23/cheese-5125021_960_720.jpg",
@@ -176,7 +176,7 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
                           ),
                           child: Row(
                             children: [
-                              CircleAvatar(radius: 28,)
+                              const CircleAvatar(radius: 28,)
                             ],
                           ),
                         ),

@@ -94,6 +94,26 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
           decoration: BoxDecoration(
             color: Colors.grey,
             borderRadius: BorderRadius.circular(12),
+            image: DecorationImage(
+              image: NetworkImage("https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_960_720.jpg"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          width: double.infinity,
+          padding: EdgeInsets.all(16),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Text(
+                "Salmon Steak".toUpperCase(),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+              Text("212 Supliers")
+            ],
           ),
         ),
         const Padding(

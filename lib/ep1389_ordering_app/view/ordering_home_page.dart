@@ -94,25 +94,40 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
           decoration: BoxDecoration(
             color: Colors.grey,
             borderRadius: BorderRadius.circular(12),
-            image: DecorationImage(
+            image: const DecorationImage(
               image: NetworkImage("https://cdn.pixabay.com/photo/2016/03/05/19/02/salmon-1238248_960_720.jpg"),
               fit: BoxFit.cover,
             ),
+            gradient: LinearGradient(
+              colors: [
+                Colors.black.withOpacity(0.4),
+                Colors.black.withOpacity(0.2),
+                Colors.transparent,
+              ],
+              begin: Alignment.centerLeft,
+              end: Alignment.centerRight,
+            ),
           ),
           width: double.infinity,
-          padding: EdgeInsets.all(16),
+          padding: const EdgeInsets.all(16),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               Text(
                 "Salmon Steak".toUpperCase(),
-                style: TextStyle(
+                style: const TextStyle(
                   fontWeight: FontWeight.bold,
                   color: Colors.white,
+                  fontSize: 18,
                 ),
               ),
-              Text("212 Supliers")
+              const Text(
+                "212 Supliers",
+                style: TextStyle(
+                  color: Colors.grey,
+                ),
+              )
             ],
           ),
         ),

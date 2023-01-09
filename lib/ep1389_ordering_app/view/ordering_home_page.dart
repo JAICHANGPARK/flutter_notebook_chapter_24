@@ -142,7 +142,7 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
           ),
         ),
         Container(
-          height: 200,
+          height: 190,
           margin: const EdgeInsets.only(left: 16),
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
@@ -158,7 +158,29 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Expanded(flex: 7, child: Placeholder()),
+                      Expanded(
+                        flex: 7,
+                        child: Container(
+                          padding: EdgeInsets.symmetric(horizontal: 16),
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: NetworkImage(
+                                "https://cdn.pixabay.com/photo/2020/05/03/13/23/cheese-5125021_960_720.jpg",
+                              ),
+                              fit: BoxFit.cover,
+                            ),
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(7),
+                              topRight: Radius.circular(7),
+                            )
+                          ),
+                          child: Row(
+                            children: [
+                              CircleAvatar(radius: 28,)
+                            ],
+                          ),
+                        ),
+                      ),
                       Expanded(
                         flex: 5,
                         child: Container(

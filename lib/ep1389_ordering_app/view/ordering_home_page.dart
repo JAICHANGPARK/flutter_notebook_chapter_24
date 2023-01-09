@@ -108,20 +108,154 @@ class _OrderingHomePageState extends State<OrderingHomePage> {
         ),
         Container(
           height: 200,
-          color: Colors.red,
           margin: const EdgeInsets.only(left: 16),
           child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10,
               itemBuilder: (context, index) {
                 return Container(
-                  width: 200,
-                  decoration: const BoxDecoration(
+                  width: 260,
+                  margin: const EdgeInsets.only(right: 12),
+                  decoration: BoxDecoration(
                     color: Colors.blue,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Expanded(flex: 7, child: Placeholder()),
+                      Expanded(
+                        flex: 5,
+                        child: Container(
+                          width: double.infinity,
+                          color: Colors.white,
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              mainAxisSize: MainAxisSize.max,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: const [
+                                Text(
+                                  "Halal chicken breast",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
+                                Text(
+                                  "by Arizona Meat",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        flex: 3,
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            color: Color.fromRGBO(53, 104, 214, 1),
+                            borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(8),
+                              bottomLeft: Radius.circular(8),
+                            ),
+                          ),
+                          padding: const EdgeInsets.only(left: 12, right: 12),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Container(
+                                height: 24,
+                                padding: const EdgeInsets.symmetric(horizontal: 16),
+                                decoration: BoxDecoration(
+                                    border: Border.all(
+                                      color: Colors.white,
+                                    ),
+                                    borderRadius: BorderRadius.circular(24)),
+                                child: const Center(
+                                  child: Text(
+                                    "1KG",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              const Text(
+                                "\$54.99",
+                                style: TextStyle(color: Colors.white, fontSize: 16),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 );
               }),
-        )
+        ),
+        const Padding(
+          padding: EdgeInsets.all(16.0),
+          child: Text(
+            "Recently ordered",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 22,
+            ),
+          ),
+        ),
+        Expanded(
+          child: ListView.builder(
+            itemBuilder: (context, index) => Padding(
+              padding: const EdgeInsets.fromLTRB(16, 4, 16, 16),
+              child: Row(
+                children: [
+                  Container(
+                    height: 84,
+                    width: 84,
+                    decoration: BoxDecoration(color: Colors.grey[200], borderRadius: BorderRadius.circular(8)),
+                    child: Center(
+                      child: Text(
+                        "🍅",
+                        style: TextStyle(fontSize: 38),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 16,
+                  ),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text("Campari Tomato"),
+                        Text("by Aguero's Family Garden"),
+                        Text("\$15/box"),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.black,
+                      borderRadius: BorderRadius.circular(24),
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 8),
+                    child: Center(
+                      child: Icon(
+                        Icons.arrow_forward,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
+        ),
       ],
     );
   }

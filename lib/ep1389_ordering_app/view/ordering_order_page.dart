@@ -18,20 +18,30 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
           Container(
             height: 52,
             decoration: BoxDecoration(
-              color: Colors.grey[200],
+              color: Colors.grey[300],
+              borderRadius: BorderRadius.circular(8),
+            ),
+            child: const TextField(
+              decoration: InputDecoration(
+                hintText: "Search your order",
+                suffixIcon: Icon(Icons.search),
+                border: InputBorder.none,
+              ),
             ),
           ),
-          SizedBox(height: 16,),
+          const SizedBox(
+            height: 16,
+          ),
           Expanded(
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Your orders",
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
-                      fontSize: 18
+                      fontSize: 18,
                     ),
                   )
                 ],

@@ -46,7 +46,28 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                     ),
-                  )
+                  ),
+                  Container(
+                    height: 160,
+                    margin: EdgeInsets.symmetric(vertical: 16),
+                    child: Card(
+                      child: Center(),
+                    ),
+                  ),
+                  Container(
+                    height: 400,
+                    margin: EdgeInsets.only(bottom: 16),
+                    child: Card(
+                      child: Center(),
+                    ),
+                  ),
+                  Container(
+                    height: 400,
+                    margin: EdgeInsets.only(bottom: 16),
+                    child: Card(
+                      child: Center(),
+                    ),
+                  ),
                 ],
               ),
             ),

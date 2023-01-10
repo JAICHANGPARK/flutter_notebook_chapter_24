@@ -260,6 +260,37 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                             const Divider(
                               height: 24,
                             ),
+                            Row(
+                              children: [
+                                Text("3 items"),
+                                Text("\$512.00"),
+                              ],
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(4),
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              margin: EdgeInsets.only(top: 8),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(),
+                                  SizedBox(
+                                    width: 4,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text("Fresh Sirloin Fillet Steak"),
+                                      Text("6kg - Arizona Meat"),
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  Text("\$219.00"),
+                                ],
+                              ),
+                            )
                           ],
                         ),
                       ),

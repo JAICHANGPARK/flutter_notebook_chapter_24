@@ -51,7 +51,38 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                     height: 160,
                     margin: EdgeInsets.symmetric(vertical: 16),
                     child: Card(
-                      child: Center(),
+                      child: Column(
+                        children: [
+                          Row(
+                            children: [
+                              Container(
+                                height: 52,
+                                width: 52,
+                                decoration: BoxDecoration(
+                                  color: Colors.grey[300],
+                                  borderRadius: BorderRadius.circular(8)
+                                ),
+                              ),
+                              Column(
+                                children: [
+                                  Row(
+                                    children: [
+                                      Text("Order #185874"),
+                                    ],
+                                  ),
+                                  Row(
+                                    children: [
+                                      Text("Fri 21 Aug - 10:21 AM"),
+                                    ],
+                                  )
+
+                                ],
+                              ),
+
+                            ],
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   Container(

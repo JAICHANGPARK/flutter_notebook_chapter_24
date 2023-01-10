@@ -261,10 +261,19 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                               height: 24,
                             ),
                             Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Text("3 items"),
-                                Text("\$512.00"),
+                                Text(
+                                  "\$512.00",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                                ),
                               ],
+                            ),
+                            SizedBox(
+                              height: 8,
                             ),
                             Container(
                               padding: EdgeInsets.all(6),
@@ -277,23 +286,127 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                 children: [
                                   CircleAvatar(),
                                   SizedBox(
-                                    width: 4,
+                                    width: 8,
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: [
-                                      Text("Fresh Sirloin Fillet Steak"),
-                                      Text("6kg - Arizona Meat"),
+                                      Text(
+                                        "Fresh Sirloin Fillet Steak",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "6kg - Arizona Meat",
+                                        style: TextStyle(color: Colors.grey, fontSize: 12),
+                                      ),
                                     ],
                                   ),
                                   Spacer(),
                                   Text(
                                     "\$219.00",
-                                    style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                                   ),
                                 ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(6),
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              margin: EdgeInsets.only(top: 8),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Fresh Sirloin Fillet Steak",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "6kg - Arizona Meat",
+                                        style: TextStyle(color: Colors.grey, fontSize: 12),
+                                      ),
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "\$219.00",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.all(6),
+                              decoration: BoxDecoration(
+                                color: Colors.grey[200],
+                                borderRadius: BorderRadius.circular(4),
+                              ),
+                              margin: EdgeInsets.only(top: 8),
+                              child: Row(
+                                children: [
+                                  CircleAvatar(),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
+                                  Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Fresh Sirloin Fillet Steak",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 4,
+                                      ),
+                                      Text(
+                                        "6kg - Arizona Meat",
+                                        style: TextStyle(color: Colors.grey, fontSize: 12),
+                                      ),
+                                    ],
+                                  ),
+                                  Spacer(),
+                                  Text(
+                                    "\$219.00",
+                                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              height: 48,
+                              margin: EdgeInsets.symmetric(vertical: 12),
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                borderRadius: BorderRadius.circular(4)
+                              ),
+                              child: Center(
+                                child: Text(
+                                  "Order again",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.white,
+                                  ),
+                                ),
                               ),
                             )
                           ],

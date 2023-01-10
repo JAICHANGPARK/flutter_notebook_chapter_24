@@ -94,14 +94,25 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                         children: const [
                                           Text("Fri 21 Aug - 10:21 AM"),
-                                          Text.rich(TextSpan(children: [
+                                          Text.rich(
                                             TextSpan(
-                                              text: "by",
+                                              children: [
+                                                TextSpan(
+                                                  text: "by ",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "Dreamwalker",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                )
+                                              ],
                                             ),
-                                            TextSpan(
-                                              text: "Dreamwalker",
-                                            )
-                                          ]))
+                                          )
                                         ],
                                       ),
                                     ],
@@ -118,7 +129,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                   width: 140,
                                   height: 40,
                                   child: Stack(
-                                    children:const [
+                                    children: const [
                                       Positioned(
                                         left: 0,
                                         bottom: 0,

@@ -51,58 +51,107 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                     height: 160,
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     child: Card(
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              Container(
-                                height: 52,
-                                width: 52,
-                                decoration: BoxDecoration(
-                                  color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(8),
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 52,
+                                  width: 52,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[300],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
                                 ),
-                              ),
-                              Expanded(
-                                child: Column(
-                                  children: [
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: const [
-                                        Text(
-                                          "Order #185874",
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
+                                SizedBox(
+                                  width: 12,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: const [
+                                          Text(
+                                            "Order #185874",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                            ),
                                           ),
-                                        ),
-                                        Text(
-                                          "ACTIVE",
-                                          style: TextStyle(
-                                            color: Colors.green,
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: const [
-                                        Text("Fri 21 Aug - 10:21 AM"),
-                                        Text.rich(TextSpan(children: [
-                                          TextSpan(
-                                            text: "by",
-                                          ),
-                                          TextSpan(
-                                            text: "Dreamwalker",
+                                          Text(
+                                            "ACTIVE",
+                                            style: TextStyle(
+                                              color: Colors.green,
+                                            ),
                                           )
-                                        ]))
-                                      ],
-                                    )
-                                  ],
+                                        ],
+                                      ),
+                                      SizedBox(
+                                        height: 6,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: const [
+                                          Text("Fri 21 Aug - 10:21 AM"),
+                                          Text.rich(TextSpan(children: [
+                                            TextSpan(
+                                              text: "by",
+                                            ),
+                                            TextSpan(
+                                              text: "Dreamwalker",
+                                            )
+                                          ]))
+                                        ],
+                                      ),
+                                    ],
+                                  ),
                                 ),
+                              ],
+                            ),
+                            Divider(),
+                            Container(
+                              width: 140,
+                              height: 40,
+                              color: Colors.pink,
+                              child: Stack(
+                                children: [
+                                  Positioned(
+                                    child: CircleAvatar(),
+                                    left: 0,
+                                    bottom: 0,
+                                    top: 0,
+                                  ),
+                                  Positioned(
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.yellow,
+                                    ),
+                                    left: 30,
+                                    bottom: 0,
+                                    top: 0,
+                                  ),
+                                  Positioned(
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.orange,
+                                    ),
+                                    left: 60,
+                                    bottom: 0,
+                                    top: 0,
+                                  ),
+                                  Positioned(
+                                    child: CircleAvatar(
+                                      backgroundColor: Colors.blue,
+                                    ),
+                                    left: 90,
+                                    bottom: 0,
+                                    top: 0,
+                                  )
+                                ],
                               ),
-                            ],
-                          )
-                        ],
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -48,7 +48,6 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                     ),
                   ),
                   Container(
-                    height: 160,
                     margin: const EdgeInsets.symmetric(vertical: 16),
                     child: Card(
                       child: Padding(
@@ -110,45 +109,64 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                 ),
                               ],
                             ),
-                            Divider(),
-                            Container(
-                              width: 140,
-                              height: 40,
-                              color: Colors.pink,
-                              child: Stack(
-                                children: [
-                                  Positioned(
-                                    child: CircleAvatar(),
-                                    left: 0,
-                                    bottom: 0,
-                                    top: 0,
+                            Divider(
+                              height: 24,
+                            ),
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: 140,
+                                  height: 40,
+                                  child: Stack(
+                                    children:const [
+                                      Positioned(
+                                        left: 0,
+                                        bottom: 0,
+                                        top: 0,
+                                        child: CircleAvatar(),
+                                      ),
+                                      Positioned(
+                                        left: 30,
+                                        bottom: 0,
+                                        top: 0,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.yellow,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        left: 60,
+                                        bottom: 0,
+                                        top: 0,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.orange,
+                                        ),
+                                      ),
+                                      Positioned(
+                                        left: 90,
+                                        bottom: 0,
+                                        top: 0,
+                                        child: CircleAvatar(
+                                          backgroundColor: Colors.blue,
+                                          child: Text("+4"),
+                                        ),
+                                      )
+                                    ],
                                   ),
-                                  Positioned(
-                                    child: CircleAvatar(
-                                      backgroundColor: Colors.yellow,
-                                    ),
-                                    left: 30,
-                                    bottom: 0,
-                                    top: 0,
+                                ),
+                                Text(
+                                  "7 items",
+                                  style: TextStyle(
+                                    color: Colors.grey,
                                   ),
-                                  Positioned(
-                                    child: CircleAvatar(
-                                      backgroundColor: Colors.orange,
-                                    ),
-                                    left: 60,
-                                    bottom: 0,
-                                    top: 0,
+                                ),
+                                Spacer(),
+                                Text(
+                                  "\$512.00",
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
                                   ),
-                                  Positioned(
-                                    child: CircleAvatar(
-                                      backgroundColor: Colors.blue,
-                                    ),
-                                    left: 90,
-                                    bottom: 0,
-                                    top: 0,
-                                  )
-                                ],
-                              ),
+                                )
+                              ],
                             )
                           ],
                         ),

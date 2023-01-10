@@ -262,7 +262,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                             ),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              children: [
+                              children: const [
                                 Text("3 items"),
                                 Text(
                                   "\$512.00",
@@ -272,25 +272,25 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             Container(
-                              padding: EdgeInsets.all(6),
+                              padding: const EdgeInsets.all(6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              margin: EdgeInsets.only(top: 8),
+                              margin: const EdgeInsets.only(top: 8),
                               child: Row(
                                 children: [
-                                  CircleAvatar(),
-                                  SizedBox(
+                                  const CircleAvatar(),
+                                  const SizedBox(
                                     width: 8,
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Fresh Sirloin Fillet Steak",
                                         style: TextStyle(
@@ -306,8 +306,8 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
-                                  Text(
+                                  const Spacer(),
+                                  const Text(
                                     "\$219.00",
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                                   ),
@@ -315,21 +315,21 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(6),
+                              padding: const EdgeInsets.all(6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              margin: EdgeInsets.only(top: 8),
+                              margin: const EdgeInsets.only(top: 8),
                               child: Row(
                                 children: [
-                                  CircleAvatar(),
-                                  SizedBox(
+                                  const CircleAvatar(),
+                                  const SizedBox(
                                     width: 8,
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Fresh Sirloin Fillet Steak",
                                         style: TextStyle(
@@ -345,8 +345,8 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
-                                  Text(
+                                  const Spacer(),
+                                  const Text(
                                     "\$219.00",
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                                   ),
@@ -354,21 +354,21 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                               ),
                             ),
                             Container(
-                              padding: EdgeInsets.all(6),
+                              padding: const EdgeInsets.all(6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(4),
                               ),
-                              margin: EdgeInsets.only(top: 8),
+                              margin: const EdgeInsets.only(top: 8),
                               child: Row(
                                 children: [
-                                  CircleAvatar(),
-                                  SizedBox(
+                                  const CircleAvatar(),
+                                  const SizedBox(
                                     width: 8,
                                   ),
                                   Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
+                                    children: const [
                                       Text(
                                         "Fresh Sirloin Fillet Steak",
                                         style: TextStyle(
@@ -384,8 +384,8 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                       ),
                                     ],
                                   ),
-                                  Spacer(),
-                                  Text(
+                                  const Spacer(),
+                                  const Text(
                                     "\$219.00",
                                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13),
                                   ),
@@ -394,12 +394,9 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                             ),
                             Container(
                               height: 48,
-                              margin: EdgeInsets.symmetric(vertical: 12),
-                              decoration: BoxDecoration(
-                                color: Colors.black,
-                                borderRadius: BorderRadius.circular(4)
-                              ),
-                              child: Center(
+                              margin: const EdgeInsets.symmetric(vertical: 12),
+                              decoration: BoxDecoration(color: Colors.black, borderRadius: BorderRadius.circular(4)),
+                              child: const Center(
                                 child: Text(
                                   "Order again",
                                   style: TextStyle(

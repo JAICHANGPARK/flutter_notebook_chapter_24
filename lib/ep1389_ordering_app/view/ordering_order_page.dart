@@ -60,25 +60,46 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                 width: 52,
                                 decoration: BoxDecoration(
                                   color: Colors.grey[300],
-                                  borderRadius: BorderRadius.circular(8)
+                                  borderRadius: BorderRadius.circular(8),
                                 ),
                               ),
-                              Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text("Order #185874"),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      Text("Fri 21 Aug - 10:21 AM"),
-                                    ],
-                                  )
-
-                                ],
+                              Expanded(
+                                child: Column(
+                                  children: [
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text(
+                                          "Order #185874",
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        Text(
+                                          "ACTIVE",
+                                          style: TextStyle(
+                                            color: Colors.green,
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                    Row(
+                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Text("Fri 21 Aug - 10:21 AM"),
+                                        Text.rich(TextSpan(children: [
+                                          TextSpan(
+                                            text: "by",
+                                          ),
+                                          TextSpan(
+                                            text: "Dreamwalker",
+                                          )
+                                        ]))
+                                      ],
+                                    )
+                                  ],
+                                ),
                               ),
-
                             ],
                           )
                         ],

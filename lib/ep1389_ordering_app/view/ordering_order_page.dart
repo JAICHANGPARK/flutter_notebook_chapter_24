@@ -64,7 +64,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                     borderRadius: BorderRadius.circular(8),
                                   ),
                                 ),
-                                SizedBox(
+                                const SizedBox(
                                   width: 12,
                                 ),
                                 Expanded(
@@ -75,9 +75,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                         children: const [
                                           Text(
                                             "Order #185874",
-                                            style: TextStyle(
-                                              fontWeight: FontWeight.bold,
-                                            ),
+                                            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                                           ),
                                           Text(
                                             "ACTIVE",
@@ -87,7 +85,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                           )
                                         ],
                                       ),
-                                      SizedBox(
+                                      const SizedBox(
                                         height: 6,
                                       ),
                                       Row(
@@ -120,7 +118,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                 ),
                               ],
                             ),
-                            Divider(
+                            const Divider(
                               height: 24,
                             ),
                             Row(
@@ -164,14 +162,14 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                     ],
                                   ),
                                 ),
-                                Text(
+                                const Text(
                                   "7 items",
                                   style: TextStyle(
                                     color: Colors.grey,
                                   ),
                                 ),
-                                Spacer(),
-                                Text(
+                                const Spacer(),
+                                const Text(
                                   "\$512.00",
                                   style: TextStyle(
                                     fontWeight: FontWeight.bold,
@@ -187,8 +185,84 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                   Container(
                     height: 400,
                     margin: const EdgeInsets.only(bottom: 16),
-                    child: const Card(
-                      child: Center(),
+                    child: Card(
+                      child: Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: Column(
+                          children: [
+                            Row(
+                              children: [
+                                Container(
+                                  height: 52,
+                                  width: 52,
+                                  decoration: BoxDecoration(
+                                    color: Colors.grey[300],
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                ),
+                                const SizedBox(
+                                  width: 12,
+                                ),
+                                Expanded(
+                                  child: Column(
+                                    children: [
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: const [
+                                          Text(
+                                            "Order #178990",
+                                            style: TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16,
+                                            ),
+                                          ),
+                                          Text(
+                                            "ACTIVE",
+                                            style: TextStyle(
+                                              color: Colors.green,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                      const SizedBox(
+                                        height: 6,
+                                      ),
+                                      Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: const [
+                                          Text("Fri 21 Aug - 10:21 AM"),
+                                          Text.rich(
+                                            TextSpan(
+                                              children: [
+                                                TextSpan(
+                                                  text: "by ",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.grey,
+                                                  ),
+                                                ),
+                                                TextSpan(
+                                                  text: "Dreamwalker",
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                  ),
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const Divider(
+                              height: 24,
+                            ),
+                          ],
+                        ),
+                      ),
                     ),
                   ),
                   Container(

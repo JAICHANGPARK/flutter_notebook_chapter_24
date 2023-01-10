@@ -267,7 +267,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                               ],
                             ),
                             Container(
-                              padding: EdgeInsets.all(4),
+                              padding: EdgeInsets.all(6),
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
                                 borderRadius: BorderRadius.circular(4),
@@ -287,7 +287,12 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                     ],
                                   ),
                                   Spacer(),
-                                  Text("\$219.00"),
+                                  Text(
+                                    "\$219.00",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  ),
                                 ],
                               ),
                             )

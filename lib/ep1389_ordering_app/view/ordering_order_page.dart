@@ -21,9 +21,9 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
               color: Colors.grey[300],
               borderRadius: BorderRadius.circular(8),
             ),
-            padding: EdgeInsets.symmetric(horizontal: 12),
-            child: Center(
-              child: const TextField(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: const Center(
+              child: TextField(
                 decoration: InputDecoration(
                   hintText: "Search your order",
                   suffixIcon: Icon(Icons.search),
@@ -49,7 +49,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                   ),
                   Container(
                     height: 160,
-                    margin: EdgeInsets.symmetric(vertical: 16),
+                    margin: const EdgeInsets.symmetric(vertical: 16),
                     child: Card(
                       child: Column(
                         children: [
@@ -68,7 +68,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                   children: [
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
+                                      children: const [
                                         Text(
                                           "Order #185874",
                                           style: TextStyle(
@@ -85,7 +85,7 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                                     ),
                                     Row(
                                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
+                                      children: const [
                                         Text("Fri 21 Aug - 10:21 AM"),
                                         Text.rich(TextSpan(children: [
                                           TextSpan(
@@ -108,15 +108,15 @@ class _OrderingOrderPageState extends State<OrderingOrderPage> {
                   ),
                   Container(
                     height: 400,
-                    margin: EdgeInsets.only(bottom: 16),
-                    child: Card(
+                    margin: const EdgeInsets.only(bottom: 16),
+                    child: const Card(
                       child: Center(),
                     ),
                   ),
                   Container(
                     height: 400,
-                    margin: EdgeInsets.only(bottom: 16),
-                    child: Card(
+                    margin: const EdgeInsets.only(bottom: 16),
+                    child: const Card(
                       child: Center(),
                     ),
                   ),

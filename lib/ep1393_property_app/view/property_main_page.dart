@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class PropertyMainPage extends StatefulWidget {
   const PropertyMainPage({Key? key}) : super(key: key);
 
@@ -11,6 +10,8 @@ class PropertyMainPage extends StatefulWidget {
 class _PropertyMainPageState extends State<PropertyMainPage> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+
+    );
   }
 }

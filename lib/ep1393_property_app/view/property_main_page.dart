@@ -63,10 +63,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                               ),
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: TextField(
-                                decoration: InputDecoration(
-                                  icon: Icon(Icons.search),
-                                  hintText: "Search Your Location"
-                                ),
+                                decoration: InputDecoration(icon: Icon(Icons.search), hintText: "Search Your Location"),
                               ),
                             ),
                           ),
@@ -79,6 +76,10 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             decoration: BoxDecoration(
                               color: Color(0xfffa902e),
                               borderRadius: BorderRadius.circular(8),
+                            ),
+                            child: Icon(
+                              Icons.tune,
+                              color: Colors.white,
                             ),
                           )
                         ],

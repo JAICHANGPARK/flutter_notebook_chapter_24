@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1393_property_app/view/property_main_page.dart';
 
 void main() {}
 
@@ -7,6 +8,11 @@ class PropertyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      title: "Property App",
+      routes: {
+        "/": (context) => PropertyMainPage(),
+      },
+    );
   }
 }

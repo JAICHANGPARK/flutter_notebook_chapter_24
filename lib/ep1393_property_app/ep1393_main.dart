@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_notebook_chapter_24/ep1393_property_app/view/property_main_page.dart';
 
-void main() {}
+void main() {
+
+}
 
 class PropertyApp extends StatelessWidget {
   const PropertyApp({Key? key}) : super(key: key);

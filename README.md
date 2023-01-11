@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1389
+### EP1393
+
+- Property App Design
+- by Tariqul islam
+- https://dribbble.com/shots/20337084-Property-App-Design
+
+<img src="https://cdn.dribbble.com/userupload/4265626/file/original-c2624b0f54b8a640b5cbca07fc2f2361.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1389-1392
 
 - Ordering Apps for Chef or Restaurant
 - by Firman Jabbar for Vektora
@@ -89,7 +97,7 @@
 <img src="https://cdn.dribbble.com/userupload/4065652/file/original-9e07bf125ed0451848db5fcfc8b31756.png?compress=1&resize=1600x1200" width="400px"/>
 <img src="https://cdn.dribbble.com/userupload/4065665/file/original-3e4fd844dfdadee68ab60ccea3c58bdf.png?compress=1&resize=1600x1200" width="400px"/>
 
-## How to Run 
+## How to Run
 
 flutter run each ep main.dart
 

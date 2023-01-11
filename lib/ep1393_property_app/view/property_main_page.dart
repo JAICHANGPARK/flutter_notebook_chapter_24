@@ -14,19 +14,19 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("Home"),
+          title: const Text("Home"),
           foregroundColor: Colors.white,
           backgroundColor: Colors.black,
           leading: IconButton(
-            icon: Icon(Icons.menu),
+            icon: const Icon(Icons.menu),
             onPressed: () {},
           ),
-          actions: [Icon(Icons.notifications_none)],
+          actions: [const Icon(Icons.notifications_none)],
         ),
         body: Column(
           children: [
             Container(
-                padding: EdgeInsets.fromLTRB(16, 24, 16, 32),
+                padding: const EdgeInsets.fromLTRB(16, 24, 16, 32),
                 color: Colors.black,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,7 +37,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                         color: Colors.white,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 6,
                     ),
                     Text(
@@ -50,7 +50,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                     ),
                     Container(
                       height: 48,
-                      margin: EdgeInsets.only(
+                      margin: const EdgeInsets.only(
                         top: 24,
                       ),
                       child: Row(
@@ -61,23 +61,26 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(8),
                               ),
-                              padding: EdgeInsets.symmetric(horizontal: 16),
-                              child: TextField(
-                                decoration: InputDecoration(icon: Icon(Icons.search), hintText: "Search Your Location"),
+                              padding: const EdgeInsets.symmetric(horizontal: 16),
+                              child: const TextField(
+                                decoration: InputDecoration(
+                                  icon: Icon(Icons.search),
+                                  hintText: "Search Your Location",
+                                ),
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
                           Container(
                             width: 48,
                             height: 48,
                             decoration: BoxDecoration(
-                              color: Color(0xfffa902e),
+                              color: const Color(0xfffa902e),
                               borderRadius: BorderRadius.circular(8),
                             ),
-                            child: Icon(
+                            child: const Icon(
                               Icons.tune,
                               color: Colors.white,
                             ),

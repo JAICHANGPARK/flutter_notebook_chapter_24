@@ -272,7 +272,10 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                       Container(
                         height: 100,
                         width: 100,
-                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                        decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8),
+                        ),
                       )
                     ],
                   ),

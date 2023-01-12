@@ -266,18 +266,24 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ListView.builder(itemBuilder: (context, index) {
-                return Card(
-                  child: Row(
-                    children: [
-                      Container(
-                        height: 100,
-                        width: 100,
-                        decoration: BoxDecoration(
-                          color: Colors.blue,
-                          borderRadius: BorderRadius.circular(8),
-                        ),
-                      )
-                    ],
+                return Padding(
+                  padding: EdgeInsets.only(bottom: 12),
+                  child: Card(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Row(
+                        children: [
+                          Container(
+                            height: 100,
+                            width: 100,
+                            decoration: BoxDecoration(
+                              color: Colors.blue,
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
                   ),
                 );
               }),

@@ -90,30 +90,47 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                     )
                   ],
                 )),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Recent Posted",
-                  style: GoogleFonts.inter(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 20,
-                  ),
-                ),
-                TextButton(
-                  onPressed: () {},
-                  style: TextButton.styleFrom(
-                    foregroundColor: Colors.orange,
-                    textStyle: GoogleFonts.inter(
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 24, 16, 8),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Recent Posted",
+                    style: GoogleFonts.inter(
                       fontWeight: FontWeight.bold,
-                      fontSize: 14,
+                      fontSize: 20,
                     ),
                   ),
-                  child: Text(
-                    "View all",
-                  ),
-                )
-              ],
+                  TextButton(
+                    onPressed: () {},
+                    style: TextButton.styleFrom(
+                      foregroundColor: Colors.orange,
+                      textStyle: GoogleFonts.inter(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 14,
+                      ),
+                    ),
+                    child: Text(
+                      "View all",
+                    ),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              height: 200,
+              color: Colors.orange,
+              margin: EdgeInsets.only(left: 16),
+              child: ListView.builder(
+                  itemCount: 10,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return Container(
+                      color: Colors.blue,
+                      width: 160,
+                    );
+                  }),
             )
           ],
         ));

@@ -208,16 +208,23 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                       ),
                       Positioned(
                         right: 8,
-                        top: 100,
+                        top: 104,
                         child: Container(
                           decoration: BoxDecoration(
                             color: Colors.white,
                             shape: BoxShape.circle,
-                            boxShadow: [BoxShadow(color: Colors.grey[200]!, blurRadius: 1, spreadRadius: 2)],
+                            boxShadow: [
+                              BoxShadow(
+                                color: Colors.grey[200]!,
+                                blurRadius: 1,
+                                spreadRadius: 2,
+                              ),
+                            ],
                           ),
                           padding: EdgeInsets.all(8),
                           child: Icon(
                             Icons.bookmark_border,
+                            size: 16,
                           ),
                         ),
                       )
@@ -228,7 +235,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
             ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
+            padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -255,8 +262,23 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
               ],
             ),
           ),
-          const Expanded(
-            child: Placeholder(),
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12),
+              child: ListView.builder(itemBuilder: (context, index) {
+                return Card(
+                  child: Row(
+                    children: [
+                      Container(
+                        height: 100,
+                        width: 100,
+                        decoration: BoxDecoration(color: Colors.blue, borderRadius: BorderRadius.circular(8)),
+                      )
+                    ],
+                  ),
+                );
+              }),
+            ),
           ),
         ],
       ),

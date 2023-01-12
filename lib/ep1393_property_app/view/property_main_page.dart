@@ -279,7 +279,13 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
+                              image: DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2019/04/02/20/45/landscape-4098802__340.jpg"),
+                                fit: BoxFit.cover,
+                              ),
                             ),
+
                           ),
                           SizedBox(
                             width: 16,
@@ -339,7 +345,29 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                       ),
                                     ),
                                   ],
-                                ))
+                                )),
+                                Positioned(
+                                  right: 8,
+                                  top: 0,
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey[200]!,
+                                          blurRadius: 1,
+                                          spreadRadius: 2,
+                                        ),
+                                      ],
+                                    ),
+                                    padding: EdgeInsets.all(8),
+                                    child: Icon(
+                                      Icons.bookmark_border,
+                                      size: 16,
+                                    ),
+                                  ),
+                                )
                               ],
                             ),
                           )

@@ -120,7 +120,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
             ),
           ),
           Container(
-            height: 210,
+            height: 220,
             color: Colors.orange,
             margin: const EdgeInsets.only(left: 16),
             child: ListView.builder(
@@ -151,6 +151,9 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(8),
                               ),
+                            ),
+                            SizedBox(
+                              height: 12,
                             ),
                             Text(
                               "Brolen Properties",
@@ -183,8 +186,17 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             Text.rich(TextSpan(children: [
                               TextSpan(
                                 text: "\$425",
+                                style: GoogleFonts.inter(
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.bold,
+                                ),
                               ),
-                              TextSpan(text: "/month")
+                              TextSpan(
+                                text: "/month",
+                                style: GoogleFonts.inter(
+                                  fontSize: 12,
+                                ),
+                              )
                             ]))
                           ],
                         ),

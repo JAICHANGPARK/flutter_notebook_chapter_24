@@ -26,70 +26,71 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
       body: Column(
         children: [
           Container(
-              padding: const EdgeInsets.fromLTRB(16, 24, 16, 32),
-              color: Colors.black,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Welcome Back!",
-                    style: GoogleFonts.inter(
-                      color: Colors.white,
-                    ),
+            padding: const EdgeInsets.fromLTRB(16, 24, 16, 32),
+            color: Colors.black,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "Welcome Back!",
+                  style: GoogleFonts.inter(
+                    color: Colors.white,
                   ),
-                  const SizedBox(
-                    height: 6,
+                ),
+                const SizedBox(
+                  height: 6,
+                ),
+                Text(
+                  "Dreamwalker",
+                  style: GoogleFonts.inter(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
                   ),
-                  Text(
-                    "Dreamwalker",
-                    style: GoogleFonts.inter(
-                      color: Colors.white,
-                      fontSize: 24,
-                      fontWeight: FontWeight.bold,
-                    ),
+                ),
+                Container(
+                  height: 48,
+                  margin: const EdgeInsets.only(
+                    top: 24,
                   ),
-                  Container(
-                    height: 48,
-                    margin: const EdgeInsets.only(
-                      top: 24,
-                    ),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Container(
-                            decoration: BoxDecoration(
-                              color: Colors.white,
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            padding: const EdgeInsets.symmetric(horizontal: 16),
-                            child: const TextField(
-                              decoration: InputDecoration(
-                                icon: Icon(Icons.search),
-                                hintText: "Search Your Location",
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 16,
-                        ),
-                        Container(
-                          width: 48,
-                          height: 48,
+                  child: Row(
+                    children: [
+                      Expanded(
+                        child: Container(
                           decoration: BoxDecoration(
-                            color: const Color(0xfffa902e),
+                            color: Colors.white,
                             borderRadius: BorderRadius.circular(8),
                           ),
-                          child: const Icon(
-                            Icons.tune,
-                            color: Colors.white,
+                          padding: const EdgeInsets.symmetric(horizontal: 16),
+                          child: const TextField(
+                            decoration: InputDecoration(
+                              icon: Icon(Icons.search),
+                              hintText: "Search Your Location",
+                            ),
                           ),
-                        )
-                      ],
-                    ),
-                  )
-                ],
-              )),
+                        ),
+                      ),
+                      const SizedBox(
+                        width: 16,
+                      ),
+                      Container(
+                        width: 48,
+                        height: 48,
+                        decoration: BoxDecoration(
+                          color: const Color(0xfffa902e),
+                          borderRadius: BorderRadius.circular(8),
+                        ),
+                        child: const Icon(
+                          Icons.tune,
+                          color: Colors.white,
+                        ),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          ),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 24, 16, 8),
             child: Row(
@@ -111,7 +112,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                       fontSize: 14,
                     ),
                   ),
-                  child: Text(
+                  child: const Text(
                     "View all",
                   ),
                 )
@@ -119,18 +120,80 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
             ),
           ),
           Container(
-            height: 200,
+            height: 210,
             color: Colors.orange,
-            margin: EdgeInsets.only(left: 16),
+            margin: const EdgeInsets.only(left: 16),
             child: ListView.builder(
-                itemCount: 10,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return Container(
-                    color: Colors.blue,
-                    width: 160,
-                  );
-                }),
+              itemCount: 10,
+              scrollDirection: Axis.horizontal,
+              itemBuilder: (context, index) {
+                return Container(
+                  width: 200,
+                  margin: EdgeInsets.only(right: 16),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  padding: EdgeInsets.all(8),
+                  child: Stack(
+                    children: [
+                      Positioned(
+                        left: 0,
+                        right: 0,
+                        bottom: 0,
+                        top: 0,
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Container(
+                              height: 120,
+                              decoration: BoxDecoration(
+                                color: Colors.blue,
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                            ),
+                            Text(
+                              "Brolen Properties",
+                              style: GoogleFonts.inter(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                              ),
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Row(
+                              children: [
+                                Icon(
+                                  Icons.location_on,
+                                  size: 12,
+                                ),
+                                Text(
+                                  "Hossain Market, Dhaka 1212",
+                                  style: GoogleFonts.inter(
+                                    fontSize: 12,
+                                    color: Colors.grey,
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(
+                              height: 8,
+                            ),
+                            Text.rich(TextSpan(children: [
+                              TextSpan(
+                                text: "\$425",
+                              ),
+                              TextSpan(text: "/month")
+                            ]))
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
           ),
           Padding(
             padding: const EdgeInsets.fromLTRB(16, 16, 16, 8),
@@ -153,14 +216,16 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                       fontSize: 14,
                     ),
                   ),
-                  child: Text(
+                  child: const Text(
                     "View all",
                   ),
                 )
               ],
             ),
           ),
-          Expanded(child: Placeholder()),
+          const Expanded(
+            child: Placeholder(),
+          ),
         ],
       ),
     );

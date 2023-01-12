@@ -281,15 +281,14 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                               borderRadius: BorderRadius.circular(8),
                             ),
                           ),
+                          SizedBox(
+                            width: 16,
+                          ),
                           Expanded(
                             child: Stack(
                               children: [
                                 Positioned(
-                                    left: 16,
-                                    top: 16,
-                                    bottom: 16,
-                                    right: 0,
-                                    child:Column(
+                                    child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
@@ -341,7 +340,6 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                     ),
                                   ],
                                 ))
-
                               ],
                             ),
                           )

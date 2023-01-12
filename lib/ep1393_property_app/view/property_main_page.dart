@@ -121,7 +121,6 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
           ),
           Container(
             height: 220,
-            color: Colors.orange,
             margin: const EdgeInsets.only(left: 16),
             child: ListView.builder(
               itemCount: 10,
@@ -129,12 +128,12 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
               itemBuilder: (context, index) {
                 return Container(
                   width: 200,
-                  margin: EdgeInsets.only(right: 16),
+                  margin: const EdgeInsets.only(right: 16),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
                   ),
-                  padding: EdgeInsets.all(8),
+                  padding: const EdgeInsets.all(8),
                   child: Stack(
                     children: [
                       Positioned(
@@ -152,7 +151,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                 borderRadius: BorderRadius.circular(8),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 12,
                             ),
                             Text(
@@ -162,12 +161,12 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                 fontSize: 15,
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             Row(
                               children: [
-                                Icon(
+                                const Icon(
                                   Icons.location_on,
                                   size: 12,
                                 ),
@@ -180,7 +179,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                 ),
                               ],
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 8,
                             ),
                             Text.rich(TextSpan(children: [

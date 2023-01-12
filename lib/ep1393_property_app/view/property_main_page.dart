@@ -102,15 +102,15 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                 ),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
-                    "View all",
-                  ),
                   style: TextButton.styleFrom(
                     foregroundColor: Colors.orange,
                     textStyle: GoogleFonts.inter(
                       fontWeight: FontWeight.bold,
                       fontSize: 14,
                     ),
+                  ),
+                  child: Text(
+                    "View all",
                   ),
                 )
               ],

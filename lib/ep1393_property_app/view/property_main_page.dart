@@ -267,7 +267,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ListView.builder(itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsets.only(bottom: 12),
+                  padding: EdgeInsets.only(bottom: 8),
                   child: Card(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -279,6 +279,70 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                          Expanded(
+                            child: Stack(
+                              children: [
+                                Positioned(
+                                    left: 16,
+                                    top: 16,
+                                    bottom: 16,
+                                    right: 0,
+                                    child:Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Brolen Properties",
+                                      style: GoogleFonts.inter(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    Row(
+                                      children: [
+                                        const Icon(
+                                          Icons.location_on,
+                                          size: 12,
+                                        ),
+                                        Text(
+                                          "Hossain Market, Dhaka 1212",
+                                          style: GoogleFonts.inter(
+                                            fontSize: 12,
+                                            color: Colors.grey,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "\$425",
+                                            style: GoogleFonts.inter(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: "/month",
+                                            style: GoogleFonts.inter(
+                                              fontSize: 12,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ))
+
+                              ],
                             ),
                           )
                         ],

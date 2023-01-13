@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PropertySearchResultPage extends StatefulWidget {
@@ -36,8 +37,10 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                           ],
                         ),
                         child: IconButton(
-                          icon: Icon(Icons.arrow_back),
-                          onPressed: () {},
+                          icon: const Icon(Icons.arrow_back),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
                         ),
                       ),
                     ],

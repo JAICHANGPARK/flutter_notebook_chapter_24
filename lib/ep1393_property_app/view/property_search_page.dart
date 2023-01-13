@@ -57,6 +57,14 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                     ),
                   )
                 ],
+              ),
+              Card(
+                child: Column(
+                  children: [
+                    Text("3 miles from Wembley, Middle"),
+                    
+                  ],
+                ),
               )
             ],
           ),

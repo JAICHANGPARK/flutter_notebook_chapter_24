@@ -13,11 +13,11 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Container(
-              color: Colors.blue,
-              child: Stack(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+          child: Column(
+            children: [
+              Stack(
                 children: [
                   Row(
                     children: [
@@ -40,16 +40,23 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                           onPressed: () {},
                         ),
                       ),
-
                     ],
                   ),
-                  Center(
-                    child: Text("Search Results",style: GoogleFonts.inter(),),
+                  Positioned.fill(
+                    child: Center(
+                      child: Text(
+                        "Search Results",
+                        style: GoogleFonts.inter(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20
+                        ),
+                      ),
+                    ),
                   )
                 ],
-              ),
-            )
-          ],
+              )
+            ],
+          ),
         ),
       ),
     );

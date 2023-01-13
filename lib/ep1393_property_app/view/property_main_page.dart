@@ -12,6 +12,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         centerTitle: true,
         title: const Text("Home"),
@@ -70,9 +71,8 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             onSubmitted: (s) {
                               print("onSubmitted");
                             },
-
                             onEditingComplete: () {
-                              print("onEditingComplete")
+                              print("onEditingComplete");
                             },
                           ),
                         ),
@@ -307,57 +307,57 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                               children: [
                                 Positioned(
                                     child: Column(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Brolen Properties",
+                                      style: GoogleFonts.inter(
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 15,
+                                      ),
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    Row(
                                       children: [
+                                        const Icon(
+                                          Icons.location_on,
+                                          size: 12,
+                                        ),
                                         Text(
-                                          "Brolen Properties",
+                                          "Hossain Market, Dhaka 1212",
                                           style: GoogleFonts.inter(
-                                            fontWeight: FontWeight.bold,
-                                            fontSize: 15,
-                                          ),
-                                        ),
-                                        const SizedBox(
-                                          height: 8,
-                                        ),
-                                        Row(
-                                          children: [
-                                            const Icon(
-                                              Icons.location_on,
-                                              size: 12,
-                                            ),
-                                            Text(
-                                              "Hossain Market, Dhaka 1212",
-                                              style: GoogleFonts.inter(
-                                                fontSize: 12,
-                                                color: Colors.grey,
-                                              ),
-                                            ),
-                                          ],
-                                        ),
-                                        const SizedBox(
-                                          height: 8,
-                                        ),
-                                        Text.rich(
-                                          TextSpan(
-                                            children: [
-                                              TextSpan(
-                                                text: "\$425",
-                                                style: GoogleFonts.inter(
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.bold,
-                                                ),
-                                              ),
-                                              TextSpan(
-                                                text: "/month",
-                                                style: GoogleFonts.inter(
-                                                  fontSize: 12,
-                                                ),
-                                              )
-                                            ],
+                                            fontSize: 12,
+                                            color: Colors.grey,
                                           ),
                                         ),
                                       ],
-                                    )),
+                                    ),
+                                    const SizedBox(
+                                      height: 8,
+                                    ),
+                                    Text.rich(
+                                      TextSpan(
+                                        children: [
+                                          TextSpan(
+                                            text: "\$425",
+                                            style: GoogleFonts.inter(
+                                              fontSize: 16,
+                                              fontWeight: FontWeight.bold,
+                                            ),
+                                          ),
+                                          TextSpan(
+                                            text: "/month",
+                                            style: GoogleFonts.inter(
+                                              fontSize: 12,
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                )),
                                 Positioned(
                                   right: 8,
                                   top: 0,

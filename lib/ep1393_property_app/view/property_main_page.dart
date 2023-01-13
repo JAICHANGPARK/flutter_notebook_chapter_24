@@ -70,6 +70,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             ),
                             onSubmitted: (s) {
                               print("onSubmitted");
+
                             },
                             onEditingComplete: () {
                               print("onEditingComplete");

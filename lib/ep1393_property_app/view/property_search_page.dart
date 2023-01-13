@@ -23,8 +23,8 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                   Row(
                     children: [
                       Container(
-                        height: 52,
-                        width: 52,
+                        height: 48,
+                        width: 48,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: Colors.white,
@@ -51,18 +51,138 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                         "Search Results",
                         style: GoogleFonts.inter(
                           fontWeight: FontWeight.bold,
-                          fontSize: 20
+                          fontSize: 20,
                         ),
                       ),
                     ),
                   )
                 ],
               ),
-              Card(
-                child: Column(
+              const SizedBox(
+                height: 24,
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: Card(
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "3 miles from Wembley, Middle",
+                          style: GoogleFonts.inter(
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          "\$1,750PCM - \$2,500PCM, At least 11 bedroom",
+                          style: GoogleFonts.inter(
+                            color: Colors.grey,
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.symmetric(vertical: 16),
+                height: 42,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text("3 miles from Wembley, Middle"),
-                    
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[200]!,
+                            blurRadius: 3,
+                            spreadRadius: 6,
+                          ),
+                        ],
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.sort),
+                          SizedBox(width: 4,),
+                          Text(
+                            "Sort by",
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[200]!,
+                            blurRadius: 3,
+                            spreadRadius: 6,
+                          ),
+                        ],
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.star_border),
+                          SizedBox(width: 4,),
+                          Text(
+                            "Save Search",
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(4),
+                        border: Border.all(
+                          color: Colors.grey[400]!,
+                        ),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.grey[200]!,
+                            blurRadius: 3,
+                            spreadRadius: 6,
+                          ),
+                        ],
+                      ),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 16,
+                        vertical: 8,
+                      ),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.location_on_outlined),
+                          SizedBox(width: 4,),
+                          Text(
+                            "Map",
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
               )

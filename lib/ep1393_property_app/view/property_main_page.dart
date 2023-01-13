@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_notebook_chapter_24/ep1393_property_app/view/property_search_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class PropertyMainPage extends StatefulWidget {
@@ -64,13 +65,17 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
                           child: TextField(
-                            decoration: InputDecoration(
+                            decoration: const InputDecoration(
                               icon: Icon(Icons.search),
                               hintText: "Search Your Location",
                             ),
                             onSubmitted: (s) {
                               print("onSubmitted");
-
+                              Navigator.of(context).push(
+                                MaterialPageRoute(
+                                  builder: (context) => const PropertySearchResultPage(),
+                                ),
+                              );
                             },
                             onEditingComplete: () {
                               print("onEditingComplete");
@@ -164,7 +169,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                               decoration: BoxDecoration(
                                 color: Colors.blue,
                                 borderRadius: BorderRadius.circular(8),
-                                image: DecorationImage(
+                                image: const DecorationImage(
                                   image: NetworkImage(
                                       "https://cdn.pixabay.com/photo/2019/04/02/20/45/landscape-4098802__340.jpg"),
                                   fit: BoxFit.cover,
@@ -235,8 +240,8 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                               ),
                             ],
                           ),
-                          padding: EdgeInsets.all(8),
-                          child: Icon(
+                          padding: const EdgeInsets.all(8),
+                          child: const Icon(
                             Icons.bookmark_border,
                             size: 16,
                           ),
@@ -281,7 +286,7 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
               padding: const EdgeInsets.symmetric(horizontal: 12),
               child: ListView.builder(itemBuilder: (context, index) {
                 return Padding(
-                  padding: EdgeInsets.only(bottom: 8),
+                  padding: const EdgeInsets.only(bottom: 8),
                   child: Card(
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
@@ -293,14 +298,14 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             decoration: BoxDecoration(
                               color: Colors.blue,
                               borderRadius: BorderRadius.circular(8),
-                              image: DecorationImage(
+                              image: const DecorationImage(
                                 image: NetworkImage(
                                     "https://cdn.pixabay.com/photo/2019/04/02/20/45/landscape-4098802__340.jpg"),
                                 fit: BoxFit.cover,
                               ),
                             ),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             width: 16,
                           ),
                           Expanded(
@@ -374,8 +379,8 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                         ),
                                       ],
                                     ),
-                                    padding: EdgeInsets.all(8),
-                                    child: Icon(
+                                    padding: const EdgeInsets.all(8),
+                                    child: const Icon(
                                       Icons.bookmark_border,
                                       size: 16,
                                     ),

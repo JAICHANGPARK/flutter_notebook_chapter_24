@@ -99,7 +99,7 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(4),
+                        borderRadius: BorderRadius.circular(6),
                         border: Border.all(
                           color: Colors.grey[400]!,
                         ),
@@ -118,7 +118,9 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                       child: Row(
                         children: const [
                           Icon(Icons.sort),
-                          SizedBox(width: 4,),
+                          SizedBox(
+                            width: 4,
+                          ),
                           Text(
                             "Sort by",
                           )
@@ -128,7 +130,7 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(4),
+                        borderRadius: BorderRadius.circular(6),
                         border: Border.all(
                           color: Colors.grey[400]!,
                         ),
@@ -147,7 +149,9 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                       child: Row(
                         children: const [
                           Icon(Icons.star_border),
-                          SizedBox(width: 4,),
+                          SizedBox(
+                            width: 4,
+                          ),
                           Text(
                             "Save Search",
                           )
@@ -157,7 +161,7 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                     Container(
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(4),
+                        borderRadius: BorderRadius.circular(6),
                         border: Border.all(
                           color: Colors.grey[400]!,
                         ),
@@ -176,10 +180,43 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                       child: Row(
                         children: const [
                           Icon(Icons.location_on_outlined),
-                          SizedBox(width: 4,),
+                          SizedBox(
+                            width: 4,
+                          ),
                           Text(
                             "Map",
                           )
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                height: 320,
+                color: Colors.blue,
+                child: Column(
+                  children: [
+                    Container(
+                      height: 200,
+                      color: Colors.pink,
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Container(
+                      height: 112,
+                      child: Row(
+                        children: [
+                          Expanded(child: Placeholder()),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(child: Placeholder()),
+                          SizedBox(
+                            width: 8,
+                          ),
+                          Expanded(child: Placeholder()),
                         ],
                       ),
                     )

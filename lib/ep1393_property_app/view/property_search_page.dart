@@ -199,7 +199,14 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
                   children: [
                     Container(
                       height: 200,
-                      color: Colors.pink,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(8),
+                        image: DecorationImage(
+                          image: NetworkImage(
+                              "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
                     SizedBox(
                       height: 8,

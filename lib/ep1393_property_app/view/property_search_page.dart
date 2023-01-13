@@ -10,6 +10,28 @@ class PropertySearchResultPage extends StatefulWidget {
 class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                Container(
+                  height: 52,
+                  width: 52,
+                  decoration: BoxDecoration(shape: BoxShape.circle, boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[200]!,
+                      spreadRadius: 2,
+                      blurRadius: 2
+                    )
+                  ]),
+                )
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

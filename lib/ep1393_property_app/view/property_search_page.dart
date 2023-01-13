@@ -194,36 +194,147 @@ class _PropertySearchResultPageState extends State<PropertySearchResultPage> {
               ),
               Container(
                 height: 320,
-                color: Colors.blue,
                 child: Column(
                   children: [
                     Container(
                       height: 200,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(8),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                           image: NetworkImage(
                               "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg"),
                           fit: BoxFit.cover,
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 8,
                     ),
-                    Container(
+                    SizedBox(
                       height: 112,
                       child: Row(
                         children: [
-                          Expanded(child: Placeholder()),
-                          SizedBox(
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              image: const DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          )),
+                          const SizedBox(
                             width: 8,
                           ),
-                          Expanded(child: Placeholder()),
-                          SizedBox(
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              image: const DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          )),
+                          const SizedBox(
                             width: 8,
                           ),
-                          Expanded(child: Placeholder()),
+                          Expanded(
+                              child: Container(
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(8),
+                              image: const DecorationImage(
+                                image: NetworkImage(
+                                    "https://cdn.pixabay.com/photo/2014/07/10/17/18/large-home-389271_960_720.jpg"),
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          )),
+                        ],
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.only(top: 16),
+                height: 200,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  // color: Colors.orange,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey[200]!,
+                      blurRadius: 2,
+                      spreadRadius: 5,
+                    ),
+                  ],
+                ),
+                child: Column(
+                  children: [
+                    Container(
+                      height: 72,
+                      decoration: const BoxDecoration(
+                        color: Colors.black,
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(12),
+                          topRight: Radius.circular(12),
+                        ),
+                      ),
+                      padding: const EdgeInsets.only(left: 16, right: 16),
+                      child: Row(
+                        children: [
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Text(
+                                "\$1,803 pcm",
+                                style: GoogleFonts.inter(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20,
+                                ),
+                              ),
+                              const SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "\$416 pw",
+                                style: GoogleFonts.inter(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                          const Spacer(),
+                          Container(
+                            color: Colors.black,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Text(
+                                  "Premium".toUpperCase(),
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                                const SizedBox(
+                                  height: 4,
+                                ),
+                                const Text(
+                                  "LISTING",
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
                         ],
                       ),
                     )

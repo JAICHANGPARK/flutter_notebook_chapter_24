@@ -62,11 +62,18 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                             borderRadius: BorderRadius.circular(8),
                           ),
                           padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: const TextField(
+                          child: TextField(
                             decoration: InputDecoration(
                               icon: Icon(Icons.search),
                               hintText: "Search Your Location",
                             ),
+                            onSubmitted: (s) {
+                              print("onSubmitted");
+                            },
+
+                            onEditingComplete: () {
+                              print("onEditingComplete")
+                            },
                           ),
                         ),
                       ),
@@ -132,7 +139,13 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(8),
-                    boxShadow: [BoxShadow(color: Colors.black.withOpacity(0.05), spreadRadius: 1, blurRadius: 2)],
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withOpacity(0.05),
+                        spreadRadius: 1,
+                        blurRadius: 2,
+                      ),
+                    ],
                   ),
                   padding: const EdgeInsets.all(8),
                   child: Stack(
@@ -285,7 +298,6 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                                 fit: BoxFit.cover,
                               ),
                             ),
-
                           ),
                           SizedBox(
                             width: 16,
@@ -295,57 +307,57 @@ class _PropertyMainPageState extends State<PropertyMainPage> {
                               children: [
                                 Positioned(
                                     child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "Brolen Properties",
-                                      style: GoogleFonts.inter(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 15,
-                                      ),
-                                    ),
-                                    const SizedBox(
-                                      height: 8,
-                                    ),
-                                    Row(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        const Icon(
-                                          Icons.location_on,
-                                          size: 12,
-                                        ),
                                         Text(
-                                          "Hossain Market, Dhaka 1212",
+                                          "Brolen Properties",
                                           style: GoogleFonts.inter(
-                                            fontSize: 12,
-                                            color: Colors.grey,
+                                            fontWeight: FontWeight.bold,
+                                            fontSize: 15,
+                                          ),
+                                        ),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        Row(
+                                          children: [
+                                            const Icon(
+                                              Icons.location_on,
+                                              size: 12,
+                                            ),
+                                            Text(
+                                              "Hossain Market, Dhaka 1212",
+                                              style: GoogleFonts.inter(
+                                                fontSize: 12,
+                                                color: Colors.grey,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        const SizedBox(
+                                          height: 8,
+                                        ),
+                                        Text.rich(
+                                          TextSpan(
+                                            children: [
+                                              TextSpan(
+                                                text: "\$425",
+                                                style: GoogleFonts.inter(
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold,
+                                                ),
+                                              ),
+                                              TextSpan(
+                                                text: "/month",
+                                                style: GoogleFonts.inter(
+                                                  fontSize: 12,
+                                                ),
+                                              )
+                                            ],
                                           ),
                                         ),
                                       ],
-                                    ),
-                                    const SizedBox(
-                                      height: 8,
-                                    ),
-                                    Text.rich(
-                                      TextSpan(
-                                        children: [
-                                          TextSpan(
-                                            text: "\$425",
-                                            style: GoogleFonts.inter(
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.bold,
-                                            ),
-                                          ),
-                                          TextSpan(
-                                            text: "/month",
-                                            style: GoogleFonts.inter(
-                                              fontSize: 12,
-                                            ),
-                                          )
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                )),
+                                    )),
                                 Positioned(
                                   right: 8,
                                   top: 0,

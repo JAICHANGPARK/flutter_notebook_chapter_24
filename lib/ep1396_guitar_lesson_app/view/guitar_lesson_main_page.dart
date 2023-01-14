@@ -94,10 +94,9 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                 ),
                 Expanded(
                   child: Container(
-
                     decoration: BoxDecoration(
-                        color: Colors.white,
-                      borderRadius: BorderRadius.circular(16)
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(16),
                     ),
                   ),
                 )

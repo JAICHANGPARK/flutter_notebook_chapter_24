@@ -34,6 +34,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
@@ -68,8 +69,35 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                 borderRadius: BorderRadius.circular(16)),
                           )
                         ],
-                      )
+                      ),
+                      Container(
+                        height: 300,
+                        color: Colors.blue,
+                        margin: EdgeInsets.symmetric(vertical: 24),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Text(
+                        "Complementary categories to improve your skills",
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Container(
+                        margin: EdgeInsets.symmetric(vertical: 24),
+                        height: 48,
+                        color: Colors.orange,
+                      ),
                     ],
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    color: Colors.white,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(16)
+                    ),
                   ),
                 )
               ],

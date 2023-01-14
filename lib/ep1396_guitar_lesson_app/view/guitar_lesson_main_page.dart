@@ -24,16 +24,85 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                 ),
               )),
           Positioned(
-              child: Column(
-            children: [],
-          )),
+            left: 0,
+            right: 0,
+            bottom: 0,
+            top: 0,
+            child: Column(
+              children: [],
+            ),
+          ),
           Positioned(
               bottom: 0,
               left: 0,
               right: 0,
               child: Container(
-                height: 100,
-                decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(16)),
+                height: 84,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                          size: 38,
+                        ),
+                        SizedBox(height: 6,),
+                        Text(
+                          "Home",
+                          style: TextStyle(),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                          size: 38,
+                        ),
+                        SizedBox(height: 6,),
+                        Text(
+                          "Home",
+                          style: TextStyle(),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                          size: 38,
+                        ),
+                        SizedBox(height: 6,),
+                        Text(
+                          "Home",
+                          style: TextStyle(),
+                        )
+                      ],
+                    ),
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          Icons.home_filled,
+                          size: 38,
+                        ),
+                        SizedBox(height: 6,),
+                        Text(
+                          "Home",
+                          style: TextStyle(),
+                        )
+                      ],
+                    )
+                  ],
+                ),
               ))
         ],
       ),

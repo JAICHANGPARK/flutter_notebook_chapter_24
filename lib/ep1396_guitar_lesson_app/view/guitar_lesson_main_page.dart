@@ -19,7 +19,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
             bottom: 0,
             top: 0,
             child: Container(
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(232, 232, 232, 1),
               ),
             ),
@@ -39,7 +39,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
+                            children: const [
                               Text(
                                 "Welcome Back",
                                 style: TextStyle(),
@@ -56,7 +56,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                               ),
                             ],
                           ),
-                          Spacer(),
+                          const Spacer(),
                           Container(
                             height: 58,
                             width: 58,
@@ -90,7 +90,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                   children: [
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.home_filled,
                           size: 38,
@@ -106,7 +106,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.home_filled,
                           size: 38,
@@ -122,7 +122,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.home_filled,
                           size: 38,
@@ -138,7 +138,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
+                      children: const [
                         Icon(
                           Icons.home_filled,
                           size: 38,

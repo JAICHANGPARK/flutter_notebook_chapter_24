@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1393
+### EP1396
+
+- Mobile App Guitar Lesson Exploration 🎸
+- by Fajrin Arrahman
+- https://dribbble.com/shots/20369569-Mobile-App-Guitar-Lesson-Exploration/attachments/15422861?mode=media
+
+<img src="https://cdn.dribbble.com/users/1974400/screenshots/20369569/media/00af13446fbfffcd6ed3bebb8cacda3e.png" width="500px"/>
+
+### EP1393-1395
 
 - Property App Design
 - by Tariqul islam

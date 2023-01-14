@@ -95,7 +95,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: Color.fromRGBO(249, 248, 248, 1),
                       borderRadius: BorderRadius.circular(16),
                     ),
                   ),
@@ -110,7 +110,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
               child: Container(
                 height: 84,
                 decoration: BoxDecoration(
-                  color: Colors.white,
+                 color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Row(

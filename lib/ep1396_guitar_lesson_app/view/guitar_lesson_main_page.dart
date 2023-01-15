@@ -83,11 +83,28 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                               top: 0,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Colors.black,
-                                  borderRadius: BorderRadius.circular(32)
+                                  color: Color.fromRGBO(59, 68, 83, 1),
+                                  borderRadius: BorderRadius.circular(32),
                                 ),
                               ),
                             ),
+                            Positioned(
+                                bottom: 24,
+                                left: 0,
+                                right: 0,
+                                top: 0,
+                                child: Container(
+                                  child: Column(
+                                    children: [
+                                      Expanded(
+                                        child: Placeholder(),
+                                      ),
+                                      Expanded(
+                                        child: Placeholder(),
+                                      )
+                                    ],
+                                  ),
+                                ))
                           ],
                         ),
                       ),

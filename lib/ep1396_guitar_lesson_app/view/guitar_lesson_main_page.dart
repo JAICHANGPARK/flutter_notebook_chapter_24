@@ -79,8 +79,8 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                           children: [
                             Positioned(
                               bottom: 0,
-                              left: 24,
-                              right: 24,
+                              left: 16,
+                              right: 16,
                               top: 0,
                               child: Container(
                                 decoration: BoxDecoration(

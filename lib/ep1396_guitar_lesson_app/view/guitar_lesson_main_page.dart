@@ -74,6 +74,22 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         height: 300,
                         color: Colors.blue,
                         margin: const EdgeInsets.symmetric(vertical: 24),
+                        child: Stack(
+                          children: [
+                            Positioned(
+                              bottom: 0,
+                              left: 24,
+                              right: 24,
+                              top: 0,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.black,
+                                  borderRadius: BorderRadius.circular(32)
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                       const SizedBox(
                         height: 16,

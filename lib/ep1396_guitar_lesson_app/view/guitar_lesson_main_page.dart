@@ -119,7 +119,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                       ),
                                       Expanded(
                                         child: Padding(
-                                          padding: const EdgeInsets.all(8.0),
+                                          padding: const EdgeInsets.all(16.0),
                                           child: Column(
                                             children: [
                                               Row(
@@ -132,6 +132,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                           color: Colors.white,
+                                                          fontSize: 22
                                                         ),
                                                       ),
                                                       SizedBox(
@@ -147,6 +148,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                   ),
                                                   Spacer(),
                                                   CircularPercentIndicator(
+                                                    percent: 0.75,
                                                     radius: 28,
                                                     center: Text(
                                                       "75%",

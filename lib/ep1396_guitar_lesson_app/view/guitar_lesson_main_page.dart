@@ -83,23 +83,35 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                               top: 0,
                               child: Container(
                                 decoration: BoxDecoration(
-                                  color: Color.fromRGBO(59, 68, 83, 1),
+                                  color: const Color.fromRGBO(59, 68, 83, 1),
                                   borderRadius: BorderRadius.circular(32),
                                 ),
                               ),
                             ),
                             Positioned(
-                                bottom: 24,
+                                bottom: 16,
                                 left: 0,
                                 right: 0,
                                 top: 0,
                                 child: Container(
+                                  decoration: BoxDecoration(
+                                    color: const Color.fromRGBO(34, 37, 49, 1),
+                                    borderRadius: BorderRadius.circular(24),
+                                  ),
                                   child: Column(
                                     children: [
                                       Expanded(
-                                        child: Placeholder(),
+                                        child: Container(
+                                          decoration: const BoxDecoration(
+                                            image: DecorationImage(
+                                              image: NetworkImage(
+                                                "https://cdn.pixabay.com/photo/2016/11/19/21/05/bass-guitar-1841186_960_720.jpg",
+                                              ),
+                                            ),
+                                          ),
+                                        ),
                                       ),
-                                      Expanded(
+                                      const Expanded(
                                         child: Placeholder(),
                                       )
                                     ],

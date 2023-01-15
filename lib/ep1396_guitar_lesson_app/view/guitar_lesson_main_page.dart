@@ -152,15 +152,16 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.home_filled,
+                          Icons.bookmark_border,
                           size: 38,
+                          color: Colors.grey,
                         ),
                         SizedBox(
                           height: 6,
                         ),
                         Text(
-                          "Home",
-                          style: TextStyle(),
+                          "Bookmark",
+                          style: TextStyle(  color: Colors.grey),
                         )
                       ],
                     ),
@@ -168,15 +169,18 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.home_filled,
+                          Icons.apps,
                           size: 38,
+                          color: Colors.grey,
                         ),
                         SizedBox(
                           height: 6,
                         ),
                         Text(
-                          "Home",
-                          style: TextStyle(),
+                          "More",
+                          style: TextStyle(
+                            color: Colors.grey
+                          ),
                         )
                       ],
                     )

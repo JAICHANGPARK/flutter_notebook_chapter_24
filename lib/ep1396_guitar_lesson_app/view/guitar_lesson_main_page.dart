@@ -103,10 +103,15 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                       Expanded(
                                         child: Container(
                                           decoration: const BoxDecoration(
+                                            borderRadius: BorderRadius.only(
+                                              topLeft: Radius.circular(24),
+                                              topRight: Radius.circular(24),
+                                            ),
                                             image: DecorationImage(
                                               image: NetworkImage(
                                                 "https://cdn.pixabay.com/photo/2016/11/19/21/05/bass-guitar-1841186_960_720.jpg",
                                               ),
+                                              fit: BoxFit.cover,
                                             ),
                                           ),
                                         ),

@@ -130,10 +130,9 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                       Text(
                                                         "Guitar picking for beginners",
                                                         style: TextStyle(
-                                                          fontWeight: FontWeight.bold,
-                                                          color: Colors.white,
-                                                          fontSize: 22
-                                                        ),
+                                                            fontWeight: FontWeight.bold,
+                                                            color: Colors.white,
+                                                            fontSize: 22),
                                                       ),
                                                       SizedBox(
                                                         height: 8,
@@ -150,11 +149,30 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                   CircularPercentIndicator(
                                                     percent: 0.75,
                                                     radius: 28,
+                                                    linearGradient: LinearGradient(
+                                                      colors: [
+                                                        Colors.red,
+                                                        Colors.orange,
+                                                        Colors.yellow,
+                                                      ],
+                                                      begin: Alignment.topCenter,
+                                                      end: Alignment.centerLeft,
+                                                    ),
                                                     center: Text(
                                                       "75%",
                                                       style: TextStyle(
                                                         color: Colors.white,
                                                       ),
+                                                    ),
+                                                  )
+                                                ],
+                                              ),
+                                              Row(
+                                                children: [
+                                                  Text(
+                                                    "Resume Lesson",
+                                                    style: TextStyle(
+                                                      decoration: TextDecoration.underline,
                                                     ),
                                                   )
                                                 ],

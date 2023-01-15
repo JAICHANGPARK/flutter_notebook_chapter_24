@@ -116,8 +116,26 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                           ),
                                         ),
                                       ),
-                                      const Expanded(
-                                        child: Placeholder(),
+                                      Expanded(
+                                        child: Column(
+                                          children: [
+                                            Row(
+                                              children: [
+                                                Column(
+                                                  children: [
+                                                    Text(
+                                                      "Guitar picking for beginners",
+                                                      style: TextStyle(
+                                                        fontWeight: FontWeight.bold,
+                                                        color: Colors.white,
+                                                      ),
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),

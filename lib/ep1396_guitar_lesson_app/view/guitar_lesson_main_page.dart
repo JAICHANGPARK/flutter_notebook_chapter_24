@@ -214,7 +214,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                               margin: EdgeInsets.only(right: 16),
                               decoration: BoxDecoration(
                                 color: const Color.fromRGBO(34, 37, 49, 1),
-                                borderRadius: BorderRadius.circular(21)
+                                borderRadius: BorderRadius.circular(32),
                               ),
                               padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
                               child: Row(
@@ -222,9 +222,14 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                   Container(
                                     height: 32,
                                     width: 32,
-                                    decoration: BoxDecoration(color: Colors.white),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white,
+                                      shape: BoxShape.circle,
+                                    ),
                                   ),
-                                  SizedBox(width: 8,),
+                                  SizedBox(
+                                    width: 8,
+                                  ),
                                   Text(
                                     "Strumming",
                                     style: TextStyle(

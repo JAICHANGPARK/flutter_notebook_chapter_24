@@ -136,14 +136,14 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: const [
                         Icon(
-                          Icons.home_filled,
+                          Icons.explore_outlined,
                           size: 38,
                         ),
                         SizedBox(
                           height: 6,
                         ),
                         Text(
-                          "Home",
+                          "Discover",
                           style: TextStyle(),
                         )
                       ],

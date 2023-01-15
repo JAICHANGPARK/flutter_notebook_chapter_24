@@ -202,17 +202,43 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                       ),
                       const Text(
                         "Complementary categories to improve your skills",
-                        style: TextStyle(
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16
-                        ),
+                        style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 24),
                         height: 48,
                         color: Colors.orange,
-                        child: ListView.builder(itemBuilder: (context, index){}, itemCount: 10,
-                        scrollDirection: Axis.horizontal,),
+                        child: ListView.builder(
+                          itemBuilder: (context, index) {
+                            return Container(
+                              margin: EdgeInsets.only(right: 16),
+                              decoration: BoxDecoration(
+                                color: const Color.fromRGBO(34, 37, 49, 1),
+                                borderRadius: BorderRadius.circular(21)
+                              ),
+                              padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
+                              child: Row(
+                                children: [
+                                  Container(
+                                    height: 32,
+                                    width: 32,
+                                    decoration: BoxDecoration(color: Colors.white),
+                                  ),
+                                  SizedBox(width: 8,),
+                                  Text(
+                                    "Strumming",
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    ),
+                                  )
+                                ],
+                              ),
+                            );
+                          },
+                          itemCount: 10,
+                          scrollDirection: Axis.horizontal,
+                        ),
                       ),
                     ],
                   ),

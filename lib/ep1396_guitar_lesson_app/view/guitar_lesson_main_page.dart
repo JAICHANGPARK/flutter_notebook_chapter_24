@@ -204,12 +204,15 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         "Complementary categories to improve your skills",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
+                          fontSize: 16
                         ),
                       ),
                       Container(
                         margin: const EdgeInsets.symmetric(vertical: 24),
                         height: 48,
                         color: Colors.orange,
+                        child: ListView.builder(itemBuilder: (context, index){}, itemCount: 10,
+                        scrollDirection: Axis.horizontal,),
                       ),
                     ],
                   ),

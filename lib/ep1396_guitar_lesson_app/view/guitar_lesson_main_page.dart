@@ -169,7 +169,6 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                   )
                                                 ],
                                               ),
-
                                               Row(
                                                 children: [
                                                   Text(
@@ -179,7 +178,13 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                       decoration: TextDecoration.underline,
                                                     ),
                                                   ),
-                                                  
+                                                  SizedBox(
+                                                    width: 12,
+                                                  ),
+                                                  Icon(
+                                                    Icons.arrow_forward,
+                                                    color: Colors.white,
+                                                  )
                                                 ],
                                               )
                                             ],

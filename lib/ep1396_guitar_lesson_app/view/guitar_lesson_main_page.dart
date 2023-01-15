@@ -73,19 +73,19 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                       Container(
                         height: 300,
                         color: Colors.blue,
-                        margin: EdgeInsets.symmetric(vertical: 24),
+                        margin: const EdgeInsets.symmetric(vertical: 24),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 16,
                       ),
-                      Text(
+                      const Text(
                         "Complementary categories to improve your skills",
                         style: TextStyle(
                           fontWeight: FontWeight.bold,
                         ),
                       ),
                       Container(
-                        margin: EdgeInsets.symmetric(vertical: 24),
+                        margin: const EdgeInsets.symmetric(vertical: 24),
                         height: 48,
                         color: Colors.orange,
                       ),
@@ -95,7 +95,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                 Expanded(
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Color.fromRGBO(249, 248, 248, 1),
+                      color: const Color.fromRGBO(249, 248, 248, 1),
                       borderRadius: BorderRadius.circular(16),
                     ),
                   ),

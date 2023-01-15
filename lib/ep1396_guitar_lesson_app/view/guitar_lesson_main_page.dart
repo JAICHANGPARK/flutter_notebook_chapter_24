@@ -121,6 +121,8 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                         child: Padding(
                                           padding: const EdgeInsets.all(16.0),
                                           child: Column(
+                                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                            crossAxisAlignment: CrossAxisAlignment.start,
                                             children: [
                                               Row(
                                                 children: [
@@ -167,14 +169,17 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                   )
                                                 ],
                                               ),
+
                                               Row(
                                                 children: [
                                                   Text(
                                                     "Resume Lesson",
                                                     style: TextStyle(
+                                                      color: Colors.white,
                                                       decoration: TextDecoration.underline,
                                                     ),
-                                                  )
+                                                  ),
+                                                  
                                                 ],
                                               )
                                             ],

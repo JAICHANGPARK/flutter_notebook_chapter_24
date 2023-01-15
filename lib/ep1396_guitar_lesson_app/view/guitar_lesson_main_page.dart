@@ -9,6 +9,7 @@ class GuitarLessonMainPage extends StatefulWidget {
 }
 
 class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
+  int _index = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -272,21 +273,31 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
-                        Icon(
-                          Icons.home_filled,
-                          size: 38,
-                        ),
-                        SizedBox(
-                          height: 6,
-                        ),
-                        Text(
-                          "Home",
-                          style: TextStyle(),
-                        )
-                      ],
+                    InkWell(
+                      onTap: (){
+                        setState(() {
+                          _index = 0;
+                        });
+                      },
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children:  [
+                          Icon(
+                            Icons.home_filled,
+                            size: 38,
+                            color: _index == 0 ? Colors.black: Colors.grey,
+                          ),
+                          SizedBox(
+                            height: 6,
+                          ),
+                          Text(
+                            "Home",
+                            style: TextStyle(
+                              color: _index == 0 ? Colors.black: Colors.grey,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,

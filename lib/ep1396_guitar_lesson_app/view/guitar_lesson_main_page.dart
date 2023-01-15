@@ -110,7 +110,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
               child: Container(
                 height: 84,
                 decoration: BoxDecoration(
-                 color: Colors.white,
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(16),
                 ),
                 child: Row(
@@ -138,13 +138,16 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         Icon(
                           Icons.explore_outlined,
                           size: 38,
+                          color: Colors.grey,
                         ),
                         SizedBox(
                           height: 6,
                         ),
                         Text(
                           "Discover",
-                          style: TextStyle(),
+                          style: TextStyle(
+                            color: Colors.grey,
+                          ),
                         )
                       ],
                     ),
@@ -161,7 +164,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         ),
                         Text(
                           "Bookmark",
-                          style: TextStyle(  color: Colors.grey),
+                          style: TextStyle(color: Colors.grey),
                         )
                       ],
                     ),
@@ -178,9 +181,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         ),
                         Text(
                           "More",
-                          style: TextStyle(
-                            color: Colors.grey
-                          ),
+                          style: TextStyle(color: Colors.grey),
                         )
                       ],
                     )

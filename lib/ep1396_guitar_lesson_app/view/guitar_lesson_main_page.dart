@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class GuitarLessonMainPage extends StatefulWidget {
   const GuitarLessonMainPage({Key? key}) : super(key: key);
@@ -117,24 +118,47 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                         ),
                                       ),
                                       Expanded(
-                                        child: Column(
-                                          children: [
-                                            Row(
-                                              children: [
-                                                Column(
-                                                  children: [
-                                                    Text(
-                                                      "Guitar picking for beginners",
+                                        child: Padding(
+                                          padding: const EdgeInsets.all(8.0),
+                                          child: Column(
+                                            children: [
+                                              Row(
+                                                children: [
+                                                  Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    children: [
+                                                      Text(
+                                                        "Guitar picking for beginners",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                          color: Colors.white,
+                                                        ),
+                                                      ),
+                                                      SizedBox(
+                                                        height: 8,
+                                                      ),
+                                                      Text(
+                                                        "A little more to finish your course",
+                                                        style: TextStyle(
+                                                          color: Colors.white.withOpacity(0.8),
+                                                        ),
+                                                      )
+                                                    ],
+                                                  ),
+                                                  Spacer(),
+                                                  CircularPercentIndicator(
+                                                    radius: 28,
+                                                    center: Text(
+                                                      "75%",
                                                       style: TextStyle(
-                                                        fontWeight: FontWeight.bold,
                                                         color: Colors.white,
                                                       ),
-                                                    )
-                                                  ],
-                                                )
-                                              ],
-                                            )
-                                          ],
+                                                    ),
+                                                  )
+                                                ],
+                                              )
+                                            ],
+                                          ),
                                         ),
                                       )
                                     ],

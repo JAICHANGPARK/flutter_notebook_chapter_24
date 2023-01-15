@@ -73,7 +73,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                       ),
                       Container(
                         height: 300,
-                        color: Colors.blue,
+                        // color: Colors.blue,
                         margin: const EdgeInsets.symmetric(vertical: 24),
                         child: Stack(
                           children: [
@@ -129,14 +129,14 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                   Column(
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     children: [
-                                                      Text(
+                                                      const Text(
                                                         "Guitar picking for beginners",
                                                         style: TextStyle(
                                                             fontWeight: FontWeight.bold,
                                                             color: Colors.white,
                                                             fontSize: 22),
                                                       ),
-                                                      SizedBox(
+                                                      const SizedBox(
                                                         height: 8,
                                                       ),
                                                       Text(
@@ -147,11 +147,11 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                       )
                                                     ],
                                                   ),
-                                                  Spacer(),
+                                                  const Spacer(),
                                                   CircularPercentIndicator(
                                                     percent: 0.75,
                                                     radius: 28,
-                                                    linearGradient: LinearGradient(
+                                                    linearGradient: const LinearGradient(
                                                       colors: [
                                                         Colors.red,
                                                         Colors.orange,
@@ -160,7 +160,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                       begin: Alignment.topCenter,
                                                       end: Alignment.centerLeft,
                                                     ),
-                                                    center: Text(
+                                                    center: const Text(
                                                       "75%",
                                                       style: TextStyle(
                                                         color: Colors.white,
@@ -170,7 +170,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                 ],
                                               ),
                                               Row(
-                                                children: [
+                                                children: const [
                                                   Text(
                                                     "Resume Lesson",
                                                     style: TextStyle(

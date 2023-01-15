@@ -211,26 +211,26 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         child: ListView.builder(
                           itemBuilder: (context, index) {
                             return Container(
-                              margin: EdgeInsets.only(right: 16),
+                              margin: const EdgeInsets.only(right: 16),
                               decoration: BoxDecoration(
                                 color: const Color.fromRGBO(34, 37, 49, 1),
                                 borderRadius: BorderRadius.circular(32),
                               ),
-                              padding: EdgeInsets.fromLTRB(8, 8, 8, 8),
+                              padding: const EdgeInsets.fromLTRB(8, 8, 8, 8),
                               child: Row(
                                 children: [
                                   Container(
                                     height: 32,
                                     width: 32,
-                                    decoration: BoxDecoration(
+                                    decoration: const BoxDecoration(
                                       color: Colors.white,
                                       shape: BoxShape.circle,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     width: 8,
                                   ),
-                                  Text(
+                                  const Text(
                                     "Strumming",
                                     style: TextStyle(
                                       color: Colors.white,

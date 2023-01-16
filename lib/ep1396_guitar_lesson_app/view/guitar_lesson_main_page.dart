@@ -302,11 +302,11 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(
                           Icons.explore_outlined,
                           size: 38,
-                          color: Colors.grey,
+                          color: _index == 1 ? Colors.black : Colors.grey,
                         ),
                         SizedBox(
                           height: 6,
@@ -314,42 +314,46 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                         Text(
                           "Discover",
                           style: TextStyle(
-                            color: Colors.grey,
+                            color: _index == 1 ? Colors.black : Colors.grey,
                           ),
                         )
                       ],
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(
                           Icons.bookmark_border,
                           size: 38,
-                          color: Colors.grey,
+                          color: _index == 2 ? Colors.black : Colors.grey,
                         ),
                         SizedBox(
                           height: 6,
                         ),
                         Text(
                           "Bookmark",
-                          style: TextStyle(color: Colors.grey),
+                          style: TextStyle(
+                            color: _index == 2 ? Colors.black : Colors.grey,
+                          ),
                         )
                       ],
                     ),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
-                      children: const [
+                      children: [
                         Icon(
                           Icons.apps,
                           size: 38,
-                          color: Colors.grey,
+                          color: _index == 3 ? Colors.black : Colors.grey,
                         ),
                         SizedBox(
                           height: 6,
                         ),
                         Text(
                           "More",
-                          style: TextStyle(color: Colors.grey),
+                          style: TextStyle(
+                            color: _index == 3 ? Colors.black : Colors.grey,
+                          ),
                         )
                       ],
                     )

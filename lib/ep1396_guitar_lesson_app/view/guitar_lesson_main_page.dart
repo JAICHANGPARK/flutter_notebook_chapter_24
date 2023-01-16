@@ -219,7 +219,6 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                 Container(
                                   margin: const EdgeInsets.symmetric(vertical: 24),
                                   height: 48,
-                                  color: Colors.orange,
                                   child: ListView.builder(
                                     itemBuilder: (context, index) {
                                       return Container(
@@ -274,7 +273,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                     "Best Picker",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
-                                      fontSize: 18
+                                      fontSize: 18,
                                     ),
                                   ),
                                   SizedBox(
@@ -283,15 +282,45 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                   Expanded(
                                     child: GridView.builder(
                                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                          crossAxisCount: 2,
-                                          mainAxisSpacing: 16,
-                                          crossAxisSpacing: 16,
-                                        ),
+                                            crossAxisCount: 2,
+                                            mainAxisSpacing: 16,
+                                            crossAxisSpacing: 16,
+                                            childAspectRatio: 6 / 20),
                                         scrollDirection: Axis.horizontal,
                                         itemCount: 10,
                                         itemBuilder: (context, index) {
                                           return Container(
-                                            color: Colors.blue,
+                                            padding: EdgeInsets.symmetric(vertical: 8),
+                                            child: Row(
+                                              children: [
+                                                Container(
+                                                  width: 100,
+                                                  decoration: BoxDecoration(
+                                                    color: Colors.pink,
+                                                    borderRadius: BorderRadius.circular(8)
+                                                  ),
+                                                ),
+                                                SizedBox(
+                                                  width: 16,
+                                                ),
+                                                Expanded(
+                                                  child: Column(
+                                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                                                    children: [
+                                                      Text(
+                                                        "Anatomy of the Electric Guitar",
+                                                        style: TextStyle(
+                                                          fontWeight: FontWeight.bold,
+                                                          fontSize: 16
+                                                        ),
+                                                      ),
+                                                      Text("8 videos 45 Minutes"),
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
+                                            ),
                                           );
                                         }),
                                   ),

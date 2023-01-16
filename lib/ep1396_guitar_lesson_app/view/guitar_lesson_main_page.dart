@@ -266,18 +266,26 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                 color: const Color.fromRGBO(249, 248, 248, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              child: GridView.builder(
-                                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                                    crossAxisCount: 2,
-                                    mainAxisSpacing: 16,
-                                    crossAxisSpacing: 16,
+                              
+                              child: Column(
+                                children: [
+                                  Expanded(
+                                    child: GridView.builder(
+                                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                          crossAxisCount: 2,
+                                          mainAxisSpacing: 16,
+                                          crossAxisSpacing: 16,
+                                        ),
+                                        scrollDirection: Axis.horizontal,
+                                        itemCount: 10,
+                                        itemBuilder: (context, index) {
+                                          return Container(
+                                            color: Colors.blue,
+                                          );
+                                        }),
                                   ),
-                                  itemCount: 10,
-                                  itemBuilder: (context, index) {
-                                    return Container(
-                                      color: Colors.blue,
-                                    );
-                                  }),
+                                ],
+                              ),
                             ),
                           )
                         ],

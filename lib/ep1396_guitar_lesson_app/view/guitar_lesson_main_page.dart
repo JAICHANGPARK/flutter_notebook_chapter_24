@@ -312,15 +312,15 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                   child: Column(
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                                    children: [
-                                                      const Text(
+                                                    children: const [
+                                                      Text(
                                                         "Anatomy of the Electric Guitar",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
                                                           fontSize: 16,
                                                         ),
                                                       ),
-                                                      const Text("8 videos 45 Minutes"),
+                                                      Text("8 videos 45 Minutes"),
                                                     ],
                                                   ),
                                                 )

@@ -266,9 +266,11 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                 color: const Color.fromRGBO(249, 248, 248, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              
+                              padding: EdgeInsets.all(16),
                               child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
+                                  Text("Best Picker"),
                                   Expanded(
                                     child: GridView.builder(
                                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

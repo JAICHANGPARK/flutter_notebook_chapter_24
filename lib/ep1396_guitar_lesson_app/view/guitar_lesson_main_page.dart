@@ -270,7 +270,16 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text("Best Picker"),
+                                  Text(
+                                    "Best Picker",
+                                    style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 16,
+                                  ),
                                   Expanded(
                                     child: GridView.builder(
                                         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(

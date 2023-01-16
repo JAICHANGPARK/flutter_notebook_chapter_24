@@ -214,10 +214,15 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                 ),
                                 const Text(
                                   "Complementary categories to improve your skills",
-                                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                                  style: TextStyle(
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16,
+                                  ),
                                 ),
                                 Container(
-                                  margin: const EdgeInsets.symmetric(vertical: 24),
+                                  margin: const EdgeInsets.symmetric(
+                                    vertical: 24,
+                                  ),
                                   height: 48,
                                   child: ListView.builder(
                                     itemBuilder: (context, index) {
@@ -265,23 +270,23 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                 color: const Color.fromRGBO(249, 248, 248, 1),
                                 borderRadius: BorderRadius.circular(16),
                               ),
-                              padding: EdgeInsets.all(16),
+                              padding: const EdgeInsets.all(16),
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
-                                  Text(
+                                  const Text(
                                     "Best Picker",
                                     style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 18,
                                     ),
                                   ),
-                                  SizedBox(
+                                  const SizedBox(
                                     height: 16,
                                   ),
                                   Expanded(
                                     child: GridView.builder(
-                                        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                                        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                                             crossAxisCount: 2,
                                             mainAxisSpacing: 16,
                                             crossAxisSpacing: 16,
@@ -290,17 +295,17 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                         itemCount: 10,
                                         itemBuilder: (context, index) {
                                           return Container(
-                                            padding: EdgeInsets.symmetric(vertical: 8),
+                                            padding: const EdgeInsets.symmetric(vertical: 8),
                                             child: Row(
                                               children: [
                                                 Container(
                                                   width: 100,
                                                   decoration: BoxDecoration(
                                                     color: Colors.pink,
-                                                    borderRadius: BorderRadius.circular(8)
+                                                    borderRadius: BorderRadius.circular(8),
                                                   ),
                                                 ),
-                                                SizedBox(
+                                                const SizedBox(
                                                   width: 16,
                                                 ),
                                                 Expanded(
@@ -308,14 +313,14 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                                                     crossAxisAlignment: CrossAxisAlignment.start,
                                                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                                     children: [
-                                                      Text(
+                                                      const Text(
                                                         "Anatomy of the Electric Guitar",
                                                         style: TextStyle(
                                                           fontWeight: FontWeight.bold,
-                                                          fontSize: 16
+                                                          fontSize: 16,
                                                         ),
                                                       ),
-                                                      Text("8 videos 45 Minutes"),
+                                                      const Text("8 videos 45 Minutes"),
                                                     ],
                                                   ),
                                                 )

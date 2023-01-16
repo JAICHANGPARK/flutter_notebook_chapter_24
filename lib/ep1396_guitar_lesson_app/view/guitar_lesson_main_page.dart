@@ -10,6 +10,7 @@ class GuitarLessonMainPage extends StatefulWidget {
 
 class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
   int _index = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -274,18 +275,18 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     InkWell(
-                      onTap: (){
+                      onTap: () {
                         setState(() {
                           _index = 0;
                         });
                       },
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
-                        children:  [
+                        children: [
                           Icon(
                             Icons.home_filled,
                             size: 38,
-                            color: _index == 0 ? Colors.black: Colors.grey,
+                            color: _index == 0 ? Colors.black : Colors.grey,
                           ),
                           SizedBox(
                             height: 6,
@@ -293,7 +294,7 @@ class _GuitarLessonMainPageState extends State<GuitarLessonMainPage> {
                           Text(
                             "Home",
                             style: TextStyle(
-                              color: _index == 0 ? Colors.black: Colors.grey,
+                              color: _index == 0 ? Colors.black : Colors.grey,
                             ),
                           )
                         ],

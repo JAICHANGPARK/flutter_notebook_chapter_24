@@ -25,6 +25,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                   CircleAvatar(
                     radius: 32,
                     backgroundColor: Colors.white,
+                    foregroundColor: Colors.white,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.home_filled),
@@ -34,6 +35,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                   CircleAvatar(
                     radius: 32,
                     backgroundColor: Colors.white.withOpacity(0.3),
+                    foregroundColor: Colors.white,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.search),
@@ -43,6 +45,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                   CircleAvatar(
                     radius: 32,
                     backgroundColor: Colors.white.withOpacity(0.3),
+                    foregroundColor: Colors.white,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.bookmark_border),

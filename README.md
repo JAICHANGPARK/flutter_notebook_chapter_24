@@ -1,6 +1,14 @@
 # flutter_notebook_chapter_24
 
-### EP1396
+### EP1399
+
+- News App
+- by MindInventory UI/UX for MindInventory
+- https://dribbble.com/shots/20391043-News-App
+
+<img src="https://cdn.dribbble.com/userupload/4285953/file/original-8c3f02a1c13427d2726eb62b25504804.png?compress=1&resize=1600x1200" width="500px"/>
+
+### EP1396-1398
 
 - Mobile App Guitar Lesson Exploration 🎸
 - by Fajrin Arrahman

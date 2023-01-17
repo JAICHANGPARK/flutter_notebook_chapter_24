@@ -12,7 +12,14 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
+      body: SafeArea(
+        child: Stack(
+          children: [
 
+          ],
+        ),
+      ),
     );
   }
 }

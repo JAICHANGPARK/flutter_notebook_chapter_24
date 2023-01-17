@@ -25,13 +25,29 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                   CircleAvatar(
                     radius: 32,
                     backgroundColor: Colors.white,
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.home_filled),
+                      iconSize: 32,
+                    ),
                   ),
                   CircleAvatar(
                     radius: 32,
                     backgroundColor: Colors.white.withOpacity(0.3),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.search),
+                      iconSize: 32,
+                    ),
                   ),
                   CircleAvatar(
                     radius: 32,
+                    backgroundColor: Colors.white.withOpacity(0.3),
+                    child: IconButton(
+                      onPressed: () {},
+                      icon: Icon(Icons.bookmark_border),
+                      iconSize: 32,
+                    ),
                   ),
                 ],
               ),

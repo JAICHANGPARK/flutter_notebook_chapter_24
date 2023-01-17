@@ -46,12 +46,31 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                         ],
                       ),
                     ),
-                    TabBar(tabs: [
-                      Tab(text: "Trending",),
-                      Tab(text: "Health",),
-                      Tab(text: "Sports",),
-                      Tab(text: "Finance",),
-                    ]),
+                    TabBar(
+                      tabs: [
+                        Tab(
+                          text: "Trending",
+                        ),
+                        Tab(
+                          text: "Health",
+                        ),
+                        Tab(
+                          text: "Sports",
+                        ),
+                        Tab(
+                          text: "Finance",
+                        ),
+                      ],
+                      labelStyle: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      isScrollable: true,
+                      unselectedLabelStyle: TextStyle(
+                        fontSize: 18
+                      ),
+                      indicatorColor: Colors.transparent,
+                    ),
                     Expanded(
                         child: TabBarView(
                       children: [

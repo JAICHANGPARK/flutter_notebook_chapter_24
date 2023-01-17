@@ -24,21 +24,43 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                 length: 4,
                 child: Column(
                   children: [
-                    Row(
-                      children: [
-                        Text("News"),
-                        Container(
-                          height: 52,
-                          width: 52,
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            border: Border.all(
-                              color: Colors.white,
-                            ),
+                    Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            "News",
+                            style: TextStyle(color: Colors.white, fontSize: 28),
                           ),
-                        )
+                          Container(
+                            height: 52,
+                            width: 52,
+                            decoration: BoxDecoration(
+                              shape: BoxShape.circle,
+                              border: Border.all(
+                                color: Colors.white,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                    TabBar(tabs: [
+                      Tab(text: "Trending",),
+                      Tab(text: "Health",),
+                      Tab(text: "Sports",),
+                      Tab(text: "Finance",),
+                    ]),
+                    Expanded(
+                        child: TabBarView(
+                      children: [
+                        Container(),
+                        Container(),
+                        Container(),
+                        Container(),
                       ],
-                    )
+                    ))
                   ],
                 ),
               ),

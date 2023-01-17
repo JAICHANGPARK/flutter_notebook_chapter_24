@@ -29,7 +29,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text(
+                          const Text(
                             "News",
                             style: TextStyle(color: Colors.white, fontSize: 28),
                           ),
@@ -46,7 +46,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                         ],
                       ),
                     ),
-                    TabBar(
+                    const TabBar(
                       tabs: [
                         Tab(
                           text: "Trending",
@@ -66,9 +66,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                         fontWeight: FontWeight.bold,
                       ),
                       isScrollable: true,
-                      unselectedLabelStyle: TextStyle(
-                        fontSize: 18
-                      ),
+                      unselectedLabelStyle: TextStyle(fontSize: 18),
                       indicatorColor: Colors.transparent,
                     ),
                     Expanded(
@@ -97,7 +95,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                     foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.home_filled),
+                      icon: const Icon(Icons.home_filled),
                       iconSize: 32,
                     ),
                   ),
@@ -107,7 +105,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                     foregroundColor: Colors.white,
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.search),
+                      icon: const Icon(Icons.search),
                       iconSize: 32,
                     ),
                   ),
@@ -117,7 +115,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                     foregroundColor: Colors.white,
                     child: IconButton(
                       onPressed: () {},
-                      icon: Icon(Icons.bookmark_border),
+                      icon: const Icon(Icons.bookmark_border),
                       iconSize: 32,
                     ),
                   ),

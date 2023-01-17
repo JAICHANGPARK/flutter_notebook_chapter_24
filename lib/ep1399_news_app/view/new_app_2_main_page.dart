@@ -16,13 +16,33 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
         child: Stack(
           children: [
             Positioned(
-                left: 0,
-                right: 0,
-                bottom: 0,
-                top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              top: 0,
+              child: DefaultTabController(
+                length: 4,
                 child: Column(
-                  children: [],
-                )),
+                  children: [
+                    Row(
+                      children: [
+                        Text("News"),
+                        Container(
+                          height: 52,
+                          width: 52,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            border: Border.all(
+                              color: Colors.white,
+                            ),
+                          ),
+                        )
+                      ],
+                    )
+                  ],
+                ),
+              ),
+            ),
             Positioned(
               left: 0,
               bottom: 16,

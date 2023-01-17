@@ -11,6 +11,8 @@ class NewsApp2MainPage extends StatefulWidget {
 class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+
+    );
   }
 }

@@ -16,6 +16,14 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
         child: Stack(
           children: [
             Positioned(
+                left: 0,
+                right: 0,
+                bottom: 0,
+                top: 0,
+                child: Column(
+                  children: [],
+                )),
+            Positioned(
               left: 0,
               bottom: 16,
               right: 0,

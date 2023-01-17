@@ -73,7 +73,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                         child: TabBarView(
                       children: [
                         Container(),
-                        Container(),
+                        Placeholder(),
                         Container(),
                         Container(),
                       ],

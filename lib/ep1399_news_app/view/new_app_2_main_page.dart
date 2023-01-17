@@ -25,7 +25,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                   CircleAvatar(
                     radius: 32,
                     backgroundColor: Colors.white,
-                    foregroundColor: Colors.white,
+                    foregroundColor: Colors.black,
                     child: IconButton(
                       onPressed: () {},
                       icon: Icon(Icons.home_filled),

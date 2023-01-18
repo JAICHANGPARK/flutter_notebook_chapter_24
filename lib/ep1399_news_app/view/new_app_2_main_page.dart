@@ -85,7 +85,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                   color: Colors.amber[200],
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                padding: EdgeInsets.all(16),
+                                padding: EdgeInsets.all(20),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -105,6 +105,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         ),
                                       ),
                                     ),
+
                                     Text(
                                       "Demand for Indian Generic drugs sktrockets in ...",
                                       style: TextStyle(
@@ -112,6 +113,9 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         fontSize: 30,
                                         height: 1.5,
                                       ),
+                                    ),
+                                    SizedBox(
+                                      height: 16,
                                     ),
                                     Text("Updated just now."),
                                     Padding(

@@ -75,14 +75,14 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                         Stack(
                           children: [
                             Positioned(
-                              left: 16,
+                              left: 20,
                               top: 16,
-                              bottom: 100,
-                              right: 16,
+                              bottom: 120,
+                              right: 20,
                               child: Container(
-
                                 decoration: BoxDecoration(
                                   color: Colors.amber[200],
+                                  borderRadius: BorderRadius.circular(16),
                                 ),
                               ),
                             ),

@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -75,6 +77,112 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                       children: [
                         Stack(
                           children: [
+                            Positioned(
+                              left: 84,
+                              top: 48,
+                              bottom: 100,
+                              right: -48,
+                              child: Transform.rotate(
+                                angle: 0.05 * pi,
+                                child: Container(
+                                  decoration: BoxDecoration(
+                                    color: Colors.red[100],
+                                    borderRadius: BorderRadius.circular(16),
+                                  ),
+                                  padding: const EdgeInsets.all(20),
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: [
+                                      Container(
+                                        decoration: BoxDecoration(
+                                          color: Colors.red,
+                                          borderRadius: BorderRadius.circular(16),
+                                        ),
+                                        padding: const EdgeInsets.symmetric(
+                                          horizontal: 8,
+                                          vertical: 4,
+                                        ),
+                                        child: const Text(
+                                          "LIVE",
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ),
+                                      const Text(
+                                        "Demand for Indian Generic drugs sktrockets in ...",
+                                        style: TextStyle(
+                                          fontWeight: FontWeight.w800,
+                                          fontSize: 30,
+                                          height: 1.5,
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 16,
+                                      ),
+                                      const Text("Updated just now."),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(vertical: 16),
+                                        child: Row(
+                                          children: [
+                                            const CircleAvatar(
+                                              radius: 24,
+                                            ),
+                                            const SizedBox(
+                                              width: 8,
+                                            ),
+                                            Column(
+                                              crossAxisAlignment: CrossAxisAlignment.start,
+                                              children: const [
+                                                Text("Published by"),
+                                                Text("Dream Walker"),
+                                              ],
+                                            ),
+                                            const Spacer(),
+                                            Container(
+                                              decoration: BoxDecoration(
+                                                color: Colors.black,
+                                                borderRadius: BorderRadius.circular(24),
+                                              ),
+                                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                                              child: const Text(
+                                                "Follow",
+                                                style: TextStyle(
+                                                  color: Colors.white,
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      const Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                                        style: TextStyle(
+                                          height: 1.5,
+                                          fontWeight: FontWeight.w500,
+                                        ),
+                                      ),
+                                      const Spacer(),
+                                      Row(
+                                        crossAxisAlignment: CrossAxisAlignment.center,
+                                        mainAxisAlignment: MainAxisAlignment.end,
+                                        children: const [
+                                          CircleAvatar(
+                                            child: Icon(Icons.thumb_up_alt_outlined),
+                                          ),
+                                          CircleAvatar(
+                                            child: Icon(Icons.bookmark_border),
+                                          ),
+                                          CircleAvatar(
+                                            child: Icon(Icons.share),
+                                          ),
+                                        ],
+                                      )
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
                             Positioned(
                               left: 20,
                               top: 16,
@@ -178,6 +286,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                 ),
                               ),
                             ),
+
                           ],
                         ),
                         const Placeholder(),

@@ -119,6 +119,9 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         CircleAvatar(
                                           radius: 24,
                                         ),
+                                        SizedBox(
+                                          width: 8,
+                                        ),
                                         Column(
                                           crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
@@ -126,11 +129,13 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                             Text("Dream Walker"),
                                           ],
                                         ),
+                                        Spacer(),
                                         Container(
                                           decoration: BoxDecoration(
                                             color: Colors.black,
                                             borderRadius: BorderRadius.circular(24),
                                           ),
+                                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
                                           child: Text(
                                             "Follow",
                                             style: TextStyle(

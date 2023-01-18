@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class NewsApp2MainPage extends StatefulWidget {
   const NewsApp2MainPage({Key? key}) : super(key: key);
@@ -83,6 +84,60 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                 decoration: BoxDecoration(
                                   color: Colors.amber[200],
                                   borderRadius: BorderRadius.circular(16),
+                                ),
+                                padding: EdgeInsets.all(16),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      decoration: BoxDecoration(
+                                        color: Colors.red,
+                                        borderRadius: BorderRadius.circular(16),
+                                      ),
+                                      padding: EdgeInsets.symmetric(
+                                        horizontal: 8,
+                                        vertical: 4,
+                                      ),
+                                      child: Text(
+                                        "LIVE",
+                                        style: TextStyle(
+                                          color: Colors.white,
+                                        ),
+                                      ),
+                                    ),
+                                    Text(
+                                      "Demand for Indian Generic drugs sktrockets in ...",
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.w800,
+                                        fontSize: 30,
+                                        height: 1.5,
+                                      ),
+                                    ),
+                                    Text("Updated just now."),
+                                    Row(
+                                      children: [
+                                        CircleAvatar(),
+                                        Column(
+                                          children: [
+                                            Text("Published by"),
+                                            Text("Dream Walker"),
+                                          ],
+                                        ),
+                                        Container(
+                                          decoration: BoxDecoration(
+                                            color: Colors.black,
+                                            borderRadius: BorderRadius.circular(24),
+                                          ),
+                                          child: Text(
+                                            "Follow",
+                                            style: TextStyle(
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        )
+                                      ],
+                                    )
+                                  ],
                                 ),
                               ),
                             ),

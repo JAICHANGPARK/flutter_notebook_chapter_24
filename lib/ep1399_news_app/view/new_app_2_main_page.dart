@@ -116,8 +116,11 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                     Text("Updated just now."),
                                     Row(
                                       children: [
-                                        CircleAvatar(),
+                                        CircleAvatar(
+                                          radius: 24,
+                                        ),
                                         Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
                                           children: [
                                             Text("Published by"),
                                             Text("Dream Walker"),

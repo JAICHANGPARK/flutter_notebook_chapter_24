@@ -105,7 +105,6 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         ),
                                       ),
                                     ),
-
                                     Text(
                                       "Demand for Indian Generic drugs sktrockets in ...",
                                       style: TextStyle(
@@ -148,10 +147,12 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                                 color: Colors.white,
                                               ),
                                             ),
-                                          )
+                                          ),
                                         ],
                                       ),
-                                    )
+                                    ),
+                                    Text(
+                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."),
                                   ],
                                 ),
                               ),

@@ -129,7 +129,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                           ),
                                           Column(
                                             crossAxisAlignment: CrossAxisAlignment.start,
-                                            children: [
+                                            children: const [
                                               Text("Published by"),
                                               Text("Dream Walker"),
                                             ],
@@ -160,7 +160,9 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                     ),
                                     Spacer(),
                                     Row(
-                                      children: [
+                                      crossAxisAlignment: CrossAxisAlignment.center,
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: const [
                                         CircleAvatar(
                                           child: Icon(Icons.thumb_up_alt_outlined),
                                         ),

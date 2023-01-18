@@ -1,6 +1,6 @@
 # flutter_notebook_chapter_24
 
-### EP1399
+### EP1399-1400
 
 - News App
 - by MindInventory UI/UX for MindInventory

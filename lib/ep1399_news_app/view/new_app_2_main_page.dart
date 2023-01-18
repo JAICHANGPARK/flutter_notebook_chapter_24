@@ -114,36 +114,39 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                       ),
                                     ),
                                     Text("Updated just now."),
-                                    Row(
-                                      children: [
-                                        CircleAvatar(
-                                          radius: 24,
-                                        ),
-                                        SizedBox(
-                                          width: 8,
-                                        ),
-                                        Column(
-                                          crossAxisAlignment: CrossAxisAlignment.start,
-                                          children: [
-                                            Text("Published by"),
-                                            Text("Dream Walker"),
-                                          ],
-                                        ),
-                                        Spacer(),
-                                        Container(
-                                          decoration: BoxDecoration(
-                                            color: Colors.black,
-                                            borderRadius: BorderRadius.circular(24),
+                                    Padding(
+                                      padding: const EdgeInsets.symmetric(vertical: 16),
+                                      child: Row(
+                                        children: [
+                                          CircleAvatar(
+                                            radius: 24,
                                           ),
-                                          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                                          child: Text(
-                                            "Follow",
-                                            style: TextStyle(
-                                              color: Colors.white,
+                                          SizedBox(
+                                            width: 8,
+                                          ),
+                                          Column(
+                                            crossAxisAlignment: CrossAxisAlignment.start,
+                                            children: [
+                                              Text("Published by"),
+                                              Text("Dream Walker"),
+                                            ],
+                                          ),
+                                          Spacer(),
+                                          Container(
+                                            decoration: BoxDecoration(
+                                              color: Colors.black,
+                                              borderRadius: BorderRadius.circular(24),
                                             ),
-                                          ),
-                                        )
-                                      ],
+                                            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                                            child: Text(
+                                              "Follow",
+                                              style: TextStyle(
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          )
+                                        ],
+                                      ),
                                     )
                                   ],
                                 ),

@@ -85,7 +85,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                   color: Colors.amber[200],
                                   borderRadius: BorderRadius.circular(16),
                                 ),
-                                padding: EdgeInsets.all(20),
+                                padding: const EdgeInsets.all(20),
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
@@ -94,18 +94,18 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         color: Colors.red,
                                         borderRadius: BorderRadius.circular(16),
                                       ),
-                                      padding: EdgeInsets.symmetric(
+                                      padding: const EdgeInsets.symmetric(
                                         horizontal: 8,
                                         vertical: 4,
                                       ),
-                                      child: Text(
+                                      child: const Text(
                                         "LIVE",
                                         style: TextStyle(
                                           color: Colors.white,
                                         ),
                                       ),
                                     ),
-                                    Text(
+                                    const Text(
                                       "Demand for Indian Generic drugs sktrockets in ...",
                                       style: TextStyle(
                                         fontWeight: FontWeight.w800,
@@ -113,18 +113,18 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         height: 1.5,
                                       ),
                                     ),
-                                    SizedBox(
+                                    const SizedBox(
                                       height: 16,
                                     ),
-                                    Text("Updated just now."),
+                                    const Text("Updated just now."),
                                     Padding(
                                       padding: const EdgeInsets.symmetric(vertical: 16),
                                       child: Row(
                                         children: [
-                                          CircleAvatar(
+                                          const CircleAvatar(
                                             radius: 24,
                                           ),
-                                          SizedBox(
+                                          const SizedBox(
                                             width: 8,
                                           ),
                                           Column(
@@ -134,14 +134,14 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                               Text("Dream Walker"),
                                             ],
                                           ),
-                                          Spacer(),
+                                          const Spacer(),
                                           Container(
                                             decoration: BoxDecoration(
                                               color: Colors.black,
                                               borderRadius: BorderRadius.circular(24),
                                             ),
-                                            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-                                            child: Text(
+                                            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                                            child: const Text(
                                               "Follow",
                                               style: TextStyle(
                                                 color: Colors.white,
@@ -151,14 +151,14 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                                         ],
                                       ),
                                     ),
-                                    Text(
+                                    const Text(
                                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                                       style: TextStyle(
                                         height: 1.5,
                                         fontWeight: FontWeight.w500,
                                       ),
                                     ),
-                                    Spacer(),
+                                    const Spacer(),
                                     Row(
                                       crossAxisAlignment: CrossAxisAlignment.center,
                                       mainAxisAlignment: MainAxisAlignment.end,
@@ -180,7 +180,7 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                             ),
                           ],
                         ),
-                        Placeholder(),
+                        const Placeholder(),
                         Container(),
                         Container(),
                       ],

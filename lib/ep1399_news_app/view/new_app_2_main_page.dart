@@ -72,7 +72,22 @@ class _NewsApp2MainPageState extends State<NewsApp2MainPage> {
                     Expanded(
                         child: TabBarView(
                       children: [
-                        Container(),
+                        Stack(
+                          children: [
+                            Positioned(
+                              left: 16,
+                              top: 16,
+                              bottom: 100,
+                              right: 16,
+                              child: Container(
+
+                                decoration: BoxDecoration(
+                                  color: Colors.amber[200],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                         Placeholder(),
                         Container(),
                         Container(),
